@@ -1,0 +1,121 @@
+---
+import '../styles/global.css';
+import { NAV_LINKS, OWNER_NAME, SITE_DESCRIPTION, SITE_NAME, SKOOL_URL, YOUTUBE_URL } from '../consts';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { title, description = SITE_DESCRIPTION } = Astro.props;
+const pageTitle = title ? `${title} | ${SITE_NAME}` : SITE_NAME;
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
+const year = new Date().getFullYear();
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalUrl} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <link rel="alternate" type="application/rss+xml" title={SITE_NAME} href="/rss.xml" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalUrl} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="wordmark" href="/">
+          <img src="/favicon.svg" alt="" width="32" height="32" />
+          <span>{SITE_NAME}</span>
+        </a>
+        <nav aria-label="Main">
+          {NAV_LINKS.map((link) => <a href={link.href}>{link.label}</a>)}
+        </nav>
+      </div>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>{SITE_NAME} by {OWNER_NAME}. &copy; {year}</p>
+        <p>
+          <a href={SKOOL_URL}>Skool community</a>
+          <span aria-hidden="true"> · </span>
+          <a href={YOUTUBE_URL}>YouTube</a>
+          <span aria-hidden="true"> · </span>
+          <a href="/rss.xml">RSS</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<style>
+  .site-header {
+    border-bottom: 1px solid rgba(107, 101, 96, 0.3);
+    background: var(--warm-white);
+  }
+
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-4);
+    padding-top: var(--space-4);
+    padding-bottom: var(--space-4);
+  }
+
+  .wordmark {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--navy);
+  }
+
+  nav {
+    display: flex;
+    gap: var(--space-5);
+  }
+
+  nav a {
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+  }
+
+  .site-footer {
+    margin-top: var(--space-8);
+    padding: var(--space-6) 0;
+    background: var(--navy);
+    color: var(--cream);
+    font-size: 0.9rem;
+  }
+
+  .site-footer a {
+    color: var(--cream);
+  }
+
+  .footer-inner p {
+    margin: 0 0 var(--space-2);
+  }
+</style>

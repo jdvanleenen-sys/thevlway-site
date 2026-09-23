@@ -1,0 +1,135 @@
+/* Tokens from 90 Jeff Standards/brand-ai-the-vl-way.md. Change colours there first. */
+:root {
+  --cognac: #c67a3c;
+  --cognac-light: #f5e6d5;
+  --cognac-dark: #8b5628;
+  --navy: #14314f;
+  --navy-dark: #0e2740;
+  --warm-white: #f7f3ee;
+  --cream: #ede7df;
+  --warm-grey: #6b6560;
+  --white: #ffffff;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+
+  --max-width: 1040px;
+  --reading-width: 680px;
+  --font: 'DM Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--warm-white);
+  color: var(--navy);
+  font-family: var(--font);
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0 0 var(--space-4);
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+h2 {
+  font-size: clamp(1.5rem, 3.5vw, 2rem);
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+p {
+  margin: 0 0 var(--space-4);
+}
+
+a {
+  color: var(--navy);
+  text-decoration-color: var(--cognac);
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  color: var(--cognac-dark);
+}
+
+a:focus-visible,
+.button:focus-visible {
+  outline: 3px solid var(--cognac);
+  outline-offset: 2px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-4);
+}
+
+.reading {
+  max-width: var(--reading-width);
+}
+
+.muted {
+  color: var(--warm-grey);
+  font-size: 0.9rem;
+}
+
+.button {
+  display: inline-block;
+  padding: var(--space-3) var(--space-5);
+  border-radius: 6px;
+  font-weight: 700;
+  text-decoration: none;
+  border: 2px solid transparent;
+}
+
+.button-primary {
+  background: var(--cognac);
+  color: var(--white);
+}
+
+.button-primary:hover {
+  background: var(--cognac-dark);
+  color: var(--white);
+}
+
+.button-secondary {
+  background: transparent;
+  color: var(--navy);
+  border-color: var(--navy);
+}
+
+.button-secondary:hover {
+  background: var(--navy);
+  color: var(--white);
+}

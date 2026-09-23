@@ -1,0 +1,145 @@
+---
+import Base from '../layouts/Base.astro';
+import { SKOOL_URL, YOUTUBE_URL } from '../consts';
+
+// Copy follows the lead order in _business-plan/doctrine.md:
+// outcome, mechanism, differentiator, delivery choice, method.
+const methodSteps = [
+  {
+    name: 'See It',
+    line: 'See the real problem and the outcome you want before you pick any tool.',
+  },
+  {
+    name: 'Build It',
+    line: 'Set up the right fix. Sometimes that is software you rent. Sometimes it is a simple system built around your process.',
+  },
+  {
+    name: 'Own It',
+    line: 'Know how your business runs, where your data lives, and what the AI is allowed to do. No tool you do not understand.',
+  },
+];
+
+const deliveryPaths = [
+  { name: 'Learn it', line: 'Work through the lessons in the community at your own pace.' },
+  { name: 'Build it with us', line: 'Build your first system with help in the room.' },
+  { name: 'Have it built', line: 'We set it up around your business and hand you the keys.' },
+];
+---
+
+<Base>
+  <section class="hero">
+    <div class="container">
+      <p class="eyebrow">For owners of trades and local service businesses</p>
+      <h1>Stop losing leads, chasing quotes, and doing office work after the job's done.</h1>
+      <p class="lede">Build simple AI systems around the way you already work.</p>
+      <div class="actions">
+        <a class="button button-primary" href={SKOOL_URL}>Join the community on Skool</a>
+        <a class="button button-secondary" href={YOUTUBE_URL}>Watch on YouTube</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="container reading">
+      <h2>Rent the commodity. Build the advantage. Own the decision.</h2>
+      <p>
+        You do not have to build everything. Rent the tools that do their job well, like payments,
+        email, and bookkeeping. Keep control of the workflows that make your business different.
+      </p>
+    </div>
+  </section>
+
+  <section class="container section">
+    <h2>See It. Build It. Own It.</h2>
+    <ol class="cards">
+      {
+        methodSteps.map((step) => (
+          <li class="card">
+            <h3>{step.name}</h3>
+            <p>{step.line}</p>
+          </li>
+        ))
+      }
+    </ol>
+  </section>
+
+  <section class="container section">
+    <h2>Pick how you want to get there</h2>
+    <ul class="cards">
+      {
+        deliveryPaths.map((path) => (
+          <li class="card">
+            <h3>{path.name}</h3>
+            <p>{path.line}</p>
+          </li>
+        ))
+      }
+    </ul>
+    <a class="button button-primary" href={SKOOL_URL}>Start in the community</a>
+  </section>
+</Base>
+
+<style>
+  .hero {
+    padding: var(--space-8) 0 var(--space-7);
+  }
+
+  .eyebrow {
+    color: var(--cognac-dark);
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .hero h1 {
+    max-width: 18em;
+  }
+
+  .lede {
+    font-size: 1.25rem;
+    max-width: 32em;
+  }
+
+  .actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+    margin-top: var(--space-5);
+  }
+
+  .band {
+    background: var(--navy);
+    color: var(--white);
+    padding: var(--space-7) 0;
+  }
+
+  .band h2 {
+    color: var(--white);
+  }
+
+  .section {
+    padding-top: var(--space-7);
+  }
+
+  .cards {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 var(--space-5);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: var(--space-4);
+  }
+
+  .card {
+    background: var(--white);
+    border: 1px solid rgba(107, 101, 96, 0.3);
+    border-top: 4px solid var(--cognac);
+    border-radius: 6px;
+    padding: var(--space-5);
+  }
+
+  .card p {
+    margin: 0;
+  }
+</style>

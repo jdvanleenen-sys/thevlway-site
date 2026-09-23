@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://thevlway.com/sitemap-index.xml

@@ -1,0 +1,53 @@
+---
+import Base from '../../layouts/Base.astro';
+import { formatPostDate, getPublishedPosts } from '../../lib/posts';
+import { YOUTUBE_URL } from '../../consts';
+
+const posts = await getPublishedPosts();
+---
+
+<Base title="Blog" description="Plain-English posts on running a trades or local service business with simple AI systems.">
+  <section class="container reading page">
+    <h1>Blog</h1>
+    {
+      posts.length === 0 ? (
+        <p>
+          No posts yet. The first one goes up with the first video on the{' '}
+          <a href={YOUTUBE_URL}>YouTube channel</a>.
+        </p>
+      ) : (
+        <ul class="post-list">
+          {posts.map((post) => (
+            <li>
+              <a href={`/blog/${post.id}/`}>{post.data.title}</a>
+              <p class="muted">{formatPostDate(post.data.pubDate)}</p>
+              <p>{post.data.description}</p>
+            </li>
+          ))}
+        </ul>
+      )
+    }
+  </section>
+</Base>
+
+<style>
+  .page {
+    padding-top: var(--space-7);
+  }
+
+  .post-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .post-list li {
+    padding: var(--space-5) 0;
+    border-bottom: 1px solid rgba(107, 101, 96, 0.3);
+  }
+
+  .post-list a {
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+</style>
