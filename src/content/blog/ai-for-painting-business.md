@@ -3,10 +3,10 @@ title: 'AI for Painting Business: Quotes to Invoices, No Retyping'
 description: 'AI for painting business, the practical way. Say the job once, and the system carries it from quote to invoice. The AI never does the math. Watch the full demo.'
 pubDate: 2026-09-24
 keyword: 'ai for painting business'
-draft: true
+draft: false
 ---
 
-[![Watch: AI for Painting Business, quotes to invoices with no retyping](/blog/ai-for-painting-business/video-thumbnail.png)](https://www.youtube.com/watch?v=VIDEO_ID)
+[![Watch: AI for Painting Business, quotes to invoices with no retyping](/blog/ai-for-painting-business/video-thumbnail.png)](https://www.youtube.com/watch?v=aphOoBiAPjQ)
 
 *This video walks 1 job from the first quote to getting paid, in a demo painting shop. Every step in this post is on screen in it.*
 
@@ -52,7 +52,7 @@ Each piece of work lands on the job as its own line.
 
 ![The Lee job in the demo, with each line showing its quantity, rate and amount](/blog/ai-for-painting-business/lee-job-lines.png)
 
-*The demo job with its lines. The rates come from the price list. Claude only picked the items and quantities.* [See it happen at 2:27](https://www.youtube.com/watch?v=VIDEO_ID&t=147s).
+*The demo job with its lines. The rates come from the price list. Claude only picked the items and quantities.* [See it happen at 2:27](https://www.youtube.com/watch?v=aphOoBiAPjQ&t=147s).
 
 ## The system does the math, not the AI
 
@@ -80,7 +80,7 @@ You're on site, and the customer asks if you can do the hallway trim while you'r
 
 You say it once, and it lands on the job as a change order. The customer approves it by email, so it can't get forgotten at billing.
 
-A forgotten add-on is work you did for free. [Watch the change order at 4:20](https://www.youtube.com/watch?v=VIDEO_ID&t=260s).
+A forgotten add-on is work you did for free. [Watch the change order at 4:20](https://www.youtube.com/watch?v=aphOoBiAPjQ&t=260s).
 
 ## The quote becomes the invoice
 
@@ -88,7 +88,7 @@ When the work is done, you tick job complete. The same job becomes the invoice.
 
 Same lines. And the change order is already on it. The deposit comes off, and the balance works itself out.
 
-No retyping. [See it at 4:43](https://www.youtube.com/watch?v=VIDEO_ID&t=283s).
+No retyping. [See it at 4:43](https://www.youtube.com/watch?v=aphOoBiAPjQ&t=283s).
 
 The invoice shows the 5% GST worked out on the job. If you're not sure how GST applies to your shop, the [Canada Revenue Agency's GST/HST pages for businesses](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses.html) are the place to check.
 
