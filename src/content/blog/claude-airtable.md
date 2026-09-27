@@ -3,10 +3,11 @@ title: 'Claude + Airtable: Build a Painting Quote on Your Phone'
 description: 'Claude + Airtable for business owners: connect them on the free plans, give Claude your shop rules, and say a job into your phone. Airtable does the math.'
 pubDate: 2026-09-26
 keyword: 'claude airtable'
-draft: true
+youtubeId: 'wA-0Hr_s2Ww'
+draft: false
 ---
 
-[![Watch: Claude + Airtable, build a painting quote on your phone](/blog/claude-airtable/video-thumbnail.png)](https://www.youtube.com/watch?v=VIDEO_ID)
+[![Watch: Claude + Airtable, build a painting quote on your phone](/blog/claude-airtable/video-thumbnail.png)](https://www.youtube.com/watch?v=wA-0Hr_s2Ww)
 
 *This video sets up Claude and Airtable from scratch on a demo painting shop, then quotes a job from a phone. Every step in this post is on screen in it.*
 
