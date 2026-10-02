@@ -37,6 +37,8 @@ For a painter it's the same. The job is in the notes, and the prices are somewhe
 
 Claude's own help pages say [connectors are available on every plan](https://support.claude.com/en/articles/11176164-use-connectors-to-extend-claude-s-capabilities), and that [free accounts can make up to 5 Projects](https://support.claude.com/en/articles/9517075-what-are-projects).
 
+Airtable is a tool you rent, and that's fine: it's the same for every business. How you price a job is the part you build. If you're not sure which of your own tools are which, start with [build vs buy software](/blog/build-vs-buy-software/).
+
 ## Step 1: copy the demo into your Airtable
 
 Open the Summit Coat link and copy the base into your own Airtable. Now you have your own copy, with the price list already in it.
