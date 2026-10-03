@@ -3,10 +3,11 @@ title: 'Build vs Buy Software: 2 Questions for Every Contractor'
 description: 'Build vs buy software, for contractors: rent what is the same for every business, build how you win work, and run 2 questions on every tool you pay for.'
 pubDate: 2026-10-02
 keyword: 'build vs buy software'
-draft: true
+youtubeId: 'J5MaC5jgj74'
+draft: false
 ---
 
-[![Watch: Build vs buy software, 2 questions for every contractor](/blog/build-vs-buy-software/video-thumbnail.png)](https://www.youtube.com/watch?v=YOUTUBE_ID)
+[![Watch: Build vs buy software, 2 questions for every contractor](/blog/build-vs-buy-software/video-thumbnail.png)](https://www.youtube.com/watch?v=J5MaC5jgj74)
 
 *This is the video behind the post. It walks one roofing crew through all 3 steps, so you can see the 2 questions work on real tools before you try them on yours.*
 
@@ -34,7 +35,7 @@ So for every tool you pay for, ask 1 question: **"Is this the same for every bus
 
 Here's why it works. If every business has it, it's rarely the reason a customer picks you. The mistake is trying to make your own version. The right move is to rent a good one and move on.
 
-That's your rent list. Keep it, you need it in step 3. ([Step 1 in the video](https://www.youtube.com/watch?v=YOUTUBE_ID&t=75s))
+That's your rent list. Keep it, you need it in step 3. ([Step 1 in the video](https://www.youtube.com/watch?v=J5MaC5jgj74&t=75s))
 
 ## Step 2: build the advantage
 
@@ -46,7 +47,7 @@ So for the work that wins you jobs, ask a second question: **"Is this how I win 
 
 In the video, Marco runs a small roofing crew. His quote follow-up was going out as the same message every roofer gets, straight from his app's template. That hands away the way his business wins work. The right move: he writes the follow-up his way, then lets the app send it.
 
-And if a tool does both? Rent the app, and build how you use it. That's the answer for most of the software a trades business runs on. ([Step 2 in the video](https://www.youtube.com/watch?v=YOUTUBE_ID&t=120s))
+And if a tool does both? Rent the app, and build how you use it. That's the answer for most of the software a trades business runs on. ([Step 2 in the video](https://www.youtube.com/watch?v=J5MaC5jgj74&t=120s))
 
 ## Step 3: own the decision
 
@@ -57,7 +58,7 @@ Take out your rent list and your build list. Pick 1 tool you pay for that you've
 1. First, ask: "Is this the same for every business?"
 2. If not, ask: "Is this how I win the work?"
 
-Write rent or build beside that tool. Writing it down helps you decide, instead of drifting into another renewal. And if it belongs on the rent list, that's fine. Keep renting it. ([The 2 questions in the video](https://www.youtube.com/watch?v=YOUTUBE_ID&t=205s))
+Write rent or build beside that tool. Writing it down helps you decide, instead of drifting into another renewal. And if it belongs on the rent list, that's fine. Keep renting it. ([The 2 questions in the video](https://www.youtube.com/watch?v=J5MaC5jgj74&t=205s))
 
 Owning the decision also means knowing where your data and your logins live when you rent. The Canadian Centre for Cyber Security keeps a plain list of [baseline security controls for small and medium organizations](https://www.cyber.gc.ca/en/guidance/baseline-cyber-security-controls-small-and-medium-organizations) that's worth a read before you sign up for the next app. If you're in Canada, the federal [Canada Digital Adoption Program page](https://ised-isde.canada.ca/site/canada-digital-adoption-program/en) is another place to see how small businesses plan their tech.
 
