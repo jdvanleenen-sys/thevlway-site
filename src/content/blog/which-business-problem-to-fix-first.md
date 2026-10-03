@@ -87,7 +87,7 @@ Now look at your first win and its number. Write it as 1 sentence, like Dale's:
 
 Use your own problem and your own number. The number gives you a reason to actually do it.
 
-Once you have your sentence, the next question is how to fix it: rent a tool, or build your own way of doing it. [Build vs buy software](/blog/build-vs-buy-software/) runs 2 questions on that. And if messy invoicing is your win, the [quotes to invoices walkthrough](/blog/ai-for-painting-business/) shows one job going from quote to paid with no retyping.
+Once you have your sentence, [write it up as a business problem statement](/blog/business-problem-statement/) in 5 lines, so someone else can help. Then the next question is how to fix it: rent a tool, or build your own way of doing it. [Build vs buy software](/blog/build-vs-buy-software/) runs 2 questions on that. And if messy invoicing is your win, the [quotes to invoices walkthrough](/blog/ai-for-painting-business/) shows one job going from quote to paid with no retyping.
 
 ## Try it on your own business
 
