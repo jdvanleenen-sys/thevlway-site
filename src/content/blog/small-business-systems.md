@@ -3,10 +3,10 @@ title: 'Small Business Systems: Fix Your Office Work in 3 Steps'
 description: 'Small business systems, for trades: name the 1 office problem costing you the most, pick 1 small fix your team can run, and stay in control of it.'
 pubDate: 2026-10-03
 keyword: 'small business systems'
-draft: true
+draft: false
 ---
 
-[![Watch: Small business systems, fix your office work in 3 steps](/blog/small-business-systems/video-thumbnail.png)](https://www.youtube.com/watch?v=YOUTUBE_ID)
+[![Watch: Small business systems, fix your office work in 3 steps](/blog/small-business-systems/video-thumbnail.png)](https://www.youtube.com/watch?v=4js1a1SI2y4)
 
 *This is the video behind the post. It walks one electrical shop through all 3 steps, so you can see a small fix come out of something the owner already had.*
 
@@ -38,7 +38,7 @@ In the video, say Maya runs a small electrical shop. She's made up, but her week
 
 If 2 or 3 problems are fighting for the top spot, [which business problem to fix first](/blog/which-business-problem-to-fix-first/) shows you how to score them by cost and pick 1.
 
-That's your 1 problem. Keep it for step 2. ([Step 1 in the video](https://www.youtube.com/watch?v=YOUTUBE_ID&t=71s))
+That's your 1 problem. Keep it for step 2. ([Step 1 in the video](https://www.youtube.com/watch?v=4js1a1SI2y4&t=71s))
 
 ## Step 2: Build it
 
@@ -56,7 +56,7 @@ The mistake is building something too big to keep up. The right move is 1 small 
 
 Not sure if your fix is something to rent or something to build? [Build vs buy software](/blog/build-vs-buy-software/) runs 2 questions on that.
 
-That's your fix. Hold onto it for step 3. ([Step 2 in the video](https://www.youtube.com/watch?v=YOUTUBE_ID&t=106s))
+That's your fix. Hold onto it for step 3. ([Step 2 in the video](https://www.youtube.com/watch?v=4js1a1SI2y4&t=106s))
 
 ## Step 3: Own it
 
@@ -72,7 +72,7 @@ Now check your fix with 3 questions:
 
 Here's why. A tool is harder to change when you don't understand it. Maya can answer all 3, so the fix is hers to change.
 
-The third question is the easy one to skip. If your information lives inside a tool you rent, the Canadian Centre for Cyber Security keeps a plain list of [baseline security controls for small and medium organizations](https://www.cyber.gc.ca/en/guidance/baseline-cyber-security-controls-small-and-medium-organizations) that's worth a read. ([Step 3 in the video](https://www.youtube.com/watch?v=YOUTUBE_ID&t=151s))
+The third question is the easy one to skip. If your information lives inside a tool you rent, the Canadian Centre for Cyber Security keeps a plain list of [baseline security controls for small and medium organizations](https://www.cyber.gc.ca/en/guidance/baseline-cyber-security-controls-small-and-medium-organizations) that's worth a read. ([Step 3 in the video](https://www.youtube.com/watch?v=4js1a1SI2y4&t=151s))
 
 ## Why the order matters
 
