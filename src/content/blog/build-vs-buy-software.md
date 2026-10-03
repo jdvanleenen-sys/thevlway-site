@@ -72,6 +72,8 @@ Skip step 1, and you build what you should have rented. Skip step 2, and you han
 
 Here's your move for this week: write down the one thing you most want working in your business, and decide if it's rent or build. That one answer changes what you do next.
 
+Not sure which thing that is? [Which business problem to fix first](/blog/which-business-problem-to-fix-first/) shows you how to pick it by what it costs you, not by what bugs you most.
+
 If you want help with it, the full lesson and a prompt that walks you through this on your own business, one question at a time, are free in [my Skool community](https://www.skool.com/see-it-build-it-own-it). It's lesson 1.2 in Start Here.
 
 And if you're ready to hook your phone up to a tool you rent, the [Claude + Airtable setup](/blog/claude-airtable/) is the next step: Airtable is the rented database, and the way you price a job is the part you build.
