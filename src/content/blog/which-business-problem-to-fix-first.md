@@ -1,12 +1,12 @@
 ---
 title: 'Small Business Problems and Solutions: Which to Fix First'
 description: 'Small business problems and solutions, for trades: list your top 3, score each by what it costs you in a month, park the rest, and fix the one that costs most.'
-pubDate: 2026-10-02
+pubDate: 2026-10-03
 keyword: 'small business problems and solutions'
-draft: true
+draft: false
 ---
 
-[![Watch: Small business problems and solutions, which to fix first](/blog/which-business-problem-to-fix-first/video-thumbnail.png)](https://www.youtube.com/watch?v=YOUTUBE_ID)
+[![Watch: Small business problems and solutions, which to fix first](/blog/which-business-problem-to-fix-first/video-thumbnail.png)](https://www.youtube.com/watch?v=_I7Ue2QCFKk)
 
 *This is the video behind the post. It walks one plumbing shop through all 3 steps, so you can see why the problem that bugs you most isn't always the one to fix first.*
 
@@ -41,7 +41,7 @@ If you did lesson 1.1 in the community, put your one thing from it on the list t
 
 Here's why the list matters. You can't compare problems that stay in your head. On paper, you can.
 
-In the video, say Dale runs a small plumbing shop. He's made up, but his list will sound familiar: missed calls, messy invoicing, and lead follow-up. That's his top 3. ([Step 1 in the video](https://www.youtube.com/watch?v=YOUTUBE_ID&t=60s))
+In the video, say Dale runs a small plumbing shop. He's made up, but his list will sound familiar: missed calls, messy invoicing, and lead follow-up. That's his top 3. ([Step 1 in the video](https://www.youtube.com/watch?v=_I7Ue2QCFKk&t=60s))
 
 ## Step 2: score them by cost
 
@@ -59,7 +59,7 @@ Pick the one that costs you most, not the one that annoys you most.
 
 Can't name an exact number? A rough guess is enough. If you want a plain place to start counting the money side, the Business Development Bank of Canada has a short explainer on [what cash flow is](https://www.bdc.ca/en/articles-tools/money-finance/manage-finances/cash-flow) and why it matters.
 
-That's your first win: the problem and its number. Hold onto it. ([Step 2 in the video](https://www.youtube.com/watch?v=YOUTUBE_ID&t=105s))
+That's your first win: the problem and its number. Hold onto it. ([Step 2 in the video](https://www.youtube.com/watch?v=_I7Ue2QCFKk&t=105s))
 
 ## Step 3: park the rest
 
@@ -71,7 +71,7 @@ So write your second problem on a list called **Later**. Dale puts messy invoici
 
 Here's why. Parking it is part of finishing the first one. The mistake is starting another problem when the first one gets hard. The right move is finishing the first, then opening your Later list.
 
-Parking isn't dropping. It waits until you finish the first. And when messy invoicing does come off the list, the Canada Revenue Agency's page on [keeping records](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/keeping-records.html) is a good check on what your invoices and receipts need to hold. ([Step 3 in the video](https://www.youtube.com/watch?v=YOUTUBE_ID&t=164s))
+Parking isn't dropping. It waits until you finish the first. And when messy invoicing does come off the list, the Canada Revenue Agency's page on [keeping records](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/keeping-records.html) is a good check on what your invoices and receipts need to hold. ([Step 3 in the video](https://www.youtube.com/watch?v=_I7Ue2QCFKk&t=164s))
 
 ## Why the order matters
 
