@@ -37,7 +37,7 @@ If you're stuck, start with the usual suspects. For most trades, it's 1 of these
 - Lead follow-up
 - Job details getting lost
 
-If you did lesson 1.1 in the community, put your one thing from it on the list too.
+If you did lesson 1.1 in the community, put your one thing from it on the list too. That lesson is also a post: [small business systems in 3 steps](/blog/small-business-systems/).
 
 Here's why the list matters. You can't compare problems that stay in your head. On paper, you can.
 
