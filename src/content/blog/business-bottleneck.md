@@ -1,12 +1,12 @@
 ---
 title: 'Business Bottleneck: Find the 1 Folder Costing You the Most'
 description: 'Find your business bottleneck in 3 steps, for trades: match each problem to 1 of 4 folders, mark the 1 folder that costs you most, and give it a name.'
-pubDate: 2026-10-03
+pubDate: 2026-10-04
 keyword: 'business bottleneck'
-draft: true
+draft: false
 ---
 
-[![Watch: Business bottleneck, find the 1 folder costing you the most](/blog/business-bottleneck/video-thumbnail.png)](https://www.youtube.com/watch?v=YOUTUBE_ID)
+[![Watch: Business bottleneck, find the 1 folder costing you the most](/blog/business-bottleneck/video-thumbnail.png)](https://www.youtube.com/watch?v=XldRCThcQyc)
 
 *This is the video behind the post. It walks one landscaping crew through all 3 steps, so you can see 2 problems that feel unrelated land in the same folder.*
 
@@ -47,7 +47,7 @@ In the video, say Kyle runs a small landscaping crew. He's made up, but his week
 
 Kyle misses calls while he's on the mower. That's Leads.
 
-That's 1 problem matched. Keep it for step 2. ([Step 1 in the video](https://www.youtube.com/watch?v=YOUTUBE_ID&t=55s))
+That's 1 problem matched. Keep it for step 2. ([Step 1 in the video](https://www.youtube.com/watch?v=XldRCThcQyc&t=55s))
 
 ## Step 2: mark the 1 that costs most
 
@@ -67,7 +67,7 @@ Pick the most expensive, not the most annoying. If you already scored your probl
 
 Can't put a number on it? A rough guess is enough. If you want a plain place to start counting the dollars, the Business Development Bank of Canada has a short explainer on [what cash flow is](https://www.bdc.ca/en/articles-tools/money-finance/manage-finances/cash-flow).
 
-That's your leaking folder. Hold onto it for step 3. ([Step 2 in the video](https://www.youtube.com/watch?v=YOUTUBE_ID&t=127s))
+That's your leaking folder. Hold onto it for step 3. ([Step 2 in the video](https://www.youtube.com/watch?v=XldRCThcQyc&t=127s))
 
 ## Step 3: give your bottleneck a name
 
@@ -92,7 +92,7 @@ Here's why. A named bottleneck decides what you do next.
 
 The mistake is naming 3. The right move is naming 1.
 
-None of the 6 fit? Then name it in your own words. ([Step 3 in the video](https://www.youtube.com/watch?v=YOUTUBE_ID&t=180s))
+None of the 6 fit? Then name it in your own words. ([Step 3 in the video](https://www.youtube.com/watch?v=XldRCThcQyc&t=180s))
 
 ## Why the order matters
 
