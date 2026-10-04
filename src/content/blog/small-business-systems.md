@@ -38,6 +38,8 @@ In the video, say Maya runs a small electrical shop. She's made up, but her week
 
 If 2 or 3 problems are fighting for the top spot, [which business problem to fix first](/blog/which-business-problem-to-fix-first/) shows you how to score them by cost and pick 1.
 
+And if you can't point to the problem at all, [find your business bottleneck](/blog/business-bottleneck/) shows you how to match it to 1 folder in your business.
+
 That's your 1 problem. Keep it for step 2. ([Step 1 in the video](https://www.youtube.com/watch?v=4js1a1SI2y4&t=71s))
 
 ## Step 2: Build it
