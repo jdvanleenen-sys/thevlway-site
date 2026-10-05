@@ -112,6 +112,8 @@ Use your own name for it and your own words for the cost. A rough guess is enoug
 
 You know the leaking folder. The next question is whether to build the fix or rent it. [Build vs buy software](/blog/build-vs-buy-software/) runs 2 questions on that. And once you know your fix, [how to systemize your business](/blog/how-to-systemize-your-business/) shows how to pick between fixing 1 thing and fixing everything.
 
+And before you pay for a fix, [software for contractors](/blog/software-for-contractors/) shows you what to check first.
+
 And if your leaking folder is Payments, the Canada Revenue Agency's page on [keeping records](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/keeping-records.html) is a good check on what your invoices need to hold.
 
 ## Try it on your own business
