@@ -3,10 +3,10 @@ title: 'How to Systemize Your Business: Fix 1 Thing or Everything?'
 description: 'How to systemize your business without guessing: read your map, count the fires, pick 1 path, and put a date on it. Built for trades owners, in 3 steps.'
 pubDate: 2026-10-04
 keyword: 'how to systemize your business'
-draft: true
+draft: false
 ---
 
-[![Watch: How to systemize your business, fix 1 thing or everything](/blog/how-to-systemize-your-business/video-thumbnail.png)](https://www.youtube.com/watch?v=YOUTUBE_ID)
+[![Watch: How to systemize your business, fix 1 thing or everything](/blog/how-to-systemize-your-business/video-thumbnail.png)](https://www.youtube.com/watch?v=s9Ov0dmtVxU)
 
 *This is the video behind the post. It follows one cleaning company owner through all 3 steps, so you can watch a map answer the question before you ask it of yours.*
 
@@ -43,7 +43,7 @@ His map says otherwise. His Quotes folder is on fire, and the other 5 are okay. 
 
 The mistake is picking by how overwhelmed you feel. The right move is counting the fires.
 
-That's your read. Keep it for step 2. ([Step 1 in the video](https://www.youtube.com/watch?v=YOUTUBE_ID&t=56s))
+That's your read. Keep it for step 2. ([Step 1 in the video](https://www.youtube.com/watch?v=s9Ov0dmtVxU&t=56s))
 
 ## Step 2: pick your path
 
@@ -63,7 +63,7 @@ The mistake is picking the bigger course because it sounds more serious. A bigge
 
 If you're still weighing the fix itself, [build vs buy software](/blog/build-vs-buy-software/) runs 2 questions on that. And if you're not sure which problem to start with, [which business problem to fix first](/blog/which-business-problem-to-fix-first/) scores them for you.
 
-That's your path. Hold onto it for step 3. ([Step 2 in the video](https://www.youtube.com/watch?v=YOUTUBE_ID&t=107s))
+That's your path. Hold onto it for step 3. ([Step 2 in the video](https://www.youtube.com/watch?v=s9Ov0dmtVxU&t=107s))
 
 ## Step 3: write it down, with a date
 
@@ -79,7 +79,7 @@ Here's why that works. 1 outcome and a date tell you when you're done.
 
 The mistake is writing "get organized." You can't check that. The right move is 1 outcome you could check.
 
-Not sure what counts as a good outcome? The Government of Canada keeps a [small business hub](https://ised-isde.canada.ca/site/canadian-small-business/en) with guides on planning and running a business. It's a good place to look if you want a second view. ([Step 3 in the video](https://www.youtube.com/watch?v=YOUTUBE_ID&t=155s))
+Not sure what counts as a good outcome? The Government of Canada keeps a [small business hub](https://ised-isde.canada.ca/site/canadian-small-business/en) with guides on planning and running a business. It's a good place to look if you want a second view. ([Step 3 in the video](https://www.youtube.com/watch?v=s9Ov0dmtVxU&t=155s))
 
 ## Why the order matters
 
