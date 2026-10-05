@@ -3,10 +3,10 @@ title: 'Software for Contractors: Check This Before You Buy'
 description: 'Software for contractors, before you buy: check what you already pay for, run 3 questions on the tool, then write down build or rent and the reason why.'
 pubDate: 2026-10-04
 keyword: 'software for contractors'
-draft: true
+draft: false
 ---
 
-[![Watch: Software for contractors, check this before you buy](/blog/software-for-contractors/video-thumbnail.png)](https://www.youtube.com/watch?v=YOUTUBE_ID)
+[![Watch: Software for contractors, check this before you buy](/blog/software-for-contractors/video-thumbnail.png)](https://www.youtube.com/watch?v=XiVBx4P5vu0)
 
 *This is the video behind the post. It walks a heating and cooling shop through all 3 steps, so you can see a fix turn up in software the owner already paid for.*
 
@@ -56,7 +56,7 @@ The mistake is shopping before you look at what you have.
 
 Nothing you own does it? That's fine. Go to step 2.
 
-Write down what you found. Keep it for step 3. ([Step 1 in the video](https://www.youtube.com/watch?v=YOUTUBE_ID&t=77s))
+Write down what you found. Keep it for step 3. ([Step 1 in the video](https://www.youtube.com/watch?v=XiVBx4P5vu0&t=77s))
 
 ## Step 2: run the 3 questions
 
@@ -82,7 +82,7 @@ Now try the 3 questions on a tool you're about to renew. You may be renting your
 
 The mistake is letting the best pitch answer for you.
 
-That's your 3 answers. Hold onto them for step 3. ([Step 2 in the video](https://www.youtube.com/watch?v=YOUTUBE_ID&t=147s))
+That's your 3 answers. Hold onto them for step 3. ([Step 2 in the video](https://www.youtube.com/watch?v=XiVBx4P5vu0&t=147s))
 
 ## Step 3: decide, and write the reason
 
@@ -98,7 +98,7 @@ Tess writes, "Rent. Every shop needs calls answered, and my software does it."
 
 The mistake is deciding while someone is selling to you. The right move is deciding on paper first.
 
-And if the answer is rent, that's fine. Rent the good ones. Before you sign up for one, the Government of Canada's [Get Cyber Safe guide for small and medium businesses](https://www.getcybersafe.gc.ca/en/resources/get-cyber-safe-guide-small-and-medium-businesses) is worth a read. ([Step 3 in the video](https://www.youtube.com/watch?v=YOUTUBE_ID&t=211s))
+And if the answer is rent, that's fine. Rent the good ones. Before you sign up for one, the Government of Canada's [Get Cyber Safe guide for small and medium businesses](https://www.getcybersafe.gc.ca/en/resources/get-cyber-safe-guide-small-and-medium-businesses) is worth a read. ([Step 3 in the video](https://www.youtube.com/watch?v=XiVBx4P5vu0&t=211s))
 
 ## Why the order matters
 
