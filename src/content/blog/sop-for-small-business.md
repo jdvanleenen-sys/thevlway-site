@@ -3,10 +3,10 @@ title: 'SOP for Small Business: 4 Lines Your AI Can Actually Follow'
 description: 'An SOP for small business that an AI can run: pick 1 folder, write its 4 parts in plain lines, and hand it to a stranger to test. No code, in 3 steps.'
 pubDate: 2026-10-06
 keyword: 'sop for small business'
-draft: true
+draft: false
 ---
 
-[![Watch: SOP for small business, 4 lines your AI can actually follow](/blog/sop-for-small-business/video-thumbnail.png)](https://www.youtube.com/watch?v=YOUTUBE_ID)
+[![Watch: SOP for small business, 4 lines your AI can actually follow](/blog/sop-for-small-business/video-thumbnail.png)](https://www.youtube.com/watch?v=VcbW12lMgqg)
 
 *This is the video behind the post. It follows one cleaning company owner through all 3 steps, so you can watch a folder get built and then tested on someone who doesn't know the business.*
 
@@ -40,7 +40,7 @@ Here's why. You want a real working folder, not a practice one.
 
 The mistake is starting all 6 at once. The right move is 1 folder, finished before you start the next.
 
-That's your folder. Keep it for step 2. ([Step 1 in the video](https://www.youtube.com/watch?v=YOUTUBE_ID&t=75s))
+That's your folder. Keep it for step 2. ([Step 1 in the video](https://www.youtube.com/watch?v=VcbW12lMgqg&t=75s))
 
 ## Step 2: write its 4 parts
 
@@ -63,7 +63,7 @@ The mistake is a folder with a name and nothing inside. The right move is 4 plai
 
 If you want to practice first, there's a free hands-on folder builder in the lesson. In the builder, those 4 parts are called input, guidance, output and check. The folder method is from Jake Van Clief and David McDermott.
 
-That's 1 folder with 4 parts. Hold onto it for step 3. ([Step 2 in the video](https://www.youtube.com/watch?v=YOUTUBE_ID&t=111s))
+That's 1 folder with 4 parts. Hold onto it for step 3. ([Step 2 in the video](https://www.youtube.com/watch?v=VcbW12lMgqg&t=111s))
 
 ## Step 3: hand it to a stranger
 
@@ -79,7 +79,7 @@ If they get lost, you just found the exact gap to fix.
 
 The mistake is testing it yourself. You fill the gaps from memory. The right move is a stranger.
 
-It was never the AI. It was the structure you built. If you're still sorting out where the structure goes, the Government of Canada keeps a [small business hub](https://ised-isde.canada.ca/site/canadian-small-business/en) with guides on planning and running a business. ([Step 3 in the video](https://www.youtube.com/watch?v=YOUTUBE_ID&t=174s))
+It was never the AI. It was the structure you built. If you're still sorting out where the structure goes, the Government of Canada keeps a [small business hub](https://ised-isde.canada.ca/site/canadian-small-business/en) with guides on planning and running a business. ([Step 3 in the video](https://www.youtube.com/watch?v=VcbW12lMgqg&t=174s))
 
 ## Why the order matters
 
