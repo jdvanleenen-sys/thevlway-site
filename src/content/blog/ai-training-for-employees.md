@@ -54,7 +54,7 @@ The chat asks you 5 short questions about what ate your time this week. Then it 
 
 Say Owen runs a small roofing company with 6 people. This is a made-up example. He answers for his own week, and chasing quotes ate most of it.
 
-Keep private details out of your answers. The Canadian Centre for Cyber Security puts it plainly in its page on [generative AI](https://www.cyber.gc.ca/en/guidance/generative-artificial-intelligence-ai-itsap00041): "Do not share private information with AI tools unless you understand what they are doing with your data." Talk about your week. Leave out customer names.
+Keep private details out of your answers. Talk about your week. Leave out customer names.
 
 The mistake is handing out a guide before you've tried it. The right move is going first, so you know how it works.
 
@@ -102,8 +102,6 @@ Keep the session to 30 minutes. ([Step 3 in the video](https://www.youtube.com/w
 Run it on yourself. Send it out. Hear it out loud.
 
 Skip step 1, and you hand out something you haven't tried. Skip step 2, and the room can go quiet again. Skip step 3, and you're back to guessing who uses it.
-
-If you want an outside read on the order, the Government of Canada's [guide on the use of generative AI](https://www.canada.ca/en/government/system/digital-government/digital-government-innovations/responsible-use-ai/guide-use-generative-ai.html) is written for federal institutions, not trades businesses. Still, it says those institutions "should experiment with low-risk uses before they consider higher‑risk uses." It also lists "ensuring that employees can access and take training on the effective and responsible use of generative AI tools" as a responsibility. A 1-week audit is a low-risk place to start.
 
 ## Run your first prompt today
 
