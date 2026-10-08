@@ -106,4 +106,6 @@ Swap the demo prices for your own before you quote a real job.
 
 If you want to see what happens after the quote, the [AI for painting business](/blog/ai-for-painting-business/) post walks the same demo shop from the quote all the way to getting paid.
 
+And if your team will use Claude too, [AI training for employees](/blog/ai-training-for-employees/) starts with a 1-week audit of who already uses AI.
+
 I'm in Your Corner. Now, Go Own It.
