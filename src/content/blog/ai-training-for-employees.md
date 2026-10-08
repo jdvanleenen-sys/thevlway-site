@@ -3,7 +3,7 @@ title: 'AI Training for Employees: Start With an Audit, Not a Lesson'
 description: 'AI training for employees starts with an audit, not a lesson. Run the prompt on yourself, send it to your team, then hear it out loud in a 30-minute session.'
 pubDate: 2026-10-12
 keyword: 'ai training for employees'
-draft: true
+draft: false
 ---
 
 [![Watch: AI training for employees, start with an audit, not a lesson](/blog/ai-training-for-employees/video-thumbnail.png)](https://www.youtube.com/watch?v=59zxFUDMTgY)
