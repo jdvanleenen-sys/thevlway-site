@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI the vL Way : Team training, Week 1 : Prove It</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cognac: #C67A3C;
+    --cognac-light: #F5E6D5;
+    --cognac-dark: #8B5628;
+    --teal: #14314F;
+    --teal-light: #E7ECF3;
+    --teal-dark: #0E2740;
+    --charcoal: #14314F;
+    --warm-white: #F7F3EE;
+    --cream: #EDE7DF;
+    --warm-grey: #6B6560;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--warm-white);
+    color: var(--charcoal);
+    font-family: 'DM Sans', sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 24px 80px;
+  }
+
+  /* Header */
+  .masthead {
+    padding: 48px 0 32px;
+    border-bottom: 1px solid rgba(107,101,96,0.25);
+    margin-bottom: 40px;
+  }
+  .mark {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 28px;
+  }
+  .mark-glyph {
+    width: 34px; height: 34px;
+    border-radius: 3px;
+    background: var(--charcoal);
+    color: var(--warm-white);
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: -0.5px;
+  }
+  .mark-name {
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 0.02em;
+  }
+  .eyebrow {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    color: var(--teal-dark);
+    text-transform: uppercase;
+    margin-bottom: 14px;
+    font-weight: 500;
+  }
+  h1 {
+    font-size: 44px;
+    line-height: 1.05;
+    margin: 0 0 16px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+  .subhead {
+    font-size: 18px;
+    color: var(--warm-grey);
+    max-width: 52ch;
+    margin: 0;
+  }
+
+  /* Ladder */
+  .ladder {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    margin: 40px 0 48px;
+  }
+  .rung {
+    background: var(--cream);
+    border-radius: 6px;
+    padding: 14px 12px;
+    position: relative;
+    border: 1px solid transparent;
+  }
+  .rung .num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--warm-grey);
+    display: block;
+    margin-bottom: 6px;
+  }
+  .rung .label {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.3;
+  }
+  .rung.active {
+    background: var(--cognac);
+    border-color: var(--cognac);
+  }
+  .rung.active .num, .rung.active .label {
+    color: var(--warm-white);
+  }
+  .rung.active::after {
+    content: "you are here";
+    position: absolute;
+    bottom: -22px;
+    left: 12px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.06em;
+    color: var(--cognac-dark);
+    text-transform: uppercase;
+  }
+
+  /* Body sections */
+  section { margin-bottom: 48px; }
+  h2 {
+    font-size: 26px;
+    font-weight: 700;
+    margin: 0 0 16px;
+    letter-spacing: -0.005em;
+  }
+  p { margin: 0 0 16px; font-size: 16px; }
+  .lede {
+    font-size: 18px;
+    color: var(--charcoal);
+  }
+
+  .callout {
+    background: var(--cognac-light);
+    border-left: 4px solid var(--cognac);
+    border-radius: 0 8px 8px 0;
+    padding: 18px 22px;
+    margin: 24px 0;
+    font-size: 16px;
+  }
+  .callout strong { color: var(--cognac-dark); }
+
+  /* The generator tool: signature element */
+  .tool {
+    background: var(--charcoal);
+    border-radius: 14px;
+    padding: 32px;
+    margin: 8px 0 12px;
+  }
+  .tool-eyebrow {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: var(--cognac);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+  .tool h3 {
+    color: var(--warm-white);
+    font-size: 22px;
+    margin: 0 0 10px;
+    font-weight: 700;
+  }
+  .tool-desc {
+    color: var(--cream);
+    font-size: 15px;
+    margin: 0 0 24px;
+    max-width: 56ch;
+    opacity: 0.85;
+  }
+
+  .role-select {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+  .role-btn {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 16px;
+    border-radius: 20px;
+    border: 1px solid rgba(247,243,238,0.25);
+    background: transparent;
+    color: var(--warm-white);
+    cursor: pointer;
+    transition: background 0.15s ease, border-color 0.15s ease;
+  }
+  .role-btn:hover { border-color: var(--cognac); }
+  .role-btn:focus-visible { outline: 2px solid var(--cognac); outline-offset: 2px; }
+  .role-btn.selected {
+    background: var(--cognac);
+    border-color: var(--cognac);
+    color: var(--warm-white);
+  }
+
+  .other-wrap {
+    display: none;
+    margin-bottom: 20px;
+  }
+  .other-wrap.show { display: block; }
+  .other-wrap input {
+    width: 100%;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    padding: 12px 14px;
+    border-radius: 8px;
+    border: 1px solid rgba(247,243,238,0.25);
+    background: rgba(247,243,238,0.06);
+    color: var(--warm-white);
+  }
+  .other-wrap input::placeholder { color: rgba(247,243,238,0.4); }
+  .other-wrap input:focus-visible { outline: 2px solid var(--cognac); }
+
+  .prompt-box {
+    background: #0E2740;
+    border-radius: 10px;
+    padding: 20px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13.5px;
+    line-height: 1.65;
+    color: var(--warm-white);
+    white-space: pre-wrap;
+    min-height: 90px;
+    border: 1px solid rgba(247,243,238,0.12);
+  }
+  .prompt-box .placeholder { color: rgba(247,243,238,0.4); font-style: italic; }
+
+  .tool-actions {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-top: 16px;
+  }
+  .copy-btn {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    background: var(--cognac);
+    color: var(--warm-white);
+    border: none;
+    padding: 12px 22px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.15s ease;
+  }
+  .copy-btn:hover { background: var(--cognac-dark); }
+  .copy-btn:focus-visible { outline: 2px solid var(--warm-white); outline-offset: 2px; }
+  .copy-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+  .copy-status {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12.5px;
+    color: var(--teal-light);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+  .copy-status.show { opacity: 1; }
+
+  .tool-note {
+    font-size: 13px;
+    color: rgba(247,243,238,0.55);
+    margin-top: 18px;
+    margin-bottom: 0;
+  }
+
+  /* Checklist */
+  .checklist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .checklist li {
+    display: flex;
+    gap: 12px;
+    padding: 14px 0;
+    border-bottom: 1px solid rgba(107,101,96,0.2);
+    font-size: 16px;
+  }
+  .checklist li:last-child { border-bottom: none; }
+  .check-mark {
+    flex-shrink: 0;
+    width: 22px; height: 22px;
+    border-radius: 5px;
+    border: 2px solid var(--teal);
+    margin-top: 2px;
+  }
+
+  /* Teaser */
+  .teaser {
+    background: var(--teal-light);
+    border-radius: 10px;
+    padding: 24px 26px;
+  }
+  .teaser .eyebrow { color: var(--teal-dark); }
+  .teaser h3 {
+    font-size: 19px;
+    margin: 0 0 10px;
+    color: var(--teal-dark);
+    font-weight: 700;
+  }
+  .teaser p { color: var(--charcoal); margin: 0; font-size: 15px; }
+
+  footer {
+    margin-top: 56px;
+    padding-top: 28px;
+    border-top: 1px solid rgba(107,101,96,0.25);
+    font-size: 13px;
+    color: var(--warm-grey);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  @media (max-width: 600px) {
+    h1 { font-size: 32px; }
+    .ladder { grid-template-columns: repeat(2, 1fr); }
+    .rung.active::after { display: none; }
+    .tool { padding: 22px; }
+    footer { flex-direction: column; }
+  }
+
+  @media print {
+    .tool { background: var(--cream); }
+    .tool h3, .tool-eyebrow, .tool-desc { color: var(--charcoal); }
+    .role-btn, .other-wrap, .copy-status { display: none; }
+    .prompt-box { background: white; border: 1px solid var(--charcoal); color: var(--charcoal); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="masthead">
+    <div class="mark">
+      <div class="mark-glyph">vL</div>
+      <div class="mark-name">AI the vL Way</div>
+    </div>
+    <div class="eyebrow">Team training · Week 1 of 6</div>
+    <h1>Prove it</h1>
+    <p class="subhead">Before we teach anything, let's find out what's already working. No lesson today: just an honest look at where you stand.</p>
+  </div>
+
+  <div class="ladder">
+    <div class="rung active"><span class="num">A</span><span class="label">Meet your thought partner</span></div>
+    <div class="rung"><span class="num">B</span><span class="label">Learn when to trust it</span></div>
+    <div class="rung"><span class="num">C</span><span class="label">Put it to work</span></div>
+    <div class="rung"><span class="num">D</span><span class="label">Make it permanent</span></div>
+  </div>
+
+  <section>
+    <h2>Here's the thing</h2>
+    <p class="lede">Some of you already use AI every week. Some of you tried it once and stopped. So this week isn't a lesson; it's an audit. We're going to find out what actually stuck, in front of everyone, with zero shame attached.</p>
+    <p>If you've been using AI every week, you'll get to show that off. If you haven't touched it in months, that's useful information too, for you and for the team. Either way, nobody's behind. We're just starting from the truth instead of the assumption.</p>
+    <div class="callout">
+      <strong>The only prep that matters:</strong> come with one real thing AI has done for you this week. If you can't think of one, the tool below builds it for you in under a minute.
+    </div>
+  </section>
+
+  <section>
+    <h2>Before you show up: run this</h2>
+    <p>Most people freeze when you ask "how could AI help you at work." That's not a you problem: it's a blank page problem. Nobody brainstorms well from nothing. So don't try. Pick your role below, copy the prompt it builds, and paste it into Claude or ChatGPT. It'll ask you a few quick questions about your actual week, then hand you three specific things worth trying, ranked by how much time they'd likely save you.</p>
+
+    <div class="tool">
+      <div class="tool-eyebrow">The idea generator</div>
+      <h3>Get 3 ideas built for your actual job</h3>
+      <p class="tool-desc">Pick the closest match. The prompt updates instantly. Copy it, paste it into your AI tool, answer its questions honestly, and bring what it gives you to Session 1.</p>
+
+      <div class="role-select" role="group" aria-label="Choose your role">
+        <button class="role-btn selected" data-role="sales">Sales and estimating</button>
+        <button class="role-btn" data-role="field">Field lead or crew</button>
+        <button class="role-btn" data-role="admin">Office and admin</button>
+        <button class="role-btn" data-role="owner">Owner or manager</button>
+        <button class="role-btn" data-role="other">Something else</button>
+      </div>
+
+      <div class="other-wrap" id="otherWrap">
+        <input type="text" id="otherInput" placeholder="Describe your role in a few words (e.g. dispatcher, bookkeeper)">
+      </div>
+
+      <div class="prompt-box" id="promptBox"></div>
+
+      <div class="tool-actions">
+        <button class="copy-btn" id="copyBtn">Copy prompt</button>
+        <span class="copy-status" id="copyStatus">Copied. Paste it into Claude or ChatGPT.</span>
+      </div>
+
+      <p class="tool-note">It does not have to be Claude. You could use ChatGPT or another AI chat. Whichever one you already have open is fine.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>What to bring to Session 1</h2>
+    <ul class="checklist">
+      <li><div class="check-mark"></div><div>Whatever the AI tool handed you when you ran the prompt above</div></li>
+      <li><div class="check-mark"></div><div>One real AI conversation from the past week, if you've got one, good or bad</div></li>
+      <li><div class="check-mark"></div><div>Your laptop or phone, logged into whichever tool you use</div></li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="teaser">
+      <div class="eyebrow">Coming in Week 2</div>
+      <h3>Why you'll never do this again</h3>
+      <p>The prompt above works, but notice it had to ask you a bunch of questions it shouldn't need to ask twice. Next week we fix that for good: you'll build a stored context file so every conversation starts already knowing you. Twenty minutes, once, and the re-explaining stops forever.</p>
+    </div>
+  </section>
+
+  <footer>
+    <span>AI the vL Way · Team training</span>
+    <span>Less hype. More help.</span>
+  </footer>
+
+</div>
+
+<script>
+  const rolePrompts = {
+    sales: "I work in sales and estimating at a small trades business. My week is full of calls, site visits, quotes, and following up on them. Ask me 5 short questions about what actually ate my time this week. Then give me exactly 3 specific things I could try using you for before our next session, ranked by how much time each would probably save me. One sentence per idea.",
+    field: "I run jobs in the field at a small trades business. My week is full of schedules, crew and supplier coordination, site issues, and keeping customers updated. Ask me 5 short questions about what actually ate my time this week. Then give me exactly 3 specific things I could try using you for before our next session, ranked by how much time each would probably save me. One sentence per idea.",
+    admin: "I run the office at a small trades business. My week is full of calls, scheduling, invoices, paperwork, and keeping everyone coordinated. Ask me 5 short questions about what actually ate my time this week. Then give me exactly 3 specific things I could try using you for before our next session, ranked by how much time each would probably save me. One sentence per idea.",
+    owner: "I own or manage a small trades business. My week is full of decisions, cash, priorities, and things only I can unblock. Ask me 5 short questions about what actually ate my time this week. Then give me exactly 3 specific things I could try using you for before our next session, ranked by how much time each would probably save me. One sentence per idea.",
+    other: null
+  };
+
+  const promptBox = document.getElementById('promptBox');
+  const copyBtn = document.getElementById('copyBtn');
+  const copyStatus = document.getElementById('copyStatus');
+  const otherWrap = document.getElementById('otherWrap');
+  const otherInput = document.getElementById('otherInput');
+  const buttons = document.querySelectorAll('.role-btn');
+
+  let currentRole = 'sales';
+
+  function otherPrompt(text) {
+    const role = text && text.trim() ? text.trim() : '[your role]';
+    return `I work as a ${role} at a small trades business. Ask me 5 short questions about what actually ate my time this week. Then give me exactly 3 specific things I could try using you for before our next session, ranked by how much time each would probably save me. One sentence per idea.`;
+  }
+
+  function renderPrompt() {
+    let text;
+    if (currentRole === 'other') {
+      text = otherPrompt(otherInput.value);
+      if (!otherInput.value.trim()) {
+        promptBox.innerHTML = '<span class="placeholder">Type your role above to build your prompt...</span>';
+        return;
+      }
+    } else {
+      text = rolePrompts[currentRole];
+    }
+    promptBox.textContent = text;
+  }
+
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      buttons.forEach(b => b.classList.remove('selected'));
+      btn.classList.add('selected');
+      currentRole = btn.dataset.role;
+      otherWrap.classList.toggle('show', currentRole === 'other');
+      renderPrompt();
+      if (currentRole === 'other') otherInput.focus();
+    });
+  });
+
+  otherInput.addEventListener('input', renderPrompt);
+
+  copyBtn.addEventListener('click', async () => {
+    const text = promptBox.textContent;
+    if (!text || promptBox.querySelector('.placeholder')) return;
+    try {
+      await navigator.clipboard.writeText(text);
+    } catch (e) {
+      const range = document.createRange();
+      range.selectNode(promptBox);
+      window.getSelection().removeAllRanges();
+      window.getSelection().addRange(range);
+      document.execCommand('copy');
+      window.getSelection().removeAllRanges();
+    }
+    copyStatus.classList.add('show');
+    setTimeout(() => copyStatus.classList.remove('show'), 2500);
+  });
+
+  renderPrompt();
+</script>
+
+</body>
+</html>
