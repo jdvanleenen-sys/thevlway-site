@@ -109,7 +109,7 @@ Here's your move for this week: run the prompt on your own week, and book sessio
 
 Then send the guide to your team 2 days before. Next up is week 2, which is setting it up once so no chat starts cold.
 
-The Week 1 guide builds the prompt for each role, so nobody starts from a blank page. Get it here: [GUIDE LINK]
+The Week 1 guide builds the prompt for each role, so nobody starts from a blank page. Get it here: https://thevlway.com/guides/week-1/
 
 If you've already got an AI chat open and you're wondering what to do with it, [Claude + Airtable](/blog/claude-airtable/) shows one way to put it to work on quotes. And if you're deciding what to pay for and what to build yourself, [build vs buy software](/blog/build-vs-buy-software/) runs 2 questions on that.
 
