@@ -6,7 +6,7 @@ keyword: 'ai training for employees'
 draft: true
 ---
 
-[![Watch: AI training for employees, start with an audit, not a lesson](/blog/ai-training-for-employees/video-thumbnail.png)](https://www.youtube.com/watch?v=YOUTUBE_ID)
+[![Watch: AI training for employees, start with an audit, not a lesson](/blog/ai-training-for-employees/video-thumbnail.png)](https://www.youtube.com/watch?v=59zxFUDMTgY)
 
 *This is the video behind the post. It follows Owen, a made-up roofing owner, through all 3 steps, so you can watch the whole thing work before you try it with your own team.*
 
@@ -60,7 +60,7 @@ The mistake is handing out a guide before you've tried it. The right move is goi
 
 Want to go further? Run the same prompt for a role you don't have yet. Pick the person you'd hire next, imagine that job's week, answer the 5 questions, and read its 3 ideas.
 
-Keep the 3 ideas from your own week. You need them for step 3. ([Step 1 in the video](https://www.youtube.com/watch?v=YOUTUBE_ID&t=66s))
+Keep the 3 ideas from your own week. You need them for step 3. ([Step 1 in the video](https://www.youtube.com/watch?v=59zxFUDMTgY&t=66s))
 
 ## Step 2: send it out
 
@@ -76,7 +76,7 @@ Then ask for 1 more thing. Ask them to bring 1 real thing AI did for them this w
 
 Here's why. Asked on the spot, people freeze. The mistake is springing it on them in the meeting. The right move is 2 days of notice and 1 prompt to run.
 
-Now they can walk in with 3 ideas each. That's what step 3 runs on. ([Step 2 in the video](https://www.youtube.com/watch?v=YOUTUBE_ID&t=149s))
+Now they can walk in with 3 ideas each. That's what step 3 runs on. ([Step 2 in the video](https://www.youtube.com/watch?v=59zxFUDMTgY&t=149s))
 
 ## Step 3: hear it out loud
 
@@ -95,7 +95,7 @@ Say Owen's office manager tried AI once, got a bad answer and stopped. That's wo
 
 The mistake is turning session 1 into a lesson. The right move is to listen, and note who uses AI, who stopped and who hasn't tried it.
 
-Keep the session to 30 minutes. ([Step 3 in the video](https://www.youtube.com/watch?v=YOUTUBE_ID&t=200s))
+Keep the session to 30 minutes. ([Step 3 in the video](https://www.youtube.com/watch?v=59zxFUDMTgY&t=200s))
 
 ## Why the order matters
 
