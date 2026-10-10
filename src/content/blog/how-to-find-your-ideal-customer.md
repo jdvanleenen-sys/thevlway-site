@@ -1,9 +1,9 @@
 ---
 title: 'How to Find Your Ideal Customer From Your 10 Best Jobs'
 description: 'How to find your ideal customer from your own 10 best jobs. List them, count what repeats, test the crowd, and write 1 sentence on who your business is for.'
-pubDate: 2026-10-09
+pubDate: 2026-10-10
 keyword: 'how to find your ideal customer'
-draft: true
+draft: false
 ---
 
 [![Watch: how to find your ideal customer from your 10 best jobs](/blog/how-to-find-your-ideal-customer/video-thumbnail.png)](https://www.youtube.com/watch?v=Y7dbpB4p8HU)
