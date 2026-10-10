@@ -6,7 +6,7 @@ keyword: 'how to find your ideal customer'
 draft: true
 ---
 
-[![Watch: how to find your ideal customer from your 10 best jobs](/blog/how-to-find-your-ideal-customer/video-thumbnail.png)](https://www.youtube.com/watch?v=[YOUTUBE ID])
+[![Watch: how to find your ideal customer from your 10 best jobs](/blog/how-to-find-your-ideal-customer/video-thumbnail.png)](https://www.youtube.com/watch?v=Y7dbpB4p8HU)
 
 *This is the video behind the post. It follows Nora, a made-up renovation contractor, through all 4 steps, so you can watch the whole thing work before you try it on your own jobs.*
 
@@ -86,7 +86,7 @@ And here's Nora's list. 10 jobs, and no customer names:
 
 Fewer than 10 jobs? Use what you have, and say how many.
 
-Keep that list open. You'll check Claude's count against it in step 2. ([Step 1 in the video](https://www.youtube.com/watch?v=[YOUTUBE ID]&t=122s))
+Keep that list open. You'll check Claude's count against it in step 2. ([Step 1 in the video](https://www.youtube.com/watch?v=Y7dbpB4p8HU&t=122s))
 
 ## Step 2: find what repeats
 
@@ -110,7 +110,7 @@ Now see where Nora's guess falls over. Basements were 2 of her 10 best jobs, and
 
 Then Claude checks which of those show up in the same jobs. 4 of Nora's 6 bathroom jobs were on the north side, and 5 of the 6 came through a neighbour. That's 1 group of customers, not 3 separate counts.
 
-If nothing repeats 3 times, stop there. Add jobs as you finish them. Otherwise, take that group into step 3. For Nora, it's north side bathrooms. ([Step 2 in the video](https://www.youtube.com/watch?v=[YOUTUBE ID]&t=173s))
+If nothing repeats 3 times, stop there. Add jobs as you finish them. Otherwise, take that group into step 3. For Nora, it's north side bathrooms. ([Step 2 in the video](https://www.youtube.com/watch?v=Y7dbpB4p8HU&t=173s))
 
 ## Step 3: test the crowd
 
@@ -133,7 +133,7 @@ The mistake is keeping a crowd because you like the work. Nora likes basements. 
 
 If 2 crowds pass, pick the one you can find more of.
 
-Keep your answers. They go into your sentence in step 4. ([Step 3 in the video](https://www.youtube.com/watch?v=[YOUTUBE ID]&t=269s))
+Keep your answers. They go into your sentence in step 4. ([Step 3 in the video](https://www.youtube.com/watch?v=Y7dbpB4p8HU&t=269s))
 
 ## Step 4: write the sentence
 
@@ -149,7 +149,7 @@ Here's Nora's, after she changed a few words:
 
 > My crowd is homeowners with 1 failing bathroom, on the north side, who need it fixed fast, and they find me through neighbours.
 
-Keep yours to 25 words or fewer. Short enough to say out loud. ([Step 4 in the video](https://www.youtube.com/watch?v=[YOUTUBE ID]&t=351s))
+Keep yours to 25 words or fewer. Short enough to say out loud. ([Step 4 in the video](https://www.youtube.com/watch?v=Y7dbpB4p8HU&t=351s))
 
 ## Why the order matters
 
