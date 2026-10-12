@@ -32,7 +32,7 @@ This step tells each person which job they hand to AI from now on.
 
 A tool that belongs to nobody stays in the truck.
 
-Write down each person's name, with 1 job beside it. Pick that job from their 3 ideas from week 1. No ideas list? Ask them, "What ate your time this week?"
+Write down each person's name, with 1 job beside it. Ask each person, "What ate your time this week?" and pick the job from their answer. If your team already wrote down 3 ideas each for using AI, pick from those.
 
 Say Owen runs a small roofing company with 6 people. This is a made-up example. His office manager picks the email that chases an unpaid invoice. His estimator picks the scope write-up after each site visit.
 
@@ -64,7 +64,7 @@ This step puts each win where the whole team can see it.
 
 It's like a before and after photo of a finished job. A win nobody sees can't be copied by the next person.
 
-Use the wins thread your team started in week 6, or start 1 now. A wins thread is 1 group chat, wherever your team already talks.
+Start 1 wins thread now, or use one your team already has. A wins thread is 1 group chat, wherever your team already talks.
 
 Post the job and the time saved. Leave out customer names and prices. Everyone on the team can read it, so keep it to the win.
 
@@ -88,9 +88,9 @@ Here's Owen's agenda, and it's only 3 things:
 
 1. 1 new job handed to AI. Add it to your list.
 2. 1 win shared. Read it out from the wins thread.
-3. Reread the rules page your team signed in week 5.
+3. Reread your team's rules page for AI, the one everyone agreed to.
 
-No rules page? Write down what never goes into AI, and read that. Start with customer details, financials and passwords.
+No rules page yet? Write down what never goes into AI, and read that. Start with customer details, financials and passwords.
 
 Small and steady beats 1 big push. The mistake is 1 more big training day. The right move is 15 minutes a month, with 1 owner.
 
