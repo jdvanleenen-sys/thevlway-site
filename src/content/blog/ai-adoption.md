@@ -6,7 +6,7 @@ keyword: 'ai adoption'
 draft: true
 ---
 
-[![Watch: AI adoption, how to make it stick after the training](/blog/ai-adoption/video-thumbnail.png)](https://www.youtube.com/watch?v=[YOUTUBE ID])
+[![Watch: AI adoption, how to make it stick after the training](/blog/ai-adoption/video-thumbnail.png)](https://www.youtube.com/watch?v=raFqarDcdT8)
 
 *This is the video behind the post. It follows Owen, a made-up roofing owner, through all 3 steps, so you can watch the whole thing work before you try it with your own team.*
 
@@ -56,7 +56,7 @@ Then test it on a made-up job. Both people ask for the same quote. Read both ans
 
 For real quotes, your own rules for what goes into AI decide what gets cleaned first.
 
-Keep that list of jobs. You'll add to it in step 3. ([Step 1 in the video](https://www.youtube.com/watch?v=[YOUTUBE ID]))
+Keep that list of jobs. You'll add to it in step 3. ([Step 1 in the video](https://www.youtube.com/watch?v=raFqarDcdT8))
 
 ## AI adoption, step 2: show the wins
 
@@ -74,7 +74,7 @@ The mistake is keeping wins in your head. The right move is 1 thread the whole t
 
 If the thread goes quiet, post your own win and ask for 1 back.
 
-Keep that thread. You'll read from it in step 3. ([Step 2 in the video](https://www.youtube.com/watch?v=[YOUTUBE ID]))
+Keep that thread. You'll read from it in step 3. ([Step 2 in the video](https://www.youtube.com/watch?v=raFqarDcdT8))
 
 ## AI adoption, step 3: give it an owner
 
@@ -94,7 +94,7 @@ No rules page? Write down what never goes into AI, and read that. Start with cus
 
 Small and steady beats 1 big push. The mistake is 1 more big training day. The right move is 15 minutes a month, with 1 owner.
 
-If there's no new job this month, say so, and keep the slot. ([Step 3 in the video](https://www.youtube.com/watch?v=[YOUTUBE ID]))
+If there's no new job this month, say so, and keep the slot. ([Step 3 in the video](https://www.youtube.com/watch?v=raFqarDcdT8))
 
 ## Why the order matters
 
