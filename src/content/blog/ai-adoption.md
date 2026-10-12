@@ -3,7 +3,6 @@ title: 'AI Adoption: How to Make It Stick After the Training'
 description: 'AI adoption does not end when the training does. Name 1 job per person, show the wins in 1 thread, and give it an owner with a 15-minute check-in each month.'
 pubDate: 2026-10-12
 keyword: 'ai adoption'
-draft: true
 ---
 
 [![Watch: AI adoption, how to make it stick after the training](/blog/ai-adoption/video-thumbnail.png)](https://www.youtube.com/watch?v=raFqarDcdT8)
