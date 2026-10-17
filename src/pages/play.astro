@@ -1,0 +1,25 @@
+---
+// thevlway.com/play: a short address people can type from a video, forwarding to the Robo-Intern
+// game. YouTube shows the description's links as plain text on this channel, so the video names
+// this address instead.
+import '../styles/global.css';
+import { ROBO_INTERN_URL, SITE_NAME } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="refresh" content={`0; url=${ROBO_INTERN_URL}`} />
+    <meta name="robots" content="noindex" />
+    <link rel="canonical" href={ROBO_INTERN_URL} />
+    <title>{`Play Robo-Intern | ${SITE_NAME}`}</title>
+  </head>
+  <body>
+    <main class="container" style="padding: 48px 16px;">
+      <h1>Play Robo-Intern</h1>
+      <p>Taking you to the game. If nothing happens, <a href={ROBO_INTERN_URL}>open Robo-Intern here</a>.</p>
+    </main>
+  </body>
+</html>
