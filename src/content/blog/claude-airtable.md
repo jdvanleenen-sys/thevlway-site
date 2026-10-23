@@ -69,6 +69,8 @@ Same request again, inside the Project. This time Claude read the name, address 
 
 Same connection, better answer, because now it knows your shop.
 
+Those rules are what I call the bridle. I show the same idea on a film in [how to come up with video ideas](/blog/how-to-come-up-with-video-ideas).
+
 ## Step 4: quote a job from your phone
 
 I opened Claude on my phone, and the Project was already there. Then I just said the job:
