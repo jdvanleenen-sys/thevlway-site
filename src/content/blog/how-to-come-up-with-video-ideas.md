@@ -3,11 +3,11 @@ title: 'How to Come Up With Video Ideas: Talk First, Build Second'
 description: 'How to come up with video ideas with AI: 12 steps, 7 to talk and 5 to build, with 1 word in between so the AI never builds before you have the idea.'
 pubDate: 2026-10-23
 keyword: 'how to come up with video ideas'
-youtubeId: 'VIDEO_ID'
-draft: true
+youtubeId: 'VosUmn5OsCw'
+draft: false
 ---
 
-[![Watch: How to come up with video ideas, talk first, build second](/blog/how-to-come-up-with-video-ideas/video-thumbnail.png)](https://www.youtube.com/watch?v=VIDEO_ID)
+[![Watch: How to come up with video ideas, talk first, build second](/blog/how-to-come-up-with-video-ideas/video-thumbnail.png)](https://www.youtube.com/watch?v=VosUmn5OsCw)
 
 *This is the video behind the post. It shows the 12 steps on a real film I made in 1 evening, including the mistake my checks missed.*
 
@@ -29,19 +29,19 @@ An AI is like a framing crew. Great hands, but they still need the plans.
 
 ## How to come up with video ideas: the 7 talk steps
 
-**1. Feed it.** Start from something you keep coming back to. A world, a tool, someone else's work, or a challenge. Mine was Jordan's made-up world, starring Hermes, the Greek god of roads. ([Step 1 in the video](https://www.youtube.com/watch?v=VIDEO_ID&t=67s))
+**1. Feed it.** Start from something you keep coming back to. A world, a tool, someone else's work, or a challenge. Mine was Jordan's made-up world, starring Hermes, the Greek god of roads. ([Step 1 in the video](https://www.youtube.com/watch?v=VosUmn5OsCw&t=67s))
 
 **2. Say it in one breath.** What you're building and what it's saying, in 1 sentence. Mine was "how powerful an agent with direction can be."
 
-**3. Talk it through.** I ask the AI for advice, like I would a friend. It's not interviewing me. It's sending out ideas to spark other ideas. Then I ask for the piece that's missing. I asked for a creature from Greek mythology, and it came back with Pegasus and the myth of his golden bridle. ([Step 3](https://www.youtube.com/watch?v=VIDEO_ID&t=95s))
+**3. Talk it through.** I ask the AI for advice, like I would a friend. It's not interviewing me. It's sending out ideas to spark other ideas. Then I ask for the piece that's missing. I asked for a creature from Greek mythology, and it came back with Pegasus and the myth of his golden bridle. ([Step 3](https://www.youtube.com/watch?v=VosUmn5OsCw&t=95s))
 
-**4. Catch the twist.** That's when it clicked. Pegasus is the AI, all that power. The bridle is my context, my folders, my instructions. The AI brought me the horse, but the link was mine. ([Step 4](https://www.youtube.com/watch?v=VIDEO_ID&t=128s))
+**4. Catch the twist.** That's when it clicked. Pegasus is the AI, all that power. The bridle is my context, my folders, my instructions. The AI brought me the horse, but the link was mine. ([Step 4](https://www.youtube.com/watch?v=VosUmn5OsCw&t=128s))
 
 **5. Sleep on it, only if you're stuck.** A break helps after you've really worked a problem. A review of 117 studies found the same thing: stepping away helps, and it helps most on open-ended tasks like coming up with ideas ([Sio and Ormerod, 2009](https://pubmed.ncbi.nlm.nih.gov/19210055/)). I wasn't stuck, so I kept going.
 
 **6. Check it against the rules.** Jordan's world says Pegasus never wears a metal bit. So the bridle became golden light with no bit. The rules didn't kill the idea. They made it better.
 
-**7. Plan it once.** What happens, what gets said, and the last words on screen. The script is mined, not invented. The AI pulls it from my own words in the talk. My favourite line in the film came straight from what I'd said. ([Step 7](https://www.youtube.com/watch?v=VIDEO_ID&t=186s))
+**7. Plan it once.** What happens, what gets said, and the last words on screen. The script is mined, not invented. The AI pulls it from my own words in the talk. My favourite line in the film came straight from what I'd said. ([Step 7](https://www.youtube.com/watch?v=VosUmn5OsCw&t=186s))
 
 Most people stop talking too soon. Research on idea generation found people expect their ideas to dry up, but they keep coming if you stay with it ([Kellogg School of Management](https://insight.kellogg.northwestern.edu/article/think-youre-out-of-creative-ideas-think-again)).
 
@@ -65,7 +65,7 @@ After approved, the AI runs the build. I choose the look and the spending. The A
 
 **11. Put it together to match the voice.** Every piece gets checked against the plan.
 
-**12. Test it, then watch it yourself.** The AI ran 6 checks. Those are small test programs, and all 6 passed. Then I watched it, and I caught something they missed. ([The mistake](https://www.youtube.com/watch?v=VIDEO_ID&t=260s))
+**12. Test it, then watch it yourself.** The AI ran 6 checks. Those are small test programs, and all 6 passed. Then I watched it, and I caught something they missed. ([The mistake](https://www.youtube.com/watch?v=VosUmn5OsCw&t=260s))
 
 ![Shot 4 before and after: on the left the glowing line points out to nowhere, on the right Pegasus runs along the line toward the temple](/blog/how-to-come-up-with-video-ideas/shot-4-before-after.png)
 
@@ -75,7 +75,7 @@ In shot 4 the glowing line pointed out to nowhere. So we went back to the first 
 
 1. Talk first, then ask for a plan, and approve it before anything gets built.
 2. You choose the look, and you control the spending.
-3. Turn every mistake you find into a new check. That way you have a better chance of catching it next time. ([The rules](https://www.youtube.com/watch?v=VIDEO_ID&t=280s))
+3. Turn every mistake you find into a new check. That way you have a better chance of catching it next time. ([The rules](https://www.youtube.com/watch?v=VosUmn5OsCw&t=280s))
 
 The bridle is the part you own. Mine is a folder of rules for how I work, and my AI reads it before it starts. If you've seen how I [set up a small business system](/blog/small-business-systems), it's the same idea. Or how I use [Claude with Airtable](/blog/claude-airtable) to run the office side.
 
