@@ -4,7 +4,7 @@ description: 'Why does AI make things up? Often it read the wrong file first and
 pubDate: 2026-10-23
 keyword: 'why does ai make things up'
 youtubeId: 'Jhtpy2YoeFs'
-draft: true
+draft: false
 ---
 
 [![Watch: Bip's First Day, the robot intern who was confident and wrong](/blog/why-does-ai-make-things-up/video-thumbnail.png)](https://www.youtube.com/watch?v=Jhtpy2YoeFs)
