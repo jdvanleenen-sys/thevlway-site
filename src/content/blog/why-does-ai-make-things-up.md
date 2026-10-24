@@ -101,6 +101,8 @@ Each step below is a piece of the folder system. Each one says what it would cha
 
 The 2 steps in the first video are steps 1 and 5 in action. Steps 2, 3, 4 and 6 are what keep them working after the video ends.
 
+The second video shows all 6, in order. Bip does the same job twice, and the second time you watch each step as a stop on his path: [Why Bip Got It Wrong](https://www.youtube.com/shorts/Eq9hj96V_lE).
+
 It's the same idea behind how I [set up a small business system](/blog/small-business-systems). And it's the bridle from my post on [how to come up with video ideas](/blog/how-to-come-up-with-video-ideas). The power is in the AI. The direction comes from your folders.
 
 The method has a name. It's called Interpretable Context Methodology, ICM for short, made by Jake Van Clief and David McDermott. You can read [their paper](https://arxiv.org/abs/2603.16021). I just call it the folder system.
