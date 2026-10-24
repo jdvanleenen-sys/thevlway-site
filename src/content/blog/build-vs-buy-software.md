@@ -78,6 +78,8 @@ Not sure which thing that is? [Which business problem to fix first](/blog/which-
 
 If you want help with it, the full lesson and a prompt that walks you through this on your own business, one question at a time, are free in [my Skool community](https://www.skool.com/see-it-build-it-own-it). It's lesson 1.2 in Start Here. The lesson also has What Am I Paying For, a check you paste into Claude, the AI assistant I use, that adds up what your software costs you a month and a year.
 
+One thing we learned building it: an AI chat isn't a calculator. It writes the number that looks most likely, so on a long column it can slip a digit and still sound sure. So we took the adding away from it. The AI reads your statement, and a small script we wrote does the math, the same way every time. Claude needs code switched on to run it (Settings, then Capabilities). If it's off, Claude adds it by hand, marks the total "added without a calculator, check it", and you add the column on a calculator.
+
 And if you're ready to hook your phone up to a tool you rent, the [Claude + Airtable setup](/blog/claude-airtable/) is the next step: Airtable is the rented database, and the way you price a job is the part you build.
 
 More at [thevlway.com](/).
