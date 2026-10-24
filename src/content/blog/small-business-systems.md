@@ -40,7 +40,7 @@ If 2 or 3 problems are fighting for the top spot, [which business problem to fix
 
 And if you can't point to the problem at all, [find your business bottleneck](/blog/business-bottleneck/) shows you how to match it to 1 folder in your business.
 
-Once you have your 6 folders, [SOP for small business](/blog/sop-for-small-business/) shows you how to build the first 1 so your AI can follow it.
+Once you have your 6 folders, [SOP for small business](/blog/sop-for-small-business/) shows you how to build the first 1 so your AI can follow it. And if your AI ever hands back a confident wrong answer, [why does AI make things up](/blog/why-does-ai-make-things-up/) shows what it read first.
 
 That's your 1 problem. Keep it for step 2. ([Step 1 in the video](https://www.youtube.com/watch?v=4js1a1SI2y4&t=71s))
 

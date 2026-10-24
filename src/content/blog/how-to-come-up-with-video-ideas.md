@@ -77,7 +77,7 @@ In shot 4 the glowing line pointed out to nowhere. So we went back to the first 
 2. You choose the look, and you control the spending.
 3. Turn every mistake you find into a new check. That way you have a better chance of catching it next time. ([The rules](https://www.youtube.com/watch?v=VosUmn5OsCw&t=280s))
 
-The bridle is the part you own. Mine is a folder of rules for how I work, and my AI reads it before it starts. If you've seen how I [set up a small business system](/blog/small-business-systems), it's the same idea. Or how I use [Claude with Airtable](/blog/claude-airtable) to run the office side.
+The bridle is the part you own. Mine is a folder of rules for how I work, and my AI reads it before it starts. If you've seen how I [set up a small business system](/blog/small-business-systems), it's the same idea. Or how I use [Claude with Airtable](/blog/claude-airtable) to run the office side. And when the bridle is missing, you get the problem in [why does AI make things up](/blog/why-does-ai-make-things-up/).
 
 ## Try it on your next idea
 
