@@ -61,14 +61,49 @@ In my setup, a bit is a second AI with 1 job. "Read the specs folder and give me
 
 This time Bip says "$1,200. Confident!" And he's right. ([1:13](https://www.youtube.com/watch?v=Jhtpy2YoeFs&t=73s))
 
-## How to stop your AI from making things up
+## Why the 2 fixes work: your folders are the instructions
 
-1. **Find out what it reads first.** Open the folder your AI works from. What's at the top?
-2. **Put 1 source of truth where it starts.** 1 card per customer, in 1 place.
-3. **Don't make it wade through piles.** Send a helper with 1 question.
-4. **Let it say "I don't know."** Anthropic's guide says giving Claude that permission cuts down wrong answers.
+Bip didn't get smarter between the wrong answers and the right one. His folders changed.
+
+That's the whole idea behind the folder system I use. Your AI doesn't learn your business by being told over and over. It learns it by reading your folders, in the order you lay them out. So the way you set up your folders is the instructions.
+
+It's the difference between training a new hire out loud every week and handing them a binder that already runs the job. Your AI reads the binder every time you start. It reads the pages in order, though, and it trusts the first page that looks like an answer.
+
+When the binder is a mess, the AI still answers. It answers from whatever it found first, and it sounds sure. In a small business, that's often what making things up really is.
+
+## How to set up a folder system so your AI stops making things up
+
+Each step below is a piece of the folder system. Each one says what it would change in Bip's office.
+
+**1. Give it a front door.** 1 short page at the top of your folders that your AI reads before anything else. It holds no answers. It only says where the answers live. "Customer phone numbers are in clients/. The office line is in admin/." Mine is a file called CLAUDE.md, because that's the page Claude opens first.
+
+*In Bip's office:* the front door sends him to clients/ for a customer's number. He never grabs the office line.
+
+**2. Name your folders for the work.** admin/, clients/, specs/. Use the words you already say out loud. The folder's name tells the AI what's inside before it opens a single file.
+
+*In Bip's office:* "Find Mrs. Ramirez's number" and clients/ are the same idea. The name points the way.
+
+**3. Give every fact 1 home.** Her cell number lives on her card, and only there. The office line lives in the phone list, and only there. When a fact lives in 2 places, someday they disagree, and the AI picks one.
+
+*In Bip's office:* there's only 1 number that belongs to her, so there's only 1 number he can bring back.
+
+**4. Put a short note in each folder.** 1 page that says what's in this folder, what to trust and what to skip. "The approved materials total is on the signed quote. Rough guesses are not approved." The note is where you also tell your AI it's allowed to say "I don't know." Anthropic's guide says that permission cuts down wrong answers.
+
+*In Bip's office:* the note in specs/ tells him the $1,800 is a guess before he picks it up.
+
+**5. Give the messy folders a helper with 1 job.** Some folders stay a pile. So a helper reads just that folder and hands back just the line you need. Your main AI only ever sees the answer, never the pile. That's the bit in the video.
+
+*In Bip's office:* Bit reads specs/. Bip gets 1 line: approved materials, $1,200.
+
+**6. Check the path, not the AI.** Every answer comes from files you can open. When an answer is wrong, you can see what it read. Fix the folder, and the next answer is fixed too.
+
+*In Bip's office:* the first wrong number shows you the problem right away. The office line was first on his path.
+
+The 2 steps in the video are steps 1 and 5 in action. Steps 2, 3, 4 and 6 are what keep them working after the video ends.
 
 It's the same idea behind how I [set up a small business system](/blog/small-business-systems). And it's the bridle from my post on [how to come up with video ideas](/blog/how-to-come-up-with-video-ideas). The power is in the AI. The direction comes from your folders.
+
+The method has a name. It's called Interpretable Context Methodology, ICM for short, made by Jake Van Clief and David McDermott. You can read [their paper](https://arxiv.org/abs/2603.16021). I just call it the folder system.
 
 ## Play it yourself
 
