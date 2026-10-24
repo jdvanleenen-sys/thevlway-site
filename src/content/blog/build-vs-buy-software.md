@@ -60,6 +60,8 @@ Take out your rent list and your build list. Pick 1 tool you pay for that you've
 
 Write rent or build beside that tool. Writing it down helps you decide, instead of drifting into another renewal. And if it belongs on the rent list, that's fine. Keep renting it. ([The 2 questions in the video](https://www.youtube.com/watch?v=J5MaC5jgj74&t=205s))
 
+There's a short 8-bit version of this step. Bip's boss rents an invoice app, which is fine. Then she picks the plan that says EVERYTHING. 5 months and $445 later, she has used 1 button. Renting was never the mistake. Renting more than the job needs was: [Bip's Boss Paid $445 for 1 Button](https://youtu.be/YhiVFpwijoA).
+
 Owning the decision also means knowing where your data and your logins live when you rent. The Canadian Centre for Cyber Security keeps a plain list of [baseline security controls for small and medium organizations](https://www.cyber.gc.ca/en/guidance/baseline-cyber-security-controls-small-and-medium-organizations) that's worth a read before you sign up for the next app. If you're in Canada, the federal [Canada Digital Adoption Program page](https://ised-isde.canada.ca/site/canada-digital-adoption-program/en) is another place to see how small businesses plan their tech.
 
 ## Why the order matters
@@ -74,7 +76,7 @@ Here's your move for this week: write down the one thing you most want working i
 
 Not sure which thing that is? [Which business problem to fix first](/blog/which-business-problem-to-fix-first/) shows you how to pick it by what it costs you, not by what bugs you most.
 
-If you want help with it, the full lesson and a prompt that walks you through this on your own business, one question at a time, are free in [my Skool community](https://www.skool.com/see-it-build-it-own-it). It's lesson 1.2 in Start Here.
+If you want help with it, the full lesson and a prompt that walks you through this on your own business, one question at a time, are free in [my Skool community](https://www.skool.com/see-it-build-it-own-it). It's lesson 1.2 in Start Here. The lesson also has What Am I Paying For, a check you paste into Claude, the AI assistant I use, that adds up what your software costs you a month and a year.
 
 And if you're ready to hook your phone up to a tool you rent, the [Claude + Airtable setup](/blog/claude-airtable/) is the next step: Airtable is the rented database, and the way you price a job is the part you build.
 
