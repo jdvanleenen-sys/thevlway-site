@@ -1,0 +1,67 @@
+---
+import Base from '../layouts/Base.astro';
+import { OWNER_LOCATION, OWNER_NAME, SITE_NAME, SKOOL_NAME, SKOOL_URL, YOUTUBE_URL } from '../consts';
+
+// Claims here come only from rows marked PUBLIC in
+// Jeff-HQ/10 Ventures/icm-consulting/next-yes/me.md. Check there before adding one.
+const findMe = [
+  { href: YOUTUBE_URL, name: `${SITE_NAME} on YouTube`, line: 'Short videos and lessons on AI for contractors.' },
+  { href: SKOOL_URL, name: SKOOL_NAME, line: 'The community on Skool, where the lessons and builds live.' },
+  { href: '/blog/', name: 'The blog', line: 'A written post behind every video.' },
+];
+---
+
+<Base title="About" description={`${OWNER_NAME} runs ${SITE_NAME} from ${OWNER_LOCATION}: simple AI systems for trade contractors.`}>
+  <section class="container reading about">
+    <p class="eyebrow">About</p>
+    <h1>I'm {OWNER_NAME}. I run {SITE_NAME}.</h1>
+    <p>
+      I live in {OWNER_LOCATION}. I've done a whole bunch of renos and I've owned rental properties.
+    </p>
+    <p>
+      I'm heavily involved in AI and automation. What I'm good at is the file structure that makes it
+      work: folders your AI can read, so it knows how your business runs and what it is allowed to do.
+    </p>
+    <p>
+      Why I do this: to take the little bits of pain out of people's working lives. For a trade
+      contractor that means fixing one office bottleneck at a time, like missed calls, slow estimates,
+      late invoices, or scattered job details, with the simplest system that works.
+    </p>
+
+    <h2>Where to find me</h2>
+    <ul class="find-me">
+      {
+        findMe.map((place) => (
+          <li>
+            <a href={place.href}>{place.name}</a>
+            <span> {place.line}</span>
+          </li>
+        ))
+      }
+    </ul>
+    <a class="button button-primary" href={SKOOL_URL}>Join the community on Skool</a>
+  </section>
+</Base>
+
+<style>
+  .about {
+    padding: var(--space-8) 0 var(--space-7);
+  }
+
+  .eyebrow {
+    color: var(--cognac-dark);
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .find-me {
+    padding-left: var(--space-5);
+    margin-bottom: var(--space-5);
+  }
+
+  .find-me li {
+    margin-bottom: var(--space-2);
+  }
+</style>
