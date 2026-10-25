@@ -1,6 +1,14 @@
 ---
 import '../styles/global.css';
-import { NAV_LINKS, OWNER_NAME, SITE_DESCRIPTION, SITE_NAME, SKOOL_URL, YOUTUBE_URL } from '../consts';
+import {
+  NAV_LINKS,
+  OWNER_LOCATION,
+  OWNER_NAME,
+  SITE_DESCRIPTION,
+  SITE_NAME,
+  SKOOL_URL,
+  YOUTUBE_URL,
+} from '../consts';
 
 interface Props {
   title?: string;
@@ -11,6 +19,40 @@ const { title, description = SITE_DESCRIPTION } = Astro.props;
 const pageTitle = title ? `${title} | ${SITE_NAME}` : SITE_NAME;
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
 const year = new Date().getFullYear();
+
+// Tells search engines the site, the channel and the community are one entity run by one person.
+const siteUrl = new URL('/', Astro.site).href;
+const entityGraph = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Organization',
+      '@id': `${siteUrl}#org`,
+      name: SITE_NAME,
+      url: siteUrl,
+      description: SITE_DESCRIPTION,
+      logo: new URL('/favicon.svg', Astro.site).href,
+      founder: { '@id': `${siteUrl}#owner` },
+      sameAs: [YOUTUBE_URL, SKOOL_URL],
+    },
+    {
+      '@type': 'Person',
+      '@id': `${siteUrl}#owner`,
+      name: OWNER_NAME,
+      url: new URL('/about/', Astro.site).href,
+      homeLocation: OWNER_LOCATION,
+      worksFor: { '@id': `${siteUrl}#org` },
+      sameAs: [YOUTUBE_URL, SKOOL_URL],
+    },
+    {
+      '@type': 'WebSite',
+      '@id': `${siteUrl}#site`,
+      name: SITE_NAME,
+      url: siteUrl,
+      publisher: { '@id': `${siteUrl}#org` },
+    },
+  ],
+};
 ---
 
 <!doctype html>
@@ -34,6 +76,7 @@ const year = new Date().getFullYear();
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <script type="application/ld+json" set:html={JSON.stringify(entityGraph)} />
   </head>
   <body>
     <header class="site-header">
