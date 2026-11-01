@@ -150,6 +150,8 @@ In the video, the next caller asks the same things. Bip reads the folder. Re-til
 
 The money in the video is made up. The move isn't.
 
+The 4 files are the start. A full AI receptionist needs a few more: who she is, what a good call does, and how you test her before she takes a real call. I'm building that setup in my Skool community, [See It, Build It, Own It](https://www.skool.com/see-it-build-it-own-it).
+
 ## Play it yourself
 
 Bip comes from Robo-Intern, a small game I built where you set up the folders and Bip does the job. [Play it here](/play/). The longer version of the story is [Bip's First Day](https://youtu.be/qAa70yzIrnU).
