@@ -111,7 +111,7 @@ The method has a name. It's called Interpretable Context Methodology, ICM for sh
 
 Bip has the second problem in the first 2 videos. In the third one, he has the first.
 
-The phone rings while the owner is out on a job. Bip picks up. The caller asks 4 things. Do you do bathroom re-tile? Can you match my old tile? What's your deposit? How soon can you start?
+The owner can't answer the phone from a roof. So Bip, the shop's AI, takes the calls. The phone rings. Bip picks up. The caller asks 4 things. Do you do bathroom re-tile? Can you match my old tile? What's your deposit? How soon can you start?
 
 Nothing about the shop is on Bip's path. Not one line.
 
