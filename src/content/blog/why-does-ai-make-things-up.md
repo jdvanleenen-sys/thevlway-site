@@ -134,7 +134,7 @@ receptionist/
   the-business.md   What we do. What we don't. Where we work.
   prices.md         Deposit: [your deposit] to book.
   calendar.md       How soon we start: about [your lead time] out.
-  get-a-person.md   Not in here? Take a message. The owner calls back.
+  get-a-person.md   Not in here? Don't guess. Take a message for the owner.
 ```
 
 Why each file is there:
@@ -142,11 +142,11 @@ Why each file is there:
 1. **The business.** Bip says yes to your jobs, and no to the ones you don't do. And no to a town you don't drive to.
 2. **Prices.** Bip quotes your deposit, not a number that sounds normal.
 3. **Calendar.** Bip promises a date you can keep.
-4. **When to get you.** Anything that isn't in the folder gets a callback, not a guess.
+4. **When to get you.** The rule against guessing. Anything that isn't in the folder gets a message for you, not a made-up answer.
 
 Each fact lives in 1 file, the same rule as the folder setup above. When your deposit changes, you change 1 line in 1 file.
 
-In the video, the next caller asks the same things. Bip reads the folder. Re-tile, yes. 10% to book. About 3 weeks out. Then she asks about matching her old tile. It isn't in the folder, so Bip takes a message. She books the job and waits for the owner's call on the tile.
+In the video, the next caller asks the same things. Bip reads the folder. Re-tile, yes. 10% to book. About 3 weeks out. She asks to book, and asks about matching her old tile. That isn't in the folder, so Bip doesn't guess. He takes a message for the owner. The job books.
 
 The money in the video is made up. The move isn't.
 
