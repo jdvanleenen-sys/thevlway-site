@@ -107,6 +107,46 @@ It's the same idea behind how I [set up a small business system](/blog/small-bus
 
 The method has a name. It's called Interpretable Context Methodology, ICM for short, made by Jake Van Clief and David McDermott. You can read [their paper](https://arxiv.org/abs/2603.16021). I just call it the folder system.
 
+## The 4 answers your AI needs before it picks up the phone
+
+Bip has the second problem in the first 2 videos. In the third one, he has the first.
+
+The phone rings while the owner is out on a job. Bip picks up. The caller asks 4 things. Do you do bathroom re-tile? Can you match my old tile? What's your deposit? How soon can you start?
+
+Nothing about the shop is on Bip's path. Not one line.
+
+So he answers anyway. "We do everything!" "Exact match!" "50% up front." "Monday!" Every answer is a guess, and every guess sounds sure.
+
+The caller hangs up 40 seconds in. The job is gone. ([Watch Bip lose it](SHORT_URL))
+
+Nothing was in the wrong place this time. There was nothing there at all. That's the gap the OpenAI researchers describe. The AI fills it with a confident guess.
+
+The fix is 1 page with 4 lines. You write it once. It goes where your AI reads first, the same front door from Step 1 above. In Claude, that can be your Project's instructions.
+
+Here's the page. Copy it and fill in your own:
+
+```
+phone-answers.md
+1. What we do: [the jobs you take]. What we don't: [the jobs you turn down].
+2. Deposit: [your deposit] to book.
+3. How soon we start: about [your lead time] out.
+4. Where we work: [your area].
+Anything else: take a message. The owner calls back today.
+```
+
+Why each line is there:
+
+1. **What we do.** Bip says yes to your jobs. And no to the ones you don't do, instead of "we do everything."
+2. **Our deposit.** Bip quotes your number, not a number that sounds normal.
+3. **How soon we start.** Bip promises a date you can keep.
+4. **Where we work.** Bip doesn't book a job you can't drive to.
+
+The last line matters as much as the 4. The page answers the 4 questions in the video, not every question a caller has. When it's not on the page, a callback beats a made-up answer.
+
+In the video, the next caller asks the same things. Bip reads the page. 10% to book. About 3 weeks out. Then she asks about matching her old tile. It's not on the page, so Bip takes a message. She books.
+
+The money in the video is made up. The move isn't.
+
 ## Play it yourself
 
 Bip comes from Robo-Intern, a small game I built where you set up the folders and Bip does the job. [Play it here](/play/). The longer version of the story is [Bip's First Day](https://youtu.be/qAa70yzIrnU).
