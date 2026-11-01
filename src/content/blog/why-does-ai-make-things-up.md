@@ -121,7 +121,7 @@ The caller hangs up 40 seconds in. The job is gone. ([Watch Bip lose it](SHORT_U
 
 Nothing was in the wrong place this time. There was nothing there at all. That's the gap the OpenAI researchers describe. The AI fills it with a confident guess.
 
-The fix is 1 page with 4 answers. You write it once. It goes where your AI reads before it answers anyone, the same front door from the folder setup above. If an AI tool answers your phone, that's the instructions box in its settings. If you use Claude, Anthropic's AI assistant, it's your Project's instructions, the notes Claude reads at the start of every chat.
+The fix is 1 page with 4 answers. You write it once. It goes where your AI reads before it answers anyone, the same front door from the folder setup above. If an AI tool answers your phone, that's the instructions box in its settings. If you use Claude, it goes in your Project's instructions. Claude is Anthropic's AI assistant. A Project holds the notes it reads at the start of every chat.
 
 Here's the page. Copy it and fill in your own:
 
