@@ -121,7 +121,7 @@ The caller hangs up 40 seconds in. The job is gone. ([Watch Bip lose it](SHORT_U
 
 Nothing was in the wrong place this time. There was nothing there at all. That's the gap the OpenAI researchers describe. The AI fills it with a confident guess.
 
-The fix is 1 page with 4 lines. You write it once. It goes where your AI reads first, the same front door from Step 1 above. In Claude, that can be your Project's instructions.
+The fix is 1 page with 4 answers. You write it once. It goes where your AI reads before it answers anyone, the same front door from the folder setup above. If an AI tool answers your phone, that's the instructions box in its settings. If you use Claude, Anthropic's AI assistant, it's your Project's instructions, the notes Claude reads at the start of every chat.
 
 Here's the page. Copy it and fill in your own:
 
@@ -131,7 +131,7 @@ phone-answers.md
 2. Deposit: [your deposit] to book.
 3. How soon we start: about [your lead time] out.
 4. Where we work: [your area].
-Anything else: take a message. The owner calls back today.
+Anything else: take a message. The owner calls back.
 ```
 
 Why each line is there:
@@ -141,9 +141,9 @@ Why each line is there:
 3. **How soon we start.** Bip promises a date you can keep.
 4. **Where we work.** Bip doesn't book a job you can't drive to.
 
-The last line matters as much as the 4. The page answers the 4 questions in the video, not every question a caller has. When it's not on the page, a callback beats a made-up answer.
+The last line matters as much as the 4. The 4 answers cover what a caller needs to book. Everything else gets a callback, not a guess.
 
-In the video, the next caller asks the same things. Bip reads the page. 10% to book. About 3 weeks out. Then she asks about matching her old tile. It's not on the page, so Bip takes a message. She books.
+In the video, the next caller asks the same things. Bip reads the page. Re-tile, yes. 10% to book. About 3 weeks out. Then she asks about matching her old tile. It's not on the page, so Bip takes a message. She books the job and waits for the owner's call on the tile.
 
 The money in the video is made up. The move isn't.
 
