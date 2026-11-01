@@ -115,7 +115,7 @@ The owner is up a ladder. His phone buzzes. He can't get to it. By the time he c
 
 So he does the smart thing. AI can answer the phone now. He sets it up himself, and Bip takes the calls.
 
-He skips 1 part. The folders. Bip's receptionist folder is empty.
+He skips 1 part. The folder. Bip's receptionist folder is empty.
 
 The phone rings. The caller asks 4 things. Do you do bathroom re-tile? Can you match my old tile? What's your deposit? How soon can you start?
 
