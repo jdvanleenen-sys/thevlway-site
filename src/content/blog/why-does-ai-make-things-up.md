@@ -121,7 +121,7 @@ The phone rings. The caller asks 4 things. Do you do bathroom re-tile? Can you m
 
 Bip answers anyway. "We do everything!" "Exact match!" "50% up front." "Monday!" Every answer is a guess, and every guess sounds sure.
 
-The caller hangs up 40 seconds in. The job is gone. ([Watch Bip lose it](SHORT_URL))
+The caller hangs up 40 seconds in. The job is gone. ([Watch Bip lose it](https://www.youtube.com/shorts/av49NJTgzxA))
 
 Nothing was in the wrong place this time. There was nothing there at all. That's the gap the OpenAI researchers describe. The AI fills it with a confident guess.
 
