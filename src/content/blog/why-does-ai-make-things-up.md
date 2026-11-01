@@ -107,43 +107,46 @@ It's the same idea behind how I [set up a small business system](/blog/small-bus
 
 The method has a name. It's called Interpretable Context Methodology, ICM for short, made by Jake Van Clief and David McDermott. You can read [their paper](https://arxiv.org/abs/2603.16021). I just call it the folder system.
 
-## The 4 answers your AI needs before it picks up the phone
+## The 4 files your AI receptionist needs before it picks up the phone
 
 Bip has the second problem in the first 2 videos. In the third one, he has the first.
 
-The owner can't answer the phone from a roof. So Bip, the shop's AI, takes the calls. The phone rings. Bip picks up. The caller asks 4 things. Do you do bathroom re-tile? Can you match my old tile? What's your deposit? How soon can you start?
+The owner is up a ladder. His phone buzzes. He can't get to it. By the time he calls back, they've booked someone else.
 
-Nothing about the shop is on Bip's path. Not one line.
+So he does the smart thing. AI can answer the phone now. He sets it up himself, and Bip takes the calls.
 
-So he answers anyway. "We do everything!" "Exact match!" "50% up front." "Monday!" Every answer is a guess, and every guess sounds sure.
+He skips 1 part. The folders. Bip's receptionist folder is empty.
+
+The phone rings. The caller asks 4 things. Do you do bathroom re-tile? Can you match my old tile? What's your deposit? How soon can you start?
+
+Bip answers anyway. "We do everything!" "Exact match!" "50% up front." "Monday!" Every answer is a guess, and every guess sounds sure.
 
 The caller hangs up 40 seconds in. The job is gone. ([Watch Bip lose it](SHORT_URL))
 
 Nothing was in the wrong place this time. There was nothing there at all. That's the gap the OpenAI researchers describe. The AI fills it with a confident guess.
 
-The fix is 1 page with 4 answers. You write it once. It goes where your AI reads before it answers anyone, the same front door from the folder setup above. If an AI tool answers your phone, that's the instructions box in its settings. If you use Claude, it goes in your Project's instructions. Claude is Anthropic's AI assistant. A Project holds the notes it reads at the start of every chat.
+The fix isn't a better AI. It's 4 files in 1 folder, set up before the AI answers anyone. If an AI tool answers your phone, these go in the instructions box in its settings. If you use Claude, Anthropic's AI assistant, put them in a Project. A Project holds the notes Claude reads at the start of every chat.
 
-Here's the page. Copy it and fill in your own:
+Copy this and fill in your own:
 
 ```
-phone-answers.md
-1. What we do: [the jobs you take]. What we don't: [the jobs you turn down].
-2. Deposit: [your deposit] to book.
-3. How soon we start: about [your lead time] out.
-4. Where we work: [your area].
-Anything else: take a message. The owner calls back.
+receptionist/
+  the-business.md   What we do. What we don't. Where we work.
+  prices.md         Deposit: [your deposit] to book.
+  calendar.md       How soon we start: about [your lead time] out.
+  get-a-person.md   Not in here? Take a message. The owner calls back.
 ```
 
-Why each line is there:
+Why each file is there:
 
-1. **What we do.** Bip says yes to your jobs. And no to the ones you don't do, instead of "we do everything."
-2. **Our deposit.** Bip quotes your number, not a number that sounds normal.
-3. **How soon we start.** Bip promises a date you can keep.
-4. **Where we work.** Bip doesn't book a job you can't drive to.
+1. **The business.** Bip says yes to your jobs, and no to the ones you don't do. And no to a town you don't drive to.
+2. **Prices.** Bip quotes your deposit, not a number that sounds normal.
+3. **Calendar.** Bip promises a date you can keep.
+4. **When to get you.** Anything that isn't in the folder gets a callback, not a guess.
 
-The last line matters as much as the 4. The 4 answers cover what a caller needs to book. Everything else gets a callback, not a guess.
+Each fact lives in 1 file, the same rule as the folder setup above. When your deposit changes, you change 1 line in 1 file.
 
-In the video, the next caller asks the same things. Bip reads the page. Re-tile, yes. 10% to book. About 3 weeks out. Then she asks about matching her old tile. It's not on the page, so Bip takes a message. She books the job and waits for the owner's call on the tile.
+In the video, the next caller asks the same things. Bip reads the folder. Re-tile, yes. 10% to book. About 3 weeks out. Then she asks about matching her old tile. It isn't in the folder, so Bip takes a message. She books the job and waits for the owner's call on the tile.
 
 The money in the video is made up. The move isn't.
 

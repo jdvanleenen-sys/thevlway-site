@@ -1,0 +1,25 @@
+---
+// thevlway.com/4-files: a short address people can type from a Short (a Short's description links
+// cannot be tapped), forwarding to the 4 receptionist files in the why-does-ai-make-things-up post.
+import '../styles/global.css';
+import { SITE_NAME } from '../consts';
+const TARGET = '/blog/why-does-ai-make-things-up/#the-4-files-your-ai-receptionist-needs-before-it-picks-up-the-phone';
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="refresh" content={`0; url=${TARGET}`} />
+    <meta name="robots" content="noindex" />
+    <link rel="canonical" href={`https://thevlway.com${TARGET}`} />
+    <title>{`The 4 files your AI receptionist needs | ${SITE_NAME}`}</title>
+  </head>
+  <body>
+    <main class="container" style="padding: 48px 16px;">
+      <h1>The 4 files your AI receptionist needs</h1>
+      <p>Taking you to the page. If nothing happens, <a href={TARGET}>open the 4 files here</a>.</p>
+    </main>
+  </body>
+</html>
