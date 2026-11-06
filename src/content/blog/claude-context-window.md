@@ -3,10 +3,10 @@ title: 'Claude Context Window: Why Your AI Forgets in a Long Chat'
 description: 'The Claude context window is the AI''s working memory for 1 chat. When it fills up, your AI forgets. Here are 6 steps, and the 1 file to save this week.'
 pubDate: 2026-11-06
 keyword: 'claude context window'
-draft: true
+draft: false
 ---
 
-[![Watch: It got crowded, why your AI forgets in a long chat](/blog/claude-context-window/video-thumbnail.png)](<[youtube link]>)
+[![Watch: It got crowded, why your AI forgets in a long chat](/blog/claude-context-window/video-thumbnail.png)](https://www.youtube.com/watch?v=Ba6apFc6inw)
 
 *This is the video behind the post. Step 4 is the story of Frank's font. You watch 1 font change go wrong for a whole team, and that's the reason the fix is a folder and not a better chat.*
 
@@ -26,7 +26,7 @@ And sometimes it just makes something up.
 
 It doesn't say "I don't know." It just puts something in there. And you might not even notice.
 
-You think the AI got dumber the longer you talked. It didn't. It got crowded. ([0:26 in the video](<[youtube link]&t=26s>))
+You think the AI got dumber the longer you talked. It didn't. It got crowded. ([0:26 in the video](<https://www.youtube.com/watch?v=Ba6apFc6inw&t=26s>))
 
 ## How the Claude context window fills up
 
@@ -38,7 +38,7 @@ Then it predicts the next token, and the next, and the next. It's very good at i
 
 But without context, it goes with whatever sounds right. It still sounds good. It's just not the right word for your business.
 
-Context is what points it at the right one. All of that context sits in 1 place, the context window. ([1:45](<[youtube link]&t=105s>))
+Context is what points it at the right one. All of that context sits in 1 place, the context window. ([1:45](<https://www.youtube.com/watch?v=Ba6apFc6inw&t=105s>))
 
 I use Claude. Claude is an AI made by a company called Anthropic. Claude Code is a tool that helps Claude work with files on my computer.
 
@@ -60,7 +60,7 @@ That can happen in a fresh chat too. Why it happens there is a different story, 
 
 A crowded window makes old details harder to recall. So don't wait for it to warn you. You look.
 
-In Claude Code, type /context. It shows you how full the window is ([Claude Code, explore the context window](https://code.claude.com/docs/en/context-window)). ([3:16](<[youtube link]&t=196s>))
+In Claude Code, type /context. It shows you how full the window is ([Claude Code, explore the context window](https://code.claude.com/docs/en/context-window)). ([3:16](<https://www.youtube.com/watch?v=Ba6apFc6inw&t=196s>))
 
 My rule of thumb is to stay in the first 2/3. Anthropic says that as the window fills, accuracy and recall drop. They call it context rot.
 
@@ -79,7 +79,7 @@ And don't keep the only copy of anything in the chat. Hold on to that one. It co
 
 A PDF looks clean to you.
 
-For a PDF up to 100 pages, Claude gets the text of every page. It also gets a picture of every page. Anthropic says the text alone is typically 1,500 to 3,000 tokens a page, and the pictures use more on top of that ([Anthropic, PDF support](https://platform.claude.com/docs/en/build-with-claude/pdf-support)). ([4:10](<[youtube link]&t=250s>))
+For a PDF up to 100 pages, Claude gets the text of every page. It also gets a picture of every page. Anthropic says the text alone is typically 1,500 to 3,000 tokens a page, and the pictures use more on top of that ([Anthropic, PDF support](https://platform.claude.com/docs/en/build-with-claude/pdf-support)). ([4:10](<https://www.youtube.com/watch?v=Ba6apFc6inw&t=250s>))
 
 So for anything that's just words, use Markdown instead.
 
@@ -95,7 +95,7 @@ Maybe you use a Claude Project. That's a workspace in the chat app that keeps yo
 
 The problem starts when everybody keeps their own copy.
 
-Here's what happened to Frank's font. ([5:18](<[youtube link]&t=318s>))
+Here's what happened to Frank's font. ([5:18](<https://www.youtube.com/watch?v=Ba6apFc6inw&t=318s>))
 
 You put the brand guide in your Project. Your office manager puts it in hers. Frank, your estimator, puts it in his. Pretty soon, everybody has their own copy of the brand guide.
 
@@ -124,7 +124,7 @@ So at the top of the folder, I put 2 short files.
 - **CLAUDE.md** is the map. Claude Code reads it when you start it in that folder ([Claude Code, explore the context window](https://code.claude.com/docs/en/context-window)).
 - **CONTEXT.md** is my own file. It says what the folder does.
 
-The map points it to the files it needs. So it doesn't have to read the whole folder. ([6:47](<[youtube link]&t=407s>))
+The map points it to the files it needs. So it doesn't have to read the whole folder. ([6:47](<https://www.youtube.com/watch?v=Ba6apFc6inw&t=407s>))
 
 Now you just ask it in plain words. "Make me a Remembrance Day post using our brand guide." The map points it to the brand guide.
 
@@ -134,7 +134,7 @@ If you want to see what a good note for 1 folder looks like, I wrote about the [
 
 People are setting up whole teams of AI helpers for this. You don't need that. You need a folder structure.
 
-This method comes from Jake Van Clief and David McDermott. You can read [their paper](https://arxiv.org/abs/2603.16021). I call it the folder method. ([7:33](<[youtube link]&t=453s>))
+This method comes from Jake Van Clief and David McDermott. You can read [their paper](https://arxiv.org/abs/2603.16021). I call it the folder method. ([7:33](<https://www.youtube.com/watch?v=Ba6apFc6inw&t=453s>))
 
 ## Keep your hand on the send button
 
@@ -150,13 +150,13 @@ Remember step 2. It's built to answer, so it may fill the gaps. 1 weird line, an
 
 You're the human in the loop. You're the last set of eyes before anything goes out.
 
-The mistake is turning on the setting that lets it send on its own. The right move is simple. It drafts, you read, you send. ([8:34](<[youtube link]&t=514s>))
+The mistake is turning on the setting that lets it send on its own. The right move is simple. It drafts, you read, you send. ([8:34](<https://www.youtube.com/watch?v=Ba6apFc6inw&t=514s>))
 
 Skip step 4, and your map can point to an old copy.
 
 ## Your move this week: save 1 file
 
-Here's your move this week. ([8:58](<[youtube link]&t=538s>))
+Here's your move this week. ([8:58](<https://www.youtube.com/watch?v=Ba6apFc6inw&t=538s>))
 
 1. Pick 1 thing you've pasted into 3 chats.
 2. In Notepad, save it as rules.md in a shared folder.
