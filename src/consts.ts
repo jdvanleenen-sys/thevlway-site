@@ -10,6 +10,11 @@ export const YOUTUBE_URL = 'https://www.youtube.com/@thevLway';
 // Robo-Intern, the game Bip and Bit come from. thevlway.com/play forwards here (the short "Bip's First Day" names it).
 export const ROBO_INTERN_URL = 'https://claude.ai/code/artifact/52eee8c6-a5c2-401c-a2a0-8630848288ef';
 
+export const CONTACT_EMAIL = 'contact@thevlway.com';
+export const EDUBAWARE_INVITE_URL = `mailto:${CONTACT_EMAIL}?subject=INVITE`;
+export const EDUBAWARE_PRICE = '$30 USD';
+export const EDUBAWARE_REFUND_DAYS = 7;
+
 export const NAV_LINKS = [
   { href: '/', label: 'Home' },
   { href: '/blog/', label: 'Blog' },
