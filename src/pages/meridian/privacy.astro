@@ -1,0 +1,147 @@
+---
+import Base from '../../layouts/Base.astro';
+import { CONTACT_EMAIL, OWNER_LOCATION, OWNER_NAME } from '../../consts';
+
+const EFFECTIVE_DATE = 'November 21, 2026';
+const contactHref = `mailto:${CONTACT_EMAIL}`;
+
+const collected = [
+  'Your name, work email and Microsoft account ID, when you sign in.',
+  'Your calendar events, when you connect your Microsoft calendar.',
+  'Emails and bookings you review and approve in Meridian. Meridian uses your Microsoft account to send them.',
+  'Meeting recordings, transcripts, participant names, join and leave activity, and meeting chat, when you invite the Meridian bot.',
+  'Summaries, decisions and action items created from your meetings.',
+  'Notes, templates and documents you add, and the questions you ask Meridian.',
+  'Your billing name, address, email and payment history. Stripe collects your card. I can see its brand and last 4 digits, never the full number.',
+  'Security records, such as sign-ins and important account actions.',
+];
+
+const uses = [
+  'Record and transcribe the meetings you invite Meridian to.',
+  'Write summaries and answer your questions.',
+  'Prepare the emails and calendar changes you ask for.',
+  'Charge you, send receipts and handle refunds.',
+  'Keep the service secure, fix problems and keep the records the law requires.',
+];
+
+const providers = [
+  { name: 'Recall.ai', job: 'joins meetings, records them and creates transcripts.' },
+  { name: 'Anthropic', job: 'processes meeting content and questions so its Claude AI can write summaries and answers.' },
+  { name: 'Microsoft', job: 'handles sign-in, calendar access and the emails you approve.' },
+  { name: 'Railway', job: 'hosts the Meridian app and its database.' },
+  { name: 'Stripe', job: 'processes payments, receipts and invoices, and helps prevent fraud.' },
+  { name: 'GitHub and Google Fonts', job: 'deliver this web page and may receive your IP address.' },
+];
+---
+
+<Base title="Meridian privacy policy" description="How Meridian collects, uses and protects personal information, including meeting recordings.">
+  <section class="container reading page">
+    <p class="eyebrow">Effective {EFFECTIVE_DATE}</p>
+    <h1>Meridian privacy policy</h1>
+    <p>
+      Meridian is an AI meeting assistant sold by {OWNER_NAME}, based in {OWNER_LOCATION}. I am
+      responsible for the personal information described here.
+    </p>
+
+    <h2>What Meridian collects</h2>
+    <ul>{collected.map((item) => <li>{item}</li>)}</ul>
+
+    <h2>How it is used</h2>
+    <ul>{uses.map((item) => <li>{item}</li>)}</ul>
+    <p>I do not sell your personal information.</p>
+
+    <h2>If you are in a recorded meeting</h2>
+    <p>
+      The Meridian bot joins under a visible name and posts a notice in meeting chat saying it is
+      recording and transcribing. If you do not consent, ask the host to remove it. The person who
+      invites Meridian is responsible for having the right to record that meeting. If you were
+      recorded and want to ask about your information, email
+      <a href={contactHref}>{CONTACT_EMAIL}</a>.
+    </p>
+
+    <h2>Who can see your information</h2>
+    <p>
+      Your meetings, notes and documents are tied to your account. If you share an answer, summary or
+      email, the people who receive it can read it and may copy it. The people who operate Meridian
+      have technical access to its systems and may use it to fix problems or keep the service secure.
+    </p>
+
+    <h2>Who I share it with</h2>
+    <p>I share only what these providers need to do their job:</p>
+    <ul>
+      {
+        providers.map((provider) => (
+          <li>
+            <strong>{provider.name}</strong> {provider.job}
+          </li>
+        ))
+      }
+    </ul>
+    <p>
+      If you connect another AI assistant, such as ChatGPT, Claude or Codex, it receives the Meridian
+      information you allow it to read under that company's own terms. I may also disclose
+      information when the law requires it.
+    </p>
+
+    <h2>Where it is stored</h2>
+    <p>
+      Meeting recordings and transcripts are processed in the United States. Other providers may also
+      store or process your information outside Canada, where it may be subject to the laws of that
+      country.
+    </p>
+
+    <h2>How long I keep it</h2>
+    <p>
+      Meetings, notes and documents stay until you delete them or ask me to. Permanently deleting a
+      meeting in Meridian also asks Recall.ai to delete its recording. After you cancel, email me to
+      have your account deleted. Billing records are kept for at least 6 years for tax purposes.
+    </p>
+
+    <h2>Cookies</h2>
+    <p>
+      Meridian uses essential cookies to keep you signed in and protect sign-in. It does not use
+      advertising or analytics cookies.
+    </p>
+
+    <h2>Your choices</h2>
+    <p>
+      You can ask to see, correct or delete your personal information, or withdraw your consent, by
+      emailing <a href={contactHref}>{CONTACT_EMAIL}</a>. Some records must be kept by law. If you are
+      not satisfied with my answer, you can contact the Office of the Information and Privacy
+      Commissioner of Alberta.
+    </p>
+
+    <h2>Changes and contact</h2>
+    <p>
+      If this policy changes, I will update the date at the top. Questions go to
+      <a href={contactHref}>{CONTACT_EMAIL}</a>.
+    </p>
+  </section>
+</Base>
+
+<style>
+  .page {
+    padding-top: var(--space-8);
+    padding-bottom: var(--space-7);
+  }
+
+  .eyebrow {
+    color: var(--cognac-dark);
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  h2 {
+    margin-top: var(--space-7);
+  }
+
+  ul {
+    padding-left: var(--space-5);
+  }
+
+  li {
+    margin-bottom: var(--space-2);
+  }
+</style>
