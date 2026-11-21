@@ -1,0 +1,130 @@
+---
+import Base from '../layouts/Base.astro';
+import { CONTACT_EMAIL, OWNER_LOCATION, OWNER_NAME, SITE_NAME } from '../consts';
+
+const EFFECTIVE_DATE = 'November 21, 2026';
+const contactHref = `mailto:${CONTACT_EMAIL}`;
+
+const collected = [
+  'Your name, email address and business name, when you email me or buy a seat.',
+  'Your billing address and payment details, which you enter on Stripe. I can see the last 4 digits and brand of your card. I never see the full number.',
+  'Your payment history, such as invoices, receipts, refunds and subscription status.',
+  'What you type and upload in your EdubaWare workspace, including chats with the AI agent and the files you build.',
+  'Anything you choose to tell me by email.',
+];
+
+const uses = [
+  'Send your invitation and give you access to EdubaWare.',
+  'Teach, check your work and answer your questions.',
+  'Charge you, send receipts and handle refunds.',
+  'Keep the records the law requires, such as tax records.',
+];
+
+const providers = [
+  { name: 'Stripe', job: 'processes payments, receipts and invoices, and helps prevent fraud.' },
+  { name: 'Eduba', job: 'runs the EdubaWare platform and stores your workspace.' },
+  { name: 'AI model providers', job: 'process what you send to the AI agent so it can reply.' },
+  { name: 'GitHub', job: 'hosts this website and may log basic visit data, such as IP addresses.' },
+  { name: 'Google Fonts', job: 'delivers this site\'s font, which sends your IP address to Google.' },
+  { name: 'Email providers', job: 'carry and store messages you send me.' },
+];
+---
+
+<Base title="Privacy policy" description={`How ${SITE_NAME} collects, uses and protects your personal information.`}>
+  <section class="container reading page">
+    <p class="eyebrow">Effective {EFFECTIVE_DATE}</p>
+    <h1>Privacy policy</h1>
+    <p>
+      This policy covers thevlway.com and paid EdubaWare seats sold by {OWNER_NAME} of {SITE_NAME},
+      based in {OWNER_LOCATION}. I am responsible for the personal information described here.
+    </p>
+
+    <h2>What I collect</h2>
+    <ul>{collected.map((item) => <li>{item}</li>)}</ul>
+
+    <h2>How I use it</h2>
+    <ul>{uses.map((item) => <li>{item}</li>)}</ul>
+    <p>I do not sell your personal information.</p>
+
+    <h2>Who can see your workspace</h2>
+    <p>
+      I can see your EdubaWare workspace and chats so I can teach and check your work. Other managers
+      of the same EdubaWare organization can also see them. If your employer bought your seat, its
+      managers may be able to see your work too. Do not put private customer, financial or health
+      information in your workspace unless you are allowed to.
+    </p>
+
+    <h2>Who I share it with</h2>
+    <p>I share only what these providers need to do their job:</p>
+    <ul>
+      {
+        providers.map((provider) => (
+          <li>
+            <strong>{provider.name}</strong> {provider.job}
+          </li>
+        ))
+      }
+    </ul>
+    <p>I may also disclose information when the law requires it.</p>
+
+    <h2>Where it is stored</h2>
+    <p>
+      These providers may store or process your information outside Canada, including in the United
+      States, where it may be subject to the laws of that country.
+    </p>
+
+    <h2>How long I keep it</h2>
+    <p>
+      I keep your account information while you have a seat and for as long as I need it after that
+      to answer questions or resolve a dispute. Billing records are kept for at least 6 years for tax
+      purposes.
+    </p>
+
+    <h2>Cookies</h2>
+    <p>
+      This site does not use advertising or analytics cookies. Stripe and EdubaWare use their own
+      cookies to keep payments and sign-ins working.
+    </p>
+
+    <h2>Your choices</h2>
+    <p>
+      You can ask to see, correct or delete your personal information, or withdraw your consent, by
+      emailing <a href={contactHref}>{CONTACT_EMAIL}</a>. Some records must be kept by law. If you are
+      not satisfied with my answer, you can contact the Office of the Information and Privacy
+      Commissioner of Alberta.
+    </p>
+
+    <h2>Changes and contact</h2>
+    <p>
+      If this policy changes, I will update the date at the top. Questions go to
+      <a href={contactHref}>{CONTACT_EMAIL}</a>.
+    </p>
+  </section>
+</Base>
+
+<style>
+  .page {
+    padding-top: var(--space-8);
+    padding-bottom: var(--space-7);
+  }
+
+  .eyebrow {
+    color: var(--cognac-dark);
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  h2 {
+    margin-top: var(--space-7);
+  }
+
+  ul {
+    padding-left: var(--space-5);
+  }
+
+  li {
+    margin-bottom: var(--space-2);
+  }
+</style>
