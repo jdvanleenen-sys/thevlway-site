@@ -1,0 +1,129 @@
+---
+import Base from '../layouts/Base.astro';
+import {
+  CONTACT_EMAIL,
+  EDUBAWARE_INVITE_URL,
+  EDUBAWARE_PRICE,
+  EDUBAWARE_REFUND_DAYS,
+  OWNER_LOCATION,
+  OWNER_NAME,
+  SITE_NAME,
+} from '../consts';
+
+const included = [
+  'Your own workspace in EdubaWare, where an AI agent walks you through each lesson.',
+  'Short lessons in plain words, for people who are not technical.',
+  'Practice on one task you repeat every week, so what you build is useful at work.',
+  'New lessons as they are finished. The first lessons are open now.',
+];
+
+const steps = [
+  { title: 'Email me', line: `Send the word INVITE to ${CONTACT_EMAIL}.` },
+  { title: 'Get the payment link', line: 'I reply with a secure Stripe checkout link.' },
+  { title: 'Pay by card', line: `${EDUBAWARE_PRICE} per person, billed monthly.` },
+  { title: 'Get your invitation', line: 'I send the EdubaWare invitation to the email you used at checkout.' },
+];
+---
+
+<Base
+  title="EdubaWare access"
+  description={`Learn to use AI on your own weekly work in EdubaWare with ${OWNER_NAME}. ${EDUBAWARE_PRICE} per person per month, by invitation.`}
+>
+  <section class="container reading page">
+    <p class="eyebrow">By invitation</p>
+    <h1>Stop starting over with AI. Build one task that runs.</h1>
+    <p class="lead">
+      For people who are not technical and have office work piling up behind the job. You learn AI on
+      one task you repeat every week, using ICM Principles by Jake Van Clief.
+    </p>
+
+    <div class="price-card">
+      <p class="price">{EDUBAWARE_PRICE}</p>
+      <p>per person, per month. Cancel any time.</p>
+      <a class="button button-primary" href={EDUBAWARE_INVITE_URL}>Email me for an invitation</a>
+    </div>
+
+    <h2>What you get</h2>
+    <ul>{included.map((item) => <li>{item}</li>)}</ul>
+
+    <h2>How it works</h2>
+    <ol class="steps">
+      {
+        steps.map((step) => (
+          <li>
+            <strong>{step.title}.</strong> {step.line}
+          </li>
+        ))
+      }
+    </ol>
+
+    <h2>Who you are buying from</h2>
+    <p>
+      You are buying from {OWNER_NAME} of {SITE_NAME}, based in {OWNER_LOCATION}. I am one of Jake Van
+      Clief's 7 Masters of ICM. Eduba runs the EdubaWare platform. I run this school on it and handle
+      your billing. Your card statement will show EDUBAWARE.
+    </p>
+
+    <h2 id="refunds">Cancellations and refunds</h2>
+    <p>
+      To cancel, email <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>. Your next charge stops
+      and you keep access until the end of the month you paid for.
+    </p>
+    <p>
+      If it is not for you, email me within {EDUBAWARE_REFUND_DAYS} days of your first payment for a
+      full refund. Later payments and partial months are not refunded.
+    </p>
+
+    <h2>Payment and questions</h2>
+    <p>
+      Stripe processes all card payments, so your card number never reaches me. For anything else,
+      email <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.
+    </p>
+  </section>
+</Base>
+
+<style>
+  .page {
+    padding-top: var(--space-8);
+    padding-bottom: var(--space-7);
+  }
+
+  .eyebrow {
+    color: var(--cognac-dark);
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .lead {
+    font-size: 1.15rem;
+  }
+
+  h2 {
+    margin-top: var(--space-7);
+  }
+
+  .price-card {
+    margin-top: var(--space-6);
+    padding: var(--space-5);
+    background: var(--cognac-light);
+    border-radius: 8px;
+  }
+
+  .price {
+    margin-bottom: var(--space-1);
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  ul,
+  .steps {
+    padding-left: var(--space-5);
+  }
+
+  li {
+    margin-bottom: var(--space-2);
+  }
+</style>
