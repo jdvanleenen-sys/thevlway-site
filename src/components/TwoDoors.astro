@@ -1,0 +1,56 @@
+---
+import { CLIEF_NOTES_AFFILIATE_URL, EDUBAWARE_PAGE_URL, EDUBAWARE_PRICE } from '../consts';
+---
+
+<section class="two-doors" aria-label="2 ways to learn this">
+  <article class="door">
+    <p class="door-name">Free</p>
+    <p>Learn the ICM Principles by Jake Van Clief in Clief Notes, a free AI community on Skool.</p>
+    <p class="disclosure">I'm a Clief Notes affiliate and earn a commission if you upgrade.</p>
+    <a class="button button-primary" href={CLIEF_NOTES_AFFILIATE_URL} rel="sponsored">
+      Join Clief Notes (affiliate link)
+    </a>
+  </article>
+
+  <article class="door">
+    <p class="door-name">Paid</p>
+    <p>My school, AI the vL Way, runs on EdubaWare, a website for sharing folders with AI.</p>
+    <p class="disclosure">{EDUBAWARE_PRICE} a month, by invitation.</p>
+    <a class="button button-secondary" href={EDUBAWARE_PAGE_URL}>See the EdubaWare school</a>
+  </article>
+</section>
+
+<style>
+  .two-doors {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+    gap: var(--space-4);
+  }
+
+  .door {
+    display: flex;
+    flex-direction: column;
+    padding: var(--space-5);
+    background: var(--white);
+    border: 1px solid rgba(107, 101, 96, 0.3);
+    border-top: 4px solid var(--cognac);
+    border-radius: 6px;
+  }
+
+  .door-name {
+    margin-bottom: var(--space-2);
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+
+  .disclosure {
+    margin-top: auto;
+    margin-bottom: var(--space-2);
+    font-size: 0.9rem;
+    font-weight: 700;
+  }
+
+  .door .button {
+    text-align: center;
+  }
+</style>
