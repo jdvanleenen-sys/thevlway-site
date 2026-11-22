@@ -21,7 +21,13 @@ const { plate, scene, alt, title, layout, href, action } = Astro.props;
     <div class="body">
       <h3>{title}</h3>
       <slot />
-      {href && action && <a class="action" href={href}>{action}</a>}
+      {
+        href && action && (
+          <a class:list={layout === 'paid' ? 'button door-button paid-button' : 'action'} href={href}>
+            {action}
+          </a>
+        )
+      }
     </div>
   </div>
 </article>
@@ -116,16 +122,14 @@ const { plate, scene, alt, title, layout, href, action } = Astro.props;
     font-weight: 700;
   }
 
-  .paid .action {
-    padding: 0 var(--space-4);
-    border: 2px solid var(--edubaware);
-    border-radius: 6px;
+  .paid-button {
+    margin-top: auto;
+    border-color: var(--edubaware);
     background: var(--edubaware);
     color: var(--white);
-    text-decoration: none;
   }
 
-  .paid .action:hover {
+  .paid-button:hover {
     border-color: var(--edubaware-dark);
     background: var(--edubaware-dark);
     color: var(--white);
@@ -156,12 +160,6 @@ const { plate, scene, alt, title, layout, href, action } = Astro.props;
       width: 100%;
       border-right: 0;
       border-bottom: 3px solid var(--navy);
-    }
-
-    .paid .action {
-      align-self: stretch;
-      justify-content: center;
-      text-align: center;
     }
   }
 </style>

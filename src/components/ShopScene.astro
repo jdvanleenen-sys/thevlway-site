@@ -11,6 +11,16 @@ const SCENES = {
 
 export type SceneName = keyof typeof SCENES;
 
+const MOTION: Record<SceneName, string> = {
+  hero: '--beat:2.8s;--offset:0.2s;--sway:6s;--sway-delay:-1s;--roam:12s;--roam-delay:0s;',
+  classroom: '--beat:3.4s;--offset:1.1s;--sway:7.3s;--sway-delay:-4.2s;--roam:15s;--roam-delay:-6s;',
+  frontdesk: '--beat:2.6s;--offset:0.7s;--sway:5.4s;--sway-delay:-2.3s;--roam:11s;--roam-delay:-2s;',
+  screening: '--beat:3.8s;--offset:1.9s;--sway:8.1s;--sway-delay:-6s;--roam:13s;--roam-delay:0s;',
+  library: '--beat:4.2s;--offset:2.4s;--sway:6.7s;--sway-delay:-3.1s;--roam:17s;--roam-delay:-9s;',
+  breakroom: '--beat:2.4s;--offset:1.4s;--sway:5.9s;--sway-delay:-5s;--roam:10s;--roam-delay:-4s;',
+  office: '--beat:3.6s;--offset:0.4s;--sway:7.7s;--sway-delay:-1.8s;--roam:14s;--roam-delay:-11s;',
+};
+
 interface Props {
   name: SceneName;
   alt: string;
@@ -19,7 +29,7 @@ interface Props {
 const { name, alt } = Astro.props;
 const scene = SCENES[name];
 const hasRoamer = name !== 'hero' && name !== 'screening';
-const sceneVars = `--w:${scene.w};--h:${scene.h};--f:${scene.floor};--back:url('/shop/${name}-back.png');`;
+const sceneVars = `--w:${scene.w};--h:${scene.h};--f:${scene.floor};--back:url('/shop/${name}-back.png');${MOTION[name]}`;
 ---
 
 <div class:list={['diorama', { dark: scene.dark }]} role="img" aria-label={alt} style={sceneVars}>
@@ -35,8 +45,18 @@ const sceneVars = `--w:${scene.w};--h:${scene.h};--f:${scene.floor};--back:url('
     </div>
     <div class="sway">
       <div class="stage" data-tilt>
-        <img class="front one" src={`/shop/${name}-front-0.png`} alt="" width={scene.w * 4} height={scene.h * 4} />
-        <img class="front two" src={`/shop/${name}-front-1.png`} alt="" width={scene.w * 4} height={scene.h * 4} />
+        {
+          [0, 1, 2, 3].map((frame) => (
+            <img
+              class:list={['front', `frame-${frame}`]}
+              style={`--frame:${frame};`}
+              src={`/shop/${name}-front-${frame}.png`}
+              alt=""
+              width={scene.w * 4}
+              height={scene.h * 4}
+            />
+          ))
+        }
         {hasRoamer && <img class="roamer" src="/shop/bit-walk.png" alt="" width="40" height="56" />}
         <slot />
       </div>
@@ -72,7 +92,7 @@ const sceneVars = `--w:${scene.w};--h:${scene.h};--f:${scene.floor};--back:url('
   }
 
   .sway {
-    animation: sway 6s ease-in-out infinite alternate;
+    animation: sway var(--sway) ease-in-out var(--sway-delay) infinite alternate;
   }
 
   .stage {
@@ -155,7 +175,10 @@ const sceneVars = `--w:${scene.w};--h:${scene.h};--f:${scene.floor};--back:url('
     height: 100%;
     max-width: none;
     image-rendering: pixelated;
+    opacity: 0;
     transform: translateZ(calc(var(--u) * 12));
+    animation: frame-cycle var(--beat) step-end infinite;
+    animation-delay: calc(var(--beat) * (var(--frame) / 4 - 1) - var(--offset));
   }
 
   .roamer {
@@ -166,32 +189,16 @@ const sceneVars = `--w:${scene.w};--h:${scene.h};--f:${scene.floor};--back:url('
     height: auto;
     max-width: none;
     image-rendering: pixelated;
-    animation: roam 12s steps(22) infinite;
+    animation: roam var(--roam) steps(22) var(--roam-delay) infinite;
   }
 
-  .one {
-    animation: frame-one 0.8s step-end infinite;
-  }
-
-  .two {
-    animation: frame-two 0.8s step-end infinite;
-  }
-
-  @keyframes frame-one {
+  @keyframes frame-cycle {
     0% {
       opacity: 1;
     }
-    50% {
+    25%,
+    100% {
       opacity: 0;
-    }
-  }
-
-  @keyframes frame-two {
-    0% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
     }
   }
 
@@ -229,13 +236,12 @@ const sceneVars = `--w:${scene.w};--h:${scene.h};--f:${scene.floor};--back:url('
 
   @media (prefers-reduced-motion: reduce) {
     .sway,
-    .one,
-    .two {
+    .front {
       animation: none;
     }
 
-    .two {
-      opacity: 0;
+    .frame-0 {
+      opacity: 1;
     }
 
     .roamer {
