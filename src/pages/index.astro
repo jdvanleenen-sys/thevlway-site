@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+import AffiliateLink from '../components/AffiliateLink.astro';
 import TwoDoors from '../components/TwoDoors.astro';
 import { SKOOL_URL, YOUTUBE_URL } from '../consts';
 
@@ -37,6 +38,7 @@ const deliveryPaths = [
         <a class="button button-primary" href={SKOOL_URL}>Join the community on Skool</a>
         <a class="button button-secondary" href={YOUTUBE_URL}>Watch on YouTube</a>
       </div>
+      <div class="hero-affiliate"><AffiliateLink /></div>
     </div>
   </section>
 
@@ -62,6 +64,7 @@ const deliveryPaths = [
         ))
       }
     </ol>
+    <AffiliateLink />
   </section>
 
   <section class="container section">
@@ -110,6 +113,10 @@ const deliveryPaths = [
     display: flex;
     flex-wrap: wrap;
     gap: var(--space-3);
+    margin-top: var(--space-5);
+  }
+
+  .hero-affiliate {
     margin-top: var(--space-5);
   }
 

@@ -1,0 +1,44 @@
+---
+import { CLIEF_NOTES_AFFILIATE_URL } from '../consts';
+
+interface Props {
+  fillCard?: boolean;
+}
+
+const { fillCard = false } = Astro.props;
+---
+
+<div class:list={['affiliate', { 'fill-card': fillCard }]}>
+  <p>Learn the ICM Principles by Jake Van Clief in Clief Notes, a free AI community on Skool.</p>
+  <p class="affiliate-disclosure">I'm a Clief Notes affiliate and earn a commission if you upgrade.</p>
+  <a class="button button-primary" href={CLIEF_NOTES_AFFILIATE_URL} rel="sponsored">
+    Join Clief Notes (affiliate link)
+  </a>
+</div>
+
+<style>
+  .affiliate {
+    max-width: 32em;
+  }
+
+  .affiliate-disclosure {
+    margin-bottom: var(--space-2);
+    font-size: 0.9rem;
+    font-weight: 700;
+  }
+
+  .button {
+    text-align: center;
+  }
+
+  .fill-card {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    max-width: none;
+  }
+
+  .fill-card .affiliate-disclosure {
+    margin-top: auto;
+  }
+</style>

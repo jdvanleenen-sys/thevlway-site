@@ -1,15 +1,12 @@
 ---
-import { CLIEF_NOTES_AFFILIATE_URL, EDUBAWARE_PAGE_URL, EDUBAWARE_PRICE } from '../consts';
+import AffiliateLink from './AffiliateLink.astro';
+import { EDUBAWARE_PAGE_URL, EDUBAWARE_PRICE } from '../consts';
 ---
 
 <section class="two-doors" aria-label="2 ways to learn this">
   <article class="door">
     <p class="door-name">Free</p>
-    <p>Learn the ICM Principles by Jake Van Clief in Clief Notes, a free AI community on Skool.</p>
-    <p class="disclosure">I'm a Clief Notes affiliate and earn a commission if you upgrade.</p>
-    <a class="button button-primary" href={CLIEF_NOTES_AFFILIATE_URL} rel="sponsored">
-      Join Clief Notes (affiliate link)
-    </a>
+    <AffiliateLink fillCard />
   </article>
 
   <article class="door">
