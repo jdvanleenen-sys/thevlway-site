@@ -1,0 +1,282 @@
+<div class="tool">
+  <p class="tool-eyebrow">The idea generator</p>
+  <h3>Get 3 ideas built for your actual job</h3>
+  <p class="tool-desc">Pick the closest match. The prompt updates instantly. Copy it, paste it into your AI tool, answer its questions honestly, and bring what it gives you to Session 1.</p>
+
+  <div class="role-select" role="group" aria-label="Choose your role">
+    <button type="button" class="role-btn selected" data-role="sales">Sales and estimating</button>
+    <button type="button" class="role-btn" data-role="field">Field lead or crew</button>
+    <button type="button" class="role-btn" data-role="admin">Office and admin</button>
+    <button type="button" class="role-btn" data-role="owner">Owner or manager</button>
+    <button type="button" class="role-btn" data-role="other">Something else</button>
+  </div>
+
+  <div class="other-wrap" id="otherWrap">
+    <input type="text" id="otherInput" aria-label="Your role" placeholder="Describe your role in a few words (e.g. dispatcher, bookkeeper)" />
+  </div>
+
+  <div class="prompt-box" id="promptBox"></div>
+
+  <div class="tool-actions">
+    <button type="button" class="copy-btn" id="copyBtn">Copy prompt</button>
+    <span class="copy-status" id="copyStatus">Copied. Paste it into Claude or ChatGPT.</span>
+  </div>
+
+  <p class="tool-note">It does not have to be Claude. You could use ChatGPT or another AI chat. Whichever one you already have open is fine.</p>
+</div>
+
+<style>
+  .tool {
+    padding: var(--space-5);
+    background: var(--navy);
+    border: 3px solid var(--navy);
+    color: var(--white);
+  }
+
+  .tool-eyebrow {
+    margin-bottom: var(--space-2);
+    color: var(--cognac-light);
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    margin-bottom: var(--space-2);
+    color: var(--white);
+    font-size: 1.4rem;
+  }
+
+  .tool-desc {
+    max-width: 56ch;
+    margin-bottom: var(--space-5);
+    color: var(--cream);
+    font-size: 1rem;
+  }
+
+  .role-select {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    margin-bottom: var(--space-4);
+  }
+
+  .role-btn {
+    min-height: 44px;
+    padding: var(--space-2) var(--space-4);
+    border: 2px solid var(--cream);
+    border-radius: 6px;
+    background: transparent;
+    color: var(--white);
+    font: inherit;
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  .role-btn:hover {
+    border-color: var(--cognac);
+  }
+
+  .role-btn:focus-visible,
+  .copy-btn:focus-visible,
+  .other-wrap input:focus-visible {
+    outline: 3px solid var(--cognac-light);
+    outline-offset: 2px;
+  }
+
+  .role-btn.selected {
+    border-color: var(--cognac-dark);
+    background: var(--cognac-dark);
+    font-weight: 700;
+  }
+
+  .other-wrap {
+    display: none;
+    margin-bottom: var(--space-4);
+  }
+
+  .other-wrap.show {
+    display: block;
+  }
+
+  .other-wrap input {
+    width: 100%;
+    min-height: 44px;
+    padding: var(--space-2) var(--space-3);
+    border: 2px solid var(--cream);
+    border-radius: 6px;
+    background: var(--navy-dark);
+    color: var(--white);
+    font: inherit;
+    font-size: 1rem;
+  }
+
+  .other-wrap input::placeholder {
+    color: var(--cream);
+  }
+
+  .prompt-box {
+    min-height: 90px;
+    padding: var(--space-4);
+    background: var(--navy-dark);
+    border: 1px solid var(--cream);
+    color: var(--white);
+    font-size: 1rem;
+    line-height: 1.6;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+  }
+
+  .prompt-box :global(.placeholder) {
+    color: var(--cream);
+    font-style: italic;
+  }
+
+  .tool-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-3);
+    margin-top: var(--space-4);
+  }
+
+  .copy-btn {
+    width: min(280px, calc(100vw - 82px));
+    min-height: 60px;
+    padding: var(--space-2) var(--space-3);
+    border: 2px solid var(--white);
+    border-radius: 6px;
+    background: var(--white);
+    color: var(--navy);
+    font: inherit;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  .copy-btn:hover {
+    border-color: var(--cognac-light);
+    background: var(--cognac-light);
+  }
+
+  .copy-status {
+    color: var(--cream);
+    font-size: 0.95rem;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+
+  .copy-status.show {
+    opacity: 1;
+  }
+
+  .tool-note {
+    margin: var(--space-4) 0 0;
+    color: var(--cream);
+    font-size: 0.95rem;
+  }
+
+  @media print {
+    .tool {
+      background: var(--white);
+      color: var(--navy);
+    }
+
+    h3,
+    .tool-eyebrow,
+    .tool-desc,
+    .tool-note {
+      color: var(--navy);
+    }
+
+    .role-select,
+    .other-wrap,
+    .tool-actions {
+      display: none;
+    }
+
+    .prompt-box {
+      background: var(--white);
+      border-color: var(--navy);
+      color: var(--navy);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .copy-status {
+      transition: none;
+    }
+  }
+</style>
+
+<script is:inline>
+  const rolePrompts = {
+    sales: "I work in sales and estimating at a small trades business. My week is full of calls, site visits, quotes, and following up on them. Ask me 5 short questions about what actually ate my time this week. Then give me exactly 3 specific things I could try using you for before our next session, ranked by how much time each would probably save me. One sentence per idea.",
+    field: "I run jobs in the field at a small trades business. My week is full of schedules, crew and supplier coordination, site issues, and keeping customers updated. Ask me 5 short questions about what actually ate my time this week. Then give me exactly 3 specific things I could try using you for before our next session, ranked by how much time each would probably save me. One sentence per idea.",
+    admin: "I run the office at a small trades business. My week is full of calls, scheduling, invoices, paperwork, and keeping everyone coordinated. Ask me 5 short questions about what actually ate my time this week. Then give me exactly 3 specific things I could try using you for before our next session, ranked by how much time each would probably save me. One sentence per idea.",
+    owner: "I own or manage a small trades business. My week is full of decisions, cash, priorities, and things only I can unblock. Ask me 5 short questions about what actually ate my time this week. Then give me exactly 3 specific things I could try using you for before our next session, ranked by how much time each would probably save me. One sentence per idea.",
+    other: null
+  };
+
+  const promptBox = document.getElementById('promptBox');
+  const copyBtn = document.getElementById('copyBtn');
+  const copyStatus = document.getElementById('copyStatus');
+  const otherWrap = document.getElementById('otherWrap');
+  const otherInput = document.getElementById('otherInput');
+  const buttons = document.querySelectorAll('.role-btn');
+
+  let currentRole = 'sales';
+
+  function otherPrompt(text) {
+    const role = text && text.trim() ? text.trim() : '[your role]';
+    return `I work as a ${role} at a small trades business. Ask me 5 short questions about what actually ate my time this week. Then give me exactly 3 specific things I could try using you for before our next session, ranked by how much time each would probably save me. One sentence per idea.`;
+  }
+
+  function renderPrompt() {
+    let text;
+    if (currentRole === 'other') {
+      text = otherPrompt(otherInput.value);
+      if (!otherInput.value.trim()) {
+        promptBox.innerHTML = '<span class="placeholder">Type your role above to build your prompt...</span>';
+        return;
+      }
+    } else {
+      text = rolePrompts[currentRole];
+    }
+    promptBox.textContent = text;
+  }
+
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      buttons.forEach(b => b.classList.remove('selected'));
+      btn.classList.add('selected');
+      currentRole = btn.dataset.role;
+      otherWrap.classList.toggle('show', currentRole === 'other');
+      renderPrompt();
+      if (currentRole === 'other') otherInput.focus();
+    });
+  });
+
+  otherInput.addEventListener('input', renderPrompt);
+
+  copyBtn.addEventListener('click', async () => {
+    const text = promptBox.textContent;
+    if (!text || promptBox.querySelector('.placeholder')) return;
+    try {
+      await navigator.clipboard.writeText(text);
+    } catch (e) {
+      const range = document.createRange();
+      range.selectNode(promptBox);
+      window.getSelection().removeAllRanges();
+      window.getSelection().addRange(range);
+      document.execCommand('copy');
+      window.getSelection().removeAllRanges();
+    }
+    copyStatus.classList.add('show');
+    setTimeout(() => copyStatus.classList.remove('show'), 2500);
+  });
+
+  renderPrompt();
+</script>

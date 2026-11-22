@@ -31,100 +31,204 @@ const providers = [
 ---
 
 <Base title="Privacy policy" description={`How ${SITE_NAME} collects, uses and protects your personal information.`}>
-  <section class="container reading page">
-    <p class="eyebrow">Effective {EFFECTIVE_DATE}</p>
-    <h1>Privacy policy</h1>
-    <p>
-      This policy covers thevlway.com and paid EdubaWare seats sold by {OWNER_NAME} of {SITE_NAME},
-      based in {OWNER_LOCATION}. I am responsible for the personal information described here.
-    </p>
+  <div class="container policy">
+    <header class="head">
+      <p class="eyebrow">Effective {EFFECTIVE_DATE}</p>
+      <h1>Privacy policy</h1>
+      <p class="lede">
+        This policy covers thevlway.com and paid EdubaWare seats sold by {OWNER_NAME} of {SITE_NAME},
+        based in {OWNER_LOCATION}. I am responsible for the personal information described here.
+      </p>
+    </header>
 
-    <h2>What I collect</h2>
-    <ul>{collected.map((item) => <li>{item}</li>)}</ul>
+    <div class="panels two">
+      <section class="panel">
+        <h2>What I collect</h2>
+        <ul>{collected.map((item) => <li>{item}</li>)}</ul>
+      </section>
+      <section class="panel">
+        <h2>How I use it</h2>
+        <ul>{uses.map((item) => <li>{item}</li>)}</ul>
+        <p class="strong">I do not sell your personal information.</p>
+      </section>
+    </div>
 
-    <h2>How I use it</h2>
-    <ul>{uses.map((item) => <li>{item}</li>)}</ul>
-    <p>I do not sell your personal information.</p>
+    <div class="panels">
+      <section class="panel workspace">
+        <h2>Who can see your workspace</h2>
+        <p>
+          I can see your EdubaWare workspace and chats so I can teach and check your work. Other managers
+          of the same EdubaWare organization can also see them. If your employer bought your seat, its
+          managers may be able to see your work too. Do not put private customer, financial or health
+          information in your workspace unless you are allowed to.
+        </p>
+      </section>
+    </div>
 
-    <h2>Who can see your workspace</h2>
-    <p>
-      I can see your EdubaWare workspace and chats so I can teach and check your work. Other managers
-      of the same EdubaWare organization can also see them. If your employer bought your seat, its
-      managers may be able to see your work too. Do not put private customer, financial or health
-      information in your workspace unless you are allowed to.
-    </p>
+    <div class="panels">
+      <section class="panel">
+        <h2>Who I share it with</h2>
+        <p>I share only what these providers need to do their job:</p>
+        <ul class="providers">
+          {
+            providers.map((provider) => (
+              <li>
+                <strong>{provider.name}</strong> {provider.job}
+              </li>
+            ))
+          }
+        </ul>
+        <p>I may also disclose information when the law requires it.</p>
+      </section>
+    </div>
 
-    <h2>Who I share it with</h2>
-    <p>I share only what these providers need to do their job:</p>
-    <ul>
-      {
-        providers.map((provider) => (
-          <li>
-            <strong>{provider.name}</strong> {provider.job}
-          </li>
-        ))
-      }
-    </ul>
-    <p>I may also disclose information when the law requires it.</p>
+    <div class="panels three">
+      <section class="panel">
+        <h2>Where it is stored</h2>
+        <p>
+          These providers may store or process your information outside Canada, including in the United
+          States, where it may be subject to the laws of that country.
+        </p>
+      </section>
+      <section class="panel">
+        <h2>How long I keep it</h2>
+        <p>
+          I keep your account information while you have a seat and for as long as I need it after that
+          to answer questions or resolve a dispute. Billing records are kept for at least 6 years for tax
+          purposes.
+        </p>
+      </section>
+      <section class="panel">
+        <h2>Cookies</h2>
+        <p>
+          This site does not use advertising or analytics cookies. Stripe and EdubaWare use their own
+          cookies to keep payments and sign-ins working.
+        </p>
+      </section>
+    </div>
 
-    <h2>Where it is stored</h2>
-    <p>
-      These providers may store or process your information outside Canada, including in the United
-      States, where it may be subject to the laws of that country.
-    </p>
-
-    <h2>How long I keep it</h2>
-    <p>
-      I keep your account information while you have a seat and for as long as I need it after that
-      to answer questions or resolve a dispute. Billing records are kept for at least 6 years for tax
-      purposes.
-    </p>
-
-    <h2>Cookies</h2>
-    <p>
-      This site does not use advertising or analytics cookies. Stripe and EdubaWare use their own
-      cookies to keep payments and sign-ins working.
-    </p>
-
-    <h2>Your choices</h2>
-    <p>
-      You can ask to see, correct or delete your personal information, or withdraw your consent, by
-      emailing <a href={contactHref}>{CONTACT_EMAIL}</a>. Some records must be kept by law. If you are
-      not satisfied with my answer, you can contact the Office of the Information and Privacy
-      Commissioner of Alberta.
-    </p>
-
-    <h2>Changes and contact</h2>
-    <p>
-      If this policy changes, I will update the date at the top. Questions go to
-      <a href={contactHref}>{CONTACT_EMAIL}</a>.
-    </p>
-  </section>
+    <div class="panels two">
+      <section class="panel">
+        <h2>Your choices</h2>
+        <p>
+          You can ask to see, correct or delete your personal information, or withdraw your consent, by
+          emailing <a href={contactHref}>{CONTACT_EMAIL}</a>. Some records must be kept by law. If you are
+          not satisfied with my answer, you can contact the Office of the Information and Privacy
+          Commissioner of Alberta.
+        </p>
+      </section>
+      <section class="panel">
+        <h2>Changes and contact</h2>
+        <p>
+          If this policy changes, I will update the date at the top. Questions go
+          to <a href={contactHref}>{CONTACT_EMAIL}</a>.
+        </p>
+      </section>
+    </div>
+  </div>
 </Base>
 
 <style>
-  .page {
-    padding-top: var(--space-8);
-    padding-bottom: var(--space-7);
+  .policy {
+    display: grid;
+    gap: var(--space-4);
+    padding-top: var(--space-7);
+  }
+
+  .head {
+    max-width: 46em;
+    margin-bottom: var(--space-3);
   }
 
   .eyebrow {
+    margin-bottom: var(--space-3);
     color: var(--cognac-dark);
-    font-weight: 700;
     font-size: 0.9rem;
-    text-transform: uppercase;
+    font-weight: 700;
     letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  h1 {
+    font-size: clamp(2.2rem, 4.4vw, 3.2rem);
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+  }
+
+  .lede {
+    margin-bottom: 0;
+    font-size: 1.1rem;
+  }
+
+  .panels {
+    display: grid;
+    gap: var(--space-4);
+  }
+
+  .two {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .three {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .panel {
+    min-width: 0;
+    padding: var(--space-4);
+    background: var(--white);
+    border: 2px solid var(--navy);
+    border-top: 6px solid var(--navy);
+    font-size: 1rem;
+    line-height: 1.55;
+  }
+
+  .workspace {
+    border-top-color: var(--edubaware);
+  }
+
+  .workspace h2 {
+    color: var(--edubaware);
   }
 
   h2 {
-    margin-top: var(--space-7);
+    margin-bottom: var(--space-3);
+    font-size: 1.35rem;
   }
 
   ul {
+    margin: 0 0 var(--space-4);
     padding-left: var(--space-5);
   }
 
   li {
     margin-bottom: var(--space-2);
+  }
+
+  .providers {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0 var(--space-6);
+  }
+
+  .panel p:last-child,
+  .panel ul:last-child {
+    margin-bottom: 0;
+  }
+
+  .strong {
+    font-weight: 700;
+  }
+
+  a {
+    overflow-wrap: anywhere;
+  }
+
+  @media (max-width: 860px) {
+    .two,
+    .three,
+    .providers {
+      grid-template-columns: minmax(0, 1fr);
+    }
   }
 </style>
