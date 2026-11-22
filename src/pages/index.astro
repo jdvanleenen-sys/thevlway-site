@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+import TwoDoors from '../components/TwoDoors.astro';
 import { SKOOL_URL, YOUTUBE_URL } from '../consts';
 
 // Copy follows the lead order in _business-plan/doctrine.md:
@@ -75,7 +76,7 @@ const deliveryPaths = [
         ))
       }
     </ul>
-    <a class="button button-primary" href={SKOOL_URL}>Start in the community</a>
+    <TwoDoors />
   </section>
 </Base>
 
