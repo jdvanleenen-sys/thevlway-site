@@ -4,13 +4,13 @@ import AboutHero from '../components/AboutHero.astro';
 import AboutSubjects from '../components/AboutSubjects.astro';
 import AboutWhy from '../components/AboutWhy.astro';
 import TwoDoors from '../components/TwoDoors.astro';
-import { OWNER_LOCATION, OWNER_NAME, SITE_NAME } from '../consts';
+import { OWNER_NAME, SITE_NAME } from '../consts';
 
 // Claims come from rows marked PUBLIC in Jeff-HQ/10 Ventures/icm-consulting/next-yes/me.md, Jeff's
 // own Office line, and the Masters line on the EdubaWare page. Check there before adding one.
 ---
 
-<Base title="About" description={`${OWNER_NAME} runs ${SITE_NAME} from ${OWNER_LOCATION} and teaches trade contractors to build simple AI systems.`}>
+<Base title="About" description={`${OWNER_NAME} runs ${SITE_NAME} and teaches trade contractors to build simple AI systems.`}>
   <AboutHero />
   <AboutSubjects />
   <AboutWhy />
