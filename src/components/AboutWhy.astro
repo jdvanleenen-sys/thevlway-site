@@ -1,0 +1,105 @@
+---
+import { YOUTUBE_URL } from '../consts';
+import { getPublishedPosts } from '../lib/posts';
+
+const postCount = (await getPublishedPosts()).length;
+---
+
+<section class="why">
+  <div class="container why-inner">
+    <h2>Why I do this</h2>
+    <p>
+      To take the little bits of pain out of people's working lives. For a trade contractor that means
+      fixing one office bottleneck at a time, like missed calls, slow estimates, late invoices or
+      scattered job details, with the simplest system that works.
+    </p>
+    <p class="credit">
+      I am one of Jake Van Clief's 7 Masters of ICM. What I teach uses ICM Principles by Jake Van Clief.
+    </p>
+  </div>
+</section>
+
+<section class="container first">
+  <h2>Watch or read first</h2>
+  <ul class="grid">
+    <li class="card">
+      <h3>Videos</h3>
+      <p>Videos about the office work behind the job.</p>
+      <a class="button button-secondary door-button" href={YOUTUBE_URL}>Watch on YouTube</a>
+    </li>
+    <li class="card">
+      <h3>Blog</h3>
+      <p>{postCount} posts on quotes, systems and which problem to fix first.</p>
+      <a class="button button-secondary door-button" href="/blog/">Read the blog</a>
+    </li>
+  </ul>
+</section>
+
+<style>
+  .why {
+    margin-top: var(--space-7);
+    padding: var(--space-7) 0;
+    background: var(--navy);
+    color: var(--white);
+  }
+
+  .why h2 {
+    color: var(--white);
+  }
+
+  .why p {
+    max-width: 46em;
+  }
+
+  .why .credit {
+    margin-bottom: 0;
+    color: var(--cream);
+    font-weight: 500;
+  }
+
+  .first {
+    padding-top: var(--space-7);
+  }
+
+  .first h2 {
+    margin-bottom: var(--space-5);
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-4);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    padding: var(--space-4);
+    background: var(--white);
+    border: 2px solid var(--navy);
+    border-top: 6px solid var(--cognac-dark);
+  }
+
+  h3 {
+    margin-bottom: var(--space-2);
+  }
+
+  .card p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .card .button {
+    margin-top: auto;
+  }
+
+  @media (max-width: 860px) {
+    .grid {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+</style>

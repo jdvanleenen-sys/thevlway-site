@@ -1,0 +1,147 @@
+---
+import ShopScene, { type SceneName } from './ShopScene.astro';
+
+const subjects: { scene: SceneName; title: string; line: string; alt: string }[] = [
+  {
+    scene: 'biology',
+    title: 'Biology',
+    line: 'Start with something you can see. Then explain why it works.',
+    alt: 'Jeff at a chalkboard with a drawing of a cell, beside a desk with a microscope.',
+  },
+  {
+    scene: 'court',
+    title: 'Free throws',
+    line: 'Same routine, every shot. You get better by doing it again.',
+    alt: 'Jeff in a gym shooting a basketball at a hoop.',
+  },
+  {
+    scene: 'reno',
+    title: 'Real estate',
+    line: "I've done a whole bunch of renos and owned rental properties. Every job runs on its paperwork.",
+    alt: 'Jeff in a house under renovation with open wall studs, a ladder, a sawhorse and paint cans.',
+  },
+  {
+    scene: 'aibench',
+    title: 'AI',
+    line: 'I build the file structure that makes it work: folders your AI can read, so it knows how your business runs.',
+    alt: 'Jeff at a desk with a laptop and a board of folders, working with Bip and Bit.',
+  },
+];
+
+const methods = [
+  { title: 'Your real work first', line: 'We start with one task you already do every week.' },
+  { title: 'Plain words', line: 'No jargon. If I name a tool, I tell you what it is and why you would use it.' },
+  { title: 'You keep what you build', line: 'You leave with something that works and you know how it works.' },
+];
+---
+
+<section class="subjects">
+  <div class="container">
+    <h2>4 subjects, 1 way of teaching</h2>
+    <ul class="grid four">
+      {
+        subjects.map((subject) => (
+          <li class="card">
+            <ShopScene name={subject.scene} alt={subject.alt} />
+            <div class="card-body">
+              <h3>{subject.title}</h3>
+              <p>{subject.line}</p>
+            </div>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</section>
+
+<section class="container method">
+  <h2>How I teach</h2>
+  <ul class="grid three">
+    {
+      methods.map((method) => (
+        <li class="card">
+          <div class="card-body">
+            <h3>{method.title}</h3>
+            <p>{method.line}</p>
+          </div>
+        </li>
+      ))
+    }
+  </ul>
+</section>
+
+<style>
+  .subjects {
+    padding: var(--space-7) 0;
+    background: var(--cream);
+  }
+
+  .method {
+    padding-top: var(--space-7);
+  }
+
+  h2 {
+    margin-bottom: var(--space-5);
+  }
+
+  .grid {
+    display: grid;
+    gap: var(--space-4);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .four {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .three {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    background: var(--white);
+    border: 3px solid var(--navy);
+  }
+
+  .card-body {
+    padding: var(--space-4);
+  }
+
+  .method .card {
+    border-width: 2px;
+    border-top: 6px solid var(--cognac-dark);
+  }
+
+  h3 {
+    margin-bottom: var(--space-2);
+  }
+
+  .card p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  @media (max-width: 980px) {
+    .four {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 860px) {
+    .three {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+
+  @media (max-width: 620px) {
+    .four {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+</style>

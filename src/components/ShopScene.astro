@@ -8,6 +8,10 @@ const SCENES = {
   breakroom: { w: 160, h: 110, floor: 88, dark: false },
   office: { w: 160, h: 110, floor: 88, dark: false },
   teamroom: { w: 240, h: 135, floor: 104, dark: false },
+  biology: { w: 160, h: 100, floor: 78, dark: false },
+  court: { w: 160, h: 100, floor: 78, dark: false },
+  reno: { w: 160, h: 100, floor: 78, dark: false },
+  aibench: { w: 160, h: 100, floor: 78, dark: false },
 } as const;
 
 export type SceneName = keyof typeof SCENES;
@@ -21,6 +25,10 @@ const MOTION: Record<SceneName, string> = {
   breakroom: '--beat:2.4s;--offset:1.4s;--sway:5.9s;--sway-delay:-5s;--roam:10s;--roam-delay:-4s;',
   office: '--beat:3.6s;--offset:0.4s;--sway:7.7s;--sway-delay:-1.8s;--roam:14s;--roam-delay:-11s;',
   teamroom: '--beat:3s;--offset:0.9s;--sway:6.4s;--sway-delay:-2.7s;--roam:13s;--roam-delay:-3s;',
+  biology: '--beat:3.2s;--offset:0.3s;--sway:6.2s;--sway-delay:-1.4s;--roam:13s;--roam-delay:0s;',
+  court: '--beat:2s;--offset:1.2s;--sway:7.1s;--sway-delay:-4.4s;--roam:13s;--roam-delay:0s;',
+  reno: '--beat:3.8s;--offset:0.8s;--sway:5.7s;--sway-delay:-2.9s;--roam:13s;--roam-delay:0s;',
+  aibench: '--beat:2.9s;--offset:1.7s;--sway:6.9s;--sway-delay:-5.3s;--roam:13s;--roam-delay:0s;',
 };
 
 interface Props {
@@ -30,7 +38,7 @@ interface Props {
 
 const { name, alt } = Astro.props;
 const scene = SCENES[name];
-const hasRoamer = name !== 'hero' && name !== 'screening';
+const hasRoamer = ['classroom', 'frontdesk', 'library', 'breakroom', 'office', 'teamroom'].includes(name);
 const sceneVars = `--w:${scene.w};--h:${scene.h};--f:${scene.floor};--back:url('/shop/${name}-back.png');${MOTION[name]}`;
 ---
 
