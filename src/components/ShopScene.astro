@@ -7,6 +7,7 @@ const SCENES = {
   library: { w: 160, h: 110, floor: 92, dark: false },
   breakroom: { w: 160, h: 110, floor: 88, dark: false },
   office: { w: 160, h: 110, floor: 88, dark: false },
+  teamroom: { w: 240, h: 135, floor: 104, dark: false },
 } as const;
 
 export type SceneName = keyof typeof SCENES;
@@ -19,6 +20,7 @@ const MOTION: Record<SceneName, string> = {
   library: '--beat:4.2s;--offset:2.4s;--sway:6.7s;--sway-delay:-3.1s;--roam:17s;--roam-delay:-9s;',
   breakroom: '--beat:2.4s;--offset:1.4s;--sway:5.9s;--sway-delay:-5s;--roam:10s;--roam-delay:-4s;',
   office: '--beat:3.6s;--offset:0.4s;--sway:7.7s;--sway-delay:-1.8s;--roam:14s;--roam-delay:-11s;',
+  teamroom: '--beat:3s;--offset:0.9s;--sway:6.4s;--sway-delay:-2.7s;--roam:13s;--roam-delay:-3s;',
 };
 
 interface Props {

@@ -1,0 +1,117 @@
+---
+import {
+  CONTACT_EMAIL,
+  EDUBAWARE_INVITE_URL,
+  EDUBAWARE_PRICE,
+  EDUBAWARE_REFUND_DAYS,
+  OWNER_LOCATION,
+  OWNER_NAME,
+  SITE_NAME,
+} from '../consts';
+
+const included = [
+  'Your own workspace in EdubaWare, where an AI agent walks you through each lesson.',
+  'Short lessons in plain words, for people who are not technical.',
+  'Practice on one task you repeat every week, so what you build is useful at work.',
+  'New lessons as they are finished. The first lessons are open now.',
+];
+
+const steps = [
+  { title: 'Email me', line: `Send the word INVITE to ${CONTACT_EMAIL}.` },
+  { title: 'Get the payment link', line: 'I reply with a secure Stripe checkout link.' },
+  { title: 'Pay by card', line: `${EDUBAWARE_PRICE} per person, billed monthly.` },
+  { title: 'Get your invitation', line: 'I send the EdubaWare invitation to the email you used at checkout.' },
+];
+
+const limits = [
+  'EdubaWare is in early testing, so its screens and features will change.',
+  'When someone works in another chat, refresh the page to see their new files.',
+  'There is no undo for files yet. If 2 people change the same sentence at once, the last change wins.',
+  'Everyone in a room can read and download every file in it. Keep passwords and private customer details out.',
+];
+---
+
+<section class="container reading terms">
+  <h2>What you get</h2>
+  <ul>{included.map((item) => <li>{item}</li>)}</ul>
+
+  <h2>How to join</h2>
+  <ol>
+    {
+      steps.map((step) => (
+        <li>
+          <strong>{step.title}.</strong> {step.line}
+        </li>
+      ))
+    }
+  </ol>
+  <a class="button door-button invite" href={EDUBAWARE_INVITE_URL}>Email me for an invitation</a>
+
+  <h2>Know this before you join</h2>
+  <ul>{limits.map((item) => <li>{item}</li>)}</ul>
+  <p>
+    I can see your workspace and chats so I can teach and check your work. Other managers of the same
+    EdubaWare organization can see them too. Read the <a href="/privacy/">privacy policy</a>.
+  </p>
+
+  <h2>Who you are buying from</h2>
+  <p>
+    You are buying from {OWNER_NAME} of {SITE_NAME}, based in {OWNER_LOCATION}. I am one of Jake Van
+    Clief's 7 Masters of ICM, and this school uses ICM Principles by Jake Van Clief. Eduba runs the
+    EdubaWare platform. I run this school on it and handle your billing. Your card statement will show
+    EDUBAWARE.
+  </p>
+
+  <h2 id="refunds">Cancellations and refunds</h2>
+  <p>
+    To cancel, email <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>. Your next charge stops
+    and you keep access until the end of the month you paid for.
+  </p>
+  <p>
+    If it is not for you, email me within {EDUBAWARE_REFUND_DAYS} days of your first payment for a
+    full refund. Later payments and partial months are not refunded.
+  </p>
+
+  <h2>Payment and questions</h2>
+  <p>
+    Stripe processes all card payments, so your card number never reaches me. For anything
+    else, email <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.
+  </p>
+</section>
+
+<style>
+  .terms {
+    padding-top: var(--space-5);
+    padding-bottom: var(--space-7);
+  }
+
+  h2 {
+    margin-top: var(--space-7);
+    color: var(--edubaware);
+  }
+
+  ul,
+  ol {
+    padding-left: var(--space-5);
+  }
+
+  li {
+    margin-bottom: var(--space-2);
+  }
+
+  a {
+    overflow-wrap: anywhere;
+  }
+
+  .invite {
+    border-color: var(--edubaware);
+    background: var(--edubaware);
+    color: var(--white);
+  }
+
+  .invite:hover {
+    border-color: var(--edubaware-dark);
+    background: var(--edubaware-dark);
+    color: var(--white);
+  }
+</style>

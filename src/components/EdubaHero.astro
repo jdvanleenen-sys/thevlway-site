@@ -1,0 +1,123 @@
+---
+import ShopScene from './ShopScene.astro';
+import { CONTACT_EMAIL, EDUBAWARE_INVITE_URL, EDUBAWARE_PRICE } from '../consts';
+---
+
+<section class="edu-wrap hero">
+  <div>
+    <p class="eyebrow">AI the vL Way on EdubaWare. By invitation.</p>
+    <h1>Put your whole crew in one room with the AI.</h1>
+    <p class="lede">
+      EdubaWare is a shared workspace for your team and an AI agent. Everyone works from the same
+      files, in the same chat, on the same job.
+    </p>
+    <div class="price-card">
+      <p class="price">{EDUBAWARE_PRICE}</p>
+      <p>per person, per month. Cancel any time.</p>
+      <a class="button door-button invite" href={EDUBAWARE_INVITE_URL}>Email me for an invitation</a>
+      <p class="invite-note">Send the word INVITE to {CONTACT_EMAIL}.</p>
+    </div>
+  </div>
+  <div class="scene">
+    <ShopScene
+      name="teamroom"
+      alt="A pixel-art meeting room. 4 people sit at one long table with a shared laptop while Bip the robot helps. The sign on the wall says one room, and a board shows their shared files."
+    />
+  </div>
+</section>
+
+<style>
+  .edu-wrap {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-left: var(--space-7);
+    padding-right: var(--space-7);
+  }
+
+  .hero {
+    display: grid;
+    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+    gap: var(--space-7);
+    align-items: center;
+    padding-top: var(--space-7);
+    padding-bottom: var(--space-8);
+  }
+
+  .eyebrow {
+    margin-bottom: var(--space-3);
+    color: var(--edubaware);
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  h1 {
+    color: var(--edubaware);
+    font-size: clamp(2rem, 4vw, 3.25rem);
+    line-height: 1.08;
+    letter-spacing: -0.02em;
+  }
+
+  .lede {
+    font-size: 1.15rem;
+  }
+
+  .price-card {
+    margin-top: var(--space-5);
+    padding: var(--space-4);
+    background: var(--white);
+    border: 3px solid var(--edubaware);
+  }
+
+  .price-card p {
+    margin-bottom: var(--space-2);
+  }
+
+  .price-card .price {
+    margin-bottom: 0;
+    color: var(--edubaware);
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  .invite {
+    border-color: var(--edubaware);
+    background: var(--edubaware);
+    color: var(--white);
+  }
+
+  .invite:hover {
+    border-color: var(--edubaware-dark);
+    background: var(--edubaware-dark);
+    color: var(--white);
+  }
+
+  .price-card .invite-note {
+    margin: var(--space-2) 0 0;
+    font-size: 0.95rem;
+    overflow-wrap: anywhere;
+  }
+
+  .scene {
+    border: 4px solid var(--edubaware);
+  }
+
+  @media (max-width: 980px) {
+    .hero {
+      grid-template-columns: minmax(0, 1fr);
+      gap: var(--space-6);
+      padding-top: var(--space-6);
+      padding-bottom: var(--space-7);
+    }
+  }
+
+  @media (max-width: 620px) {
+    .edu-wrap {
+      padding-left: var(--space-4);
+      padding-right: var(--space-4);
+    }
+  }
+</style>
