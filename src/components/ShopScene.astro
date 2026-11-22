@@ -18,6 +18,7 @@ interface Props {
 
 const { name, alt } = Astro.props;
 const scene = SCENES[name];
+const hasRoamer = name !== 'hero' && name !== 'screening';
 const sceneVars = `--w:${scene.w};--h:${scene.h};--f:${scene.floor};--back:url('/shop/${name}-back.png');`;
 ---
 
@@ -36,6 +37,7 @@ const sceneVars = `--w:${scene.w};--h:${scene.h};--f:${scene.floor};--back:url('
       <div class="stage" data-tilt>
         <img class="front one" src={`/shop/${name}-front-0.png`} alt="" width={scene.w * 4} height={scene.h * 4} />
         <img class="front two" src={`/shop/${name}-front-1.png`} alt="" width={scene.w * 4} height={scene.h * 4} />
+        {hasRoamer && <img class="roamer" src="/shop/bit-walk.png" alt="" width="40" height="56" />}
         <slot />
       </div>
     </div>
@@ -70,7 +72,7 @@ const sceneVars = `--w:${scene.w};--h:${scene.h};--f:${scene.floor};--back:url('
   }
 
   .sway {
-    animation: sway 9s ease-in-out infinite alternate;
+    animation: sway 6s ease-in-out infinite alternate;
   }
 
   .stage {
@@ -156,12 +158,23 @@ const sceneVars = `--w:${scene.w};--h:${scene.h};--f:${scene.floor};--back:url('
     transform: translateZ(calc(var(--u) * 12));
   }
 
+  .roamer {
+    position: absolute;
+    bottom: calc(var(--u) * 5);
+    left: 14%;
+    width: calc(var(--u) * 10);
+    height: auto;
+    max-width: none;
+    image-rendering: pixelated;
+    animation: roam 12s steps(22) infinite;
+  }
+
   .one {
-    animation: frame-one 1.5s step-end infinite;
+    animation: frame-one 0.8s step-end infinite;
   }
 
   .two {
-    animation: frame-two 1.5s step-end infinite;
+    animation: frame-two 0.8s step-end infinite;
   }
 
   @keyframes frame-one {
@@ -182,12 +195,35 @@ const sceneVars = `--w:${scene.w};--h:${scene.h};--f:${scene.floor};--back:url('
     }
   }
 
+  @keyframes roam {
+    0% {
+      left: 14%;
+      transform: translateZ(calc(var(--u) * 20)) scaleX(1);
+    }
+    46% {
+      left: 74%;
+      transform: translateZ(calc(var(--u) * 20)) scaleX(1);
+    }
+    50% {
+      left: 74%;
+      transform: translateZ(calc(var(--u) * 20)) scaleX(-1);
+    }
+    96% {
+      left: 14%;
+      transform: translateZ(calc(var(--u) * 20)) scaleX(-1);
+    }
+    100% {
+      left: 14%;
+      transform: translateZ(calc(var(--u) * 20)) scaleX(1);
+    }
+  }
+
   @keyframes sway {
     from {
-      transform: rotateY(-2.5deg);
+      transform: rotateY(-6deg);
     }
     to {
-      transform: rotateY(2.5deg);
+      transform: rotateY(6deg);
     }
   }
 
@@ -200,6 +236,10 @@ const sceneVars = `--w:${scene.w};--h:${scene.h};--f:${scene.floor};--back:url('
 
     .two {
       opacity: 0;
+    }
+
+    .roamer {
+      display: none;
     }
 
     .stage {

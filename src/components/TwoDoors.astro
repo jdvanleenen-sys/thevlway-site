@@ -9,7 +9,7 @@ import { EDUBAWARE_PAGE_URL, EDUBAWARE_PRICE } from '../consts';
     <AffiliateLink fillCard />
   </article>
 
-  <article class="door">
+  <article class="door paid">
     <p class="door-name">Paid</p>
     <p>My school, AI the vL Way, runs on EdubaWare, a website for sharing folders with AI.</p>
     <p class="disclosure">{EDUBAWARE_PRICE} a month, by invitation.</p>
@@ -45,6 +45,25 @@ import { EDUBAWARE_PAGE_URL, EDUBAWARE_PRICE } from '../consts';
     margin-bottom: var(--space-2);
     font-size: 0.9rem;
     font-weight: 700;
+  }
+
+  .paid {
+    border-top-color: var(--edubaware);
+  }
+
+  .paid .door-name {
+    color: var(--edubaware);
+  }
+
+  .paid .button {
+    border-color: var(--edubaware);
+    background: var(--edubaware);
+    color: var(--white);
+  }
+
+  .paid .button:hover {
+    border-color: var(--edubaware-dark);
+    background: var(--edubaware-dark);
   }
 
   .door .button {

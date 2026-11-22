@@ -17,7 +17,7 @@ import { EDUBAWARE_PAGE_URL, EDUBAWARE_PRICE, EDUBAWARE_REFUND_DAYS } from '../c
         <p class="door-name">Free</p>
         <AffiliateLink compact />
       </div>
-      <div class="door">
+      <div class="door paid">
         <p class="door-name">Paid</p>
         <p class="paid-line">
           EdubaWare is {EDUBAWARE_PRICE} a month, by invitation. Cancel any time.
@@ -93,6 +93,25 @@ import { EDUBAWARE_PAGE_URL, EDUBAWARE_PRICE, EDUBAWARE_REFUND_DAYS } from '../c
     margin-bottom: var(--space-1);
     font-size: 1.1rem;
     font-weight: 700;
+  }
+
+  .paid {
+    border-top-color: var(--edubaware);
+  }
+
+  .paid .door-name {
+    color: var(--edubaware);
+  }
+
+  .paid .button {
+    border-color: var(--edubaware);
+    background: var(--edubaware);
+    color: var(--white);
+  }
+
+  .paid .button:hover {
+    border-color: var(--edubaware-dark);
+    background: var(--edubaware-dark);
   }
 
   .paid-line {

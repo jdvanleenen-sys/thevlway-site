@@ -59,7 +59,7 @@ const { plate, scene, alt, title, layout, href, action } = Astro.props;
   }
 
   .paid .plate {
-    background: var(--cognac-dark);
+    background: var(--edubaware);
   }
 
   .inner {
@@ -118,14 +118,16 @@ const { plate, scene, alt, title, layout, href, action } = Astro.props;
 
   .paid .action {
     padding: 0 var(--space-4);
-    border: 2px solid var(--navy);
+    border: 2px solid var(--edubaware);
     border-radius: 6px;
-    color: var(--navy);
+    background: var(--edubaware);
+    color: var(--white);
     text-decoration: none;
   }
 
   .paid .action:hover {
-    background: var(--navy);
+    border-color: var(--edubaware-dark);
+    background: var(--edubaware-dark);
     color: var(--white);
   }
 
