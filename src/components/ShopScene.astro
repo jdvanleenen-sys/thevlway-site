@@ -1,0 +1,235 @@
+---
+const SCENES = {
+  hero: { w: 240, h: 135, floor: 106, dark: false },
+  classroom: { w: 240, h: 110, floor: 86, dark: false },
+  frontdesk: { w: 160, h: 110, floor: 88, dark: false },
+  screening: { w: 160, h: 110, floor: 78, dark: true },
+  library: { w: 160, h: 110, floor: 92, dark: false },
+  breakroom: { w: 160, h: 110, floor: 88, dark: false },
+  office: { w: 160, h: 110, floor: 88, dark: false },
+} as const;
+
+export type SceneName = keyof typeof SCENES;
+
+interface Props {
+  name: SceneName;
+  alt: string;
+}
+
+const { name, alt } = Astro.props;
+const scene = SCENES[name];
+const sceneVars = `--w:${scene.w};--h:${scene.h};--f:${scene.floor};--back:url('/shop/${name}-back.png');`;
+---
+
+<div class:list={['diorama', { dark: scene.dark }]} role="img" aria-label={alt} style={sceneVars}>
+  <div class="camera">
+    <div class="sway">
+      <div class="stage" data-tilt>
+        <div class="plane ceiling"></div>
+        <div class="plane side left"></div>
+        <div class="plane side right"></div>
+        <div class="plane back"></div>
+        <div class="plane ground"></div>
+      </div>
+    </div>
+    <div class="sway">
+      <div class="stage" data-tilt>
+        <img class="front one" src={`/shop/${name}-front-0.png`} alt="" width={scene.w * 4} height={scene.h * 4} />
+        <img class="front two" src={`/shop/${name}-front-1.png`} alt="" width={scene.w * 4} height={scene.h * 4} />
+        <slot />
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .diorama {
+    position: relative;
+    width: 100%;
+    aspect-ratio: var(--w) / var(--h);
+    overflow: hidden;
+    container-type: inline-size;
+    background: var(--navy);
+  }
+
+  .camera {
+    --u: calc(100cqw / var(--w));
+    --d: calc(var(--u) * 30);
+    --reach: calc(var(--u) * 90);
+    position: absolute;
+    inset: 0;
+    perspective: calc(var(--u) * 260);
+    perspective-origin: 50% 28%;
+  }
+
+  .sway,
+  .stage {
+    position: absolute;
+    inset: 0;
+    transform-style: preserve-3d;
+  }
+
+  .sway {
+    animation: sway 9s ease-in-out infinite alternate;
+  }
+
+  .stage {
+    transform: rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg));
+    transition: transform 0.25s ease-out;
+  }
+
+  .plane {
+    position: absolute;
+    image-rendering: pixelated;
+  }
+
+  .back {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(var(--u) * var(--f));
+    background: var(--back) top / 100% calc(var(--u) * var(--h)) no-repeat;
+    transform: translateZ(calc(var(--d) * -1));
+  }
+
+  .ground {
+    top: calc(var(--u) * var(--f));
+    left: 0;
+    width: 100%;
+    height: calc(var(--d) + var(--reach));
+    background: var(--back) bottom / 100% calc((var(--d) + var(--reach)) * var(--h) / (var(--h) - var(--f))) no-repeat;
+    transform-origin: top;
+    transform: translateZ(calc(var(--d) * -1)) rotateX(90deg);
+  }
+
+  .side {
+    top: 0;
+    width: calc(var(--d) + var(--reach));
+    height: calc(var(--u) * var(--f));
+    background: linear-gradient(
+      to top,
+      var(--navy) 0 var(--u),
+      var(--white) 0 calc(var(--u) * 3),
+      var(--cream) 0 calc(var(--u) * 16),
+      var(--cognac-dark) 0 calc(var(--u) * 17),
+      var(--cream) 0
+    );
+  }
+
+  .left {
+    left: 0;
+    transform-origin: left;
+    transform: translateZ(calc(var(--d) * -1)) rotateY(-90deg);
+  }
+
+  .right {
+    right: 0;
+    transform-origin: right;
+    transform: translateZ(calc(var(--d) * -1)) rotateY(90deg);
+  }
+
+  .ceiling {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(var(--d) + var(--reach));
+    background: var(--cognac-dark);
+    transform-origin: top;
+    transform: translateZ(calc(var(--d) * -1)) rotateX(-90deg);
+  }
+
+  .dark .side {
+    background: var(--navy-dark);
+  }
+
+  .dark .ceiling {
+    background: var(--navy);
+  }
+
+  .front {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    image-rendering: pixelated;
+    transform: translateZ(calc(var(--u) * 12));
+  }
+
+  .one {
+    animation: frame-one 1.5s step-end infinite;
+  }
+
+  .two {
+    animation: frame-two 1.5s step-end infinite;
+  }
+
+  @keyframes frame-one {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes frame-two {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes sway {
+    from {
+      transform: rotateY(-2.5deg);
+    }
+    to {
+      transform: rotateY(2.5deg);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .sway,
+    .one,
+    .two {
+      animation: none;
+    }
+
+    .two {
+      opacity: 0;
+    }
+
+    .stage {
+      transition: none;
+    }
+  }
+</style>
+
+<script>
+  const MAX_TILT_DEGREES = 7;
+  const allowsMotion = !matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  for (const scene of document.querySelectorAll<HTMLElement>('.diorama')) {
+    const stages = scene.querySelectorAll<HTMLElement>('[data-tilt]');
+    if (!allowsMotion) continue;
+
+    scene.addEventListener('pointermove', (event) => {
+      const box = scene.getBoundingClientRect();
+      const across = (event.clientX - box.left) / box.width - 0.5;
+      const down = (event.clientY - box.top) / box.height - 0.5;
+      for (const stage of stages) {
+        stage.style.setProperty('--ry', `${across * MAX_TILT_DEGREES}deg`);
+        stage.style.setProperty('--rx', `${down * -MAX_TILT_DEGREES}deg`);
+      }
+    });
+    scene.addEventListener('pointerleave', () => {
+      for (const stage of stages) {
+        stage.style.removeProperty('--ry');
+        stage.style.removeProperty('--rx');
+      }
+    });
+  }
+</script>

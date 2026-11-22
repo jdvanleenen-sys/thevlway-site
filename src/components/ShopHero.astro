@@ -1,0 +1,187 @@
+---
+import AffiliateLink from './AffiliateLink.astro';
+import ShopScene from './ShopScene.astro';
+import { EDUBAWARE_PAGE_URL, EDUBAWARE_PRICE, EDUBAWARE_REFUND_DAYS } from '../consts';
+---
+
+<section class="shop-wrap hero">
+  <div class="intro">
+    <p class="eyebrow">For owners of trades and local service businesses</p>
+    <h1>Stop losing leads, chasing quotes, and doing office work after the job's done.</h1>
+    <p class="lede">
+      Pick 1 office job you repeat every week. Build it once, with an AI agent walking you through
+      each lesson.
+    </p>
+    <div class="doors">
+      <div class="door">
+        <p class="door-name">Free</p>
+        <AffiliateLink compact />
+      </div>
+      <div class="door">
+        <p class="door-name">Paid</p>
+        <p class="paid-line">
+          EdubaWare is {EDUBAWARE_PRICE} a month, by invitation. Cancel any time.
+          Full refund within {EDUBAWARE_REFUND_DAYS} days of your first payment.
+        </p>
+        <a class="button button-secondary" href={EDUBAWARE_PAGE_URL}>See the EdubaWare school</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="scene">
+    <ShopScene
+      name="hero"
+      alt="A pixel-art trades shop at night. Paperwork is piled on the workbench and spilling across the floor. A tired owner in a work shirt listens to Bip the robot under a sign reading days since Bip guessed: 0. Bit carries a card toward the classroom door."
+    >
+      <img class="walker" src="/shop/bit-walk.png" alt="" width="40" height="56" />
+    </ShopScene>
+    <span class="bubble">Quotes are sent, Boss. Probably.</span>
+  </div>
+</section>
+
+<style>
+  .shop-wrap {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-left: var(--space-7);
+    padding-right: var(--space-7);
+  }
+
+  .hero {
+    display: grid;
+    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+    gap: var(--space-7);
+    align-items: center;
+    padding-top: var(--space-7);
+    padding-bottom: var(--space-8);
+  }
+
+  .eyebrow {
+    margin-bottom: var(--space-3);
+    color: var(--cognac-dark);
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  h1 {
+    font-size: clamp(2rem, 4vw, 3.25rem);
+    line-height: 1.08;
+    letter-spacing: -0.02em;
+    overflow-wrap: anywhere;
+  }
+
+  .lede {
+    font-size: 1.15rem;
+  }
+
+  .doors {
+    display: grid;
+    gap: var(--space-4);
+    margin-top: var(--space-5);
+  }
+
+  .door {
+    min-width: 0;
+    padding-top: var(--space-3);
+    border-top: 2px solid var(--navy);
+  }
+
+  .door-name {
+    margin-bottom: var(--space-1);
+    font-size: 1.1rem;
+    font-weight: 700;
+  }
+
+  .paid-line {
+    margin-bottom: var(--space-2);
+    font-size: 1rem;
+  }
+
+  .door .button {
+    text-align: center;
+  }
+
+  .scene {
+    position: relative;
+    aspect-ratio: 240 / 135;
+    overflow: hidden;
+    border: 4px solid var(--navy);
+    background: var(--cognac-light);
+  }
+
+  .walker {
+    position: absolute;
+    left: 8%;
+    bottom: 10%;
+    width: 4.17%;
+    height: auto;
+    image-rendering: pixelated;
+    transform: translateZ(calc(var(--u) * 16));
+    animation: walk 11s steps(44) infinite;
+  }
+
+  .bubble {
+    position: absolute;
+    right: 15%;
+    top: 45%;
+    padding: 3px 9px;
+    background: var(--white);
+    border: 2px solid var(--navy);
+    font-size: clamp(10px, 1.1vw, 15px);
+    font-weight: 700;
+    line-height: 1.4;
+    white-space: nowrap;
+  }
+
+  @keyframes walk {
+    0% {
+      left: 8%;
+      opacity: 0;
+    }
+    4%,
+    92% {
+      opacity: 1;
+    }
+    100% {
+      left: 80%;
+      opacity: 0;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .walker {
+      left: 40%;
+      animation: none;
+    }
+  }
+
+  @media (max-width: 980px) {
+    .hero {
+      grid-template-columns: minmax(0, 1fr);
+      gap: var(--space-6);
+      padding-top: var(--space-6);
+      padding-bottom: var(--space-7);
+    }
+  }
+
+  @media (max-width: 620px) {
+    .shop-wrap {
+      padding-left: var(--space-4);
+      padding-right: var(--space-4);
+    }
+
+    .door .button {
+      display: block;
+    }
+
+    .bubble {
+      right: 12%;
+      padding: 1px 4px;
+      border-width: 1px;
+      font-size: 9px;
+    }
+  }
+</style>

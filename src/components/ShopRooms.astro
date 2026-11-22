@@ -1,0 +1,116 @@
+---
+import AffiliateLink from './AffiliateLink.astro';
+import ShopRoom from './ShopRoom.astro';
+import { EDUBAWARE_PAGE_URL, EDUBAWARE_PRICE, YOUTUBE_URL } from '../consts';
+import { getPublishedPosts } from '../lib/posts';
+
+const postCount = (await getPublishedPosts()).length;
+---
+
+<section class="rooms">
+  <div class="shop-wrap">
+    <h2>Walk around the shop</h2>
+    <div class="floor">
+      <ShopRoom
+        layout="side"
+        plate="Screening room"
+        scene="screening"
+        alt="Bip looks worried on a movie screen while 3 people watch from the seats."
+        title="Watch Bip get it wrong."
+        href={YOUTUBE_URL}
+        action="Watch on YouTube"
+      >
+        <p class="room-copy">Videos about the office work behind the job.</p>
+      </ShopRoom>
+      <ShopRoom
+        layout="side"
+        plate="Library"
+        scene="library"
+        alt="Bip beside a tall bookshelf while a member reads in an armchair."
+        title="Read it in plain words."
+        href="/blog/"
+        action="Read the blog"
+      >
+        <p class="room-copy">{postCount} posts on quotes, systems and which problem to fix first.</p>
+      </ShopRoom>
+      <ShopRoom
+        layout="free"
+        plate="Front desk: Clief Notes, free"
+        scene="frontdesk"
+        alt="Bit behind a front desk under a Clief Notes sign, with a customer walking up."
+        title="Meet the source."
+      >
+        <AffiliateLink fillCard />
+      </ShopRoom>
+      <ShopRoom
+        layout="paid"
+        plate="Classroom: EdubaWare, paid"
+        scene="classroom"
+        alt="Bip teaches at a chalkboard that says one task while 3 owners work at desks."
+        title="Build one task that runs."
+        href={EDUBAWARE_PAGE_URL}
+        action="See the EdubaWare school"
+      >
+        <p class="room-copy">
+          My school runs on EdubaWare. You get your own workspace, short lessons in plain words, and
+          practice on one task you repeat every week.
+        </p>
+        <p class="room-copy"><strong>{EDUBAWARE_PRICE} per person, per month, by invitation.</strong></p>
+      </ShopRoom>
+      <ShopRoom
+        layout="side"
+        plate="Break room"
+        scene="breakroom"
+        alt="A painter plays an arcade game in a break room with a coffee machine and fridge."
+        title="Give Bip a shift."
+        href="/play/"
+        action="Play Robo-Intern"
+      >
+        <p class="room-copy">Robo-Intern is the game Bip and Bit come from.</p>
+      </ShopRoom>
+      <ShopRoom
+        layout="side"
+        plate="Office"
+        scene="office"
+        alt="Jeff in a hard hat at a desk with an apple, under house plans on the wall."
+        title="Meet Jeff."
+        href="/about/"
+        action="Read about Jeff"
+      >
+        <p class="room-copy">A teacher who builds homes, teaching you how to build with AI.</p>
+      </ShopRoom>
+    </div>
+  </div>
+</section>
+
+<style>
+  .rooms {
+    padding: var(--space-7) 0;
+    background: var(--cream);
+  }
+
+  .shop-wrap {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-left: var(--space-7);
+    padding-right: var(--space-7);
+  }
+
+  h2 {
+    margin-bottom: var(--space-5);
+  }
+
+  .floor {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: var(--space-4);
+  }
+
+  @media (max-width: 620px) {
+    .shop-wrap {
+      padding-left: var(--space-4);
+      padding-right: var(--space-4);
+    }
+  }
+</style>

@@ -1,0 +1,165 @@
+---
+import ShopScene, { type SceneName } from './ShopScene.astro';
+
+interface Props {
+  plate: string;
+  scene: SceneName;
+  alt: string;
+  title: string;
+  layout: 'side' | 'free' | 'paid';
+  href?: string;
+  action?: string;
+}
+
+const { plate, scene, alt, title, layout, href, action } = Astro.props;
+---
+
+<article class:list={['room', layout]}>
+  <p class="plate">{plate}</p>
+  <div class="inner">
+    <div class="picture"><ShopScene name={scene} alt={alt} /></div>
+    <div class="body">
+      <h3>{title}</h3>
+      <slot />
+      {href && action && <a class="action" href={href}>{action}</a>}
+    </div>
+  </div>
+</article>
+
+<style>
+  .room {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    background: var(--white);
+    border: 3px solid var(--navy);
+  }
+
+  .free {
+    grid-column: span 5;
+  }
+
+  .paid {
+    grid-column: span 7;
+  }
+
+  .side {
+    grid-column: span 6;
+  }
+
+  .plate {
+    margin: 0;
+    padding: var(--space-2) var(--space-4);
+    background: var(--navy);
+    color: var(--white);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .paid .plate {
+    background: var(--cognac-dark);
+  }
+
+  .inner {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    min-width: 0;
+  }
+
+  .side .inner {
+    flex-direction: row;
+  }
+
+  .picture {
+    display: block;
+    width: 100%;
+    border-bottom: 3px solid var(--navy);
+  }
+
+  .side .picture {
+    flex: 0 0 48%;
+    width: 48%;
+    align-self: center;
+    border-bottom: 0;
+    border-right: 3px solid var(--navy);
+  }
+
+  .body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    min-width: 0;
+    padding: var(--space-4);
+  }
+
+  h3 {
+    margin-bottom: var(--space-2);
+    font-size: 1.4rem;
+  }
+
+  .body :global(.room-copy) {
+    margin-bottom: var(--space-3);
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .action {
+    display: inline-flex;
+    align-items: center;
+    align-self: flex-start;
+    min-height: 44px;
+    margin-top: auto;
+    color: var(--cognac-dark);
+    font-weight: 700;
+  }
+
+  .paid .action {
+    padding: 0 var(--space-4);
+    border: 2px solid var(--navy);
+    border-radius: 6px;
+    color: var(--navy);
+    text-decoration: none;
+  }
+
+  .paid .action:hover {
+    background: var(--navy);
+    color: var(--white);
+  }
+
+  @media (min-width: 981px) {
+    .free,
+    .paid {
+      order: -1;
+    }
+  }
+
+  @media (max-width: 980px) {
+    .free,
+    .paid,
+    .side {
+      grid-column: span 12;
+    }
+  }
+
+  @media (max-width: 620px) {
+    .side .inner {
+      flex-direction: column;
+    }
+
+    .side .picture {
+      flex: none;
+      width: 100%;
+      border-right: 0;
+      border-bottom: 3px solid var(--navy);
+    }
+
+    .paid .action {
+      align-self: stretch;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+</style>
