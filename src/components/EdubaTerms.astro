@@ -31,67 +31,110 @@ const limits = [
 ];
 ---
 
-<section class="container reading terms">
-  <h2>What you get</h2>
-  <ul>{included.map((item) => <li>{item}</li>)}</ul>
+<section class="container terms">
+  <div class="panels two">
+    <article class="panel">
+      <h2>What you get</h2>
+      <ul>{included.map((item) => <li>{item}</li>)}</ul>
+    </article>
+    <article class="panel">
+      <h2>How to join</h2>
+      <ol>
+        {
+          steps.map((step) => (
+            <li>
+              <strong>{step.title}.</strong> {step.line}
+            </li>
+          ))
+        }
+      </ol>
+      <a class="button door-button invite" href={EDUBAWARE_INVITE_URL}>Email me for an invitation</a>
+    </article>
+  </div>
 
-  <h2>How to join</h2>
-  <ol>
-    {
-      steps.map((step) => (
-        <li>
-          <strong>{step.title}.</strong> {step.line}
-        </li>
-      ))
-    }
-  </ol>
-  <a class="button door-button invite" href={EDUBAWARE_INVITE_URL}>Email me for an invitation</a>
+  <div class="panels one">
+    <article class="panel">
+      <h2>Know this before you join</h2>
+      <ul class="limits">{limits.map((item) => <li>{item}</li>)}</ul>
+      <p class="seen">
+        I can see your workspace and chats so I can teach and check your work. Other managers of the
+        same EdubaWare organization can see them too. Read the <a href="/privacy/">privacy policy</a>.
+      </p>
+    </article>
+  </div>
 
-  <h2>Know this before you join</h2>
-  <ul>{limits.map((item) => <li>{item}</li>)}</ul>
-  <p>
-    I can see your workspace and chats so I can teach and check your work. Other managers of the same
-    EdubaWare organization can see them too. Read the <a href="/privacy/">privacy policy</a>.
-  </p>
-
-  <h2>Who you are buying from</h2>
-  <p>
-    You are buying from {OWNER_NAME} of {SITE_NAME}, based in {OWNER_LOCATION}. I am one of Jake Van
-    Clief's 7 Masters of ICM, and this school uses ICM Principles by Jake Van Clief. Eduba runs the
-    EdubaWare platform. I run this school on it and handle your billing. Your card statement will show
-    EDUBAWARE.
-  </p>
-
-  <h2 id="refunds">Cancellations and refunds</h2>
-  <p>
-    To cancel, email <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>. Your next charge stops
-    and you keep access until the end of the month you paid for.
-  </p>
-  <p>
-    If it is not for you, email me within {EDUBAWARE_REFUND_DAYS} days of your first payment for a
-    full refund. Later payments and partial months are not refunded.
-  </p>
-
-  <h2>Payment and questions</h2>
-  <p>
-    Stripe processes all card payments, so your card number never reaches me. For anything
-    else, email <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.
-  </p>
+  <div class="panels three">
+    <article class="panel">
+      <h2>Who you are buying from</h2>
+      <p>
+        You are buying from {OWNER_NAME} of {SITE_NAME}, based in {OWNER_LOCATION}. I am one of Jake
+        Van Clief's 7 Masters of ICM, and this school uses ICM Principles by Jake Van Clief. Eduba runs
+        the EdubaWare platform. I run this school on it and handle your billing. Your card statement
+        will show EDUBAWARE.
+      </p>
+    </article>
+    <article class="panel">
+      <h2 id="refunds">Cancellations and refunds</h2>
+      <p>
+        To cancel, email <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>. Your next charge
+        stops and you keep access until the end of the month you paid for.
+      </p>
+      <p>
+        If it is not for you, email me within {EDUBAWARE_REFUND_DAYS} days of your first payment for a
+        full refund. Later payments and partial months are not refunded.
+      </p>
+    </article>
+    <article class="panel">
+      <h2>Payment and questions</h2>
+      <p>
+        Stripe processes all card payments, so your card number never reaches me. For anything else,
+        email <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.
+      </p>
+    </article>
+  </div>
 </section>
 
 <style>
   .terms {
-    padding-top: var(--space-5);
-    padding-bottom: var(--space-7);
+    display: grid;
+    gap: var(--space-4);
+    padding-top: var(--space-4);
+  }
+
+  .panels {
+    display: grid;
+    gap: var(--space-4);
+  }
+
+  .two {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .three {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .panel {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    padding: var(--space-4);
+    background: var(--white);
+    border: 2px solid var(--navy);
+    border-top: 6px solid var(--edubaware);
+    font-size: 1rem;
+    line-height: 1.5;
   }
 
   h2 {
-    margin-top: var(--space-7);
+    margin-bottom: var(--space-3);
     color: var(--edubaware);
+    font-size: 1.4rem;
   }
 
   ul,
   ol {
+    margin: 0 0 var(--space-4);
     padding-left: var(--space-5);
   }
 
@@ -99,11 +142,23 @@ const limits = [
     margin-bottom: var(--space-2);
   }
 
+  .limits {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0 var(--space-6);
+  }
+
+  .panel p:last-child,
+  .panel ul:last-child {
+    margin-bottom: 0;
+  }
+
   a {
     overflow-wrap: anywhere;
   }
 
   .invite {
+    margin-top: auto;
     border-color: var(--edubaware);
     background: var(--edubaware);
     color: var(--white);
@@ -113,5 +168,13 @@ const limits = [
     border-color: var(--edubaware-dark);
     background: var(--edubaware-dark);
     color: var(--white);
+  }
+
+  @media (max-width: 860px) {
+    .two,
+    .three,
+    .limits {
+      grid-template-columns: minmax(0, 1fr);
+    }
   }
 </style>

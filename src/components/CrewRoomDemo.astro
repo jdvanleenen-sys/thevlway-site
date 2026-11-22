@@ -11,7 +11,7 @@ const messages = [
 ---
 
 <section class="demo-band">
-  <div class="demo-wrap">
+  <div class="container">
     <h2>One job, one room</h2>
     <p class="sub">Watch a quote move through a shared room. The job and the people are made up.</p>
     <div class="room" data-crew-demo>
@@ -40,13 +40,6 @@ const messages = [
   .demo-band {
     padding: var(--space-7) 0;
     background: var(--cream);
-  }
-
-  .demo-wrap {
-    width: 100%;
-    max-width: 1040px;
-    margin: 0 auto;
-    padding: 0 var(--space-7);
   }
 
   h2 {
@@ -149,10 +142,6 @@ const messages = [
   }
 
   @media (max-width: 720px) {
-    .demo-wrap {
-      padding: 0 var(--space-4);
-    }
-
     .room-body {
       grid-template-columns: minmax(0, 1fr);
     }

@@ -3,20 +3,14 @@ import ShopScene from './ShopScene.astro';
 import { CONTACT_EMAIL, EDUBAWARE_INVITE_URL, EDUBAWARE_PRICE } from '../consts';
 ---
 
-<section class="edu-wrap hero">
-  <div>
+<section class="container hero">
+  <div class="intro">
     <p class="eyebrow">AI the vL Way on EdubaWare. By invitation.</p>
     <h1>Put your whole crew in one room with the AI.</h1>
     <p class="lede">
       EdubaWare is a shared workspace for your team and an AI agent. Everyone works from the same
       files, in the same chat, on the same job.
     </p>
-    <div class="price-card">
-      <p class="price">{EDUBAWARE_PRICE}</p>
-      <p>per person, per month. Cancel any time.</p>
-      <a class="button door-button invite" href={EDUBAWARE_INVITE_URL}>Email me for an invitation</a>
-      <p class="invite-note">Send the word INVITE to {CONTACT_EMAIL}.</p>
-    </div>
   </div>
   <div class="scene">
     <ShopScene
@@ -24,24 +18,32 @@ import { CONTACT_EMAIL, EDUBAWARE_INVITE_URL, EDUBAWARE_PRICE } from '../consts'
       alt="A pixel-art meeting room. 4 people sit at one long table with a shared laptop while Bip the robot helps. The sign on the wall says one room, and a board shows their shared files."
     />
   </div>
+  <div class="price-bar">
+    <div>
+      <p class="price">{EDUBAWARE_PRICE}</p>
+      <p class="price-note">per person, per month. Cancel any time.</p>
+    </div>
+    <div class="invite-group">
+      <a class="button door-button invite" href={EDUBAWARE_INVITE_URL}>Email me for an invitation</a>
+      <p class="invite-note">Send the word INVITE to {CONTACT_EMAIL}.</p>
+    </div>
+  </div>
 </section>
 
 <style>
-  .edu-wrap {
-    width: 100%;
-    max-width: 1280px;
-    margin: 0 auto;
-    padding-left: var(--space-7);
-    padding-right: var(--space-7);
-  }
-
   .hero {
     display: grid;
-    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
-    gap: var(--space-7);
-    align-items: center;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-5) var(--space-6);
     padding-top: var(--space-7);
-    padding-bottom: var(--space-8);
+    padding-bottom: var(--space-7);
+  }
+
+  .intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 0;
   }
 
   .eyebrow {
@@ -55,32 +57,47 @@ import { CONTACT_EMAIL, EDUBAWARE_INVITE_URL, EDUBAWARE_PRICE } from '../consts'
 
   h1 {
     color: var(--edubaware);
-    font-size: clamp(2rem, 4vw, 3.25rem);
+    font-size: clamp(2rem, 3.6vw, 2.9rem);
     line-height: 1.08;
     letter-spacing: -0.02em;
   }
 
   .lede {
+    margin-bottom: 0;
     font-size: 1.15rem;
   }
 
-  .price-card {
-    margin-top: var(--space-5);
+  .scene {
+    min-width: 0;
+    border: 4px solid var(--edubaware);
+  }
+
+  .price-bar {
+    display: flex;
+    grid-column: 1 / -1;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-3) var(--space-5);
     padding: var(--space-4);
     background: var(--white);
     border: 3px solid var(--edubaware);
   }
 
-  .price-card p {
-    margin-bottom: var(--space-2);
-  }
-
-  .price-card .price {
-    margin-bottom: 0;
+  .price {
+    margin: 0;
     color: var(--edubaware);
     font-size: 2rem;
     font-weight: 700;
     line-height: 1.2;
+  }
+
+  .price-note {
+    margin: 0;
+  }
+
+  .invite-group {
+    min-width: 0;
   }
 
   .invite {
@@ -95,29 +112,22 @@ import { CONTACT_EMAIL, EDUBAWARE_INVITE_URL, EDUBAWARE_PRICE } from '../consts'
     color: var(--white);
   }
 
-  .price-card .invite-note {
+  .invite-note {
+    max-width: 280px;
     margin: var(--space-2) 0 0;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     overflow-wrap: anywhere;
   }
 
-  .scene {
-    border: 4px solid var(--edubaware);
-  }
-
-  @media (max-width: 980px) {
+  @media (max-width: 860px) {
     .hero {
       grid-template-columns: minmax(0, 1fr);
-      gap: var(--space-6);
       padding-top: var(--space-6);
-      padding-bottom: var(--space-7);
     }
-  }
 
-  @media (max-width: 620px) {
-    .edu-wrap {
-      padding-left: var(--space-4);
-      padding-right: var(--space-4);
+    .price-bar {
+      flex-direction: column;
+      align-items: flex-start;
     }
   }
 </style>
