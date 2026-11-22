@@ -1,53 +1,143 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { formatPostDate, getPublishedPosts } from '../../lib/posts';
+import PostCard from '../../components/PostCard.astro';
+import ShopScene from '../../components/ShopScene.astro';
+import TwoDoors from '../../components/TwoDoors.astro';
+import { getPublishedPosts } from '../../lib/posts';
 import { YOUTUBE_URL } from '../../consts';
 
 const posts = await getPublishedPosts();
+const [latest, ...earlier] = posts;
 ---
 
 <Base title="Blog" description="Plain-English posts on running a trades or local service business with simple AI systems.">
-  <section class="container reading page">
-    <h1>Blog</h1>
-    {
-      posts.length === 0 ? (
-        <p>
-          No posts yet. The first one goes up with the first video on the{' '}
-          <a href={YOUTUBE_URL}>YouTube channel</a>.
-        </p>
-      ) : (
-        <ul class="post-list">
-          {posts.map((post) => (
-            <li>
-              <a href={`/blog/${post.id}/`}>{post.data.title}</a>
-              <p class="muted">{formatPostDate(post.data.pubDate)}</p>
-              <p>{post.data.description}</p>
-            </li>
-          ))}
-        </ul>
-      )
-    }
+  <section class="container hero">
+    <div class="intro">
+      <p class="eyebrow">The library</p>
+      <h1>Plain answers for the office work behind the job.</h1>
+      <p class="lede">{posts.length} posts on quotes, systems and which problem to fix first.</p>
+    </div>
+    <div class="scene">
+      <ShopScene name="library" alt="A pixel-art library with a tall bookshelf. Bip stands by the ladder while a member reads in an armchair." />
+    </div>
+  </section>
+
+  <section class="shelf">
+    <div class="container">
+      {
+        latest ? (
+          <>
+            <p class="label">Latest post</p>
+            <PostCard post={latest} featured />
+            <h2>All posts</h2>
+            <ul class="grid">
+              {earlier.map((post) => (
+                <li>
+                  <PostCard post={post} heading="h3" />
+                </li>
+              ))}
+            </ul>
+          </>
+        ) : (
+          <p>
+            No posts yet. The first one goes up with the first video on the{' '}
+            <a href={YOUTUBE_URL}>YouTube channel</a>.
+          </p>
+        )
+      }
+    </div>
+  </section>
+
+  <section class="container start">
+    <h2>2 ways to start</h2>
+    <TwoDoors />
   </section>
 </Base>
 
 <style>
-  .page {
+  .hero {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-5) var(--space-6);
+    padding-top: var(--space-7);
+    padding-bottom: var(--space-7);
+  }
+
+  .intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 0;
+  }
+
+  .eyebrow,
+  .label {
+    margin-bottom: var(--space-3);
+    color: var(--cognac-dark);
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  h1 {
+    font-size: clamp(2rem, 3.6vw, 2.9rem);
+    line-height: 1.08;
+    letter-spacing: -0.02em;
+  }
+
+  .lede {
+    margin-bottom: 0;
+    font-size: 1.15rem;
+  }
+
+  .scene {
+    min-width: 0;
+    border: 4px solid var(--navy);
+  }
+
+  .shelf {
+    padding: var(--space-7) 0;
+    background: var(--cream);
+  }
+
+  .shelf h2 {
+    margin: var(--space-7) 0 var(--space-4);
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--space-4);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .grid li {
+    min-width: 0;
+  }
+
+  .start {
     padding-top: var(--space-7);
   }
 
-  .post-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  @media (max-width: 980px) {
+    .grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
   }
 
-  .post-list li {
-    padding: var(--space-5) 0;
-    border-bottom: 1px solid rgba(107, 101, 96, 0.3);
+  @media (max-width: 860px) {
+    .hero {
+      grid-template-columns: minmax(0, 1fr);
+      padding-top: var(--space-6);
+    }
   }
 
-  .post-list a {
-    font-size: 1.25rem;
-    font-weight: 700;
+  @media (max-width: 620px) {
+    .grid {
+      grid-template-columns: minmax(0, 1fr);
+    }
   }
 </style>

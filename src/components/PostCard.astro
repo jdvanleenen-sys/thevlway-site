@@ -1,0 +1,145 @@
+---
+import { existsSync } from 'node:fs';
+import { join } from 'node:path';
+import { formatPostDate, type BlogPost } from '../lib/posts';
+
+interface Props {
+  post: BlogPost;
+  featured?: boolean;
+  heading?: 'h2' | 'h3';
+}
+
+const { post, featured = false, heading: Heading = 'h2' } = Astro.props;
+const hasThumbnail = existsSync(join(process.cwd(), 'public', 'blog', post.id, 'video-thumbnail.png'));
+const thumbnail = hasThumbnail ? `/blog/${post.id}/video-thumbnail.png` : '/shop/library-back.png';
+---
+
+<article class:list={['post-card', { featured }]}>
+  <img src={thumbnail} alt="" width="1280" height="720" loading={featured ? 'eager' : 'lazy'} />
+  <div class="body">
+    <p class="date">{formatPostDate(post.data.pubDate)}</p>
+    <Heading class="title"><a href={`/blog/${post.id}/`}>{post.data.title}</a></Heading>
+    <p class="description">{post.data.description}</p>
+    <span class="read" aria-hidden="true">Read the post</span>
+  </div>
+</article>
+
+<style>
+  .post-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    height: 100%;
+    background: var(--white);
+    border: 3px solid var(--navy);
+  }
+
+  .post-card:hover {
+    background: var(--cognac-light);
+  }
+
+  .post-card:focus-within {
+    outline: 3px solid var(--cognac);
+    outline-offset: 2px;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-bottom: 3px solid var(--navy);
+  }
+
+  .body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    min-width: 0;
+    padding: var(--space-4);
+  }
+
+  .date {
+    margin-bottom: var(--space-1);
+    color: var(--warm-grey);
+    font-size: 0.9rem;
+  }
+
+  .title {
+    margin-bottom: var(--space-2);
+    font-size: 1.2rem;
+    line-height: 1.25;
+  }
+
+  .title a {
+    text-decoration: none;
+  }
+
+  .title a::after {
+    position: absolute;
+    inset: 0;
+    content: '';
+  }
+
+  .title a:focus-visible {
+    outline: none;
+  }
+
+  .description {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .read {
+    margin-top: auto;
+    color: var(--cognac-dark);
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  .featured {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .featured img {
+    height: 100%;
+    border-right: 3px solid var(--navy);
+    border-bottom: 0;
+  }
+
+  .featured .body {
+    justify-content: center;
+    padding: var(--space-5);
+  }
+
+  .featured .title {
+    font-size: 1.6rem;
+  }
+
+  .featured .read {
+    margin-top: 0;
+  }
+
+  @media (max-width: 760px) {
+    .featured {
+      display: flex;
+    }
+
+    .featured img {
+      height: auto;
+      border-right: 0;
+      border-bottom: 3px solid var(--navy);
+    }
+
+    .featured .body {
+      padding: var(--space-4);
+    }
+
+    .featured .title {
+      font-size: 1.3rem;
+    }
+  }
+</style>
