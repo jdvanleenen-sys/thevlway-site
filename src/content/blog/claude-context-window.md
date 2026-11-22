@@ -166,7 +166,7 @@ Keep it to rules and prices. No customer names or details, because everyone with
 
 The next time you need it, you point Claude Code at it instead of pasting it again.
 
-I teach this step by step in my Skool community. Skool is where my community lives. It's called [See It, Build It, Own It](https://www.skool.com/see-it-build-it-own-it).
+Want help with this? See the [2 ways to start](#start) below.
 
 Open your last long chat tonight and find the thing you keep pasting.
 

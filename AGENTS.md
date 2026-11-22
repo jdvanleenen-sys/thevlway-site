@@ -17,7 +17,7 @@ behind every video. Owner facts (site, blog home) live in that line's `_config/m
 ## Layout
 | Path | Job |
 |---|---|
-| `src/consts.ts` | Site name, owner, Skool and YouTube URLs, nav. The only place links live |
+| `src/consts.ts` | Site name, owner, Clief Notes, EdubaWare and YouTube URLs, nav. The only place links live |
 | `src/content.config.ts` | The blog post contract (frontmatter schema). A post missing a field fails the build |
 | `src/content/blog/*.md` | One file per post. The filename is the URL slug |
 | `src/lib/posts.ts` | Published posts, newest first; drafts excluded everywhere |

@@ -2,6 +2,17 @@
 import AffiliateLink from './AffiliateLink.astro';
 import ShopScene from './ShopScene.astro';
 import { EDUBAWARE_PAGE_URL, EDUBAWARE_PRICE, EDUBAWARE_REFUND_DAYS } from '../consts';
+
+const bipSayings = [
+  'Quotes are sent, Boss. Probably.',
+  'I filed the invoices. Somewhere.',
+  'I double-checked it. Once.',
+  'Your 2:00 is at 3:00. Or 1:00.',
+  'I rounded the estimate. Up.',
+  'The customer said yes. I think.',
+  'Found the receipt. Lost the job.',
+  'Boss, what is a permit?',
+];
 ---
 
 <section class="shop-wrap hero">
@@ -35,7 +46,7 @@ import { EDUBAWARE_PAGE_URL, EDUBAWARE_PRICE, EDUBAWARE_REFUND_DAYS } from '../c
     >
       <img class="walker" src="/shop/bit-walk.png" alt="" width="40" height="56" />
     </ShopScene>
-    <span class="bubble">Quotes are sent, Boss. Probably.</span>
+    <span class="bubble" aria-hidden="true" data-sayings={JSON.stringify(bipSayings)}>{bipSayings[0]}</span>
   </div>
 </section>
 
@@ -155,6 +166,14 @@ import { EDUBAWARE_PAGE_URL, EDUBAWARE_PRICE, EDUBAWARE_REFUND_DAYS } from '../c
     white-space: nowrap;
   }
 
+  .bubble {
+    transition: opacity 0.25s ease;
+  }
+
+  .bubble.quiet {
+    opacity: 0;
+  }
+
   @keyframes walk {
     0% {
       left: 8%;
@@ -200,3 +219,26 @@ import { EDUBAWARE_PAGE_URL, EDUBAWARE_PRICE, EDUBAWARE_REFUND_DAYS } from '../c
     }
   }
 </style>
+
+<script>
+  const SHOW_MS = 3600;
+  const PAUSE_MS = 1300;
+  const bubble = document.querySelector<HTMLElement>('.bubble[data-sayings]');
+
+  if (bubble && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const sayings = JSON.parse(bubble.dataset.sayings ?? '[]') as string[];
+    let current = 0;
+
+    const showNextSaying = () => {
+      bubble.classList.add('quiet');
+      window.setTimeout(() => {
+        current = (current + 1) % sayings.length;
+        bubble.textContent = sayings[current];
+        bubble.classList.remove('quiet');
+        window.setTimeout(showNextSaying, SHOW_MS);
+      }, PAUSE_MS);
+    };
+
+    window.setTimeout(showNextSaying, SHOW_MS);
+  }
+</script>

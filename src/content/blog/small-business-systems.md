@@ -106,6 +106,6 @@ Use your own problem and your own words for the cost. A rough guess is enough. T
 
 Here's your move for this week: write down your 1 office problem and what it costs you.
 
-If you want help with it, the full lesson and a prompt that walks you through all 3 steps on your own business, one question at a time, are free in [my Skool community](https://www.skool.com/see-it-build-it-own-it). It's lesson 1.1 in Start Here. When you have your 1 problem, post it in the Start Here category.
+Want help with this? See the [2 ways to start](#start) below.
 
 More at [thevlway.com](/).

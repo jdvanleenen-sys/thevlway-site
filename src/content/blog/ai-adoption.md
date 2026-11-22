@@ -109,7 +109,7 @@ You won't know if it's sticking today. You'll see it at next month's check-in. T
 
 Once your team uses AI each day, the next move is building the system it runs on. If you're deciding what to pay for and what to build yourself, [build vs buy software](/blog/build-vs-buy-software/) runs 2 questions on that.
 
-Post your team's before and after in [my Skool community](https://www.skool.com/see-it-build-it-own-it). Leave out staff and customer names.
+Want help with this? See the [2 ways to start](#start) below.
 
 More at [thevlway.com](/).
 

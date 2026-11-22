@@ -12,7 +12,7 @@ draft: false
 
 A business problem statement is a short note that says what's broken, what it costs you, and what better would look like. For a trades business, 5 lines is enough. You can write it on the back of a quote.
 
-In my community we call it a Build Card. It's the first thing a new member posts. This post gives you the same 5 lines, and you can use them anywhere: with your crew, with your bookkeeper, or with your AI.
+I call it a Build Card. This post gives you the 5 lines, and you can use them anywhere: with your crew, with your bookkeeper, or with your AI.
 
 ## Why a business problem statement comes first
 
@@ -86,7 +86,7 @@ That took 5 lines. And now anyone who reads it knows where to start.
 
 A problem statement that stays in your truck doesn't do much.
 
-So show it to 1 person who can help. In my community, that's the whole point of the card. You post it, then you read 1 other member's card and leave 1 helpful reply. ([That step in the video](https://www.youtube.com/watch?v=_7NUTfwkYNE&t=50s))
+So show it to 1 person who can help. That's the whole point of the card. Hand it to them and ask for 1 helpful reply. ([That step in the video](https://www.youtube.com/watch?v=_7NUTfwkYNE&t=50s))
 
 Reading someone else's card helps you too. You'll see your own problem in a different trade.
 
@@ -96,6 +96,6 @@ Once it's written, the next question is how to fix it. [Build vs buy software](/
 
 Here's your move for this week: fill in the 5 lines, with your own number on line 5.
 
-If you want help with it, the full Build Card and a prompt that walks you through it one question at a time are free in [my Skool community](https://www.skool.com/see-it-build-it-own-it). It's lesson 1.4 in Start Here. Post your card there, and I'll point you to where to start.
+Want help with this? See the [2 ways to start](#start) below.
 
 More at [thevlway.com](/).

@@ -108,7 +108,7 @@ The stuff that matters still stays yours. You set the prices. You do the work. Y
 
 ## Get the same setup for your shop
 
-The Summit Coat folders are free in my Skool community, [See It · Build It · Own It](https://www.skool.com/see-it-build-it-own-it). You get the 6 folders, the instructions Claude follows and the quote and invoice template, plus 3 short guides with prompts you can run on your own business.
+Want this setup for your shop? See the [2 ways to start](#start) below.
 
 More posts like this are on the [AI the vL Way blog](/blog/). If you're new here, [start on the home page](/).
 

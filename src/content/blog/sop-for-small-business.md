@@ -71,7 +71,7 @@ This step shows whether your folder works without you in the room.
 
 Think of a new hire on day 1. If they call you 5 times, the work order had gaps.
 
-So give your folder to someone who doesn't know your business. A family member works, or another member of the community. Tell them, "Use this folder with your AI, and don't ask me anything."
+So give your folder to someone who doesn't know your business. A family member or a friend works. Tell them, "Use this folder with your AI, and don't ask me anything."
 
 Back to Andre. He hands his Quotes folder to his brother. His brother has never quoted a cleaning job. His quote comes out close to Andre's. So the folder passed its first test.
 
@@ -89,7 +89,7 @@ Skip step 1, and you may end up with 6 half-built folders. Skip step 2, and your
 
 ## Write your first folder
 
-Here's your move for this week. Build the folder for your leakiest stage, with the 4 parts. Then post 1 line about what you built in your Build Card thread.
+Here's your move for this week. Build the folder for your leakiest stage, with the 4 parts.
 
 If the build turns into paperwork questions, [Canada's business services page](https://www.canada.ca/en/services/business.html) lists what's available in one place.
 
@@ -97,6 +97,6 @@ If the build turns into paperwork questions, [Canada's business services page](h
 
 You came in with 6 folders. Now you can build the first one so it works without you in the room.
 
-The full lesson, with the free hands-on builder and a prompt that walks you through it on your own business, is free in [my Skool community](https://www.skool.com/see-it-build-it-own-it). It's lesson 2.2 in Map Your Business.
+Want help with this? See the [2 ways to start](#start) below.
 
 More at [thevlway.com](/).

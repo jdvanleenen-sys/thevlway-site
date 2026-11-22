@@ -122,6 +122,6 @@ Not sure which problem to run this on? [Which business problem to fix first](/bl
 
 Here's your move for this week: take your bottleneck, and write 1 line. Build or rent, and why.
 
-If you want help with it, the full lesson is free in [my Skool community](https://www.skool.com/see-it-build-it-own-it). It's lesson 2.4 in Map Your Business, and the 3 questions are there to copy. Then post build or rent, and your 1 line reason, in your Build Card thread.
+Want help with this? See the [2 ways to start](#start) below.
 
 More at [thevlway.com](/).

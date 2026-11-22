@@ -120,6 +120,6 @@ And if your leaking folder is Payments, the Canada Revenue Agency's page on [kee
 
 Here's your move for this week: write down the name of your bottleneck and what it costs you in a normal week.
 
-If you want help with it, the full lesson, with all 6 names, is free in [my Skool community](https://www.skool.com/see-it-build-it-own-it). It's lesson 2.3 in Map Your Business. When you have yours, post your leakiest folder, and why, in your Build Card thread.
+Want help with this? See the [2 ways to start](#start) below.
 
 More at [thevlway.com](/).

@@ -37,7 +37,7 @@ If you're stuck, start with the usual suspects. For most trades, it's 1 of these
 - Lead follow-up
 - Job details getting lost
 
-If you did lesson 1.1 in the community, put your one thing from it on the list too. That lesson is also a post: [small business systems in 3 steps](/blog/small-business-systems/).
+If you've read [small business systems in 3 steps](/blog/small-business-systems/), put your one thing from it on the list too.
 
 Here's why the list matters. You can't compare problems that stay in your head. On paper, you can.
 
@@ -93,6 +93,6 @@ Once you have your sentence, [write it up as a business problem statement](/blog
 
 Here's your move for this week: write your first win as 1 sentence, with your own number in it.
 
-If you want help with it, the full lesson and a prompt that walks you through all 3 steps on your own business, one question at a time, are free in [my Skool community](https://www.skool.com/see-it-build-it-own-it). It's lesson 1.3 in Start Here.
+Want help with this? See the [2 ways to start](#start) below.
 
 More at [thevlway.com](/).

@@ -76,7 +76,7 @@ Here's your move for this week: write down the one thing you most want working i
 
 Not sure which thing that is? [Which business problem to fix first](/blog/which-business-problem-to-fix-first/) shows you how to pick it by what it costs you, not by what bugs you most.
 
-If you want help with it, the full lesson and a prompt that walks you through this on your own business, one question at a time, are free in [my Skool community](https://www.skool.com/see-it-build-it-own-it). It's lesson 1.2 in Start Here. The lesson also has What Am I Paying For, a check you paste into Claude, the AI assistant I use, that adds up what your software costs you a month and a year.
+Want help with this? See the [2 ways to start](#start) below.
 
 One thing we learned building it: an AI chat isn't a calculator. It writes the number that looks most likely, so on a long column it can slip a digit and still sound sure. So we took the adding away from it. The AI reads your statement, and a small script we wrote does the math, the same way every time. Claude needs code switched on to run it (Settings, then Capabilities). If it's off, Claude adds it by hand, marks the total "added without a calculator, check it", and you add the column on a calculator.
 

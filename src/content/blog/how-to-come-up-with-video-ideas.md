@@ -81,7 +81,7 @@ The bridle is the part you own. Mine is a folder of rules for how I work, and my
 
 ## Try it on your next idea
 
-The 12 steps, the prompt for each stage and a short page you can keep open are free in my Skool community. It's called [See It, Build It, Own It](https://www.skool.com/see-it-build-it-own-it), and the lesson is 7.6 in Build Anything.
+Want help with this? See the [2 ways to start](#start) below.
 
 Pick 1 thing you want to make for your business. Talk until you have your 1 sentence and your twist. Then say approved.
 

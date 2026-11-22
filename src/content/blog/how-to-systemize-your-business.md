@@ -101,6 +101,6 @@ If a new plan means sorting out the paperwork side too, [Canada's business servi
 
 You came in with a map, a bottleneck, and a build or rent call. Now you have a path. You're no longer guessing.
 
-The full lesson, with all 3 paths and a prompt that walks you through it on your own business, is free in [my Skool community](https://www.skool.com/see-it-build-it-own-it). It's lesson 2.5 in Map Your Business. When you have your path, post your path, your outcome and your date in your Build Card thread.
+Want help with this? See the [2 ways to start](#start) below.
 
 More at [thevlway.com](/).

@@ -102,7 +102,7 @@ So, can you give me a price today? Yes, and it's checked, not guessed.
 
 ## Get the same setup
 
-The Summit Coat demo and a setup guide are free in my Skool community, [See It, Build It, Own It](https://www.skool.com/see-it-build-it-own-it). The guide walks you through the copy, the connection and the Project, with a prompt that sets up the emails and approval links for your own copy.
+Want this setup for your shop? See the [2 ways to start](#start) below.
 
 Swap the demo prices for your own before you quote a real job.
 

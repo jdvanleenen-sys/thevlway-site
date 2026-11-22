@@ -209,7 +209,7 @@ Then take your last 10 finished jobs, good and bad. Fewer? Use them all. Count h
 
 Next up is your offer. You write it for the crowd you just named.
 
-If you're a member, post your sentence and your count in [my Skool community](https://www.skool.com/see-it-build-it-own-it). Your 1 sentence, and "N of my last 10 jobs fit it". Leave your customers' names out of the post.
+Want help with this? See the [2 ways to start](#start) below.
 
 If you want to see Claude used on another part of a trades business, [Claude + Airtable](/blog/claude-airtable/) shows how to build a painting quote on your phone.
 
