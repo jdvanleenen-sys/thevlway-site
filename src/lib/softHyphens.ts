@@ -19,9 +19,24 @@ function addBreaks(word: string): string {
     .join(SOFT_HYPHEN);
 }
 
+// Long emails and web addresses get invisible break points, which copying and clicking ignore.
+function addAddressBreaks(element: HTMLElement) {
+  const walker = document.createTreeWalker(element, NodeFilter.SHOW_TEXT);
+  const nodes: Text[] = [];
+  while (walker.nextNode()) nodes.push(walker.currentNode as Text);
+  nodes.forEach((node) => {
+    if (node.parentElement?.closest(SKIP) || !/\S+[@/.]\S{6,}/.test(node.data)) return;
+    const pieces = node.data.split(/(?<=[@/])|(?<=\.)(?=[a-z])/);
+    if (pieces.length < 2) return;
+    const parts = pieces.flatMap((piece, index) => (index ? [document.createElement('wbr'), piece] : [piece]));
+    node.replaceWith(...parts);
+  });
+}
+
 export function addSoftHyphens(root: ParentNode, selector: string) {
   root.querySelectorAll<HTMLElement>(selector).forEach((element) => {
     if (element.closest(SKIP)) return;
+    addAddressBreaks(element);
     const walker = document.createTreeWalker(element, NodeFilter.SHOW_TEXT);
     const nodes: Text[] = [];
     while (walker.nextNode()) nodes.push(walker.currentNode as Text);
