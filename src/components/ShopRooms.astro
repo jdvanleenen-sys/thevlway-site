@@ -1,7 +1,7 @@
 ---
 import AffiliateLink from './AffiliateLink.astro';
 import ShopRoom from './ShopRoom.astro';
-import { EDUBAWARE_PAGE_URL, EDUBAWARE_PRICE, YOUTUBE_URL } from '../consts';
+import { EDUBAWARE_PAGE_URL, EDUBAWARE_PRICE, TEAMS_PATH, YOUTUBE_URL } from '../consts';
 import { getPublishedPosts } from '../lib/posts';
 
 const postCount = (await getPublishedPosts()).length;
@@ -78,6 +78,18 @@ const postCount = (await getPublishedPosts()).length;
         action="Read about Jeff"
       >
         <p class="room-copy">I've taught biology, free throws and real estate. AI is just the next subject I get to show you.</p>
+      </ShopRoom>
+      <ShopRoom
+        layout="full"
+        plate="Boardroom: EdubaWare, for teams"
+        scene="teamroom"
+        alt="4 people sit at a long burgundy table with a laptop and coffee, under a One Room sign and a board of 3 linked folders, while Bip stands at the end of the table."
+        title="Finish the job together."
+        href={TEAMS_PATH}
+        action="See AI the vL Way for Teams"
+      >
+        <p class="room-copy">Your departments finish their work together in shared EdubaWare chats, with templates made for the different jobs your company runs.</p>
+        <p class="room-copy"><strong>{EDUBAWARE_PRICE} per seat, per month.</strong></p>
       </ShopRoom>
     </div>
   </div>
