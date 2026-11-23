@@ -4,9 +4,10 @@ import { CLIEF_NOTES_AFFILIATE_URL, CLIEF_NOTES_DISCLOSURE } from '../consts';
 interface Props {
   fillCard?: boolean;
   compact?: boolean;
+  edubawareColor?: boolean;
 }
 
-const { fillCard = false, compact = false } = Astro.props;
+const { fillCard = false, compact = false, edubawareColor = false } = Astro.props;
 ---
 
 <div class:list={['affiliate', { 'fill-card': fillCard }]}>
@@ -16,7 +17,11 @@ const { fillCard = false, compact = false } = Astro.props;
     )
   }
   <p class="affiliate-disclosure">{CLIEF_NOTES_DISCLOSURE}</p>
-  <a class="button button-primary door-button" href={CLIEF_NOTES_AFFILIATE_URL} rel="sponsored">
+  <a
+    class:list={['button door-button', edubawareColor ? 'button-edubaware' : 'button-primary']}
+    href={CLIEF_NOTES_AFFILIATE_URL}
+    rel="sponsored"
+  >
     Join Clief Notes (affiliate link)
   </a>
 </div>

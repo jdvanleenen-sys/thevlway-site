@@ -136,6 +136,19 @@ img {
   color: var(--white);
 }
 
+/* Burgundy is EdubaWare's colour. Every button that leads into EdubaWare uses it, free or paid. */
+.button-edubaware {
+  border-color: var(--edubaware);
+  background: var(--edubaware);
+  color: var(--white);
+}
+
+.button-edubaware:hover {
+  border-color: var(--edubaware-dark);
+  background: var(--edubaware-dark);
+  color: var(--white);
+}
+
 /* Every free and paid door button is this exact size. 82px is the narrowest card's side space. */
 .door-button {
   display: flex;

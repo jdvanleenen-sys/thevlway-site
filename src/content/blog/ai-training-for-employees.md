@@ -4,9 +4,9 @@ description: 'AI training for employees starts with an audit, not a lesson. Run 
 pubDate: 2026-10-12
 keyword: 'ai training for employees'
 draft: false
+youtubeId: '59zxFUDMTgY'
+videoUploadDate: 2026-10-08
 ---
-
-[![Watch: AI training for employees, start with an audit, not a lesson](/blog/ai-training-for-employees/video-thumbnail.png)](https://www.youtube.com/watch?v=59zxFUDMTgY)
 
 *This is the video behind the post. It follows Owen, a made-up roofing owner, through all 3 steps, so you can watch the whole thing work before you try it with your own team.*
 

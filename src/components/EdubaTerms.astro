@@ -1,6 +1,7 @@
 ---
 import {
   CONTACT_EMAIL,
+  EDUBAWARE_FREE_URL,
   EDUBAWARE_INVITE_URL,
   EDUBAWARE_PRICE,
   EDUBAWARE_REFUND_DAYS,
@@ -8,14 +9,6 @@ import {
   OWNER_NAME,
   SITE_NAME,
 } from '../consts';
-
-const included = [
-  'Your own workspace in EdubaWare, where an AI agent walks you through each lesson.',
-  'Short lessons in plain words, for people who are not technical.',
-  'Practice on one task you repeat every week, so what you build is useful at work.',
-  'New lessons as they are finished. The first lessons are open now.',
-  '2 or more paid seats get 1 private shared room for your crew.',
-];
 
 const steps = [
   { title: 'Email me', line: `Send the word INVITE to ${CONTACT_EMAIL}.` },
@@ -32,13 +25,9 @@ const limits = [
 ];
 ---
 
-<section class="container terms">
+<section class="container terms" id="join">
   <div class="panels two">
-    <article class="panel">
-      <h2>What you get</h2>
-      <ul>{included.map((item) => <li>{item}</li>)}</ul>
-    </article>
-    <article class="panel">
+    <article class="panel depth-box">
       <h2>How to join</h2>
       <ol>
         {
@@ -49,14 +38,12 @@ const limits = [
           ))
         }
       </ol>
-      <a class="button door-button invite" href={EDUBAWARE_INVITE_URL}>Email me for an invitation</a>
+      <p class="free">Want the free lessons first? <a href={EDUBAWARE_FREE_URL}>Email me the word FREE</a>.</p>
+      <a class="button button-edubaware door-button invite" href={EDUBAWARE_INVITE_URL}>Ask for a founding seat</a>
     </article>
-  </div>
-
-  <div class="panels one">
-    <article class="panel">
+    <article class="panel depth-box">
       <h2>Know this before you join</h2>
-      <ul class="limits">{limits.map((item) => <li>{item}</li>)}</ul>
+      <ul>{limits.map((item) => <li>{item}</li>)}</ul>
       <p class="seen">
         I can see your workspace and chats so I can teach and check your work. Other managers of the
         same EdubaWare organization can see them too. Read the <a href="/privacy/">privacy policy</a>.
@@ -65,7 +52,7 @@ const limits = [
   </div>
 
   <div class="panels three">
-    <article class="panel">
+    <article class="panel depth-box">
       <h2>Who you are buying from</h2>
       <p>
         You are buying from {OWNER_NAME} of {SITE_NAME}, based in {OWNER_LOCATION}. I am one of Jake
@@ -74,7 +61,7 @@ const limits = [
         will show EDUBAWARE.
       </p>
     </article>
-    <article class="panel">
+    <article class="panel depth-box">
       <h2 id="refunds">Cancellations and refunds</h2>
       <p>
         To cancel, email <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>. Your next charge
@@ -85,7 +72,7 @@ const limits = [
         full refund. Later payments and partial months are not refunded.
       </p>
     </article>
-    <article class="panel">
+    <article class="panel depth-box">
       <h2>Payment and questions</h2>
       <p>
         Stripe processes all card payments, so your card number never reaches me. For anything else,
@@ -143,12 +130,6 @@ const limits = [
     margin-bottom: var(--space-2);
   }
 
-  .limits {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 0 var(--space-6);
-  }
-
   .panel p:last-child,
   .panel ul:last-child {
     margin-bottom: 0;
@@ -160,21 +141,11 @@ const limits = [
 
   .invite {
     margin-top: auto;
-    border-color: var(--edubaware);
-    background: var(--edubaware);
-    color: var(--white);
-  }
-
-  .invite:hover {
-    border-color: var(--edubaware-dark);
-    background: var(--edubaware-dark);
-    color: var(--white);
   }
 
   @media (max-width: 860px) {
     .two,
-    .three,
-    .limits {
+    .three {
       grid-template-columns: minmax(0, 1fr);
     }
   }

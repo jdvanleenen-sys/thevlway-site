@@ -1,0 +1,82 @@
+---
+import AffiliateLink from './AffiliateLink.astro';
+import { EDUBAWARE_FREE_URL, ICM_PAPER_URL } from '../consts';
+---
+
+<section class="method-band" id="method">
+  <div class="container">
+    <h2>The method is Jake's. The teaching is mine.</h2>
+    <div class="columns">
+      <article class="card depth-box">
+        <p class="label">The method</p>
+        <h3>ICM Principles by Jake Van Clief</h3>
+        <p>
+          Jake Van Clief is the person behind Interpretable Context Methodology, or ICM. ICM structure
+          has folders and notes that show AI where to look. Jake and David McDermott published it in
+          2026. <a href={ICM_PAPER_URL}>Read the ICM paper</a>.
+        </p>
+        <AffiliateLink fillCard edubawareColor />
+      </article>
+      <article class="card depth-box">
+        <p class="label">The teacher</p>
+        <h3>Jeff van Leenen</h3>
+        <p>
+          I was a school teacher for 24 years. Now I am an executive at a home building company, so I
+          know the office work behind the job. I am one of Jake Van Clief's 7 Masters of ICM.
+        </p>
+        <p>You bring your task, and I help you apply his method to it.</p>
+        <a class="button button-edubaware door-button action" href={EDUBAWARE_FREE_URL}>Start free</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<style>
+  .method-band {
+    margin-top: var(--space-7);
+    padding: var(--space-7) 0;
+    background: var(--cream);
+  }
+
+  .columns {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-4);
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    padding: var(--space-5);
+    background: var(--white);
+    border: 2px solid var(--navy);
+    border-top: 6px solid var(--edubaware);
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .label {
+    margin-bottom: var(--space-1);
+    color: var(--edubaware);
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    color: var(--edubaware);
+    font-size: 1.4rem;
+  }
+
+  .action {
+    margin-top: auto;
+  }
+
+  @media (max-width: 860px) {
+    .columns {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+</style>

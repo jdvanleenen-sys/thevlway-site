@@ -36,17 +36,17 @@ const providers = [
       <p class="eyebrow">Effective {EFFECTIVE_DATE}</p>
       <h1>Privacy policy</h1>
       <p class="lede">
-        This policy covers thevlway.com and paid EdubaWare seats sold by {OWNER_NAME} of {SITE_NAME},
+        This policy covers thevlway.com and free and paid EdubaWare seats from {OWNER_NAME} of {SITE_NAME},
         based in {OWNER_LOCATION}. I am responsible for the personal information described here.
       </p>
     </header>
 
     <div class="panels two">
-      <section class="panel">
+      <section class="panel depth-box">
         <h2>What I collect</h2>
         <ul>{collected.map((item) => <li>{item}</li>)}</ul>
       </section>
-      <section class="panel">
+      <section class="panel depth-box">
         <h2>How I use it</h2>
         <ul>{uses.map((item) => <li>{item}</li>)}</ul>
         <p class="strong">I do not sell your personal information.</p>
@@ -54,7 +54,7 @@ const providers = [
     </div>
 
     <div class="panels">
-      <section class="panel workspace">
+      <section class="panel workspace depth-box">
         <h2>Who can see your workspace</h2>
         <p>
           I can see your EdubaWare workspace and chats so I can teach and check your work. Other managers
@@ -67,7 +67,7 @@ const providers = [
     </div>
 
     <div class="panels">
-      <section class="panel">
+      <section class="panel depth-box">
         <h2>Who I share it with</h2>
         <p>I share only what these providers need to do their job:</p>
         <ul class="providers">
@@ -84,14 +84,14 @@ const providers = [
     </div>
 
     <div class="panels three">
-      <section class="panel">
+      <section class="panel depth-box">
         <h2>Where it is stored</h2>
         <p>
           These providers may store or process your information outside Canada, including in the United
           States, where it may be subject to the laws of that country.
         </p>
       </section>
-      <section class="panel">
+      <section class="panel depth-box">
         <h2>How long I keep it</h2>
         <p>
           I keep your account information while you have a seat and for as long as I need it after that
@@ -99,7 +99,7 @@ const providers = [
           purposes.
         </p>
       </section>
-      <section class="panel">
+      <section class="panel depth-box">
         <h2>Cookies</h2>
         <p>
           This site does not use advertising or analytics cookies. Stripe and EdubaWare use their own
@@ -109,7 +109,7 @@ const providers = [
     </div>
 
     <div class="panels two">
-      <section class="panel">
+      <section class="panel depth-box">
         <h2>Your choices</h2>
         <p>
           You can ask to see, correct or delete your personal information, or withdraw your consent, by
@@ -118,7 +118,7 @@ const providers = [
           Commissioner of Alberta.
         </p>
       </section>
-      <section class="panel">
+      <section class="panel depth-box">
         <h2>Changes and contact</h2>
         <p>
           If this policy changes, I will update the date at the top. Questions go

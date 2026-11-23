@@ -9,10 +9,15 @@ const blog = defineCollection({
   schema: z.object({
     title: z.string().max(70),
     description: z.string().min(50).max(170),
+    // Optional shorter versions for search results. The page itself keeps title and description.
+    seoTitle: z.string().max(60).optional(),
+    seoDescription: z.string().min(70).max(160).optional(),
     pubDate: z.coerce.date(),
     updatedDate: z.coerce.date().optional(),
     keyword: z.string(),
     youtubeId: z.string().optional(),
+    // The video's YouTube publish date. Google requires it for video search results.
+    videoUploadDate: z.coerce.date().optional(),
     draft: z.boolean().default(false),
   }),
 });

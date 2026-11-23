@@ -1,0 +1,103 @@
+---
+import {
+  EDUBAWARE_FOUNDING_SEATS,
+  EDUBAWARE_FREE_URL,
+  EDUBAWARE_INVITE_URL,
+  EDUBAWARE_PRICE,
+} from '../consts';
+
+const understand = [
+  'One Job, One Page: put your weekly task on 1 page, step by step.',
+  'The Fresh Chat Test: watch a new AI try to use a folder and see where it gets lost.',
+  'You work in EdubaWare, a website for sharing folders with AI.',
+];
+
+const build = [
+  'Turn your 1 page into a task that runs.',
+  'I am in your chat when you get stuck.',
+  'Your work gets checked, and you get 1 fix from me each week.',
+];
+---
+
+<section class="paths-band" id="paths">
+  <div class="container">
+    <h2>2 ways to work with me</h2>
+    <div class="columns">
+      <article class="card depth-box">
+        <p class="label">Free</p>
+        <h3>Understand it with me</h3>
+        <ul>{understand.map((line) => <li>{line}</li>)}</ul>
+        <p class="leave"><strong>You leave with:</strong> a plan for your task, and why the folder matters.</p>
+        <a class="button button-edubaware door-button invite" href={EDUBAWARE_FREE_URL}>Start free</a>
+      </article>
+      <article class="card depth-box">
+        <p class="label">{EDUBAWARE_PRICE} a month, {EDUBAWARE_FOUNDING_SEATS} founding seats</p>
+        <h3>Build it with me</h3>
+        <ul>{build.map((line) => <li>{line}</li>)}</ul>
+        <p class="leave">
+          <strong>The goal:</strong> your task runs in steps, checks itself and waits for your sign-off.
+          I am finishing the lessons for this part with the first group.
+        </p>
+        <a class="button button-edubaware door-button invite" href={EDUBAWARE_INVITE_URL}>Ask for a founding seat</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<style>
+  .paths-band {
+    padding: var(--space-7) 0;
+    background: var(--cream);
+  }
+
+  .columns {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-4);
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    padding: var(--space-5);
+    background: var(--white);
+    border: 2px solid var(--navy);
+    border-top: 6px solid var(--edubaware);
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .label {
+    margin-bottom: var(--space-1);
+    color: var(--edubaware);
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    color: var(--edubaware);
+    font-size: 1.4rem;
+  }
+
+  ul {
+    margin: 0 0 var(--space-4);
+    padding-left: var(--space-5);
+  }
+
+  li {
+    margin-bottom: var(--space-2);
+  }
+
+  .invite {
+    margin-top: auto;
+  }
+
+  @media (max-width: 760px) {
+    .columns {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+</style>

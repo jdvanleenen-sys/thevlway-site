@@ -4,12 +4,12 @@ import { EDUBAWARE_PAGE_URL, EDUBAWARE_PRICE } from '../consts';
 ---
 
 <section class="two-doors" aria-label="2 ways to learn this">
-  <article class="door">
+  <article class="door depth-box">
     <p class="door-name">Free</p>
     <AffiliateLink fillCard />
   </article>
 
-  <article class="door paid">
+  <article class="door paid depth-box">
     <p class="door-name">Paid</p>
     <p>My school, AI the vL Way, runs on EdubaWare, a website for sharing folders with AI.</p>
     <p class="disclosure">{EDUBAWARE_PRICE} a month, by invitation.</p>
@@ -48,6 +48,7 @@ import { EDUBAWARE_PAGE_URL, EDUBAWARE_PRICE } from '../consts';
   }
 
   .paid {
+    --depth-edge: var(--edubaware-dark);
     border-top-color: var(--edubaware);
   }
 

@@ -33,7 +33,7 @@ const bring = [
     <div class="ladder">
       {
         rungs.map((rung) => (
-          <div class:list={['rung', { active: rung.active }]}>
+          <div class:list={['rung', 'depth-box', { active: rung.active }]}>
             <span class="num">{rung.letter}</span>
             <span class="label">{rung.label}</span>
           </div>
@@ -41,7 +41,7 @@ const bring = [
       }
     </div>
 
-    <section class="panel">
+    <section class="panel depth-box">
       <h2>Here's the thing</h2>
       <p class="lede">Some of you already use AI every week. Some of you tried it once and stopped. So this week isn't a lesson; it's an audit. We're going to find out what actually stuck, in front of everyone, with zero shame attached.</p>
       <p>If you've been using AI every week, you'll get to show that off. If you haven't touched it in months, that's useful information too, for you and for the team. Either way, nobody's behind. We're just starting from the truth instead of the assumption.</p>
@@ -50,14 +50,14 @@ const bring = [
       </div>
     </section>
 
-    <section class="panel">
+    <section class="panel depth-box">
       <h2>Before you show up: run this</h2>
       <p>Most people freeze when you ask "how could AI help you at work." That's not a you problem: it's a blank page problem. Nobody brainstorms well from nothing. So don't try. Pick your role below, copy the prompt it builds, and paste it into Claude or ChatGPT. It'll ask you a few quick questions about your actual week, then hand you three specific things worth trying, ranked by how much time they'd likely save you.</p>
       <Week1Tool />
     </section>
 
     <div class="pair">
-      <section class="panel">
+      <section class="panel depth-box">
         <h2>What to bring to Session 1</h2>
         <ul class="checklist">
           {
@@ -71,7 +71,7 @@ const bring = [
         </ul>
       </section>
 
-      <section class="panel teaser">
+      <section class="panel teaser depth-box">
         <p class="eyebrow">Coming in Week 2</p>
         <h3>Why you'll never do this again</h3>
         <p>The prompt above works, but notice it had to ask you a bunch of questions it shouldn't need to ask twice. Next week we fix that for good: you'll build a stored context file so every conversation starts already knowing you. Twenty minutes, once, and the re-explaining stops forever.</p>

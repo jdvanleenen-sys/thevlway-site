@@ -4,9 +4,9 @@ description: 'An SOP for small business that an AI can run: pick 1 folder, write
 pubDate: 2026-10-06
 keyword: 'sop for small business'
 draft: false
+youtubeId: 'VcbW12lMgqg'
+videoUploadDate: 2026-10-06
 ---
-
-[![Watch: SOP for small business, 4 lines your AI can actually follow](/blog/sop-for-small-business/video-thumbnail.png)](https://www.youtube.com/watch?v=VcbW12lMgqg)
 
 *This is the video behind the post. It follows one cleaning company owner through all 3 steps, so you can watch a folder get built and then tested on someone who doesn't know the business.*
 

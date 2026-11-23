@@ -1,32 +1,51 @@
 ---
 import ShopScene from './ShopScene.astro';
-import { CONTACT_EMAIL, EDUBAWARE_INVITE_URL, EDUBAWARE_PRICE } from '../consts';
+import {
+  CONTACT_EMAIL,
+  EDUBAWARE_FOUNDING_SEATS,
+  EDUBAWARE_FREE_URL,
+  EDUBAWARE_INVITE_URL,
+  EDUBAWARE_PRICE,
+  OWNER_NAME,
+} from '../consts';
 ---
 
 <section class="container hero">
   <div class="intro">
-    <p class="eyebrow">AI the vL Way on EdubaWare. By invitation.</p>
-    <h1>Put your whole crew in one room with the AI.</h1>
+    <p class="eyebrow">ICM Principles by Jake Van Clief</p>
+    <h1>Understand it with me. Build it with me.</h1>
     <p class="lede">
-      EdubaWare is a shared workspace for your team and an AI agent. Everyone works from the same
-      files, in the same chat, on the same job.
+      New to Clief Notes and not sure where to start? Bring 1 task you repeat every week, and work on
+      it with a Master of ICM in your chat. No coding.
+    </p>
+    <p class="credit">
+      I'm {OWNER_NAME}, one of Jake Van Clief's 7 Masters of ICM.
     </p>
   </div>
   <div class="scene">
     <ShopScene
-      name="teamroom"
-      alt="A pixel-art meeting room. 4 people sit at one long table with a shared laptop while Bip the robot helps. The sign on the wall says one room, and a board shows their shared files."
+      name="aibench"
+      alt="Jeff at a desk with a laptop and a board of folders, working with Bip and Bit."
     />
   </div>
-  <div class="price-bar">
-    <div>
+  <div class="doors">
+    <article class="door depth-box">
+      <p class="door-name">Understand it with me</p>
+      <p class="price">Free</p>
+      <p class="note">2 short lessons on your own weekly task.</p>
+      <a class="button button-edubaware door-button invite" href={EDUBAWARE_FREE_URL}>Start free</a>
+      <p class="small">Send the word FREE to {CONTACT_EMAIL}.</p>
+    </article>
+    <article class="door depth-box">
+      <p class="door-name">Build it with me</p>
       <p class="price">{EDUBAWARE_PRICE}</p>
-      <p class="price-note">per person, per month. Cancel any time.</p>
-    </div>
-    <div class="invite-group">
-      <a class="button door-button invite" href={EDUBAWARE_INVITE_URL}>Email me for an invitation</a>
-      <p class="invite-note">Send the word INVITE to {CONTACT_EMAIL}.</p>
-    </div>
+      <p class="note">
+        Per person, per month. {EDUBAWARE_FOUNDING_SEATS} founding seats. Cancel any time. The first
+        lessons are ready. I finish the rest with the first group.
+      </p>
+      <a class="button button-edubaware door-button invite" href={EDUBAWARE_INVITE_URL}>Ask for a founding seat</a>
+      <p class="small">Send the word INVITE to {CONTACT_EMAIL}.</p>
+    </article>
   </div>
 </section>
 
@@ -49,7 +68,7 @@ import { CONTACT_EMAIL, EDUBAWARE_INVITE_URL, EDUBAWARE_PRICE } from '../consts'
   .eyebrow {
     margin-bottom: var(--space-3);
     color: var(--edubaware);
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     font-weight: 700;
     letter-spacing: 0.05em;
     text-transform: uppercase;
@@ -57,14 +76,21 @@ import { CONTACT_EMAIL, EDUBAWARE_INVITE_URL, EDUBAWARE_PRICE } from '../consts'
 
   h1 {
     color: var(--edubaware);
-    font-size: clamp(2rem, 3.6vw, 2.9rem);
+    font-size: clamp(2rem, 3.8vw, 3rem);
     line-height: 1.08;
     letter-spacing: -0.02em;
   }
 
   .lede {
-    margin-bottom: 0;
+    margin-bottom: var(--space-4);
     font-size: 1.15rem;
+  }
+
+  .credit {
+    margin-bottom: 0;
+    padding-left: var(--space-3);
+    border-left: 4px solid var(--edubaware);
+    font-size: 1rem;
   }
 
   .scene {
@@ -72,48 +98,49 @@ import { CONTACT_EMAIL, EDUBAWARE_INVITE_URL, EDUBAWARE_PRICE } from '../consts'
     border: 4px solid var(--edubaware);
   }
 
-  .price-bar {
-    display: flex;
+  .doors {
+    display: grid;
     grid-column: 1 / -1;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    gap: var(--space-3) var(--space-5);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-4);
+  }
+
+  .door {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
     padding: var(--space-4);
     background: var(--white);
     border: 3px solid var(--edubaware);
   }
 
-  .price {
-    margin: 0;
+  .door-name {
+    margin-bottom: var(--space-1);
     color: var(--edubaware);
-    font-size: 2rem;
+    font-size: 1.4rem;
     font-weight: 700;
     line-height: 1.2;
   }
 
-  .price-note {
+  .price {
     margin: 0;
+    color: var(--edubaware);
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.2;
   }
 
-  .invite-group {
-    min-width: 0;
+  .note {
+    margin-bottom: var(--space-3);
+    font-size: 1rem;
+    line-height: 1.45;
   }
 
   .invite {
-    border-color: var(--edubaware);
-    background: var(--edubaware);
-    color: var(--white);
+    margin-top: auto;
   }
 
-  .invite:hover {
-    border-color: var(--edubaware-dark);
-    background: var(--edubaware-dark);
-    color: var(--white);
-  }
-
-  .invite-note {
-    max-width: 280px;
+  .small {
     margin: var(--space-2) 0 0;
     font-size: 0.9rem;
     overflow-wrap: anywhere;
@@ -122,12 +149,41 @@ import { CONTACT_EMAIL, EDUBAWARE_INVITE_URL, EDUBAWARE_PRICE } from '../consts'
   @media (max-width: 860px) {
     .hero {
       grid-template-columns: minmax(0, 1fr);
-      padding-top: var(--space-6);
+      padding-top: var(--space-5);
     }
 
-    .price-bar {
-      flex-direction: column;
-      align-items: flex-start;
+    .doors {
+      order: 1;
+    }
+
+    .scene {
+      order: 2;
+    }
+  }
+
+  @media (max-width: 620px) {
+    .doors {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+
+  @media (max-width: 400px) {
+    .hero {
+      gap: var(--space-4);
+      padding-top: var(--space-4);
+    }
+
+    h1 {
+      font-size: 1.6rem;
+    }
+
+    .lede {
+      margin-bottom: var(--space-3);
+      font-size: 1rem;
+    }
+
+    .credit {
+      font-size: 0.9rem;
     }
   }
 </style>

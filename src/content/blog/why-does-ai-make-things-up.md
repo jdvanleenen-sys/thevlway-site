@@ -1,13 +1,14 @@
 ---
 title: 'Why Does AI Make Things Up? Usually It Read the Wrong File First'
 description: 'Why does AI make things up? Often it read the wrong file first and was sure about it. 2 steps fix that: put the right file first, and send a helper into the mess.'
+seoTitle: 'Why Does AI Make Things Up? It Read the Wrong File'
+seoDescription: 'Why does AI make things up? Often it read the wrong file first. 2 steps fix that: put the right file first, and send a helper into the mess.'
 pubDate: 2026-10-23
 keyword: 'why does ai make things up'
 youtubeId: 'Jhtpy2YoeFs'
 draft: false
+videoUploadDate: 2026-10-23
 ---
-
-[![Watch: Bip's First Day, the robot intern who was confident and wrong](/blog/why-does-ai-make-things-up/video-thumbnail.png)](https://www.youtube.com/watch?v=Jhtpy2YoeFs)
 
 *This is the video behind the post, a 1:46 Short. My robot intern says "Confident!" 3 times. He's wrong twice, and both times he read the wrong file first.*
 

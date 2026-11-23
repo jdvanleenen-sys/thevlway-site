@@ -1,0 +1,90 @@
+---
+import {
+  EDUBAWARE_FOUNDING_SEATS,
+  EDUBAWARE_FREE_URL,
+  EDUBAWARE_INVITE_URL,
+  EDUBAWARE_PRICE,
+} from '../consts';
+import { EDUBAWARE_FAQ as questions } from '../lib/edubaFaq';
+---
+
+<section class="container faq" id="faq">
+  <h2>What's on your mind?</h2>
+  <div class="list">
+    {
+      questions.map((item) => (
+        <details class="depth-box">
+          <summary>{item.q}</summary>
+          <p>{item.a}</p>
+        </details>
+      ))
+    }
+  </div>
+</section>
+
+<section class="final" id="start">
+  <div class="container">
+    <h2>Understand it with me, or build it with me</h2>
+    <p>Bring 1 task. Pick the way in that fits where you are.</p>
+    <div class="buttons">
+      <a class="button button-edubaware door-button" href={EDUBAWARE_FREE_URL}>Start free</a>
+      <a class="button button-edubaware door-button" href={EDUBAWARE_INVITE_URL}>Ask for a founding seat</a>
+    </div>
+    <p class="terms">Free lessons, or {EDUBAWARE_PRICE} founding price per person, per month. {EDUBAWARE_FOUNDING_SEATS} founding seats. Cancel any time.</p>
+  </div>
+</section>
+
+<style>
+  .faq {
+    padding-top: var(--space-7);
+    padding-bottom: var(--space-7);
+  }
+
+  .list {
+    display: grid;
+    gap: var(--space-4);
+  }
+
+  details {
+    background: var(--white);
+    border: 2px solid var(--navy);
+  }
+
+  summary {
+    padding: var(--space-3) var(--space-4);
+    color: var(--edubaware);
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  summary:focus-visible {
+    outline: 3px solid var(--edubaware);
+    outline-offset: 2px;
+  }
+
+  details p {
+    margin: 0;
+    padding: 0 var(--space-4) var(--space-4);
+    font-size: 1rem;
+  }
+
+  .final {
+    padding: var(--space-7) 0;
+    background: var(--cream);
+  }
+
+  .final h2 {
+    color: var(--edubaware);
+  }
+
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+  }
+
+  .terms {
+    margin: var(--space-3) 0 0;
+    font-size: 0.9rem;
+  }
+</style>
