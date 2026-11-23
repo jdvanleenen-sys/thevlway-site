@@ -92,6 +92,8 @@ check(17, 'No words joined by a missing space', coreNames.flatMap((name) => (pag
 
 check(18, 'School pages do not sell crew or team work', failing(['home', 'edubaware', 'about'], (p) => !/your crew/i.test(p.text)));
 
+check(19, 'Founding price lock and second refund window are stated', ['edubaware'].filter(() => !(/locked for as long as you stay subscribed/.test(pages.edubaware.text) && /another seven days/.test(pages.edubaware.text))));
+
 let failed = 0;
 for (const { id, label, failures } of results) {
   if (failures.length) failed += 1;

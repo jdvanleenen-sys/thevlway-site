@@ -20,7 +20,7 @@ export const EDUBAWARE_FAQ = [
   },
   {
     q: 'Is the school finished?',
-    a: `Not yet. The first lessons are ready, and I finish the last three with the first group. That is why this is the founding price, ${EDUBAWARE_PRICE} a month.`,
+    a: `Not yet. The first lessons are ready, and I finish the last three with the first group. That is why this is the founding price, ${EDUBAWARE_PRICE} a month, locked for as long as you stay subscribed.`,
   },
   {
     q: 'What kind of weekly job works best?',
@@ -36,6 +36,6 @@ export const EDUBAWARE_FAQ = [
   },
   {
     q: 'What if it is not for me?',
-    a: `Email me within ${EDUBAWARE_REFUND_DAYS} days of your first payment and I refund it in full. After that, you can cancel any time.`,
+    a: `Email me within ${EDUBAWARE_REFUND_DAYS} days of your first payment and I refund it in full. When the last three lessons open, founding members get another ${EDUBAWARE_REFUND_DAYS} days to ask for a refund of their latest monthly payment. You can cancel any time.`,
   },
 ] as const;
