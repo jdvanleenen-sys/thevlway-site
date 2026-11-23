@@ -16,7 +16,7 @@ export const EDUBAWARE_FAQ = [
   },
   {
     q: 'Should I start free or take a founding seat?',
-    a: 'Start free if you are still working out what this is. Take a founding seat if you have a weekly job and want it running.',
+    a: 'Start free if you are still working out what this is. Take a founding seat if you have a weekly job and want to build it with me while I finish the last three lessons.',
   },
   {
     q: 'Is the school finished?',
@@ -32,7 +32,7 @@ export const EDUBAWARE_FAQ = [
   },
   {
     q: 'Can my crew work with me?',
-    a: 'Yes. Two or more paid seats get one private shared workspace. Everyone can work in the same chat at the same time, with the AI coach and me.',
+    a: 'Yes. Two or more paid seats get one shared workspace for your crew. Everyone can work in the same chat at the same time, with the AI coach and me.',
   },
   {
     q: 'What if it is not for me?',

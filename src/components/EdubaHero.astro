@@ -1,6 +1,7 @@
 ---
 import ShopScene from './ShopScene.astro';
 import {
+  ICM_PLAIN,
   CONTACT_EMAIL,
   EDUBAWARE_FOUNDING_SEATS,
   EDUBAWARE_FOUNDING_SEATS_START,
@@ -20,7 +21,7 @@ import {
       crew, an AI coach and a real teacher can all work on it in the same chat, at the same time. No coding.
     </p>
     <p class="credit">
-      I'm {OWNER_NAME}, one of Jake Van Clief's 7 Masters of ICM, and a teacher for over 24 years.
+      I'm {OWNER_NAME}, one of Jake Van Clief's 7 Masters of ICM, and a teacher for over 24 years. {ICM_PLAIN}
     </p>
   </div>
   <div class="scene">
@@ -33,7 +34,7 @@ import {
     <article class="door depth-box">
       <p class="door-name">Try it free</p>
       <p class="price">Free</p>
-      <p class="note">Two short lessons on your own weekly job. Free lessons are with the AI coach. I join your chat with a founding seat.</p>
+      <p class="note">Two short lessons on your own weekly job. Free lessons are with the AI coach. A founding seat adds me to your chat.</p>
       <a class="button button-edubaware door-button invite" href={EDUBAWARE_FREE_URL}>Start free</a>
       <p class="small">Send the word FREE to {CONTACT_EMAIL}.</p>
     </article>

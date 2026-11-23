@@ -2,7 +2,7 @@
 import Base from '../layouts/Base.astro';
 import { CONTACT_EMAIL, OWNER_LOCATION, OWNER_NAME, SITE_NAME } from '../consts';
 
-const EFFECTIVE_DATE = 'November 22, 2026';
+const EFFECTIVE_DATE = 'November 23, 2026';
 const contactHref = `mailto:${CONTACT_EMAIL}`;
 
 const collected = [
@@ -28,6 +28,7 @@ const providers = [
   { name: 'AI model providers', job: 'process what you send to the AI coach so it can reply.' },
   { name: 'GitHub', job: 'hosts this website and may log basic visit data, such as IP addresses.' },
   { name: 'Google Fonts', job: 'delivers this site\'s font, which sends your IP address to Google.' },
+  { name: 'YouTube', job: 'plays the videos embedded in blog posts, which sends your IP address to Google.' },
   { name: 'Email providers', job: 'carry and store messages you send me.' },
 ];
 ---
@@ -107,7 +108,8 @@ const providers = [
         <h2>Cookies</h2>
         <p>
           This site does not use advertising or analytics cookies. Stripe and EdubaWare use their own
-          cookies to keep payments and sign-ins working.
+          cookies to keep payments and sign-ins working. Blog videos use YouTube's privacy-enhanced player,
+          which may store data in your browser when you play a video.
         </p>
       </section>
     </div>

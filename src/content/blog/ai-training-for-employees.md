@@ -68,7 +68,7 @@ This step gives your team time to think before the session.
 
 It's like sending the drawings before the site meeting.
 
-Send the Week 1 guide to your team 2 days before session 1. Tell them, "Pick your role, run the prompt and bring your 3 ideas."
+Send the Week 1 guide to your team two days before session 1. Tell them, "Pick your role, run the prompt and bring your three ideas."
 
 The guide has a button for sales, the field, the office and the owner. If someone's job isn't there, they pick "Something else" and type it in.
 
@@ -107,7 +107,7 @@ Skip step 1, and you hand out something you haven't tried. Skip step 2, and the 
 
 Here's your move for this week: run the prompt on your own week, and book session 1 with your team.
 
-Then send the guide to your team 2 days before. After that, set it up once so no chat starts cold. [Claude context window](/blog/claude-context-window/) shows how.
+Then send the guide to your team two days before. After that, set it up once so no chat starts cold. [Claude context window](/blog/claude-context-window/) shows how.
 
 The Week 1 guide builds the prompt for each role, so nobody starts from a blank page. Get it here: https://thevlway.com/guides/week-1/
 

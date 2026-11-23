@@ -30,7 +30,7 @@ This step tells you if you have one fire, or chaos everywhere.
 
 A firefighter sizes up the whole building before picking up a hose.
 
-So lay out your six folders, and ask one question: **"Is 1 folder on fire, or is it all of them?"**
+So lay out your six folders, and ask one question: **"Is one folder on fire, or is it all of them?"**
 
 Here's how to read the answer:
 
@@ -54,7 +54,7 @@ A leak gets a plumber. A gut job gets a whole crew.
 Your read points to one of these paths:
 
 - **One folder on fire?** Take the Fix One Thing path. You fix the leak and get the win.
-- **Chaos everywhere?** Take the Whole Operation path. You build the folders and wire them together.
+- **Chaos everywhere?** Take the Whole Operation path. You map all your folders, then build them one at a time, starting with [the one that costs you most](/blog/business-bottleneck/).
 - **Rather not do it alone?** Build it with a teacher in the same chat. See the [two ways to start](#start) below.
 
 Andre has one fire, so he takes Fix One Thing.
