@@ -109,9 +109,13 @@ import {
     gap: var(--space-4);
   }
 
+  /* Both doors share the same five rows, so their buttons stay level. */
   .door {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-row: span 5;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: subgrid;
+    row-gap: 0;
     min-width: 0;
     padding: var(--space-4);
     background: var(--white);
@@ -168,6 +172,12 @@ import {
   @media (max-width: 620px) {
     .doors {
       grid-template-columns: minmax(0, 1fr);
+    }
+
+    .door {
+      display: flex;
+      flex-direction: column;
+      grid-row: auto;
     }
   }
 
