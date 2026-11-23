@@ -26,7 +26,7 @@ A list of six folders is a start. A map is when your AI can read it and act. Eac
 
 If you don't have your six folders yet, start with [small business systems](/blog/small-business-systems/). This post picks up right after that.
 
-## Step 1: pick 1 folder
+## Step 1: pick one folder
 
 This step gives you one real folder to build, not six at once.
 
@@ -42,7 +42,7 @@ The mistake is starting all six at once. The right move is one folder, finished 
 
 That's your folder. Keep it for step 2. ([Step 1 in the video](https://www.youtube.com/watch?v=VcbW12lMgqg&t=75s))
 
-## Step 2: write its 4 parts
+## Step 2: write its four parts
 
 This step tells your AI what to do inside that folder.
 

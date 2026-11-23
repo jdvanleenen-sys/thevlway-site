@@ -58,7 +58,7 @@ Nothing you own does it? That's fine. Go to step 2.
 
 Write down what you found. Keep it for step 3. ([Step 1 in the video](https://www.youtube.com/watch?v=XiVBx4P5vu0&t=77s))
 
-## Step 2: run the 3 questions
+## Step 2: run the three questions
 
 This step sorts any tool into build or rent.
 
@@ -106,7 +106,7 @@ Check what you pay for. Run the three questions. Decide, and write why.
 
 Skip step 1, and you may pay for a fix you already have. Skip step 2, and the best pitch may decide for you. Skip step 3, and the decision may never get made.
 
-## Write your 1 line
+## Write your one line
 
 Now write yours. Build or rent, and why.
 

@@ -60,7 +60,7 @@ In my setup, a helper is a second AI with one job. "Read the specs folder and gi
 
 This time the AI says "$1,200. Confident!" And it's right. ([1:13](https://www.youtube.com/watch?v=Jhtpy2YoeFs&t=73s))
 
-## Why the 2 fixes work: your folders are the instructions
+## Why the two fixes work: your folders are the instructions
 
 The AI didn't get smarter between the wrong answers and the right one. Its folders changed.
 
@@ -98,7 +98,7 @@ Each step below is a piece of the folder system. Each one says what it would cha
 
 *In our example:* the first wrong number shows you the problem right away. The office line was first on the AI's path.
 
-The two steps in the first video are steps 1 and 5 in action. Steps 2, 3, 4 and 6 are what keep them working after the video ends.
+The two steps in the first video are steps 1 and 5 in action. The other four steps are what keep them working after the video ends.
 
 [The second video](https://www.youtube.com/shorts/Eq9hj96V_lE) shows all six, in order. The AI does the same job twice, and the second time you watch each step as a stop on its path.
 

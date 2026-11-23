@@ -46,7 +46,7 @@ Here's what goes on each line. ([This part of the video](https://www.youtube.com
 
 **Line two: the one office problem you want fixed first.** Just one. Not the list. If you write four problems, you'll get four half answers.
 
-**Line three: what happens now.** Say it the way it really goes. "The phone rings while I'm on a roof, and I call back 2 days later."
+**Line three: what happens now.** Say it the way it really goes. "The phone rings while I'm on a roof, and I call back two days later."
 
 **Line four: what it costs you.** Count it in jobs, dollars or evenings. Pick whichever one you can put a number on. A rough guess is fine. If you want a plain place to start on the money side, the Business Development Bank of Canada has a short page on [what cash flow is](https://www.bdc.ca/en/articles-tools/entrepreneur-toolkit/templates-business-guides/glossary/cash-flow).
 
@@ -58,26 +58,26 @@ Here's what goes on each line. ([This part of the video](https://www.youtube.com
 
 So on line five, use a number or a moment. Like this:
 
-> "I stop losing 3 calls a week."
+> "I stop losing three calls a week."
 
 Or a moment: getting home by six.
 
 Both of those you can check. Either the calls stopped getting lost or they didn't. Either you were home by six or you weren't.
 
-"I stop losing 3 calls a week" beats "things run smoother". ([See the two cards side by side](https://www.youtube.com/watch?v=_7NUTfwkYNE&t=39s))
+"I stop losing three calls a week" beats "things run smoother". ([See the two cards side by side](https://www.youtube.com/watch?v=_7NUTfwkYNE&t=39s))
 
-It's the same idea as a measuring tape. You don't cut trim "a bit shorter". You cut it to a number. The Business Development Bank of Canada has a name for goals written this way, and its page on [SMART objectives](https://www.bdc.ca/en/articles-tools/entrepreneur-toolkit/templates-business-guides/glossary/smart-objectives) is worth 2 minutes if you want the longer version.
+It's the same idea as a measuring tape. You don't cut trim "a bit shorter". You cut it to a number. The Business Development Bank of Canada has a name for goals written this way, and its page on [SMART objectives](https://www.bdc.ca/en/articles-tools/entrepreneur-toolkit/templates-business-guides/glossary/smart-objectives) is worth two minutes if you want the longer version.
 
 ## What a filled-in one looks like
 
 Here's an example. The shop is made up, and so are its numbers.
 
 ```
-My trade, and how big my team is: Plumbing, 4 of us
+My trade, and how big my team is: Plumbing, four of us
 The 1 office problem I want fixed first: Missed calls
 What happens now: Calls go to voicemail while we're on a job. I call back at night, or not at all.
 What it costs me: About 3 jobs a week
-What better would look like: I stop losing 3 calls a week.
+What better would look like: I stop losing three calls a week.
 ```
 
 That took five lines. And now anyone who reads it knows where to start.

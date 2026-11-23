@@ -73,7 +73,7 @@ The mistake is one chat for everything, all week. The right move is one job per 
 
 And don't keep the only copy of anything in the chat. Hold on to that one. It comes back in step 4.
 
-## Feed it light, and keep 1 copy of every fact
+## Feed it light, and keep one copy of every fact
 
 ### Step 3: Feed it light
 
@@ -154,7 +154,7 @@ The mistake is turning on the setting that lets it send on its own. The right mo
 
 Skip step 4, and your map can point to an old copy.
 
-## Your move this week: save 1 file
+## Your move this week: save one file
 
 Here's your move this week. ([8:58](<https://www.youtube.com/watch?v=Ba6apFc6inw&t=538s>))
 

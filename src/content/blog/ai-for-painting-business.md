@@ -46,7 +46,7 @@ In the truck, you open Claude on your phone and just talk.
 
 The customer and the job are set up before you knock.
 
-Then in the kitchen, you keep talking in the same chat. "Kitchen walls, 1 room, Benjamin Moore Calm, and a feature wall in Hale Navy."
+Then in the kitchen, you keep talking in the same chat. "Kitchen walls, one room, Benjamin Moore Calm, and a feature wall in Hale Navy."
 
 Each piece of work lands on the job as its own line.
 

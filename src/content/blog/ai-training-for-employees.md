@@ -74,7 +74,7 @@ The guide has a button for sales, the field, the office and the owner. If someon
 
 Then ask for one more thing. Ask them to bring one real thing AI did for them this week, good or bad.
 
-Here's why. Asked on the spot, people freeze. The mistake is springing it on them in the meeting. The right move is 2 days of notice and one prompt to run.
+Here's why. Asked on the spot, people freeze. The mistake is springing it on them in the meeting. The right move is two days of notice and one prompt to run.
 
 Now they can walk in with three ideas each. That's what step 3 runs on. ([Step 2 in the video](https://www.youtube.com/watch?v=59zxFUDMTgY&t=149s))
 

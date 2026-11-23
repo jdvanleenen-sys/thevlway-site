@@ -58,7 +58,7 @@ You can also upload someone else's skill as a zip file. A zip file is one file t
 
 We used the Skill Creator. Here it is, in four steps.
 
-## How to create a Claude skill in 4 steps
+## How to create a Claude skill in four steps
 
 ### Step 1: Say what done looks like
 
@@ -138,26 +138,26 @@ Want your team on it? Share skills on Team or Enterprise plans, or send teammate
 Copy everything in the box into Claude. It walks you through the same steps on your own report, one question at a time.
 
 ```text
-I run a small trades business. I just watched how to build a Claude skill in 4 steps:
+I run a small trades business. I just watched how to build a Claude skill in four steps:
 say what done looks like, let the Skill Creator build it, test it on made-up numbers,
 then check the report against what went in.
 
-Help me do it for 1 report I rebuild by hand. Ask me 1 question at a time and wait
+Help me do it for one report I rebuild by hand. Ask me one question at a time and wait
 for my answer. Use plain words. No tech talk.
 
 Step 1. Ask me which report I rebuild by hand every week, month or quarter. If I'm not
 sure, ask what I copy from last time and change the numbers on. Help me pick 1.
 
-Step 2. Help me write what done looks like, as a short checklist. Ask me, 1 at a time:
+Step 2. Help me write what done looks like, as a short checklist. Ask me, one at a time:
 - Where does last time's version live, and what file type is it?
 - Where do the new numbers come from?
 - What has to stay the same? The layout, the logo, the colours, the fonts.
 - What is allowed to change? Usually only the words, the numbers and the dates.
 - What should happen when a number is missing? Default: highlight it in yellow so a
   person fills it in.
-- Is there a number that should never change from 1 report to the next? A home count,
+- Is there a number that should never change from one report to the next? A home count,
   a contract total, a square footage. Name it.
-Then show me my finished-report checklist, 4 to 6 lines, in my own words.
+Then show me my finished-report checklist, four to six lines, in my own words.
 
 Step 3. Write me the message to paste into a NEW chat with Claude's Skill Creator. It
 should say: help me create a skill from this checklist, then list my checklist. Tell me

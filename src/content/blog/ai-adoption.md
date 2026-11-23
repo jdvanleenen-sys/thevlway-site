@@ -39,7 +39,7 @@ The job is handed over. The checking isn't. AI drafts and people sign.
 
 The mistake is telling your team to "use AI more." The right move is one named job per person.
 
-### To go further: one job that crosses 2 people
+### To go further: one job that crosses two people
 
 Pick one job that two people share. In Owen's company, the estimator writes the scope and the office builds the quote.
 

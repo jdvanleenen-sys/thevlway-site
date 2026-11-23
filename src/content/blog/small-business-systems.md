@@ -30,7 +30,7 @@ This step helps you name the problem before you pick a fix.
 
 Think of a job site. You measure before you cut.
 
-So ask yourself one question: **"What's the 1 office problem costing me the most?"**
+So ask yourself one question: **"What's the one office problem costing me the most?"**
 
 Here's why it matters. If you can't name the problem, a tool can look like the answer. The mistake is shopping for a tool first. The right move is naming the problem first.
 
@@ -92,7 +92,7 @@ I taught high school science, which is why every lesson I make has you do the th
 
 And you don't have to build everything yourself. You build one small fix, a few focused minutes at a time.
 
-## Write your 1 problem down
+## Write your one problem down
 
 Now write down the one office problem costing you the most. Then write what it costs you, in jobs, dollars or evenings.
 

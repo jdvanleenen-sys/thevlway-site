@@ -49,7 +49,7 @@ Kyle misses calls while he's on the mower. That's Leads.
 
 That's one problem matched. Keep it for step 2. ([Step 1 in the video](https://www.youtube.com/watch?v=XldRCThcQyc&t=55s))
 
-## Step 2: mark the 1 that costs most
+## Step 2: mark the one that costs most
 
 This step tells you where to build first.
 

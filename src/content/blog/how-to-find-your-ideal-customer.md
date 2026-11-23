@@ -164,7 +164,7 @@ This is the prompt for step 2. Open a new chat in Claude. Paste in everything in
 Before you paste anything, remember what stays out. Only the type of job, the part of town, how the customer found you and about what you kept go in. Customer names, addresses, phone numbers and emails stay out, and so do invoices and customer files. Check your Claude privacy settings first.
 
 ```
-I run a trades business. Below are my best past jobs, 1 per line:
+I run a trades business. Below are my best past jobs, one per line:
 job type, area, how the customer found me, and about what I kept
 after materials and labour.
 There are no customer names or addresses in this list. Don't add any.
@@ -176,14 +176,14 @@ There are no customer names or addresses in this list. Don't add any.
    each job type. Don't guess a reason for anything.
    Then take the job type that came up most. Count how many of those
    jobs were in the same area, and how many found me the same way.
-3. Then ask me these 4 questions, 1 at a time, about the pattern that
+3. Then ask me these four questions, one at a time, about the pattern that
    came up most:
    - Does this customer have a problem that hurts right now?
    - Can they pay for it?
    - Is there a place or a list where I can find more of them?
    - Are there more of them coming, or fewer?
    If my answer is vague, ask me again.
-4. Then write 1 sentence in this shape, and stop:
+4. Then write one sentence in this shape, and stop:
    "My crowd is [who], in [where], who need [what], and they find me
    through [how]."
    Keep it to 25 words or fewer. Name each thing once. Use only what
@@ -195,7 +195,7 @@ Only if I gave you fewer than 10 jobs:
 - if I carry on, start the sentence with "First draft, from N jobs:".
 If I gave you 10 or more, don't ask that and don't add that label.
 
-If nothing repeats at least 3 times, say "not enough to go on yet"
+If nothing repeats at least three times, say "not enough to go on yet"
 and stop. Don't fill gaps.
 
 My jobs:

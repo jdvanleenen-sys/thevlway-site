@@ -26,7 +26,7 @@ That back and forth turned out to be the first half of my method. There are two 
 
 An AI is like a framing crew. Great hands, but they still need the plans.
 
-## How to come up with video ideas: the 7 talk steps
+## How to come up with video ideas: the seven talk steps
 
 **1. Feed it.** Start from something you keep coming back to. A world, a tool, someone else's work, or a challenge. Mine was Jordan's made-up world, starring Hermes, the Greek god of roads. ([Step 1 in the video](https://www.youtube.com/watch?v=VosUmn5OsCw&t=67s))
 

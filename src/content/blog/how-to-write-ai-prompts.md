@@ -50,7 +50,7 @@ That wrong lunch was on me.
 
 "My fault. I never told you. Let's try again." ([0:30](<https://www.youtube.com/watch?v=5tpmCo_r0-I&t=30s>))
 
-## How to write AI prompts in 3 steps
+## How to write AI prompts in three steps
 
 ### Step 1: Give the details
 
@@ -126,7 +126,7 @@ Here's the rule from the video, in one line. ([1:13](<https://www.youtube.com/wa
 
 Tell your AI what done looks like. Have it check before it shows you.
 
-## Use the same 3 steps on your own work
+## Use the same three steps on your own work
 
 Your quote, your email, your job list. Same three steps. ([1:09](<https://www.youtube.com/watch?v=5tpmCo_r0-I&t=69s>))
 

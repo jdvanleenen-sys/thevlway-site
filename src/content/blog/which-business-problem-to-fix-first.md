@@ -79,7 +79,7 @@ List your top three. Score them by cost. Park the rest.
 
 Skip step 1, and you may miss the problem costing you the most. Skip step 2, and you fix the most annoying problem first. Skip step 3, and your second problem pulls you off the first.
 
-## Write your first win as 1 sentence
+## Write your first win as one sentence
 
 Now look at your first win and its number. Write it as one sentence, like Dale's:
 

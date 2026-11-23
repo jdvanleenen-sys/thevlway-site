@@ -132,6 +132,11 @@ check(34, 'About states the varsity coaching record, with no free throws', ['abo
 check(35, 'Teams says the three templates are included and seats are separate from the founding seats', ['teams'].filter(() => !/three built templates are included/i.test(pages.teams.text) || !/not part of the school's five founding seats/.test(pages.teams.text)));
 check(36, 'Home says the three built templates are included with Teams', ['home'].filter(() => !/Three built templates included/.test(pages.home.text)));
 
+check(37, 'No digit mid-sentence in blog posts, apart from step, week and session labels', postFiles.flatMap((file) => {
+  const text = visibleText(mainHtml(readFileSync(file, 'utf8')).replace(/<(h1|pre|code)[\s\S]*?<\/\1>/g, ' '));
+  return (text.match(/\b[a-z]+ [1-9] [a-z]+/g) ?? []).filter((hit) => !/^(step|steps|week|session) /.test(hit)).map((hit) => `${file}: ${hit}`);
+}));
+
 let failed = 0;
 for (const { id, label, failures } of results) {
   if (failures.length) failed += 1;
