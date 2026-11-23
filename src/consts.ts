@@ -11,9 +11,10 @@ export const ROBO_INTERN_URL = 'https://claude.ai/code/artifact/52eee8c6-a5c2-40
 export const CONTACT_EMAIL = 'contact@thevlway.com';
 export const EDUBAWARE_INVITE_URL = `mailto:${CONTACT_EMAIL}?subject=INVITE`;
 export const EDUBAWARE_PAGE_URL = 'https://thevlway.com/edubaware/';
-// Paid affiliate link. Render it through TwoDoors.astro so rel="sponsored" and the disclosure stay with it.
+// Paid affiliate link. Render it through AffiliateLink.astro or DOOR_LINKS so rel="sponsored" and the disclosure stay with it.
 export const CLIEF_NOTES_AFFILIATE_URL =
   'https://www.skool.com/cliefnotes/about?ref=9b87167cad844357b07892d1da8b1c51';
+export const CLIEF_NOTES_DISCLOSURE = "I'm a Clief Notes affiliate and earn a commission if you upgrade.";
 export const EDUBAWARE_PRICE = '$30 USD';
 export const EDUBAWARE_REFUND_DAYS = 7;
 
@@ -22,3 +23,15 @@ export const NAV_LINKS = [
   { href: '/blog/', label: 'Blog' },
   { href: '/about/', label: 'About' },
 ] as const;
+
+interface DoorLink {
+  href: string;
+  label: string;
+  rel?: 'sponsored';
+}
+
+// The 2 doors in the shared menu and footer.
+export const DOOR_LINKS: readonly DoorLink[] = [
+  { href: CLIEF_NOTES_AFFILIATE_URL, label: 'Clief Notes (affiliate link)', rel: 'sponsored' },
+  { href: '/edubaware/', label: 'EdubaWare school' },
+];

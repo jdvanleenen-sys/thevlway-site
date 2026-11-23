@@ -1,6 +1,8 @@
 ---
 import '../styles/global.css';
 import {
+  CLIEF_NOTES_DISCLOSURE,
+  DOOR_LINKS,
   NAV_LINKS,
   OWNER_LOCATION,
   OWNER_NAME,
@@ -86,6 +88,7 @@ const entityGraph = {
         </a>
         <nav aria-label="Main">
           {NAV_LINKS.map((link) => <a href={link.href}>{link.label}</a>)}
+          {DOOR_LINKS.map((door) => <a href={door.href} rel={door.rel}>{door.label}</a>)}
         </nav>
       </div>
     </header>
@@ -96,12 +99,19 @@ const entityGraph = {
       <div class="container footer-inner">
         <p>{SITE_NAME} by {OWNER_NAME}. &copy; {year}</p>
         <p>
-          <a href="/edubaware/">EdubaWare school</a>
-          <span aria-hidden="true"> · </span>
+          {
+            DOOR_LINKS.map((door) => (
+              <>
+                <a href={door.href} rel={door.rel}>{door.label}</a>
+                <span aria-hidden="true"> · </span>
+              </>
+            ))
+          }
           <a href={YOUTUBE_URL}>YouTube</a>
           <span aria-hidden="true"> · </span>
           <a href="/rss.xml">RSS</a>
         </p>
+        <p>{CLIEF_NOTES_DISCLOSURE}</p>
       </div>
     </footer>
   </body>
@@ -116,6 +126,7 @@ const entityGraph = {
   .header-inner {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
     gap: var(--space-4);
     padding-top: var(--space-4);
@@ -133,7 +144,8 @@ const entityGraph = {
 
   nav {
     display: flex;
-    gap: var(--space-5);
+    flex-wrap: wrap;
+    gap: var(--space-2) var(--space-5);
   }
 
   nav a {
