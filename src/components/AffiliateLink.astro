@@ -1,5 +1,5 @@
 ---
-import { CLIEF_NOTES_AFFILIATE_URL } from '../consts';
+import { CLIEF_NOTES_AFFILIATE_URL, CLIEF_NOTES_DISCLOSURE } from '../consts';
 
 interface Props {
   fillCard?: boolean;
@@ -16,7 +16,7 @@ const { fillCard = false, compact = false, edubawareColor = false } = Astro.prop
       <p>Learn the ICM Principles by Jake Van Clief in Clief Notes, a free AI community on Skool.</p>
     )
   }
-  <p class="affiliate-disclosure">I'm a Clief Notes affiliate and earn a commission if you upgrade.</p>
+  <p class="affiliate-disclosure">{CLIEF_NOTES_DISCLOSURE}</p>
   <a
     class:list={['button door-button', edubawareColor ? 'button-edubaware' : 'button-primary']}
     href={CLIEF_NOTES_AFFILIATE_URL}
