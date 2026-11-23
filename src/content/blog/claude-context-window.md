@@ -1,6 +1,6 @@
 ---
 title: 'Claude Context Window: Why Your AI Forgets in a Long Chat'
-description: 'The Claude context window is the AI''s working memory for 1 chat. When it fills up, your AI forgets. Here are 6 steps, and the 1 file to save this week.'
+description: 'The Claude context window is the AI''s working memory for one chat. When it fills up, your AI forgets. Here are six steps, and the one file to save this week.'
 pubDate: 2026-11-06
 keyword: 'claude context window'
 draft: false
@@ -8,9 +8,9 @@ draft: false
 
 [![Watch: It got crowded, why your AI forgets in a long chat](/blog/claude-context-window/video-thumbnail.png)](https://www.youtube.com/watch?v=Ba6apFc6inw)
 
-*This is the video behind the post. Step 4 is the story of Frank's font. You watch 1 font change go wrong for a whole team, and that's the reason the fix is a folder and not a better chat.*
+*This is the video behind the post. Step 4 is the story of Frank's font. You watch one font change go wrong for a whole team, and that's the reason the fix is a folder and not a better chat.*
 
-The Claude context window is the AI's working memory for 1 chat. Your messages go in there. Its answers go in there. Every file it reads goes in there.
+The Claude context window is the AI's working memory for one chat. Your messages go in there. Its answers go in there. Every file it reads goes in there.
 
 And it has a size.
 
@@ -32,17 +32,17 @@ You think the AI got dumber the longer you talked. It didn't. It got crowded. ([
 
 ### Step 1: Know the window
 
-AI doesn't read words the way you do. It reads tokens, small chunks of text. A short word is often 1 token. A long word can be a few.
+AI doesn't read words the way you do. It reads tokens, small chunks of text. A short word is often one token. A long word can be a few.
 
 Then it predicts the next token, and the next, and the next. It's very good at it.
 
 But without context, it goes with whatever sounds right. It still sounds good. It's just not the right word for your business.
 
-Context is what points it at the right one. All of that context sits in 1 place, the context window. ([1:45](<https://www.youtube.com/watch?v=Ba6apFc6inw&t=105s>))
+Context is what points it at the right one. All of that context sits in one place, the context window. ([1:45](<https://www.youtube.com/watch?v=Ba6apFc6inw&t=105s>))
 
 I use Claude. Claude is an AI made by a company called Anthropic. Claude Code is a tool that helps Claude work with files on my computer.
 
-The newest Claude models hold up to 1 million tokens ([Anthropic, context windows](https://platform.claude.com/docs/en/build-with-claude/context-windows)). That sounds like a lot.
+The newest Claude models hold up to one million tokens ([Anthropic, context windows](https://platform.claude.com/docs/en/build-with-claude/context-windows)). That sounds like a lot.
 
 It fills up faster than you think. Every message you send makes the window fuller.
 
@@ -64,12 +64,12 @@ In Claude Code, type /context. It shows you how full the window is ([Claude Code
 
 My rule of thumb is to stay in the first 2/3. Anthropic says that as the window fills, accuracy and recall drop. They call it context rot.
 
-So before it gets full, you've got 2 moves.
+So before it gets full, you've got two moves.
 
 - Type /compact, and tell it what to keep.
 - Or ask it for a handoff, a summary for a fresh chat. Check it, then paste it into the fresh chat.
 
-The mistake is 1 chat for everything, all week. The right move is 1 job per chat, and a fresh chat when the job changes.
+The mistake is one chat for everything, all week. The right move is one job per chat, and a fresh chat when the job changes.
 
 And don't keep the only copy of anything in the chat. Hold on to that one. It comes back in step 4.
 
@@ -105,9 +105,9 @@ You ask Frank for a quote sheet in the company font. He makes it in his Project,
 
 That's drift. The copies drift apart, and the fix is you walking around to every one of them.
 
-The right move is 1 shared folder with 1 copy. That's your single point of truth. Change the font there, once.
+The right move is one shared folder with one copy. That's your single point of truth. Change the font there, once.
 
-![From the video, step 4: 3 people and 1 shared folder above them, with the caption "The right move is one shared folder with one copy"](/blog/claude-context-window/one-shared-folder.png)
+![From the video, step 4: three people and one shared folder above them, with the caption "The right move is one shared folder with one copy"](/blog/claude-context-window/one-shared-folder.png)
 
 Next time, Frank tells Claude Code to read the shared brand guide. He doesn't have to update a thing. He still checks the quote sheet before it goes out.
 
@@ -119,7 +119,7 @@ Remember the one from step 2? Anything you'll need again lives in the folder. A 
 
 Think of the directory board at a mall. You don't walk past every store. You read the board and go straight there.
 
-So at the top of the folder, I put 2 short files.
+So at the top of the folder, I put two short files.
 
 - **CLAUDE.md** is the map. Claude Code reads it when you start it in that folder ([Claude Code, explore the context window](https://code.claude.com/docs/en/context-window)).
 - **CONTEXT.md** is my own file. It says what the folder does.
@@ -130,7 +130,7 @@ Now you just ask it in plain words. "Make me a Remembrance Day post using our br
 
 For bigger jobs, number the folders in the order the work goes. Write each folder's job and order in the map. That's a workflow, the same steps every time. Ask it to follow that order, and check each step.
 
-If you want to see what a good note for 1 folder looks like, I wrote about the [4 lines an AI can follow](/blog/sop-for-small-business).
+If you want to see what a good note for one folder looks like, I wrote about the [four lines an AI can follow](/blog/sop-for-small-business).
 
 People are setting up whole teams of AI helpers for this. You don't need that. You need a folder structure.
 
@@ -158,7 +158,7 @@ Skip step 4, and your map can point to an old copy.
 
 Here's your move this week. ([8:58](<https://www.youtube.com/watch?v=Ba6apFc6inw&t=538s>))
 
-1. Pick 1 thing you've pasted into 3 chats.
+1. Pick one thing you've pasted into three chats.
 2. In Notepad, save it as rules.md in a shared folder.
 3. Next time, tell Claude Code where it is and ask it to read it.
 
@@ -166,7 +166,7 @@ Keep it to rules and prices. No customer names or details, because everyone with
 
 The next time you need it, you point Claude Code at it instead of pasting it again.
 
-Want help with this? See the [2 ways to start](#start) below.
+Want help with this? See the [two ways to start](#start) below.
 
 Open your last long chat tonight and find the thing you keep pasting.
 

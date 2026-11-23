@@ -25,12 +25,6 @@ import { EDUBAWARE_PRICE } from '../consts';
   </div>
 </Base>
 
-<script>
-  import { addSoftHyphens } from '../lib/teamsSoftHyphens';
-
-  addSoftHyphens(document, '.teams-page p:not(.eyebrow, .amount, .per, .number, .fee, .small), .teams-page li');
-</script>
-
 <style is:global>
   /* This page carries EdubaWare's burgundy, so its boxes and links match the buttons. */
   .teams-page {
@@ -54,14 +48,6 @@ import { EDUBAWARE_PRICE } from '../consts';
   .teams-page button:focus-visible {
     outline: 3px solid var(--edubaware);
     outline-offset: 2px;
-  }
-
-  /* Jeff's house style: body text is fully justified. Headings, buttons and price figures are not. */
-  .teams-page p:not(.eyebrow, .amount, .per, .number, .fee),
-  .teams-page li {
-    text-align: justify;
-    text-justify: inter-word;
-    hyphens: manual;
   }
 
   /* The price box is short and centered, and justifying its email line leaves huge gaps. */

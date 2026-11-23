@@ -1,6 +1,6 @@
 ---
 title: 'How to Find Your Ideal Customer From Your 10 Best Jobs'
-description: 'How to find your ideal customer from your own 10 best jobs. List them, count what repeats, test the crowd, and write 1 sentence on who your business is for.'
+description: 'How to find your ideal customer from your own 10 best jobs. List them, count what repeats, test the crowd, and write one sentence on who your business is for.'
 pubDate: 2026-10-10
 keyword: 'how to find your ideal customer'
 draft: false
@@ -8,11 +8,11 @@ draft: false
 
 [![Watch: how to find your ideal customer from your 10 best jobs](/blog/how-to-find-your-ideal-customer/video-thumbnail.png)](https://www.youtube.com/watch?v=Y7dbpB4p8HU)
 
-*This is the video behind the post. It follows Nora, a made-up renovation contractor, through all 4 steps, so you can watch the whole thing work before you try it on your own jobs.*
+*This is the video behind the post. It follows Nora, a made-up renovation contractor, through all four steps, so you can watch the whole thing work before you try it on your own jobs.*
 
-How to find your ideal customer starts with your own 10 best jobs, not a guess. You list them, count what repeats, test that group with 4 questions, and write 1 sentence that says who your business is for.
+How to find your ideal customer starts with your own 10 best jobs, not a guess. You list them, count what repeats, test that group with four questions, and write one sentence that says who your business is for.
 
-That sentence is the result. This post is how to get it, in 4 steps that go in order.
+That sentence is the result. This post is how to get it, in four steps that go in order.
 
 ## The deck job 45 minutes away
 
@@ -52,7 +52,7 @@ Best means a job you'd take again tomorrow. It paid well, it paid on time, and i
 
 The mistake is listing your 10 biggest jobs. The right move is the 10 you'd happily do again.
 
-Write 1 line per job. The type, the area, how they found you, and what you kept after materials and labour. A rough number is fine. If you use job or invoice software, look your jobs up there.
+Write one line per job. The type, the area, how they found you, and what you kept after materials and labour. A rough number is fine. If you use job or invoice software, look your jobs up there.
 
 Here's your table:
 
@@ -98,27 +98,27 @@ Claude reads your list back as a table and asks if it's right. If it's wrong, te
 
 Then it counts what repeats. The job type, the area, and how they found you. For Nora you should get:
 
-- Bathrooms, 6 of 10
-- The north side, 5 of 10
-- A neighbour, 5 of 10
+- Bathrooms, six of 10
+- The north side, five of 10
+- A neighbour, five of 10
 
 Claude can get a count wrong. So check each number against your list. Count the rows yourself. If Claude's count is off, type the right number. Your list wins.
 
 The mistake is trusting the count. The right move is checking it.
 
-Now see where Nora's guess falls over. Basements were 2 of her 10 best jobs, and in total she kept $12,400 on them. Bathrooms were 6 of 10, and in total she kept $26,200. All 5 of the jobs that came from a neighbour were bathrooms.
+Now see where Nora's guess falls over. Basements were two of her 10 best jobs, and in total she kept $12,400 on them. Bathrooms were six of 10, and in total she kept $26,200. All five of the jobs that came from a neighbour were bathrooms.
 
-Then Claude checks which of those show up in the same jobs. 4 of Nora's 6 bathroom jobs were on the north side, and 5 of the 6 came through a neighbour. That's 1 group of customers, not 3 separate counts.
+Then Claude checks which of those show up in the same jobs. 4 of Nora's six bathroom jobs were on the north side, and five of the six came through a neighbour. That's one group of customers, not three separate counts.
 
-If nothing repeats 3 times, stop there. Add jobs as you finish them. Otherwise, take that group into step 3. For Nora, it's north side bathrooms. ([Step 2 in the video](https://www.youtube.com/watch?v=Y7dbpB4p8HU&t=173s))
+If nothing repeats three times, stop there. Add jobs as you finish them. Otherwise, take that group into step 3. For Nora, it's north side bathrooms. ([Step 2 in the video](https://www.youtube.com/watch?v=Y7dbpB4p8HU&t=173s))
 
 ## Step 3: test the crowd
 
 This step checks that the group needs you, can pay, and can be found. You check the ground before you pour.
 
-The 4 questions here are adapted from Alex Hormozi's book $100M Offers. The steps are in my words.
+The four questions here are adapted from Alex Hormozi's book $100M Offers. The steps are in my words.
 
-Claude asks you 4 questions, 1 at a time, about that group:
+Claude asks you four questions, one at a time, about that group:
 
 - Does this customer have a problem that hurts right now?
 - Can they pay for it?
@@ -127,11 +127,11 @@ Claude asks you 4 questions, 1 at a time, about that group:
 
 Answer from what you've seen on real jobs. If you don't know, say so. If your answer is vague, Claude asks you again. For a no or a don't know, ask past customers before you choose.
 
-Here's how Nora answers for bathrooms. A failed shower in your only bathroom hurts now. All 6 of those customers paid her in full. Neighbours refer her. More north side homeowners now need their bathrooms redone.
+Here's how Nora answers for bathrooms. A failed shower in your only bathroom hurts now. All six of those customers paid her in full. Neighbours refer her. More north side homeowners now need their bathrooms redone.
 
-The mistake is keeping a crowd because you like the work. Nora likes basements. But 2 jobs is thin, so she'll test that crowd later. She picks bathrooms, and keeps an eye on basements.
+The mistake is keeping a crowd because you like the work. Nora likes basements. But two jobs is thin, so she'll test that crowd later. She picks bathrooms, and keeps an eye on basements.
 
-If 2 crowds pass, pick the one you can find more of.
+If two crowds pass, pick the one you can find more of.
 
 Keep your answers. They go into your sentence in step 4. ([Step 3 in the video](https://www.youtube.com/watch?v=Y7dbpB4p8HU&t=269s))
 
@@ -139,7 +139,7 @@ Keep your answers. They go into your sentence in step 4. ([Step 3 in the video](
 
 This step turns the count and your answers into something you can say. A truck that says "we do everything" doesn't say who it's for.
 
-Claude drafts it. Who, where, what they need and how they find you. Then you change the words until you can picture 1 real person.
+Claude drafts it. Who, where, what they need and how they find you. Then you change the words until you can picture one real person.
 
 If the draft says something your list or your answers don't, take it out.
 
@@ -147,7 +147,7 @@ The mistake is stopping at "homeowners". Say where, and what they need.
 
 Here's Nora's, after she changed a few words:
 
-> My crowd is homeowners with 1 failing bathroom, on the north side, who need it fixed fast, and they find me through neighbours.
+> My crowd is homeowners with one failing bathroom, on the north side, who need it fixed fast, and they find me through neighbours.
 
 Keep yours to 25 words or fewer. Short enough to say out loud. ([Step 4 in the video](https://www.youtube.com/watch?v=Y7dbpB4p8HU&t=351s))
 
@@ -203,13 +203,13 @@ My jobs:
 
 ## Do it on your real business today
 
-List your 10 best jobs, run the 4 steps, and write your 1 sentence.
+List your 10 best jobs, run the four steps, and write your one sentence.
 
 Then take your last 10 finished jobs, good and bad. Fewer? Use them all. Count how many fit your sentence. That's your starting count of recent jobs from this crowd.
 
 Next up is your offer. You write it for the crowd you just named.
 
-Want help with this? See the [2 ways to start](#start) below.
+Want help with this? See the [two ways to start](#start) below.
 
 If you want to see Claude used on another part of a trades business, [Claude + Airtable](/blog/claude-airtable/) shows how to build a painting quote on your phone.
 

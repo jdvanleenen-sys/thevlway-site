@@ -12,7 +12,7 @@ export const EDUBAWARE_FAQ = [
   },
   {
     q: 'Why pay when Clief Notes is free?',
-    a: 'Clief Notes teaches the method. You pay me to look at your own work, sit in your chat and give you 1 fix each week.',
+    a: 'Clief Notes teaches the method. You pay me to look at your own work, sit in your chat and give you one fix each week.',
   },
   {
     q: 'Should I understand it or build it?',
@@ -20,7 +20,7 @@ export const EDUBAWARE_FAQ = [
   },
   {
     q: 'Is the school finished?',
-    a: `Not yet. The first lessons are ready, and I finish the last 3 with the first group. That is why this is the founding price, ${EDUBAWARE_PRICE} a month.`,
+    a: `Not yet. The first lessons are ready, and I finish the last three with the first group. That is why this is the founding price, ${EDUBAWARE_PRICE} a month.`,
   },
   {
     q: 'What kind of task works best?',
@@ -28,7 +28,7 @@ export const EDUBAWARE_FAQ = [
   },
   {
     q: 'How much of your time do I get?',
-    a: `This is a school, not private coaching. The AI coach is there whenever you work. I read your work, give you 1 fix each week and join your chat when you need a person. That is why I am keeping it to ${EDUBAWARE_FOUNDING_SEATS} founding seats.`,
+    a: `This is a school, not private coaching. The AI coach is there whenever you work. I read your work, give you one fix each week and join your chat when you need a person. That is why I am keeping it to ${EDUBAWARE_FOUNDING_SEATS} founding seats.`,
   },
   {
     q: 'What if it is not for me?',
