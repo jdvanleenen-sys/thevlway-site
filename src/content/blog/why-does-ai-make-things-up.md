@@ -1,6 +1,8 @@
 ---
 title: 'Why Does AI Make Things Up? Usually It Read the Wrong File First'
 description: 'Why does AI make things up? Often it read the wrong file first and was sure about it. 2 steps fix that: put the right file first, and send a helper into the mess.'
+seoTitle: 'Why Does AI Make Things Up? It Read the Wrong File'
+seoDescription: 'Why does AI make things up? Often it read the wrong file first. 2 steps fix that: put the right file first, and send a helper into the mess.'
 pubDate: 2026-10-23
 keyword: 'why does ai make things up'
 youtubeId: 'Jhtpy2YoeFs'

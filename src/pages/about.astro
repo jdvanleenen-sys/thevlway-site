@@ -8,9 +8,20 @@ import { OWNER_NAME, SITE_NAME } from '../consts';
 
 // Claims come from rows marked PUBLIC in Jeff-HQ/10 Ventures/icm-consulting/next-yes/me.md, Jeff's
 // own Office line, and the Masters line on the EdubaWare page. Check there before adding one.
+const siteUrl = new URL('/', Astro.site).href;
+const profile = {
+  '@type': 'ProfilePage',
+  '@id': `${siteUrl}about/#profile`,
+  url: `${siteUrl}about/`,
+  mainEntity: { '@id': `${siteUrl}#owner` },
+};
 ---
 
-<Base title="About" description={`${OWNER_NAME} runs ${SITE_NAME} and teaches trade contractors to build simple AI systems.`}>
+<Base
+  title={`About ${OWNER_NAME}`}
+  description={`${OWNER_NAME} runs ${SITE_NAME} and teaches trade contractors to build simple AI systems.`}
+  schema={[profile]}
+>
   <AboutHero />
   <AboutSubjects />
   <AboutWhy />

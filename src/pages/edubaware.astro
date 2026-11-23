@@ -8,12 +8,51 @@ import EdubaPaths from '../components/EdubaPaths.astro';
 import EdubaProblem from '../components/EdubaProblem.astro';
 import EdubaTerms from '../components/EdubaTerms.astro';
 import EdubaWeek from '../components/EdubaWeek.astro';
-import { EDUBAWARE_FOUNDING_SEATS, EDUBAWARE_PRICE, OWNER_NAME } from '../consts';
+import { EDUBAWARE_FOUNDING_SEATS, EDUBAWARE_PRICE, OWNER_NAME, SITE_NAME } from '../consts';
+import { EDUBAWARE_FAQ } from '../lib/edubaFaq';
+import { EDUBAWARE_SHARE_ALT, EDUBAWARE_SHARE_IMAGE, faqSchema } from '../lib/seo';
+
+const siteUrl = new URL('/', Astro.site).href;
+const pageUrl = `${siteUrl}edubaware/`;
+const school = {
+  '@type': 'Service',
+  '@id': `${pageUrl}#school`,
+  name: `${SITE_NAME} school on EdubaWare`,
+  serviceType: 'AI training on your own weekly office task',
+  description: 'Learn ICM Principles by Jake Van Clief on 1 real weekly task, free or with a teacher in your chat.',
+  url: pageUrl,
+  provider: { '@id': `${siteUrl}#org` },
+  offers: [
+    {
+      '@type': 'Offer',
+      name: 'Understand it with me',
+      price: '0',
+      priceCurrency: 'USD',
+      url: pageUrl,
+    },
+    {
+      '@type': 'Offer',
+      name: 'Build it with me: founding seat',
+      price: '30',
+      priceCurrency: 'USD',
+      url: pageUrl,
+      priceSpecification: {
+        '@type': 'UnitPriceSpecification',
+        price: '30',
+        priceCurrency: 'USD',
+        unitText: 'per person, per month',
+      },
+    },
+  ],
+};
 ---
 
 <Base
   title="Understand ICM or build it with me"
   description={`ICM Principles by Jake Van Clief. Understand it free or build it with ${OWNER_NAME} in your chat. ${EDUBAWARE_FOUNDING_SEATS} founding seats at ${EDUBAWARE_PRICE} a month.`}
+  image={EDUBAWARE_SHARE_IMAGE}
+  imageAlt={EDUBAWARE_SHARE_ALT}
+  schema={[school, faqSchema(pageUrl, EDUBAWARE_FAQ)]}
 >
   <div class="eduba-page">
     <EdubaHero />

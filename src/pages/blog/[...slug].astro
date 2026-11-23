@@ -5,6 +5,7 @@ import PostBody from '../../components/PostBody.astro';
 import PostCard from '../../components/PostCard.astro';
 import TwoDoors from '../../components/TwoDoors.astro';
 import { formatPostDate, getPublishedPosts, type BlogPost } from '../../lib/posts';
+import { articleSchema, postShareImage } from '../../lib/seo';
 
 const MORE_POSTS = 3;
 
@@ -27,9 +28,19 @@ interface Props {
 const { post, morePosts } = Astro.props;
 const { Content, headings } = await render(post);
 const sections = headings.filter((heading) => heading.depth === 2);
+const siteUrl = new URL('/', Astro.site).href;
 ---
 
-<Base title={post.data.title} description={post.data.description}>
+<Base
+  title={post.data.seoTitle ?? post.data.title}
+  description={post.data.seoDescription ?? post.data.description}
+  image={postShareImage(post.id)}
+  imageAlt={post.data.title}
+  ogType="article"
+  publishedTime={post.data.pubDate}
+  modifiedTime={post.data.updatedDate ?? post.data.pubDate}
+  schema={[articleSchema(post, siteUrl)]}
+>
   <div class="container post">
     <header class="post-head">
       <a class="back" href="/blog/">Back to the blog</a>
