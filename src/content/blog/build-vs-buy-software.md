@@ -8,7 +8,7 @@ draft: false
 videoUploadDate: 2026-10-06
 ---
 
-*This is the video behind the post. It walks one roofing crew through all three steps, so you can see the two questions work on real tools before you try them on yours.*
+*This is the video behind the post. It walks one roofing crew through all three steps, so you can see the two questions work on everyday tools before you try them on yours.*
 
 Build vs buy software comes down to one rule: rent what's the same for every business, build how you win the work, and make the call yourself instead of letting a sales demo make it for you.
 
@@ -44,7 +44,7 @@ Two restaurants can buy the very same oven. The recipe is why you go back to one
 
 So for the work that wins you jobs, ask a second question: **"Is this how I win the work?"** If yes, write build next to it.
 
-In the video, Marco runs a small roofing crew. His quote follow-up was going out as the same message every roofer gets, straight from his app's template. That hands away the way his business wins work. The right move: he writes the follow-up his way, then lets the app send it.
+In the video, Marco, a made-up owner, runs a small roofing crew. His quote follow-up was going out as the same message every roofer gets, straight from his app's template. That hands away the way his business wins work. The right move: he writes the follow-up his way, then lets the app send it.
 
 And if a tool does both? Rent the app, and build how you use it. That's the answer for most of the software a trades business runs on. ([Step 2 in the video](https://www.youtube.com/watch?v=J5MaC5jgj74&t=120s))
 
@@ -59,7 +59,7 @@ Take out your rent list and your build list. Pick one tool you pay for that you'
 
 Write rent or build beside that tool. Writing it down helps you decide, instead of drifting into another renewal. And if it belongs on the rent list, that's fine. Keep renting it. ([The two questions in the video](https://www.youtube.com/watch?v=J5MaC5jgj74&t=205s))
 
-There's a short 8-bit version of this step. A business owner rents an invoice app, which is fine. Then she picks the plan that says EVERYTHING. Five months and $445 later, she has used one button. Renting was never the mistake. Renting more than the job needs was: [What am I paying for?](https://youtu.be/YhiVFpwijoA).
+There's a short 8-bit version of this step. A business owner rents an invoice app, which is fine. Then she picks the plan that says EVERYTHING. Five months and $445 later, she has used one button. Renting was never the mistake. Renting more than the job needs was. Watch it here: [What am I paying for?](https://youtu.be/YhiVFpwijoA)
 
 Owning the decision also means knowing where your data and your logins live when you rent. The Canadian Centre for Cyber Security keeps a plain list of [baseline security controls for small and medium organizations](https://www.cyber.gc.ca/en/guidance/baseline-cyber-security-controls-small-and-medium-organizations) that's worth a read before you sign up for the next app. If you're in Canada, the federal [Canada Digital Adoption Program page](https://ised-isde.canada.ca/site/canada-digital-adoption-program/en) is another place to see how small businesses plan their tech.
 
@@ -77,7 +77,7 @@ Not sure which thing that is? [Which business problem to fix first](/blog/which-
 
 Want help with this? See the [two ways to start](#start) below.
 
-One thing we learned building it: an AI chat isn't a calculator. It writes the number that looks most likely, so on a long column it can slip a digit and still sound sure. So we took the adding away from it. The AI reads your statement, and a small script we wrote does the math, the same way every time. Claude needs code switched on to run it (Settings, then Capabilities). If it's off, Claude adds it by hand, marks the total "added without a calculator, check it", and you add the column on a calculator.
+One caution if you use AI to total what your tools cost: an AI chat isn't a calculator. It can slip a digit on a long column and still sound sure, so add the total yourself.
 
 And if you're ready to hook your phone up to a tool you rent, the [Claude + Airtable setup](/blog/claude-airtable/) is the next step: Airtable is the rented database, and the way you price a job is the part you build.
 

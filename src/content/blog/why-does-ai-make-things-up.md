@@ -153,8 +153,8 @@ The four files are the start. A full AI receptionist needs a few more: who it is
 
 ## Your move today
 
-Want help with this? See the [two ways to start](#start) below.
-
 Open your AI's folder tonight and look at what it reads first.
+
+Want help with this? See the [two ways to start](#start) below.
 
 I'm in Your Corner. Now, Go Own It.
