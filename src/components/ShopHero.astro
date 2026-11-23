@@ -9,6 +9,7 @@ import {
   EDUBAWARE_REFUND_DAYS,
   ICM_PLAIN,
   TEAMS_PATH,
+  TEAMS_PRICE,
 } from '../consts';
 
 const bipSayings = [
@@ -73,7 +74,7 @@ const bipSayings = [
       </p>
     </div>
     <div class="door paid">
-      <p class="door-name">For teams: {EDUBAWARE_PRICE} per seat, per month</p>
+      <p class="door-name">For teams: {TEAMS_PRICE} per seat, per month</p>
       <p class="paid-line"><strong>What you get:</strong></p>
       <ul>
         <li>One shared room for each job, with your people and the AI in the same chat</li>
@@ -132,10 +133,20 @@ const bipSayings = [
     align-items: start;
   }
 
+  /* Each door shares the same five rows, so the three buttons sit on one line. */
   .door {
+    display: grid;
+    grid-row: span 5;
+    grid-template-rows: subgrid;
+    row-gap: 0;
     min-width: 0;
     padding-top: var(--space-3);
     border-top: 2px solid var(--navy);
+  }
+
+  .door > .button,
+  .door > :global(.affiliate) {
+    align-self: end;
   }
 
   .door-name {
@@ -258,6 +269,11 @@ const bipSayings = [
 
     .doors {
       grid-template-columns: minmax(0, 1fr);
+    }
+
+    .door {
+      display: block;
+      grid-row: auto;
     }
   }
 

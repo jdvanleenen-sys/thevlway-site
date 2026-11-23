@@ -18,7 +18,10 @@ export const EDUBAWARE_PAGE_URL = 'https://thevlway.com/edubaware/';
 export const CLIEF_NOTES_AFFILIATE_URL =
   'https://www.skool.com/cliefnotes/about?ref=9b87167cad844357b07892d1da8b1c51';
 export const CLIEF_NOTES_DISCLOSURE = "I'm a Clief Notes affiliate and earn a commission if you upgrade.";
-export const EDUBAWARE_PRICE = '$30 USD';
+// The school and Teams are separate offers with separate prices.
+export const EDUBAWARE_PRICE = '$97 USD';
+export const EDUBAWARE_PRICE_AMOUNT = '97';
+export const TEAMS_PRICE = '$30 USD';
 export const EDUBAWARE_REFUND_DAYS = 'seven';
 export const TEAMS_PATH = '/teams/';
 export const TEAMS_EMAIL_URL = `mailto:${CONTACT_EMAIL}?subject=TEAMS`;

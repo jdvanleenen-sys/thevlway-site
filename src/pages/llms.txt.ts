@@ -2,6 +2,7 @@ import type { APIContext } from 'astro';
 import {
   EDUBAWARE_FOUNDING_SEATS,
   EDUBAWARE_PRICE,
+  TEAMS_PRICE,
   OWNER_NAME,
   SITE_DESCRIPTION,
   SITE_NAME,
@@ -24,7 +25,7 @@ export async function GET(context: APIContext) {
     '',
     `- [Try it free](${site}edubaware/): two free lessons with an AI coach on your own weekly office job.`,
     `- [Build it with me](${site}edubaware/): learn ICM Principles with Jeff in the same chat. ${EDUBAWARE_FOUNDING_SEATS} founding seats at ${EDUBAWARE_PRICE} per person, per month. The first lessons are ready, and the last three are being finished with the first group.`,
-    `- [AI the vL Way for Teams](${site}teams/): a company's people finish one job together in a shared room on EdubaWare, on a template built for the work. ${EDUBAWARE_PRICE} per seat, per month. Setup, template work, custom builds, training and ongoing help are priced after looking at the job.`,
+    `- [AI the vL Way for Teams](${site}teams/): a company's people finish one job together in a shared room on EdubaWare, on a template built for the work. ${TEAMS_PRICE} per seat, per month. Setup, template work, custom builds, training and ongoing help are priced after looking at the job.`,
     '',
     '## Main pages',
     '',

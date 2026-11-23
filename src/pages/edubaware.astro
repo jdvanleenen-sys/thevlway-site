@@ -9,7 +9,7 @@ import EdubaPaths from '../components/EdubaPaths.astro';
 import EdubaProblem from '../components/EdubaProblem.astro';
 import EdubaTerms from '../components/EdubaTerms.astro';
 import EdubaWeek from '../components/EdubaWeek.astro';
-import { EDUBAWARE_FOUNDING_SEATS, EDUBAWARE_FOUNDING_SEATS_START, EDUBAWARE_PRICE, OWNER_NAME, SITE_NAME } from '../consts';
+import { EDUBAWARE_FOUNDING_SEATS, EDUBAWARE_FOUNDING_SEATS_START, EDUBAWARE_PRICE, EDUBAWARE_PRICE_AMOUNT, OWNER_NAME, SITE_NAME } from '../consts';
 import { EDUBAWARE_FAQ } from '../lib/edubaFaq';
 import { EDUBAWARE_SHARE_ALT, EDUBAWARE_SHARE_IMAGE, faqSchema } from '../lib/seo';
 
@@ -34,12 +34,12 @@ const school = {
     {
       '@type': 'Offer',
       name: 'Build it with me: founding seat',
-      price: '30',
+      price: EDUBAWARE_PRICE_AMOUNT,
       priceCurrency: 'USD',
       url: pageUrl,
       priceSpecification: {
         '@type': 'UnitPriceSpecification',
-        price: '30',
+        price: EDUBAWARE_PRICE_AMOUNT,
         priceCurrency: 'USD',
         unitText: 'per person, per month',
       },

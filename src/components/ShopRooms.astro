@@ -1,7 +1,7 @@
 ---
 import AffiliateLink from './AffiliateLink.astro';
 import ShopRoom from './ShopRoom.astro';
-import { OWNER_AUTHORITY, EDUBAWARE_FOUNDING_SEATS_START, EDUBAWARE_PAGE_URL, EDUBAWARE_PRICE, TEAMS_PATH, YOUTUBE_URL } from '../consts';
+import { OWNER_AUTHORITY, EDUBAWARE_FOUNDING_SEATS_START, EDUBAWARE_PAGE_URL, EDUBAWARE_PRICE, TEAMS_PATH, TEAMS_PRICE, YOUTUBE_URL } from '../consts';
 import { getPublishedPosts } from '../lib/posts';
 
 const postCount = (await getPublishedPosts()).length;
@@ -90,7 +90,7 @@ const postCount = (await getPublishedPosts()).length;
         action="See AI the vL Way for Teams"
       >
         <p class="room-copy">Your departments finish their work together in shared EdubaWare chats, with templates made for the different jobs your company runs.</p>
-        <p class="room-copy"><strong>{EDUBAWARE_PRICE} per seat, per month.</strong></p>
+        <p class="room-copy"><strong>{TEAMS_PRICE} per seat, per month.</strong></p>
       </ShopRoom>
     </div>
   </div>
