@@ -1,19 +1,20 @@
 ---
-import { CLIEF_NOTES_AFFILIATE_URL, CLIEF_NOTES_DISCLOSURE } from '../consts';
+import { CLIEF_NOTES_AFFILIATE_URL, CLIEF_NOTES_DISCLOSURE, ICM_PLAIN } from '../consts';
 
 interface Props {
   fillCard?: boolean;
   compact?: boolean;
   edubawareColor?: boolean;
+  defineIcm?: boolean;
 }
 
-const { fillCard = false, compact = false, edubawareColor = false } = Astro.props;
+const { fillCard = false, compact = false, edubawareColor = false, defineIcm = true } = Astro.props;
 ---
 
 <div class:list={['affiliate', { 'fill-card': fillCard }]}>
   {
     !compact && (
-      <p>Learn the ICM Principles by Jake Van Clief in Clief Notes, a free AI community on Skool.</p>
+      <p>{defineIcm && `${ICM_PLAIN} `}Learn the ICM Principles by Jake Van Clief in Clief Notes, a free AI community on Skool, an online community website.</p>
     )
   }
   <p class="affiliate-disclosure">{CLIEF_NOTES_DISCLOSURE}</p>
@@ -47,7 +48,8 @@ const { fillCard = false, compact = false, edubawareColor = false } = Astro.prop
   }
 
   .button-primary:hover {
-    background: var(--navy);
+    background: color-mix(in srgb, var(--cognac-dark) 80%, black);
+    color: var(--white);
   }
 
   .fill-card {

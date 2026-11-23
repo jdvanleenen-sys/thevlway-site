@@ -2,20 +2,22 @@
 import Base from '../layouts/Base.astro';
 import { CONTACT_EMAIL, OWNER_LOCATION, OWNER_NAME, SITE_NAME } from '../consts';
 
-const EFFECTIVE_DATE = 'November 22, 2026';
+const EFFECTIVE_DATE = 'November 23, 2026';
 const contactHref = `mailto:${CONTACT_EMAIL}`;
 
 const collected = [
   'Your name, email address and business name, when you email me or buy a seat.',
   'Your billing address and payment details, which you enter on Stripe. I can see the last 4 digits and brand of your card. I never see the full number.',
   'Your payment history, such as invoices, receipts, refunds and subscription status.',
-  'What you type and upload in your EdubaWare workspace, including chats with the AI agent and the files you build.',
+  'What you type and upload in your EdubaWare workspace, including chats with the AI coach and the files you build.',
+  'Company files and information you give me for a template, custom build, training or ongoing help.',
   'Anything you choose to tell me by email.',
 ];
 
 const uses = [
   'Send your invitation and give you access to EdubaWare.',
   'Teach, check your work and answer your questions.',
+  'Build and support the templates and tools your company hires me to make.',
   'Charge you, send receipts and handle refunds.',
   'Keep the records the law requires, such as tax records.',
 ];
@@ -23,20 +25,21 @@ const uses = [
 const providers = [
   { name: 'Stripe', job: 'processes payments, receipts and invoices, and helps prevent fraud.' },
   { name: 'Eduba', job: 'runs the EdubaWare platform and stores your workspace.' },
-  { name: 'AI model providers', job: 'process what you send to the AI agent so it can reply.' },
+  { name: 'AI model providers', job: 'process what you send to the AI coach so it can reply.' },
   { name: 'GitHub', job: 'hosts this website and may log basic visit data, such as IP addresses.' },
   { name: 'Google Fonts', job: 'delivers this site\'s font, which sends your IP address to Google.' },
+  { name: 'YouTube', job: 'plays the videos embedded in blog posts, which sends your IP address to Google.' },
   { name: 'Email providers', job: 'carry and store messages you send me.' },
 ];
 ---
 
-<Base title="Privacy policy" description={`How ${SITE_NAME} collects, uses and protects your personal information.`}>
+<Base title="Privacy policy" description={`How ${SITE_NAME} collects, uses, shares and stores your personal information.`}>
   <div class="container policy">
     <header class="head">
       <p class="eyebrow">Effective {EFFECTIVE_DATE}</p>
       <h1>Privacy policy</h1>
       <p class="lede">
-        This policy covers thevlway.com and free and paid EdubaWare seats from {OWNER_NAME} of {SITE_NAME},
+        This policy covers thevlway.com, free and paid EdubaWare seats, and company work from {OWNER_NAME} of {SITE_NAME},
         based in {OWNER_LOCATION}. I am responsible for the personal information described here.
       </p>
     </header>
@@ -59,7 +62,7 @@ const providers = [
         <p>
           I can see your EdubaWare workspace and chats so I can teach and check your work. Other managers
           of the same EdubaWare organization can also see them. If your employer bought your seat, its
-          managers may be able to see your work too. If you work in a shared crew room, everyone in that
+          managers may be able to see your work too. If you work in a shared room, everyone in that
           room can read and download every file in it. Do not put private customer, financial or health
           information in your workspace unless you are allowed to.
         </p>
@@ -79,6 +82,7 @@ const providers = [
             ))
           }
         </ul>
+        <p>If your company connects other tools to a shared room, the AI coach can send them information from that room. Your company chooses those tools.</p>
         <p>I may also disclose information when the law requires it.</p>
       </section>
     </div>
@@ -96,14 +100,16 @@ const providers = [
         <p>
           I keep your account information while you have a seat and for as long as I need it after that
           to answer questions or resolve a dispute. Billing records are kept for at least 6 years for tax
-          purposes.
+          purposes. I keep company files only as long as I need them for the work you hired me to do, or
+          until you ask me to delete them, unless the law requires me to keep them.
         </p>
       </section>
       <section class="panel depth-box">
         <h2>Cookies</h2>
         <p>
           This site does not use advertising or analytics cookies. Stripe and EdubaWare use their own
-          cookies to keep payments and sign-ins working.
+          cookies to keep payments and sign-ins working. Blog videos use YouTube's privacy-enhanced player,
+          which may store data in your browser when you play a video.
         </p>
       </section>
     </div>

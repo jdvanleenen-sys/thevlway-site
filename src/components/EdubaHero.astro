@@ -1,8 +1,10 @@
 ---
 import ShopScene from './ShopScene.astro';
 import {
+  ICM_PLAIN,
   CONTACT_EMAIL,
   EDUBAWARE_FOUNDING_SEATS,
+  EDUBAWARE_FOUNDING_SEATS_START,
   EDUBAWARE_FREE_URL,
   EDUBAWARE_INVITE_URL,
   EDUBAWARE_PRICE,
@@ -13,13 +15,14 @@ import {
 <section class="container hero">
   <div class="intro">
     <p class="eyebrow">ICM Principles by Jake Van Clief</p>
-    <h1>Understand it with me. Build it with me.</h1>
+    <h1>Bring one weekly task. Build it with a teacher in the same chat.</h1>
     <p class="lede">
-      New to Clief Notes and not sure where to start? Bring 1 task you repeat every week, and work on
-      it with a Master of ICM in your chat. No coding.
+      Not technical, with office work piling up behind the job? Bring one task you repeat every week. You,
+      an AI coach and a real teacher work on it in the same chat. The goal: it runs in steps, checks itself and
+      hands it to you to sign off. No coding.
     </p>
     <p class="credit">
-      I'm {OWNER_NAME}, one of Jake Van Clief's 7 Masters of ICM.
+      I'm {OWNER_NAME}, one of Jake Van Clief's 7 Masters of ICM, and a teacher for over 24 years. {ICM_PLAIN}
     </p>
   </div>
   <div class="scene">
@@ -30,18 +33,18 @@ import {
   </div>
   <div class="doors">
     <article class="door depth-box">
-      <p class="door-name">Understand it with me</p>
+      <p class="door-name">Try it</p>
       <p class="price">Free</p>
-      <p class="note">2 short lessons on your own weekly task.</p>
-      <a class="button button-edubaware door-button invite" href={EDUBAWARE_FREE_URL}>Start free</a>
+      <p class="note">Two short lessons on your own weekly task. Free lessons are with the AI coach. A founding seat adds me to your chat.</p>
+      <a class="button button-edubaware door-button invite" href={EDUBAWARE_FREE_URL}>Start the free lessons</a>
       <p class="small">Send the word FREE to {CONTACT_EMAIL}.</p>
     </article>
     <article class="door depth-box">
       <p class="door-name">Build it with me</p>
       <p class="price">{EDUBAWARE_PRICE}</p>
       <p class="note">
-        Per person, per month. {EDUBAWARE_FOUNDING_SEATS} founding seats. Cancel any time. The first
-        lessons are ready. I finish the rest with the first group.
+        Per person, per month. {EDUBAWARE_FOUNDING_SEATS_START} founding seats. Cancel any time. The first
+        four lessons are open. I finish the last three with the first group.
       </p>
       <a class="button button-edubaware door-button invite" href={EDUBAWARE_INVITE_URL}>Ask for a founding seat</a>
       <p class="small">Send the word INVITE to {CONTACT_EMAIL}.</p>
@@ -94,6 +97,7 @@ import {
   }
 
   .scene {
+    align-self: center;
     min-width: 0;
     border: 4px solid var(--edubaware);
   }

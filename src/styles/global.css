@@ -126,14 +126,15 @@ img {
 }
 
 .button-secondary {
-  background: transparent;
-  color: var(--navy);
+  background: var(--navy);
+  color: var(--white);
   border-color: var(--navy);
 }
 
 .button-secondary:hover {
-  background: var(--navy);
+  background: var(--navy-dark);
   color: var(--white);
+  border-color: var(--navy-dark);
 }
 
 /* Burgundy is EdubaWare's colour. Every button that leads into EdubaWare uses it, free or paid. */
@@ -160,4 +161,12 @@ img {
   font-size: 1rem;
   line-height: 1.2;
   text-align: center;
+}
+
+/* Jeff's house style: body text is fully justified. Short labels and price figures are not. */
+main p:not(.eyebrow, .amount, .per, .number, .fee, .plate, .door-name, .price, .label),
+main li {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: manual;
 }

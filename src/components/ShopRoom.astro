@@ -6,7 +6,7 @@ interface Props {
   scene: SceneName;
   alt: string;
   title: string;
-  layout: 'side' | 'free' | 'paid';
+  layout: 'side' | 'free' | 'paid' | 'full';
   href?: string;
   action?: string;
 }
@@ -23,7 +23,7 @@ const { plate, scene, alt, title, layout, href, action } = Astro.props;
       <slot />
       {
         href && action && (
-          <a class:list={layout === 'paid' ? 'button door-button paid-button' : 'action'} href={href}>
+          <a class:list={layout === 'paid' || layout === 'full' ? 'button door-button paid-button' : 'action'} href={href}>
             {action}
           </a>
         )
@@ -54,6 +54,14 @@ const { plate, scene, alt, title, layout, href, action } = Astro.props;
     grid-column: span 6;
   }
 
+  /* Sits above the 4 side rooms at every width, and below the 2 doors on desktop. */
+  .full {
+    --depth-edge: var(--edubaware-dark);
+    grid-column: 1 / -1;
+    order: -1;
+    border-color: var(--edubaware);
+  }
+
   .plate {
     margin: 0;
     padding: var(--space-2) var(--space-4);
@@ -65,7 +73,8 @@ const { plate, scene, alt, title, layout, href, action } = Astro.props;
     text-transform: uppercase;
   }
 
-  .paid .plate {
+  .paid .plate,
+  .full .plate {
     background: var(--edubaware);
   }
 
@@ -76,7 +85,8 @@ const { plate, scene, alt, title, layout, href, action } = Astro.props;
     min-width: 0;
   }
 
-  .side .inner {
+  .side .inner,
+  .full .inner {
     flex-direction: row;
   }
 
@@ -92,6 +102,14 @@ const { plate, scene, alt, title, layout, href, action } = Astro.props;
     align-self: center;
     border-bottom: 0;
     border-right: 3px solid var(--navy);
+  }
+
+  .full .picture {
+    flex: 0 0 58%;
+    width: 58%;
+    align-self: center;
+    border-bottom: 0;
+    border-right: 3px solid var(--edubaware);
   }
 
   .body {
@@ -148,6 +166,19 @@ const { plate, scene, alt, title, layout, href, action } = Astro.props;
     .paid,
     .side {
       grid-column: span 12;
+    }
+  }
+
+  @media (max-width: 980px) {
+    .full .inner {
+      flex-direction: column;
+    }
+
+    .full .picture {
+      flex: none;
+      width: 100%;
+      border-right: 0;
+      border-bottom: 3px solid var(--edubaware);
     }
   }
 

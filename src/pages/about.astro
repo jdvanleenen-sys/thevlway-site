@@ -3,11 +3,11 @@ import Base from '../layouts/Base.astro';
 import AboutHero from '../components/AboutHero.astro';
 import AboutSubjects from '../components/AboutSubjects.astro';
 import AboutWhy from '../components/AboutWhy.astro';
+import PageWalkers from '../components/PageWalkers.astro';
 import TwoDoors from '../components/TwoDoors.astro';
 import { OWNER_NAME, SITE_NAME } from '../consts';
 
-// Claims come from rows marked PUBLIC in Jeff-HQ/10 Ventures/icm-consulting/next-yes/me.md, Jeff's
-// own Office line, and the Masters line on the EdubaWare page. Check there before adding one.
+// Every claim here must already be approved for public use. Check before adding one.
 const siteUrl = new URL('/', Astro.site).href;
 const profile = {
   '@type': 'ProfilePage',
@@ -19,19 +19,26 @@ const profile = {
 
 <Base
   title={`About ${OWNER_NAME}`}
-  description={`${OWNER_NAME} runs ${SITE_NAME} and teaches trade contractors to build simple AI systems.`}
+  description={`${OWNER_NAME} runs ${SITE_NAME} and teaches people who aren't technical to build simple AI systems for the office work behind the job.`}
   schema={[profile]}
 >
-  <AboutHero />
-  <AboutSubjects />
-  <AboutWhy />
-  <section class="container start">
-    <h2>2 ways to start</h2>
-    <TwoDoors />
-  </section>
+  <div class="about-page">
+    <AboutHero />
+    <AboutSubjects />
+    <AboutWhy />
+    <section class="container start">
+      <h2>Two ways to start</h2>
+      <TwoDoors />
+    </section>
+    <PageWalkers sheet="/shop/cast-walk.png" headings=".about-page section h2" maxLanes={1} />
+  </div>
 </Base>
 
 <style>
+  .about-page {
+    position: relative;
+  }
+
   .start {
     padding-top: var(--space-7);
   }

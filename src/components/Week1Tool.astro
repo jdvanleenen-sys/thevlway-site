@@ -1,7 +1,7 @@
 <div class="tool depth-box">
   <p class="tool-eyebrow">The idea generator</p>
-  <h3>Get 3 ideas built for your actual job</h3>
-  <p class="tool-desc">Pick the closest match. The prompt updates instantly. Copy it, paste it into your AI tool, answer its questions honestly, and bring what it gives you to Session 1.</p>
+  <h3>Get three ideas built for your actual job</h3>
+  <p class="tool-desc">Pick the closest match. The prompt updates instantly. Copy it, paste it into your AI tool, answer its questions as best you can, and bring what it gives you to your first team session. Keep private details out: talk about your week and leave out customer names.</p>
 
   <div class="role-select" role="group" aria-label="Choose your role">
     <button type="button" class="role-btn selected" data-role="sales">Sales and estimating</button>
@@ -213,10 +213,10 @@
 
 <script is:inline>
   const rolePrompts = {
-    sales: "I work in sales and estimating at a small trades business. My week is full of calls, site visits, quotes, and following up on them. Ask me 5 short questions about what actually ate my time this week. Then give me exactly 3 specific things I could try using you for before our next session, ranked by how much time each would probably save me. One sentence per idea.",
-    field: "I run jobs in the field at a small trades business. My week is full of schedules, crew and supplier coordination, site issues, and keeping customers updated. Ask me 5 short questions about what actually ate my time this week. Then give me exactly 3 specific things I could try using you for before our next session, ranked by how much time each would probably save me. One sentence per idea.",
-    admin: "I run the office at a small trades business. My week is full of calls, scheduling, invoices, paperwork, and keeping everyone coordinated. Ask me 5 short questions about what actually ate my time this week. Then give me exactly 3 specific things I could try using you for before our next session, ranked by how much time each would probably save me. One sentence per idea.",
-    owner: "I own or manage a small trades business. My week is full of decisions, cash, priorities, and things only I can unblock. Ask me 5 short questions about what actually ate my time this week. Then give me exactly 3 specific things I could try using you for before our next session, ranked by how much time each would probably save me. One sentence per idea.",
+    sales: "I work in sales and estimating at a small trades business. My week is full of calls, site visits, quotes, and following up on them. Ask me five short questions about what actually ate my time this week. Then give me exactly three specific things I could try using you for before our next session, ranked by how much time each would probably save me. One sentence per idea.",
+    field: "I run jobs in the field at a small trades business. My week is full of schedules, crew and supplier coordination, site issues, and keeping customers updated. Ask me five short questions about what actually ate my time this week. Then give me exactly three specific things I could try using you for before our next session, ranked by how much time each would probably save me. One sentence per idea.",
+    admin: "I run the office at a small trades business. My week is full of calls, scheduling, invoices, paperwork, and keeping everyone coordinated. Ask me five short questions about what actually ate my time this week. Then give me exactly three specific things I could try using you for before our next session, ranked by how much time each would probably save me. One sentence per idea.",
+    owner: "I own or manage a small trades business. My week is full of decisions, cash, priorities, and things only I can unblock. Ask me five short questions about what actually ate my time this week. Then give me exactly three specific things I could try using you for before our next session, ranked by how much time each would probably save me. One sentence per idea.",
     other: null
   };
 
@@ -231,7 +231,7 @@
 
   function otherPrompt(text) {
     const role = text && text.trim() ? text.trim() : '[your role]';
-    return `I work as a ${role} at a small trades business. Ask me 5 short questions about what actually ate my time this week. Then give me exactly 3 specific things I could try using you for before our next session, ranked by how much time each would probably save me. One sentence per idea.`;
+    return `I work as a ${role} at a small trades business. Ask me five short questions about what actually ate my time this week. Then give me exactly three specific things I could try using you for before our next session, ranked by how much time each would probably save me. One sentence per idea.`;
   }
 
   function renderPrompt() {

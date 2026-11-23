@@ -1,6 +1,6 @@
 ---
 title: 'How to Create a Claude Skill (and Catch What It Misses)'
-description: 'How to create a Claude skill for the report you rebuild by hand. 4 steps, a made-up test, and the check that caught 40 homes in 1 place and 42 in another.'
+description: 'How to create a Claude skill for the report you rebuild by hand. Four steps, a made-up test, and the check that caught 40 homes in one place and 42 in another.'
 pubDate: 2026-11-23
 keyword: 'how to create a claude skill'
 draft: false
@@ -10,11 +10,11 @@ videoUploadDate: 2026-11-11
 
 *This is the video behind the post. Watch the report that looks done in the first 20 seconds. Then watch step 4 find the number that was wrong in it.*
 
-How to create a Claude skill comes down to 4 steps. Say what done looks like. Let the Skill Creator build it. Test it on made-up numbers. Check the report against what went in.
+How to create a Claude skill comes down to four steps. Say what done looks like. Let the Skill Creator build it. Test it on made-up numbers. Check the report against what went in.
 
 Step 4 is why this post exists.
 
-Our report looked done. 1 part said 40 homes. Another part said 42.
+Our report looked done. One part said 40 homes. Another part said 42.
 
 The skill didn't flag it. The check did.
 
@@ -54,11 +54,11 @@ In Settings, turn on Create and edit files first. Anthropic, the company that ma
 
 Claude has a built-in helper called the Skill Creator. It builds skills with you.
 
-You can also upload someone else's skill as a zip file. A zip file is 1 file that carries a whole folder. Read it first and trust the source.
+You can also upload someone else's skill as a zip file. A zip file is one file that carries a whole folder. Read it first and trust the source.
 
-We used the Skill Creator. Here it is, in 4 steps.
+We used the Skill Creator. Here it is, in four steps.
 
-## How to create a Claude skill in 4 steps
+## How to create a Claude skill in four steps
 
 ### Step 1: Say what done looks like
 
@@ -111,7 +111,7 @@ Start a new chat. Give Claude the new report, the old one, the numbers and the c
 
 Ask it to list every mismatch and every missed checklist item, in a table.
 
-It found 1. The home count said 40 in 1 place and 42 in another.
+It found one. The home count said 40 in one place and 42 in another.
 
 The made-up numbers disagreed with each other. The skill didn't flag it.
 
@@ -121,7 +121,7 @@ Then we added a checklist line. Flag any home count that isn't 40.
 
 We put that rule into the skill, saved it and tested again.
 
-Now the skill knows 1 more rule, and we still run the check.
+Now the skill knows one more rule, and we still run the check.
 
 ## A person still signs off
 
@@ -135,29 +135,29 @@ Want your team on it? Share skills on Team or Enterprise plans, or send teammate
 
 ## The free prompt for your own report
 
-Copy everything in the box into Claude. It walks you through the same steps on your own report, 1 question at a time.
+Copy everything in the box into Claude. It walks you through the same steps on your own report, one question at a time.
 
 ```text
-I run a small trades business. I just watched how to build a Claude skill in 4 steps:
+I run a small trades business. I just watched how to build a Claude skill in four steps:
 say what done looks like, let the Skill Creator build it, test it on made-up numbers,
 then check the report against what went in.
 
-Help me do it for 1 report I rebuild by hand. Ask me 1 question at a time and wait
+Help me do it for one report I rebuild by hand. Ask me one question at a time and wait
 for my answer. Use plain words. No tech talk.
 
 Step 1. Ask me which report I rebuild by hand every week, month or quarter. If I'm not
 sure, ask what I copy from last time and change the numbers on. Help me pick 1.
 
-Step 2. Help me write what done looks like, as a short checklist. Ask me, 1 at a time:
+Step 2. Help me write what done looks like, as a short checklist. Ask me, one at a time:
 - Where does last time's version live, and what file type is it?
 - Where do the new numbers come from?
 - What has to stay the same? The layout, the logo, the colours, the fonts.
 - What is allowed to change? Usually only the words, the numbers and the dates.
 - What should happen when a number is missing? Default: highlight it in yellow so a
   person fills it in.
-- Is there a number that should never change from 1 report to the next? A home count,
+- Is there a number that should never change from one report to the next? A home count,
   a contract total, a square footage. Name it.
-Then show me my finished-report checklist, 4 to 6 lines, in my own words.
+Then show me my finished-report checklist, four to six lines, in my own words.
 
 Step 3. Write me the message to paste into a NEW chat with Claude's Skill Creator. It
 should say: help me create a skill from this checklist, then list my checklist. Tell me
@@ -183,10 +183,10 @@ Rules for you:
 
 ## Your move today
 
-Pick 1 report you rebuild by hand. Write its checklist today.
+Pick one report you rebuild by hand. Write its checklist today.
 
-Not sure how to write a line an AI can follow? I wrote about the [4 lines that work](/blog/sop-for-small-business/). And if a long chat starts losing track of your details, here's how the [Claude context window](/blog/claude-context-window/) fills up.
+Not sure how to write a line an AI can follow? I wrote about the [four lines that work](/blog/sop-for-small-business/). And if a long chat starts losing track of your details, here's how the [Claude context window](/blog/claude-context-window/) fills up.
 
-Want help with this? See the [2 ways to start](#start) below.
+Want help with this? See the [two ways to start](#start) below.
 
 I'm in Your Corner. Now, Go Own It.

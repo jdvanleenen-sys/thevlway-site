@@ -1,0 +1,205 @@
+---
+import { FILM_STEPS } from '../lib/teamsStory';
+---
+
+<section class="film-band" id="the-job" aria-labelledby="film-title">
+  <div class="container">
+    <h2 id="film-title">Watch one job get finished</h2>
+    <p class="made-up">Kestrel Homes, its people and this job are made up. Jeff is real. This shows how a template can be set up.</p>
+    <div class="film" data-teams-film>
+      <figure class="screen depth-box">
+        <img
+          class="poster"
+          src="/teams/poster.png"
+          width="960"
+          height="540"
+          alt="A made-up office team in suits stands inside one shared EdubaWare chat, next to the signed report they finished."
+        />
+        <canvas width="960" height="540" role="img" aria-label="Animated scene of a made-up team whose private chats slide together, pulling them into one EdubaWare chat to finish a report."></canvas>
+        <figcaption>
+          <button class="button button-edubaware film-toggle" type="button" hidden>Pause the film</button>
+        </figcaption>
+      </figure>
+      <ol class="steps depth-box">
+        {
+          FILM_STEPS.map((step) => (
+            <li>
+              <strong>{step.title}</strong> {step.text}
+            </li>
+          ))
+        }
+      </ol>
+    </div>
+  </div>
+</section>
+
+<style>
+  .film-band {
+    padding: var(--space-7) 0;
+    background: var(--cream);
+  }
+
+  h2 {
+    margin-bottom: var(--space-1);
+    color: var(--edubaware);
+  }
+
+  .made-up {
+    margin-bottom: var(--space-4);
+    font-weight: 700;
+  }
+
+  .film {
+    display: grid;
+    grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+    gap: var(--space-5);
+    align-items: start;
+  }
+
+  .screen {
+    margin: 0;
+    background: var(--white);
+    border: 3px solid var(--edubaware);
+  }
+
+  .poster,
+  canvas {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    background: var(--navy);
+  }
+
+  canvas {
+    display: none;
+  }
+
+  .film:global(.is-ready) .poster {
+    display: none;
+  }
+
+  .film:global(.is-ready) canvas {
+    display: block;
+  }
+
+  figcaption {
+    padding: var(--space-2);
+  }
+
+  figcaption:has(button[hidden]) {
+    display: none;
+  }
+
+  .film-toggle {
+    min-height: 44px;
+    padding: var(--space-1) var(--space-4);
+    font-family: inherit;
+    font-size: 0.95rem;
+    cursor: pointer;
+  }
+
+  .steps {
+    display: grid;
+    gap: var(--space-1);
+    margin: 0;
+    padding: var(--space-3) var(--space-3) var(--space-3) var(--space-6);
+    background: var(--white);
+    border: 3px solid var(--edubaware);
+    font-size: 0.92rem;
+    line-height: 1.4;
+  }
+
+  .steps li {
+    padding: var(--space-1) var(--space-2);
+    border-left: 4px solid transparent;
+  }
+
+  .steps li:global(.is-current) {
+    border-left-color: var(--edubaware);
+    background: var(--cream);
+  }
+
+  .steps strong {
+    color: var(--edubaware);
+  }
+
+  @media (max-width: 860px) {
+    .film {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+</style>
+
+<script>
+  import { drawFilmFrame, type FilmImages } from '../lib/teamsFilmDraw';
+  import { FILM_LENGTH, POSTER_TIME, stepAt } from '../lib/teamsStory';
+
+  const PLAY_LABEL = 'Play the film';
+  const PAUSE_LABEL = 'Pause the film';
+
+  function loadImage(src: string): Promise<HTMLImageElement> {
+    return new Promise((resolve, reject) => {
+      const image = new Image();
+      image.onload = () => resolve(image);
+      image.onerror = () => reject(new Error(`Could not load ${src}`));
+      image.src = src;
+    });
+  }
+
+  async function loadFilmImages(): Promise<FilmImages> {
+    const [cast, offices] = await Promise.all([
+      loadImage('/teams/cast.png'),
+      loadImage('/teams/offices.png'),
+    ]);
+    return { cast, offices };
+  }
+
+  async function startFilm(film: HTMLElement) {
+    const canvas = film.querySelector('canvas');
+    const toggle = film.querySelector<HTMLButtonElement>('.film-toggle');
+    const context = canvas?.getContext('2d');
+    if (!canvas || !toggle || !context) return;
+    const steps = [...film.querySelectorAll<HTMLElement>('.steps li')];
+
+    // If the art fails to load, the poster and the written steps stay on screen.
+    const images = await loadFilmImages().catch(() => null);
+    if (!images) return;
+
+    const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    let isPlaying = !reducedMotion;
+    let filmTime = reducedMotion ? POSTER_TIME : 0;
+    let lastFrame = 0;
+
+    const render = () => {
+      drawFilmFrame(context, images, filmTime);
+      const current = stepAt(filmTime);
+      steps.forEach((step, index) => step.classList.toggle('is-current', isPlaying && index === current));
+    };
+
+    const tick = (now: number) => {
+      if (!isPlaying) return;
+      if (lastFrame) filmTime = (filmTime + Math.min((now - lastFrame) / 1000, 0.1)) % FILM_LENGTH;
+      lastFrame = now;
+      render();
+      requestAnimationFrame(tick);
+    };
+
+    const setPlaying = (playing: boolean) => {
+      isPlaying = playing;
+      lastFrame = 0;
+      toggle.textContent = playing ? PAUSE_LABEL : PLAY_LABEL;
+      toggle.setAttribute('aria-pressed', String(!playing));
+      document.dispatchEvent(new CustomEvent('teams:motion', { detail: playing }));
+      render();
+      if (playing) requestAnimationFrame(tick);
+    };
+
+    toggle.hidden = false;
+    toggle.addEventListener('click', () => setPlaying(!isPlaying));
+    film.classList.add('is-ready');
+    setPlaying(isPlaying);
+  }
+
+  document.querySelectorAll<HTMLElement>('[data-teams-film]').forEach((film) => void startFilm(film));
+</script>

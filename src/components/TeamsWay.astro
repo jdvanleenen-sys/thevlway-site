@@ -1,0 +1,134 @@
+---
+const layers = [
+  { number: '60%', name: 'The structure', line: 'What we build for your company: your templates, your rules, your shared files and the steps each job follows.' },
+  { number: '30%', name: 'The handoffs', line: 'How the work moves between your people: who brings what, who checks it and who signs off.' },
+  { number: '10%', name: 'The AI', line: 'The AI does its part inside that structure, with the right files and clear steps in front of it.' },
+];
+
+const teaching = [
+  { name: 'See it.', line: 'I show your people the whole job working, start to finish.' },
+  { name: 'Do it.', line: 'They try it with me beside them.' },
+  { name: 'Make it yours.', line: 'They use it on their own work, and I correct what they do.' },
+  { name: 'Take it somewhere new.', line: 'They use the same steps on a different job.' },
+];
+
+const limits = [
+  'EdubaWare is an early-stage platform. Its screens and features will change.',
+  'Anyone in a room can change or delete a file, and there is no undo.',
+  'If two people edit the same thing at once, one edit can overwrite the other.',
+  'There are no scheduled runs. Nothing runs until someone sends a message.',
+  'Everyone in a room can read and download every file in it.',
+  'Microsoft 365 and SharePoint connections are not ready.',
+  'Each outside app you connect uses one login for the whole team, not one for each person.',
+  'Your company\'s EdubaWare managers and I can see every chat, and we are there to assist.',
+];
+---
+
+<section class="container way" id="how">
+  <h2>The AI is the smallest part</h2>
+  <p class="intro">
+    Taping AI onto a messy process gets you a faster mess. I build the structure first, then add the AI.
+    My 60/30/10 rule shows where the value sits, and why the AI can do its job.
+  </p>
+  <div class="layers">
+    {
+      layers.map((layer) => (
+        <article class="teams-card depth-box">
+          <p class="number">{layer.number}</p>
+          <h3>{layer.name}</h3>
+          <p>{layer.line}</p>
+        </article>
+      ))
+    }
+  </div>
+
+  <p class="closer">Drop AI into a mess and it mostly guesses. Give it structure and it has something to work with.</p>
+
+  <div class="columns">
+    <article class="teams-card depth-box">
+      <h3>How I teach</h3>
+      <p>Jake teaches at scale. I teach one company at a time, inside your real work. I have been teaching for over 24 years. This is how I teach:</p>
+      <ol>{teaching.map((step) => <li><strong>{step.name}</strong> {step.line}</li>)}</ol>
+      <p class="partner">I teach your people to use AI as a thought partner. Brief it the way you would brief a new coworker, with what is happening, why it matters and what you need back.</p>
+    </article>
+    <article class="teams-card depth-box" id="limits">
+      <h3>Know this before you start</h3>
+      <ul>{limits.map((limit) => <li>{limit}</li>)}</ul>
+    </article>
+  </div>
+</section>
+
+<style>
+  .way {
+    padding-top: var(--space-7);
+    padding-bottom: var(--space-7);
+  }
+
+  h2 {
+    color: var(--edubaware);
+  }
+
+  .layers {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--space-5);
+    margin-bottom: var(--space-4);
+  }
+
+  .closer {
+    margin-bottom: var(--space-6);
+    font-weight: 700;
+  }
+
+  .partner {
+    margin: var(--space-3) 0 0;
+  }
+
+  .number {
+    margin-bottom: var(--space-1);
+    color: var(--edubaware);
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.1;
+  }
+
+  .layers p:last-child {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .columns {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-5);
+  }
+
+  .columns p,
+  ul,
+  ol {
+    font-size: 1rem;
+    line-height: 1.45;
+  }
+
+  ul,
+  ol {
+    margin: 0;
+    padding-left: var(--space-5);
+  }
+
+  li {
+    margin-bottom: var(--space-2);
+  }
+
+  li:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 980px) {
+    .layers,
+    .columns {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+</style>

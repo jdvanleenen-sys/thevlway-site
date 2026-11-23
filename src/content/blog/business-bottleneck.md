@@ -1,6 +1,6 @@
 ---
 title: 'Business Bottleneck: Find the 1 Folder Costing You the Most'
-description: 'Find your business bottleneck in 3 steps, for trades: match each problem to 1 of 4 folders, mark the 1 folder that costs you most, and give it a name.'
+description: 'Find your business bottleneck in three steps, for trades: match each problem to one of four stages, mark the one folder that costs you most, and give it a name.'
 pubDate: 2026-10-04
 keyword: 'business bottleneck'
 draft: false
@@ -8,33 +8,33 @@ youtubeId: 'XldRCThcQyc'
 videoUploadDate: 2026-10-06
 ---
 
-*This is the video behind the post. It walks one landscaping crew through all 3 steps, so you can see 2 problems that feel unrelated land in the same folder.*
+*This is the video behind the post. It walks one landscaping crew through all three steps, so you can see two problems that feel unrelated land in the same folder.*
 
-Your business bottleneck is the 1 folder in your business that's leaking the most right now. To find it, match each problem to the folder it happens in, mark the 1 that costs you most, and give it a name.
+Your business bottleneck is the one folder in your business that's leaking the most right now. To find it, match each problem to the folder it happens in, mark the one that costs you most, and give it a name.
 
-If you've been asking how to identify business problems, this is where I'd start. The rest of this post is how to run those 3 steps on your own business.
+If you've been asking how to identify business problems, this is where I'd start. The rest of this post is how to run those three steps on your own business.
 
 ## Business bottleneck: why "I'm drowning" fixes nothing
 
-It's 9 at night, and you're still at the kitchen table. Someone asks what's wrong, and you say, "I'm drowning."
+It's nine at night, and you're still at the kitchen table. Someone asks what's wrong, and you say, "I'm drowning."
 
 But you can't point to what's pulling you under. So nothing gets fixed, and next week looks the same.
 
 You'd think business pain is a mystery. It isn't. It's a specific leak in a specific stage.
 
-Your work moves through 4 stages. Think of each one as a folder: Leads, Quotes, Jobs and Payments.
+Your work moves through four stages. Think of each one as a folder: Leads, Quotes, Jobs and Payments. If you've seen the six folders in [AI for painting business](/blog/ai-for-painting-business/), these four stages are the path a customer takes through them.
 
-Know which folder is leaking, and you know where to start. It takes 3 steps, and they go in order.
+Know which folder is leaking, and you know where to start. It takes three steps, and they go in order.
 
 ## Step 1: match the problem to its folder
 
-This step turns "I'm drowning" into 1 place you can point to.
+This step turns "I'm drowning" into one place you can point to.
 
 A plumber doesn't say the house is wet. He finds the pipe.
 
-So for each problem, ask 1 question: **"Which folder does this happen in?"**
+So for each problem, ask one question: **"Which folder does this happen in?"**
 
-Here are 4 problems, and where each one fits:
+Here are four problems, and where each one fits:
 
 - **The phone rings while you're up a ladder.** That's Leads. A fix there is an AI receptionist, a tool that answers your calls.
 - **Quotes go out and nobody replies.** That's Quotes. A fix there is automatic follow-up. That's a text or email after the quote.
@@ -43,21 +43,21 @@ Here are 4 problems, and where each one fits:
 
 Here's why it matters. A folder gives you a place to start. A feeling doesn't.
 
-In the video, say Kyle runs a small landscaping crew. He's made up, but his week will sound familiar. He thinks his whole business is the problem.
+In the video, Kyle runs a small landscaping crew. He's made up, but his week will sound familiar. He thinks his whole business is the problem.
 
 Kyle misses calls while he's on the mower. That's Leads.
 
-That's 1 problem matched. Keep it for step 2. ([Step 1 in the video](https://www.youtube.com/watch?v=XldRCThcQyc&t=55s))
+That's one problem matched. Keep it for step 2. ([Step 1 in the video](https://www.youtube.com/watch?v=XldRCThcQyc&t=55s))
 
-## Step 2: mark the 1 that costs most
+## Step 2: mark the one that costs most
 
 This step tells you where to build first.
 
 You patch the biggest hole in the bucket first.
 
-So take your matched problem. Now trace a second one that feels unrelated. Often, 2 problems turn out to live in the same folder.
+So take your matched problem. Now trace a second one that feels unrelated. Often, two problems turn out to live in the same folder.
 
-Back to Kyle. He also forgets to call people back. That's Leads again. 2 problems, 1 folder.
+Back to Kyle. He also forgets to call people back. That's Leads again. Two problems, one folder.
 
 So it isn't his whole business. It's his Leads folder.
 
@@ -71,11 +71,11 @@ That's your leaking folder. Hold onto it for step 3. ([Step 2 in the video](http
 
 ## Step 3: give your bottleneck a name
 
-This step turns a leaking folder into 1 clear thing to fix.
+This step turns a leaking folder into one clear thing to fix.
 
 On a job site, the task with a name gets on the schedule.
 
-So take your leaking folder, and pick the name that fits. Here are 6 names to choose from:
+So take your leaking folder, and pick the name that fits. Here are six names to choose from:
 
 - Never Miss a Lead
 - Site Visit to Estimate Draft
@@ -86,31 +86,31 @@ So take your leaking folder, and pick the name that fits. Here are 6 names to ch
 
 Then write what it costs you in a normal week.
 
-Kyle's is Never Miss a Lead. Say it costs him about 2 jobs in a normal week. That's Kyle's example, not a rule for every crew.
+Kyle's is Never Miss a Lead. Say it costs him about two jobs in a normal week. That's Kyle's example, not a rule for every crew.
 
 Here's why. A named bottleneck decides what you do next.
 
-The mistake is naming 3. The right move is naming 1.
+The mistake is naming three. The right move is naming one.
 
-None of the 6 fit? Then name it in your own words. ([Step 3 in the video](https://www.youtube.com/watch?v=XldRCThcQyc&t=180s))
+None of the six fit? Then name it in your own words. ([Step 3 in the video](https://www.youtube.com/watch?v=XldRCThcQyc&t=180s))
 
 ## Why the order matters
 
-Match the problem. Mark the 1 that costs most. Give it a name.
+Match the problem. Mark the one that costs most. Give it a name.
 
-Skip step 1, and it all stays 1 big feeling. Skip step 2, and you may fix the annoying one first. Skip step 3, and you have nothing clear to fix next.
+Skip step 1, and it all stays one big feeling. Skip step 2, and you may fix the annoying one first. Skip step 3, and you have nothing clear to fix next.
 
 ## Write your bottleneck down
 
 Now write the name of your bottleneck. Then write what it costs you in a normal week.
 
-2 short lines will do:
+Two short lines will do:
 
 > "My bottleneck is ____. In a normal week it costs me ____."
 
 Use your own name for it and your own words for the cost. A rough guess is enough.
 
-You know the leaking folder. The next question is whether to build the fix or rent it. [Build vs buy software](/blog/build-vs-buy-software/) runs 2 questions on that. And once you know your fix, [how to systemize your business](/blog/how-to-systemize-your-business/) shows how to pick between fixing 1 thing and fixing everything.
+You know the leaking folder. The next question is whether to build the fix or rent it. [Build vs buy software](/blog/build-vs-buy-software/) runs two questions on that. And once you know your fix, [how to systemize your business](/blog/how-to-systemize-your-business/) shows how to pick between fixing one thing and fixing everything.
 
 And before you pay for a fix, [software for contractors](/blog/software-for-contractors/) shows you what to check first.
 
@@ -120,6 +120,6 @@ And if your leaking folder is Payments, the Canada Revenue Agency's page on [kee
 
 Here's your move for this week: write down the name of your bottleneck and what it costs you in a normal week.
 
-Want help with this? See the [2 ways to start](#start) below.
+Want help with this? See the [two ways to start](#start) below.
 
 More at [thevlway.com](/).

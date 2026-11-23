@@ -19,9 +19,9 @@ const steps = [
 
 const limits = [
   'EdubaWare is in early testing, so its screens and features will change.',
-  'When someone works in another chat, refresh the page to see their new files.',
-  'There is no undo for files yet. If 2 people change the same sentence at once, the last change wins.',
-  'Everyone in a room can read and download every file in it. Keep passwords and private customer details out.',
+  'Everyone in the same chat sees it live. If someone is working in a different chat, refresh the page to see their new files.',
+  'Anyone in a shared room can change or delete a file, and there is no undo yet. If two people change the same sentence at once, the last change wins.',
+  'Everyone in a shared room can read and download every file in it. Keep passwords and private customer details out, and practise with made-up or blanked-out customer details.',
 ];
 ---
 
@@ -65,17 +65,18 @@ const limits = [
       <h2 id="refunds">Cancellations and refunds</h2>
       <p>
         To cancel, email <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>. Your next charge
-        stops and you keep access until the end of the month you paid for.
+        stops and you keep access until the end of the month you paid for. Download your files before your access ends.
       </p>
       <p>
         If it is not for you, email me within {EDUBAWARE_REFUND_DAYS} days of your first payment for a
-        full refund. Later payments and partial months are not refunded.
+        full refund. When the last three lessons open, founding members get another {EDUBAWARE_REFUND_DAYS} days
+        to ask for a refund of their latest monthly payment. Other payments and partial months are not refunded.
       </p>
     </article>
     <article class="panel depth-box">
       <h2>Payment and questions</h2>
       <p>
-        Stripe processes all card payments, so your card number never reaches me. For anything else,
+        Stripe processes all card payments, so your full card number never reaches me. For anything else,
         email <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.
       </p>
     </article>

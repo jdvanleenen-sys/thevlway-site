@@ -32,9 +32,9 @@ For a painter it's the same. The job is in the notes, and the prices are somewhe
 
 - Claude on your phone. The free plan works.
 - A free Airtable account.
-- A base to connect to. I use a demo, Summit Coat Painting, a made-up painting shop. It isn't real, and its prices are made up.
+- A base to connect to (Airtable's word for a database). I use a demo, Summit Coat Painting, a made-up painting shop. It isn't real, and its prices are made up.
 
-Claude's own help pages say [connectors are available on every plan](https://support.claude.com/en/articles/11176164-use-connectors-to-extend-claude-s-capabilities), and that [free accounts can make up to 5 Projects](https://support.claude.com/en/articles/9517075-what-are-projects).
+Claude's own help pages say [connectors are available on every plan](https://support.claude.com/en/articles/11176164-use-connectors-to-extend-claude-s-capabilities), and that [free accounts can make up to five Projects](https://support.claude.com/en/articles/9517075-what-are-projects).
 
 Airtable is a tool you rent, and that's fine: it's the same for every business. How you price a job is the part you build. If you're not sure which of your own tools are which, start with [build vs buy software](/blog/build-vs-buy-software/).
 
@@ -42,7 +42,7 @@ Airtable is a tool you rent, and that's fine: it's the same for every business. 
 
 Open the Summit Coat link and copy the base into your own Airtable. Now you have your own copy, with the price list already in it.
 
-Every rate lives in 1 place. Change a price there and every new quote uses it.
+Every rate lives in one place. Change a price there and every new quote uses it.
 
 ## Step 2: connect Claude to Airtable
 
@@ -62,7 +62,7 @@ In a plain chat, Claude connected to Airtable just fine. It made the customer an
 
 Connecting isn't the same as knowing your shop.
 
-So I made a Claude Project. A project is a folder in Claude that holds your rules. I pasted in the instructions: how to take a job down, and what it must never do, like never type a dollar amount and never send anything. Then I uploaded 4 files about the shop: what it does, how it prices, and the jobs it turns down.
+So I made a Claude Project. A project is a folder in Claude that holds your rules. I pasted in the instructions: how to take a job down, and what it must never do, like type a dollar amount or send anything. Then I uploaded four files about the shop: what it does, how it prices, and the jobs it turns down.
 
 Same request again, inside the Project. This time Claude read the name, address and phone back before it created anything. It flagged that "Test job" looked like a voice-to-text slip. And it asked for the email.
 
@@ -76,7 +76,7 @@ I opened Claude on my phone, and the Project was already there. Then I just said
 
 > A 2,000 square foot house, walls in Benjamin Moore Calm. 1 feature wall in Hale Navy. 42 feet of wood railing, and 16 feet of shelves.
 
-It asked about anything it couldn't be sure of. My phone heard "Calm" as "Com", so it asked for the colour. The price list has 2 kinds of closet shelving, so it asked which one I meant.
+It asked about anything it couldn't be sure of. My phone heard "Calm" as "Com", so it asked for the colour. The price list has two kinds of closet shelving, so it asked which one I meant.
 
 Each piece landed in Airtable as its own line, and each line pulled its rate from the price list:
 
@@ -101,7 +101,7 @@ So, can you give me a price today? Yes, and it's checked, not guessed.
 
 ## Get the same setup
 
-Want this setup for your shop? See the [2 ways to start](#start) below.
+Want this setup for your shop? See the [two ways to start](#start) below.
 
 Swap the demo prices for your own before you quote a real job.
 

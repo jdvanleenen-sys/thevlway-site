@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import EdubaFaq from '../components/EdubaFaq.astro';
+import PageWalkers from '../components/PageWalkers.astro';
 import EdubaHero from '../components/EdubaHero.astro';
 import EdubaMethod from '../components/EdubaMethod.astro';
 import EdubaOffer from '../components/EdubaOffer.astro';
@@ -8,7 +9,7 @@ import EdubaPaths from '../components/EdubaPaths.astro';
 import EdubaProblem from '../components/EdubaProblem.astro';
 import EdubaTerms from '../components/EdubaTerms.astro';
 import EdubaWeek from '../components/EdubaWeek.astro';
-import { EDUBAWARE_FOUNDING_SEATS, EDUBAWARE_PRICE, OWNER_NAME, SITE_NAME } from '../consts';
+import { EDUBAWARE_FOUNDING_SEATS, EDUBAWARE_FOUNDING_SEATS_START, EDUBAWARE_PRICE, OWNER_NAME, SITE_NAME } from '../consts';
 import { EDUBAWARE_FAQ } from '../lib/edubaFaq';
 import { EDUBAWARE_SHARE_ALT, EDUBAWARE_SHARE_IMAGE, faqSchema } from '../lib/seo';
 
@@ -18,14 +19,14 @@ const school = {
   '@type': 'Service',
   '@id': `${pageUrl}#school`,
   name: `${SITE_NAME} school on EdubaWare`,
-  serviceType: 'AI training on your own weekly office task',
-  description: 'Learn ICM Principles by Jake Van Clief on 1 real weekly task, free or with a teacher in your chat.',
+  serviceType: 'AI training on your own weekly office job',
+  description: 'Learn ICM Principles by Jake Van Clief on one real weekly task, free with an AI coach or with a teacher in the same chat.',
   url: pageUrl,
   provider: { '@id': `${siteUrl}#org` },
   offers: [
     {
       '@type': 'Offer',
-      name: 'Understand it with me',
+      name: 'Try it free',
       price: '0',
       priceCurrency: 'USD',
       url: pageUrl,
@@ -48,8 +49,8 @@ const school = {
 ---
 
 <Base
-  title="Understand ICM or build it with me"
-  description={`ICM Principles by Jake Van Clief. Understand it free or build it with ${OWNER_NAME} in your chat. ${EDUBAWARE_FOUNDING_SEATS} founding seats at ${EDUBAWARE_PRICE} a month.`}
+  title="Learn ICM With a Teacher in Your Chat"
+  description={`Bring one weekly task. Try two free lessons, or build it with ${OWNER_NAME} in the same chat. ${EDUBAWARE_FOUNDING_SEATS_START} founding seats at ${EDUBAWARE_PRICE} a month.`}
   image={EDUBAWARE_SHARE_IMAGE}
   imageAlt={EDUBAWARE_SHARE_ALT}
   schema={[school, faqSchema(pageUrl, EDUBAWARE_FAQ)]}
@@ -63,6 +64,7 @@ const school = {
     <EdubaOffer />
     <EdubaTerms />
     <EdubaFaq />
+    <PageWalkers sheet="/shop/cast-walk.png" headings=".eduba-page > section h2" maxLanes={4} />
   </div>
 </Base>
 
@@ -70,6 +72,7 @@ const school = {
   /* This page carries EdubaWare's burgundy, so its boxes and links match the buttons. */
   .eduba-page {
     --depth-edge: var(--edubaware-dark);
+    position: relative;
   }
 
   .eduba-page .depth-box.depth-box {

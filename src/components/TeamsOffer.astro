@@ -1,0 +1,144 @@
+---
+import { EDUBAWARE_PRICE } from '../consts';
+
+const QUOTED = 'Priced after we look at the job';
+
+const parts = [
+  {
+    name: 'Shared room',
+    price: `${EDUBAWARE_PRICE} per seat, per month`,
+    line: 'Departments and cross-department teams finish their work together in shared EdubaWare chats, with templates made for the different jobs your company runs. A template can produce Word, Excel, PDF and PowerPoint files to download. The three built templates are included in your seat. Building new templates is priced separately.',
+  },
+  { name: 'Template help', price: QUOTED, line: 'I build, review and test your templates with you.' },
+  { name: 'Custom builds', price: QUOTED, line: 'I build custom tools with you, after we agree what the job needs.' },
+  { name: 'Training', price: QUOTED, line: 'Hire me to train your people on AI. I have taught two live staff lessons so far and have not measured the results.' },
+  { name: 'Ongoing help', price: QUOTED, line: 'I can join your team\'s work from time to time, when they need a teacher.' },
+];
+
+const BUILT_STATUS = 'Built and loaded on EdubaWare. Shown so far on made-up data.';
+
+const templates = [
+  { name: 'Earnings report', line: 'Each department brings its numbers, the room checks for a missing cost, and the owner signs off.' },
+  { name: 'Mini CIM', line: 'A confidential information memorandum, the document a company uses to present itself to investors or buyers. Accounting holds the numbers and marketing holds the story.' },
+  { name: 'Marketing video plan', line: 'Your team plans one marketing video together in one room.' },
+];
+
+const builds = [
+  {
+    name: 'SOPs',
+    line: 'Standard operating procedures your team can ask about while they do the job.',
+    status: 'An idea today. We would build your first SOP together.',
+  },
+  {
+    name: 'A knowledge graph',
+    line: 'A linked map of your teams, what they share and where the real files live.',
+    status: 'I have the method. No company has run it with me yet.',
+  },
+];
+---
+
+<section class="container offer" id="offer">
+  <h2>What you get</h2>
+  <div class="parts">
+    {
+      parts.map((part, index) => (
+        <article class:list={['teams-card', 'depth-box', { lead: index === 0 }]}>
+          <h3>{index + 1}. {part.name}</h3>
+          <p class="fee">{part.price}</p>
+          <p>{part.line}</p>
+        </article>
+      ))
+    }
+  </div>
+
+  <h2 class="builds-title">Templates included with every seat</h2>
+  <div class="builds">
+    {
+      templates.map((template) => (
+        <article class="teams-card depth-box">
+          <h3>{template.name}</h3>
+          <p>{template.line}</p>
+          <p class="status">{BUILT_STATUS}</p>
+        </article>
+      ))
+    }
+  </div>
+  <p>Next on the shelf: a trade quote comparison and a meeting-to-action list.</p>
+
+  <h2 class="builds-title">What we could build together</h2>
+  <p>These are examples of tools I can build with you. They are not finished products.</p>
+  <div class="builds">
+    {
+      builds.map((build) => (
+        <article class="teams-card depth-box">
+          <h3>{build.name}</h3>
+          <p>{build.line}</p>
+          <p class="status">{build.status}</p>
+        </article>
+      ))
+    }
+  </div>
+</section>
+
+<style>
+  .offer {
+    padding-top: var(--space-7);
+    padding-bottom: var(--space-4);
+  }
+
+  h2 {
+    color: var(--edubaware);
+  }
+
+  .parts {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-5);
+  }
+
+  .lead {
+    grid-column: 1 / -1;
+  }
+
+  .teams-card p {
+    font-size: 1rem;
+    line-height: 1.45;
+  }
+
+  .teams-card p:last-child {
+    margin-bottom: 0;
+  }
+
+  .fee {
+    margin-bottom: var(--space-2);
+    font-weight: 700;
+  }
+
+  .builds-title {
+    margin-top: var(--space-8);
+  }
+
+  .builds {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--space-5);
+  }
+
+  .status {
+    padding-top: var(--space-2);
+    border-top: 2px solid var(--cream);
+    font-weight: 700;
+  }
+
+  @media (max-width: 980px) {
+    .builds {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+
+  @media (max-width: 560px) {
+    .parts {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+</style>

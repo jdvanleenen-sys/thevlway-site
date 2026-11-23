@@ -1,0 +1,55 @@
+---
+import { CONTACT_EMAIL, EDUBAWARE_PRICE, TEAMS_EMAIL_URL } from '../consts';
+
+const steps = [
+  `Email ${CONTACT_EMAIL} with the word TEAMS and the job that keeps getting lost.`,
+  'We talk through that one job, and I tell you if a shared room fits.',
+  'If it fits, I quote any custom setup or new template, then set up your seats in EdubaWare.',
+];
+---
+
+<section class="start" id="start">
+  <div class="container">
+    <h2>Start with one job</h2>
+    <ol class="depth-box">{steps.map((step) => <li>{step}</li>)}</ol>
+    <a class="button button-edubaware door-button" href={TEAMS_EMAIL_URL}>Email Jeff about my team</a>
+    <p class="terms">
+      {EDUBAWARE_PRICE} per seat, per month. The three built templates are included. Teams seats are not part of the school's five founding seats. Everything else is priced after we look at the job. I set up
+      billing with you by email.
+    </p>
+    <p class="terms">Learning on your own? <a href="/edubaware/">See the EdubaWare school</a>.</p>
+  </div>
+</section>
+
+<style>
+  .start {
+    padding: var(--space-7) 0;
+    background: var(--cream);
+  }
+
+  h2 {
+    color: var(--edubaware);
+  }
+
+  ol {
+    margin: 0 0 var(--space-5);
+    padding: var(--space-4) var(--space-4) var(--space-4) var(--space-6);
+    background: var(--white);
+    border: 3px solid var(--edubaware);
+    font-size: 1rem;
+    overflow-wrap: anywhere;
+  }
+
+  li {
+    margin-bottom: var(--space-2);
+  }
+
+  li:last-child {
+    margin-bottom: 0;
+  }
+
+  .terms {
+    margin: var(--space-3) 0 0;
+    font-size: 0.95rem;
+  }
+</style>

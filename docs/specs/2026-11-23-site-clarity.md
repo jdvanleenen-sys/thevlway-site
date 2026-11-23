@@ -1,0 +1,51 @@
+# Site clarity pass: 2026-11-23
+
+## Done means
+A person who has never heard of ICM or EdubaWare can tell, from any main page, that they get a
+real teacher and an AI coach in the same live chat, and no two pages disagree about the offer.
+
+The school and Teams are separate offers on EdubaWare. The school teaches individuals the ICM
+Principles. Teams puts a corporation's people together on projects, using templates.
+
+## Decisions from Jeff
+- Many people can work in the same chat at the same time. This is the main advantage.
+- Rebuilt against the capstone on 2026-11-23: the free door is Clief Notes through the affiliate link. The two free lessons are a way to try the school.
+- The site carries the approved audience, the approved outcome and the team-room ask.
+
+## The 11 fixes
+1. Say the same-chat advantage on the home, EdubaWare, About and Teams pages.
+2. Put the teacher in the home page hero.
+3. Make the free door Clief Notes on every page, with the two free lessons offered inside the school.
+4. Stop promising Jeff in the chat on the free tier.
+5. Say on the home page that the last three lessons are still being finished.
+6. State the same paid offer everywhere: $30 USD per person, per month, five founding seats.
+7. Back up "you keep what you build" with the download step.
+8. Remove retired course names from the blog.
+9. Explain how the four stages fit with the six folders.
+10. Remove the promise of a Week 2 page that does not exist.
+11. Replace the broken Get Cyber Safe link.
+
+## Standard words
+| Thing | Word |
+|---|---|
+| The AI inside EdubaWare | AI coach |
+| One person's place | workspace |
+| A team's place | shared room |
+| Where people talk | chat |
+| What you bring | weekly task ("job" means the customer's job) |
+| ICM, on first use | a way of setting up folders and notes that show AI where to look |
+
+Room stays only in lesson names and the shop scenes on the home page.
+
+## The loop
+- **Checks:** `scripts/check-site-clarity.mjs`, run on the built site. Pass or fail, and each
+  fail names its page.
+- **Rule:** all pass, stop. Any fail, change only what failed and run every check again.
+- **Budget:** three attempts.
+- **Fixed target:** every attempt is judged against this list, never the last attempt.
+- **Marginal:** if an attempt turns no fail into a pass, stop and keep the best attempt.
+- **Gate:** nothing merges to `main` or goes live without Jeff's go.
+
+## Must not change
+Prices, refund terms, the affiliate disclosure, the exact Masters credit, and post URLs.
+No claim that EdubaWare replaces another AI subscription, and no return-on-investment claim.

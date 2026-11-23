@@ -66,7 +66,7 @@ const entityGraph = {
       '@id': `${siteUrl}#owner`,
       name: OWNER_NAME,
       url: new URL('/about/', Astro.site).href,
-      description: "School teacher for 24 years, now a home building executive, and one of Jake Van Clief's 7 Masters of ICM.",
+      description: "Teacher for over 24 years, now a home building executive, and one of Jake Van Clief's 7 Masters of ICM.",
       knowsAbout: ['Interpretable Context Methodology', 'AI systems for small business', 'Teaching adults to use AI'],
       homeLocation: OWNER_LOCATION,
       worksFor: { '@id': `${siteUrl}#org` },
@@ -158,6 +158,8 @@ const entityGraph = {
               </>
             ))
           }
+          <a href="/teams/">For teams</a>
+          <span aria-hidden="true"> · </span>
           <a href={YOUTUBE_URL}>YouTube</a>
           <span aria-hidden="true"> · </span>
           <a href="/rss.xml">RSS</a>
@@ -166,6 +168,11 @@ const entityGraph = {
       </div>
     </footer>
     <DepthBoxes />
+    <script>
+      import { addSoftHyphens } from '../lib/softHyphens';
+
+      addSoftHyphens(document, 'main p, main li');
+    </script>
   </body>
 </html>
 
@@ -207,6 +214,22 @@ const entityGraph = {
 
   nav a:hover {
     text-decoration: underline;
+  }
+
+  /* 4 links only fit on a phone when the site name is left to the logo and screen readers. */
+  @media (max-width: 560px) {
+    .wordmark span {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip-path: inset(50%);
+      white-space: nowrap;
+    }
+
+    nav {
+      gap: var(--space-4);
+    }
   }
 
   .site-footer {

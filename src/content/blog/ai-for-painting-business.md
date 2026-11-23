@@ -8,7 +8,7 @@ draft: false
 
 [![Watch: AI for Painting Business, quotes to invoices with no retyping](/blog/ai-for-painting-business/video-thumbnail.png)](https://www.youtube.com/watch?v=aphOoBiAPjQ)
 
-*This video walks 1 job from the first quote to getting paid, in a demo painting shop. Every step in this post is on screen in it.*
+*This video walks one job from the first quote to getting paid, in a demo painting shop. Every step in this post is on screen in it.*
 
 The best use of AI for painting business owners isn't writing your ads. It's getting the paperwork off your kitchen table.
 
@@ -18,7 +18,7 @@ Here's how that works, step by step.
 
 ## The problem is the evening, not the painting
 
-Your work day is full of jobs only you can do.
+Your workday is full of jobs only you can do.
 
 You check that the tint is right. You deal with the crew member who called in sick. You handle problem after problem, and you can handle all of it.
 
@@ -32,11 +32,11 @@ Every one of them has to be right. A wrong number costs you money, or it costs y
 
 I built a made-up painting company to show this. It's called Summit Coat Painting, an interior painting shop in Calgary. It isn't real.
 
-It keeps its business in 6 folders. Clients, Sales, Work, Money, Crew and Context.
+It keeps its business in six folders. Clients, Sales, Work, Money, Crew and Context.
 
-Your shop might need 5 folders, or it might need 7. They're built around how you work, not a template everybody downloads.
+Your shop might need five folders, or it might need seven. They're built around how you work, not a template everybody downloads.
 
-And every price lives in 1 place, the price list. Change a price once, and every quote after that uses it.
+And every price lives in one place, the price list. Change a price once, and every quote after that uses it.
 
 ## Step 1: say the job once
 
@@ -46,7 +46,7 @@ In the truck, you open Claude on your phone and just talk.
 
 The customer and the job are set up before you knock.
 
-Then in the kitchen, you keep talking in the same chat. "Kitchen walls, 1 room, Benjamin Moore Calm, and a feature wall in Hale Navy."
+Then in the kitchen, you keep talking in the same chat. "Kitchen walls, one room, Benjamin Moore Calm, and a feature wall in Hale Navy."
 
 Each piece of work lands on the job as its own line.
 
@@ -60,7 +60,7 @@ This is the rule the whole setup is built on.
 
 AI is great at understanding what you said. It shouldn't be the one adding up your money.
 
-So Claude picks 2 things for each line. The item from your price list, and the quantity. It never types a dollar amount.
+So Claude picks two things for each line. The item from your price list, and the quantity. It never types a dollar amount.
 
 Every line pulls its rate from the price list. The quote adds itself up, with the GST and the deposit. The adding is done by [formulas in Airtable](https://support.airtable.com/docs/formula-field-reference), the same way every time.
 
@@ -96,11 +96,11 @@ When the money lands, you type it in, and it marks itself paid.
 
 ## What it saves you
 
-Time, because you said the job once instead of typing it 3 times.
+Time, because you said the job once instead of typing it three times.
 
-Accuracy, because the system does the math and flags what doesn't match.
+Mistakes, because the system does the math and flags what doesn't match.
 
-Money, because change orders can't slip through.
+Missed change orders, because they stay on the job.
 
 And brain power, because every job remembers where it's at.
 
@@ -108,7 +108,7 @@ The stuff that matters still stays yours. You set the prices. You do the work. Y
 
 ## Get the same setup for your shop
 
-Want this setup for your shop? See the [2 ways to start](#start) below.
+Want to build something like this for your own work? See the [two ways to start](#start) below.
 
 More posts like this are on the [AI the vL Way blog](/blog/). If you're new here, [start on the home page](/).
 

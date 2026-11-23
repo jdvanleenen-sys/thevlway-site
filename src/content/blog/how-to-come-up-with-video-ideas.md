@@ -1,6 +1,6 @@
 ---
 title: 'How to Come Up With Video Ideas: Talk First, Build Second'
-description: 'How to come up with video ideas with AI: 12 steps, 7 to talk and 5 to build, with 1 word in between so the AI never builds before you have the idea.'
+description: 'How to come up with video ideas with AI: 12 steps, seven to talk and five to build, with one word in between so the AI never builds before you have the idea.'
 pubDate: 2026-10-23
 keyword: 'how to come up with video ideas'
 youtubeId: 'VosUmn5OsCw'
@@ -8,9 +8,9 @@ draft: false
 videoUploadDate: 2026-10-23
 ---
 
-*This is the video behind the post. It shows the 12 steps on a real film I made in 1 evening, including the mistake my checks missed.*
+*This is the video behind the post. It shows the 12 steps on a real film I made in one evening, including the mistake my checks missed.*
 
-Here's how to come up with video ideas with AI. Talk first, then build. Spend 7 steps getting to 1 sentence and a twist that's yours. Then say 1 word, approved, before the AI makes anything.
+Here's how to come up with video ideas with AI. Talk first, then build. Spend seven steps getting to one sentence and a twist that's yours. Then say one word, approved, before the AI makes anything.
 
 Under 15 minutes of talking turned into a 29-second film. Then I went to bed, and my AI built the first version in 18 minutes.
 
@@ -22,15 +22,15 @@ My friend Jordan asked me how I make my videos. I couldn't explain it, so I talk
 
 Right away, it wanted to start building. I kept pushing back because I didn't have the idea yet.
 
-That back and forth turned out to be the first half of my method. There are 2 stages and 1 gate between them. You talk, you say approved, then you build.
+That back and forth turned out to be the first half of my method. There are two stages and one gate between them. You talk, you say approved, then you build.
 
 An AI is like a framing crew. Great hands, but they still need the plans.
 
-## How to come up with video ideas: the 7 talk steps
+## How to come up with video ideas: the seven talk steps
 
 **1. Feed it.** Start from something you keep coming back to. A world, a tool, someone else's work, or a challenge. Mine was Jordan's made-up world, starring Hermes, the Greek god of roads. ([Step 1 in the video](https://www.youtube.com/watch?v=VosUmn5OsCw&t=67s))
 
-**2. Say it in one breath.** What you're building and what it's saying, in 1 sentence. Mine was "how powerful an agent with direction can be."
+**2. Say it in one breath.** What you're building and what it's saying, in one sentence. Mine was "how powerful an agent with direction can be."
 
 **3. Talk it through.** I ask the AI for advice, like I would a friend. It's not interviewing me. It's sending out ideas to spark other ideas. Then I ask for the piece that's missing. I asked for a creature from Greek mythology, and it came back with Pegasus and the myth of his golden bridle. ([Step 3](https://www.youtube.com/watch?v=VosUmn5OsCw&t=95s))
 
@@ -46,29 +46,29 @@ Most people stop talking too soon. Research on idea generation found people expe
 
 ## The gate: 1 word
 
-I change any line I want. Then I say 1 word. Approved.
+I change any line I want. Then I say one word. Approved.
 
-Nothing gets built until I say it. That 1 rule is what keeps the AI from running off with a half-made idea.
+Nothing gets built until I say it. That one rule is what keeps the AI from running off with a half-made idea.
 
 It's the same thinking as deciding what to build and what to buy before you spend a dollar. I wrote about that in [build vs buy software](/blog/build-vs-buy-software).
 
 ## The 5 build steps
 
-After approved, the AI runs the build. I choose the look and the spending. The AI does the technical work.
+After I say approved, the AI runs the build. I choose the look and the spending. The AI does the technical work.
 
 **8. Voice first.** The voice sets the timing for everything else. Mine came from ElevenLabs, a tool that copies my voice.
 
-**9. 1 picture for every scene.** Made in Higgsfield, an AI picture maker. Lock the pictures before any video. A picture is cheap to redo. A clip isn't.
+**9. One picture for every scene.** Made in Higgsfield, an AI picture maker. Lock the pictures before any video. A picture is cheap to redo. A clip isn't.
 
-**10. 1 thing per clip.** Higgsfield turns each picture into a short clip that does 1 thing.
+**10. One thing per clip.** Higgsfield turns each picture into a short clip that does one thing.
 
 **11. Put it together to match the voice.** Every piece gets checked against the plan.
 
-**12. Test it, then watch it yourself.** The AI ran 6 checks. Those are small test programs, and all 6 passed. Then I watched it, and I caught something they missed. ([The mistake](https://www.youtube.com/watch?v=VosUmn5OsCw&t=260s))
+**12. Test it, then watch it yourself.** The AI ran six checks. Those are small test programs, and all six passed. Then I watched it, and I caught something they missed. ([The mistake](https://www.youtube.com/watch?v=VosUmn5OsCw&t=260s))
 
 ![Shot 4 before and after: on the left the glowing line points out to nowhere, on the right Pegasus runs along the line toward the temple](/blog/how-to-come-up-with-video-ideas/shot-4-before-after.png)
 
-In shot 4 the glowing line pointed out to nowhere. So we went back to the first clip, where Pegasus runs right along it. Checks catch what you told them to look for. Your eyes catch the rest.
+In shot four the glowing line pointed out to nowhere. So we went back to the first clip, where Pegasus runs right along it. Checks catch what you told them to look for. Your eyes catch the rest.
 
 ## The 3 rules I took from this build
 
@@ -80,8 +80,8 @@ The bridle is the part you own. Mine is a folder of rules for how I work, and my
 
 ## Try it on your next idea
 
-Want help with this? See the [2 ways to start](#start) below.
+Want help with this? See the [two ways to start](#start) below.
 
-Pick 1 thing you want to make for your business. Talk until you have your 1 sentence and your twist. Then say approved.
+Pick one thing you want to make for your business. Talk until you have your one sentence and your twist. Then say approved.
 
 The power was always there. The bridle is yours.

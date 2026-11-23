@@ -1,20 +1,20 @@
 ---
-import { EDUBAWARE_FOUNDING_SEATS, EDUBAWARE_PRICE } from '../consts';
+import { EDUBAWARE_FOUNDING_SEATS, EDUBAWARE_PRICE, TEAMS_PATH } from '../consts';
 
 const included = [
   'Your own workspace in EdubaWare, where an AI coach walks you through each lesson.',
   'Short lessons in plain words, for people who are not technical.',
-  'Practice on 1 task you repeat every week, so what you build is useful at work.',
-  'Me in your chat, and 1 fix from me each week.',
+  'Practice on one task you repeat every week, so what you build is useful at work.',
+  'Me in the same chat, and one fix from me each week.',
   'New lessons as they are finished.',
-  '2 or more paid seats get 1 private shared room for your crew.',
+  'Learning with someone? Two or more paid seats get one shared room, where you learn in the same chat at the same time.',
 ];
 
 const ready = [
-  { name: 'One Job, One Page', line: 'Put your task on 1 page.' },
+  { name: 'One Job, One Page', line: 'Put your weekly task on one page.' },
   { name: 'The Fresh Chat Test', line: 'See where a new AI gets lost in a folder.' },
-  { name: 'Use the Room', line: 'Find your way around and make the AI remember your rules.' },
-  { name: 'Run a Room', line: 'Plan a shared room for your team.' },
+  { name: 'Use the Room', line: 'Find your way around your workspace and make the AI coach remember your rules.' },
+  { name: 'Run a Room', line: 'Plan a shared room for people learning together.' },
 ];
 
 const building = [
@@ -26,7 +26,8 @@ const building = [
 
 <section class="container offer" id="offer">
   <h2>Your founding seat: {EDUBAWARE_PRICE} a month</h2>
-  <p class="cap">I am taking {EDUBAWARE_FOUNDING_SEATS} founding seats, so I have time to read everyone's work.</p>
+  <p class="cap">I am taking {EDUBAWARE_FOUNDING_SEATS} founding seats, so I have time to read everyone's work. The price will rise for later members. Your founding price stays locked for as long as you stay subscribed.</p>
+  <p>Buying for a company? <a href={TEAMS_PATH}>See AI the vL Way for Teams</a>.</p>
   <div class="columns">
     <article class="panel depth-box">
       <h3>Your seat</h3>
@@ -37,7 +38,7 @@ const building = [
       <ul>{ready.map((lesson) => <li><strong>{lesson.name}.</strong> {lesson.line}</li>)}</ul>
       <h3>Being built</h3>
       <ul>{building.map((lesson) => <li><strong>{lesson.name}.</strong> {lesson.line}</li>)}</ul>
-      <p class="note">These 3 lessons finish your task. They are not open yet. I am building them with the first group, so your real task helps shape them.</p>
+      <p class="note">These three lessons finish your weekly task. They are not open yet. I am building them with the first group, so your real work helps shape them.</p>
     </article>
   </div>
 </section>
