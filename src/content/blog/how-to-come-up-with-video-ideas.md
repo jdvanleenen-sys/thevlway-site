@@ -29,19 +29,19 @@ An AI is like a framing crew. Great hands, but they still need the plans.
 
 ## How to come up with video ideas: the 7 talk steps
 
-**One. Feed it.** Start from something you keep coming back to. A world, a tool, someone else's work, or a challenge. Mine was Jordan's made-up world, starring Hermes, the Greek god of roads. ([Step 1 in the video](https://www.youtube.com/watch?v=VosUmn5OsCw&t=67s))
+**1. Feed it.** Start from something you keep coming back to. A world, a tool, someone else's work, or a challenge. Mine was Jordan's made-up world, starring Hermes, the Greek god of roads. ([Step 1 in the video](https://www.youtube.com/watch?v=VosUmn5OsCw&t=67s))
 
-**Two. Say it in one breath.** What you're building and what it's saying, in one sentence. Mine was "how powerful an agent with direction can be."
+**2. Say it in one breath.** What you're building and what it's saying, in one sentence. Mine was "how powerful an agent with direction can be."
 
-**Three. Talk it through.** I ask the AI for advice, like I would a friend. It's not interviewing me. It's sending out ideas to spark other ideas. Then I ask for the piece that's missing. I asked for a creature from Greek mythology, and it came back with Pegasus and the myth of his golden bridle. ([Step 3](https://www.youtube.com/watch?v=VosUmn5OsCw&t=95s))
+**3. Talk it through.** I ask the AI for advice, like I would a friend. It's not interviewing me. It's sending out ideas to spark other ideas. Then I ask for the piece that's missing. I asked for a creature from Greek mythology, and it came back with Pegasus and the myth of his golden bridle. ([Step 3](https://www.youtube.com/watch?v=VosUmn5OsCw&t=95s))
 
-**Four. Catch the twist.** That's when it clicked. Pegasus is the AI, all that power. The bridle is my context, my folders, my instructions. The AI brought me the horse, but the link was mine. ([Step 4](https://www.youtube.com/watch?v=VosUmn5OsCw&t=128s))
+**4. Catch the twist.** That's when it clicked. Pegasus is the AI, all that power. The bridle is my context, my folders, my instructions. The AI brought me the horse, but the link was mine. ([Step 4](https://www.youtube.com/watch?v=VosUmn5OsCw&t=128s))
 
-**Five. Sleep on it, only if you're stuck.** A break helps after you've really worked a problem. A review of 117 studies found the same thing: stepping away helps, and it helps most on open-ended tasks like coming up with ideas ([Sio and Ormerod, 2009](https://pubmed.ncbi.nlm.nih.gov/19210055/)). I wasn't stuck, so I kept going.
+**5. Sleep on it, only if you're stuck.** A break helps after you've really worked a problem. A review of 117 studies found the same thing: stepping away helps, and it helps most on open-ended tasks like coming up with ideas ([Sio and Ormerod, 2009](https://pubmed.ncbi.nlm.nih.gov/19210055/)). I wasn't stuck, so I kept going.
 
-**Six. Check it against the rules.** Jordan's world says Pegasus never wears a metal bit. So the bridle became golden light with no bit. The rules didn't kill the idea. They made it better.
+**6. Check it against the rules.** Jordan's world says Pegasus never wears a metal bit. So the bridle became golden light with no bit. The rules didn't kill the idea. They made it better.
 
-**Seven. Plan it once.** What happens, what gets said, and the last words on screen. The script is mined, not invented. The AI pulls it from my own words in the talk. My favourite line in the film came straight from what I'd said. ([Step 7](https://www.youtube.com/watch?v=VosUmn5OsCw&t=186s))
+**7. Plan it once.** What happens, what gets said, and the last words on screen. The script is mined, not invented. The AI pulls it from my own words in the talk. My favourite line in the film came straight from what I'd said. ([Step 7](https://www.youtube.com/watch?v=VosUmn5OsCw&t=186s))
 
 Most people stop talking too soon. Research on idea generation found people expect their ideas to dry up, but they keep coming if you stay with it ([Kellogg School of Management](https://insight.kellogg.northwestern.edu/article/think-youre-out-of-creative-ideas-think-again)).
 
@@ -57,9 +57,9 @@ It's the same thinking as deciding what to build and what to buy before you spen
 
 After I say approved, the AI runs the build. I choose the look and the spending. The AI does the technical work.
 
-**Eight. Voice first.** The voice sets the timing for everything else. Mine came from ElevenLabs, a tool that copies my voice.
+**8. Voice first.** The voice sets the timing for everything else. Mine came from ElevenLabs, a tool that copies my voice.
 
-**Nine. One picture for every scene.** Made in Higgsfield, an AI picture maker. Lock the pictures before any video. A picture is cheap to redo. A clip isn't.
+**9. One picture for every scene.** Made in Higgsfield, an AI picture maker. Lock the pictures before any video. A picture is cheap to redo. A clip isn't.
 
 **10. One thing per clip.** Higgsfield turns each picture into a short clip that does one thing.
 

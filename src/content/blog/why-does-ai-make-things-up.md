@@ -77,31 +77,31 @@ When the binder is a mess, the AI still answers. It answers from whatever it fou
 
 Each step below is a piece of the folder system. Each one says what it would change in Bip's office.
 
-**One. Give it a front door.** One short page at the top of your folders that your AI loads at the start. It holds no answers. It only says where the answers live. "Customer phone numbers are in clients/. The office line is in admin/." Mine is a file called CLAUDE.md, because Claude Code loads that page every time it starts.
+**1. Give it a front door.** One short page at the top of your folders that your AI loads at the start. It holds no answers. It only says where the answers live. "Customer phone numbers are in clients/. The office line is in admin/." Mine is a file called CLAUDE.md, because Claude Code loads that page every time it starts.
 
 *In Bip's office:* the front door sends him to clients/ for a customer's number. He never grabs the office line.
 
-**Two. Name your folders for the work.** admin/, clients/, specs/. Use the words you already say out loud. The folder's name tells the AI what's inside before it opens a single file.
+**2. Name your folders for the work.** admin/, clients/, specs/. Use the words you already say out loud. The folder's name tells the AI what's inside before it opens a single file.
 
 *In Bip's office:* "Find Mrs. Ramirez's number" and clients/ are the same idea. The name points the way.
 
-**Three. Put a short note in each folder, named CLAUDE.md.** One page that says what's in this folder, what to trust and what to skip. Claude Code loads a folder's CLAUDE.md when it works in that folder. "1 card per customer. Cell number on the card." "The approved materials total is on the signed quote. Rough guesses are not approved." The note is where you also tell your AI it's allowed to say "I don't know." Anthropic's guide says that permission cuts down wrong answers.
+**3. Put a short note in each folder, named CLAUDE.md.** One page that says what's in this folder, what to trust and what to skip. Claude Code loads a folder's CLAUDE.md when it works in that folder. "1 card per customer. Cell number on the card." "The approved materials total is on the signed quote. Rough guesses are not approved." The note is where you also tell your AI it's allowed to say "I don't know." Anthropic's guide says that permission cuts down wrong answers.
 
 *In Bip's office:* the note on clients/ sends him straight to her card. The note in specs/ tells him the $1,800 is a guess before he picks it up.
 
-**Four. Give every fact one home.** Her cell number lives on her card, and only there. The office line lives in the phone list, and only there. When a fact lives in two places, someday they disagree, and the AI may go with either one. So the second place keeps a pointer, not a copy: "Ramirez: see her card in clients/."
+**4. Give every fact one home.** Her cell number lives on her card, and only there. The office line lives in the phone list, and only there. When a fact lives in two places, someday they disagree, and the AI may go with either one. So the second place keeps a pointer, not a copy: "Ramirez: see her card in clients/."
 
 *In Bip's office:* there's only one number that belongs to her, so there's only one number he can bring back.
 
-**Five. Give the messy folders a helper with one job.** Some folders stay a pile. So a helper reads just that folder and hands back just the line you need. Your main AI only ever sees the answer, never the pile. That's the bit in the video.
+**5. Give the messy folders a helper with one job.** Some folders stay a pile. So a helper reads just that folder and hands back just the line you need. Your main AI only ever sees the answer, never the pile. That's the bit in the video.
 
 *In Bip's office:* Bit reads specs/. Bip gets one line: approved materials, $1,200.
 
-**Six. Check the path.** Every answer comes from files you can open. When an answer is wrong, ask what it read. Then fix the wrong fact, or the note that wasn't clear. These pages guide your AI. They don't lock it, and that's why this step is here.
+**6. Check the path.** Every answer comes from files you can open. When an answer is wrong, ask what it read. Then fix the wrong fact, or the note that wasn't clear. These pages guide your AI. They don't lock it, and that's why this step is here.
 
 *In Bip's office:* the first wrong number shows you the problem right away. The office line was first on his path.
 
-The two steps in the first video are steps one and five in action. Steps two, three, four and six are what keep them working after the video ends.
+The two steps in the first video are steps 1 and 5 in action. Steps 2, 3, 4 and 6 are what keep them working after the video ends.
 
 The second video shows all six, in order. Bip does the same job twice, and the second time you watch each step as a stop on his path: [Why Bip Got It Wrong](https://www.youtube.com/shorts/Eq9hj96V_lE).
 
