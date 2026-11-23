@@ -127,6 +127,11 @@ check(32, 'No overpromise of constant presence or real-business-only builds', al
   return ['I stay in the chat', 'only show you builds', 'Money, because change orders'].filter((term) => text.includes(term)).map((term) => `${file}: ${term}`);
 }));
 
+check(33, 'No Bip in the written text of any blog post', postFiles.filter((file) => /\bBip\b|Robo-Intern/.test(visibleText(mainHtml(readFileSync(file, 'utf8'))))));
+check(34, 'About states the varsity coaching record, with no free throws', ['about'].filter(() => !/coached varsity basketball and volleyball/.test(pages.about.text) || /free throws/i.test(pages.about.text)));
+check(35, 'Teams says the three templates are included and seats are separate from the founding seats', ['teams'].filter(() => !/three built templates are included/i.test(pages.teams.text) || !/not part of the school's five founding seats/.test(pages.teams.text)));
+check(36, 'Home says the three built templates are included with Teams', ['home'].filter(() => !/Three built templates included/.test(pages.home.text)));
+
 let failed = 0;
 for (const { id, label, failures } of results) {
   if (failures.length) failed += 1;
