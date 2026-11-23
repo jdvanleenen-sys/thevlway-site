@@ -90,6 +90,8 @@ check(16, 'Every internal link resolves', allFiles.flatMap((file) => {
 
 check(17, 'No words joined by a missing space', coreNames.flatMap((name) => (pages[name].text.match(/[a-z]founding|[a-z]{2}[.,][A-Z][a-z]+/g) ?? []).map((hit) => `${name}: ${hit}`)));
 
+check(18, 'School pages do not sell crew or team work', failing(['home', 'edubaware', 'about'], (p) => !/your crew/i.test(p.text)));
+
 let failed = 0;
 for (const { id, label, failures } of results) {
   if (failures.length) failed += 1;

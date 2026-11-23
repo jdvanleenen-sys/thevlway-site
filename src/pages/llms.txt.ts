@@ -23,7 +23,7 @@ export async function GET(context: APIContext) {
     '## Ways to work with Jeff',
     '',
     `- [Try it free](${site}edubaware/): two free lessons with an AI coach on your own weekly office job.`,
-    `- [Build it with me](${site}edubaware/): work with Jeff and your crew in the same chat. ${EDUBAWARE_FOUNDING_SEATS} founding seats at ${EDUBAWARE_PRICE} per person, per month. The first lessons are ready, and the last three are being finished with the first group.`,
+    `- [Build it with me](${site}edubaware/): learn ICM Principles with Jeff in the same chat. ${EDUBAWARE_FOUNDING_SEATS} founding seats at ${EDUBAWARE_PRICE} per person, per month. The first lessons are ready, and the last three are being finished with the first group.`,
     `- [AI the vL Way for Teams](${site}teams/): departments finish their work together in shared EdubaWare chats, with templates made for the different jobs the company runs. ${EDUBAWARE_PRICE} per seat, per month. Setup, template work, custom builds, training and ongoing help are priced after looking at the job.`,
     '',
     '## Main pages',

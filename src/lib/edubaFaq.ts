@@ -31,8 +31,8 @@ export const EDUBAWARE_FAQ = [
     a: `This is a school, not private coaching. The AI coach is there whenever you work. I read your work, give you one fix each week and join your chat when you need a person. That is why I am keeping it to ${EDUBAWARE_FOUNDING_SEATS} founding seats.`,
   },
   {
-    q: 'Can my crew work with me?',
-    a: 'Yes. Two or more paid seats get one shared workspace for your crew. Everyone can work in the same chat at the same time, with the AI coach and me.',
+    q: 'Can I learn with someone else?',
+    a: 'Yes. Two or more paid seats get one shared workspace, where you learn in the same chat at the same time with the AI coach and me. If your company wants its team working on projects together, that is AI the vL Way for Teams.',
   },
   {
     q: 'What if it is not for me?',

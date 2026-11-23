@@ -2,8 +2,10 @@
 
 ## Done means
 A person who has never heard of ICM or EdubaWare can tell, from any main page, that they get a
-real teacher and can work with their crew and an AI coach in the same live chat, and no two
-pages disagree about the offer.
+real teacher and an AI coach in the same live chat, and no two pages disagree about the offer.
+
+The school and Teams are separate offers on EdubaWare. The school teaches individuals the ICM
+Principles. Teams puts a corporation's people together on projects, using templates.
 
 ## Decisions from Jeff
 - Many people can work in the same chat at the same time. This is the main advantage.
