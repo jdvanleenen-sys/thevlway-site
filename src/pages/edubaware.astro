@@ -1,18 +1,51 @@
 ---
 import Base from '../layouts/Base.astro';
-import CrewRoomDemo from '../components/CrewRoomDemo.astro';
-import EdubaFeatures from '../components/EdubaFeatures.astro';
+import EdubaFaq from '../components/EdubaFaq.astro';
 import EdubaHero from '../components/EdubaHero.astro';
+import EdubaMethod from '../components/EdubaMethod.astro';
+import EdubaOffer from '../components/EdubaOffer.astro';
+import EdubaPaths from '../components/EdubaPaths.astro';
+import EdubaProblem from '../components/EdubaProblem.astro';
 import EdubaTerms from '../components/EdubaTerms.astro';
-import { EDUBAWARE_PRICE, OWNER_NAME } from '../consts';
+import EdubaWeek from '../components/EdubaWeek.astro';
+import { EDUBAWARE_FOUNDING_SEATS, EDUBAWARE_PRICE, OWNER_NAME } from '../consts';
 ---
 
 <Base
-  title="EdubaWare access"
-  description={`Put your crew in one shared room with an AI agent on EdubaWare with ${OWNER_NAME}. ${EDUBAWARE_PRICE} per person per month, by invitation.`}
+  title="Understand ICM or build it with me"
+  description={`ICM Principles by Jake Van Clief. Understand it free or build it with ${OWNER_NAME} in your chat. ${EDUBAWARE_FOUNDING_SEATS} founding seats at ${EDUBAWARE_PRICE} a month.`}
 >
-  <EdubaHero />
-  <CrewRoomDemo />
-  <EdubaFeatures />
-  <EdubaTerms />
+  <div class="eduba-page">
+    <EdubaHero />
+    <EdubaProblem />
+    <EdubaPaths />
+    <EdubaWeek />
+    <EdubaMethod />
+    <EdubaOffer />
+    <EdubaTerms />
+    <EdubaFaq />
+  </div>
 </Base>
+
+<style is:global>
+  /* This page carries EdubaWare's burgundy, so its boxes and links match the buttons. */
+  .eduba-page {
+    --depth-edge: var(--edubaware-dark);
+  }
+
+  .eduba-page .depth-box.depth-box {
+    border-color: var(--edubaware);
+  }
+
+  .eduba-page a {
+    text-decoration-color: var(--edubaware);
+  }
+
+  .eduba-page a:not(.button):hover {
+    color: var(--edubaware);
+  }
+
+  .eduba-page a:focus-visible {
+    outline-color: var(--edubaware);
+  }
+</style>

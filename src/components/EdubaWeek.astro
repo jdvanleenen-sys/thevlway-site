@@ -1,0 +1,84 @@
+---
+const steps = [
+  { title: 'You work on your task', line: 'Your own workspace, your own weekly job.', star: false },
+  { title: 'The AI asks and hints', line: 'It never writes your answers.', star: false },
+  { title: 'You hand it in', line: 'A check confirms what the lesson needs.', star: false },
+  { title: 'I pick your 1 fix', line: 'I read your work and choose what moves you forward.', star: true },
+  { title: 'You make the fix', line: 'The next lesson builds on it.', star: false },
+];
+---
+
+<section class="container week" id="week">
+  <h2>What a week looks like when you build with me</h2>
+  <ol>
+    {
+      steps.map((step, index) => (
+        <li class:list={['depth-box', { star: step.star }]}>
+          <span class="number" aria-hidden="true">{index + 1}</span>
+          <h3>{step.title}</h3>
+          <p>{step.line}</p>
+        </li>
+      ))
+    }
+  </ol>
+</section>
+
+<style>
+  .week {
+    padding-top: var(--space-7);
+  }
+
+  ol {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: var(--space-3);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    min-width: 0;
+    padding: var(--space-3);
+    background: var(--white);
+    border: 2px solid var(--navy);
+    border-top: 6px solid var(--edubaware);
+  }
+
+  li.star {
+    background: var(--edubaware);
+    border-color: var(--edubaware);
+    color: var(--white);
+  }
+
+  .number {
+    display: block;
+    color: var(--edubaware);
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  h3 {
+    margin-bottom: var(--space-1);
+    color: var(--edubaware);
+    font-size: 1.05rem;
+  }
+
+  li.star .number,
+  li.star h3 {
+    color: var(--white);
+  }
+
+  p {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+
+  @media (max-width: 900px) {
+    ol {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+</style>

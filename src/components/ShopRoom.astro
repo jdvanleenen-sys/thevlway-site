@@ -14,7 +14,7 @@ interface Props {
 const { plate, scene, alt, title, layout, href, action } = Astro.props;
 ---
 
-<article class:list={['room', layout]}>
+<article class:list={['room', 'depth-box', layout]}>
   <p class="plate">{plate}</p>
   <div class="inner">
     <div class="picture"><ShopScene name={scene} alt={alt} /></div>
@@ -46,6 +46,7 @@ const { plate, scene, alt, title, layout, href, action } = Astro.props;
   }
 
   .paid {
+    --depth-edge: var(--edubaware-dark);
     grid-column: span 7;
   }
 

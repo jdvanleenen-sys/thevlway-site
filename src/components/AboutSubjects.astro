@@ -41,7 +41,7 @@ const methods = [
     <ul class="grid four">
       {
         subjects.map((subject) => (
-          <li class="card">
+          <li class="card depth-box">
             <ShopScene name={subject.scene} alt={subject.alt} />
             <div class="card-body">
               <h3>{subject.title}</h3>
@@ -59,7 +59,7 @@ const methods = [
   <ul class="grid three">
     {
       methods.map((method) => (
-        <li class="card">
+        <li class="card depth-box">
           <div class="card-body">
             <h3>{method.title}</h3>
             <p>{method.line}</p>

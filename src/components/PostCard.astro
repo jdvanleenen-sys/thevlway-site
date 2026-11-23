@@ -14,7 +14,7 @@ const hasThumbnail = existsSync(join(process.cwd(), 'public', 'blog', post.id, '
 const thumbnail = hasThumbnail ? `/blog/${post.id}/video-thumbnail.png` : '/shop/library-back.png';
 ---
 
-<article class:list={['post-card', { featured }]}>
+<article class:list={['post-card', 'depth-box', { featured }]}>
   <img src={thumbnail} alt="" width="1280" height="720" loading={featured ? 'eager' : 'lazy'} />
   <div class="body">
     <p class="date">{formatPostDate(post.data.pubDate)}</p>

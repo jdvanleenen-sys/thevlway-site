@@ -1,0 +1,125 @@
+---
+import {
+  EDUBAWARE_FOUNDING_SEATS,
+  EDUBAWARE_FREE_URL,
+  EDUBAWARE_INVITE_URL,
+  EDUBAWARE_PRICE,
+  EDUBAWARE_REFUND_DAYS,
+} from '../consts';
+
+const questions = [
+  {
+    q: 'Do I need to be technical?',
+    a: 'No. You click, type and read. The lessons use plain words, and you never have to write code.',
+  },
+  {
+    q: 'What if I am not in Clief Notes yet?',
+    a: 'You can still start here. Clief Notes is a free place to learn the method from Jake, and the link is on this page.',
+  },
+  {
+    q: 'Why pay when Clief Notes is free?',
+    a: 'Clief Notes teaches the method. You pay me to look at your own work, sit in your chat and give you 1 fix each week.',
+  },
+  {
+    q: 'Should I understand it or build it?',
+    a: 'Start free if you are still working out what this is. Take a founding seat if you have a task and want it running.',
+  },
+  {
+    q: 'Is the school finished?',
+    a: `Not yet. The first lessons are ready, and I finish the last 3 with the first group. That is why this is the founding price, ${EDUBAWARE_PRICE} a month.`,
+  },
+  {
+    q: 'What kind of task works best?',
+    a: 'Something you repeat every week with mostly the same steps, like quotes, invoices, job notes or follow-up emails.',
+  },
+  {
+    q: 'How much of your time do I get?',
+    a: `This is a school, not private coaching. The AI coach is there whenever you work. I read your work, give you 1 fix each week and join your chat when you need a person. That is why I am keeping it to ${EDUBAWARE_FOUNDING_SEATS} founding seats.`,
+  },
+  {
+    q: 'What if it is not for me?',
+    a: `Email me within ${EDUBAWARE_REFUND_DAYS} days of your first payment and I refund it in full. After that, you can cancel any time.`,
+  },
+];
+---
+
+<section class="container faq" id="faq">
+  <h2>What's on your mind?</h2>
+  <div class="list">
+    {
+      questions.map((item) => (
+        <details class="depth-box">
+          <summary>{item.q}</summary>
+          <p>{item.a}</p>
+        </details>
+      ))
+    }
+  </div>
+</section>
+
+<section class="final" id="start">
+  <div class="container">
+    <h2>Understand it with me, or build it with me</h2>
+    <p>Bring 1 task. Pick the way in that fits where you are.</p>
+    <div class="buttons">
+      <a class="button button-edubaware door-button" href={EDUBAWARE_FREE_URL}>Start free</a>
+      <a class="button button-edubaware door-button" href={EDUBAWARE_INVITE_URL}>Ask for a founding seat</a>
+    </div>
+    <p class="terms">Free lessons, or {EDUBAWARE_PRICE} founding price per person, per month. {EDUBAWARE_FOUNDING_SEATS} founding seats. Cancel any time.</p>
+  </div>
+</section>
+
+<style>
+  .faq {
+    padding-top: var(--space-7);
+    padding-bottom: var(--space-7);
+  }
+
+  .list {
+    display: grid;
+    gap: var(--space-4);
+  }
+
+  details {
+    background: var(--white);
+    border: 2px solid var(--navy);
+  }
+
+  summary {
+    padding: var(--space-3) var(--space-4);
+    color: var(--edubaware);
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  summary:focus-visible {
+    outline: 3px solid var(--edubaware);
+    outline-offset: 2px;
+  }
+
+  details p {
+    margin: 0;
+    padding: 0 var(--space-4) var(--space-4);
+    font-size: 1rem;
+  }
+
+  .final {
+    padding: var(--space-7) 0;
+    background: var(--cream);
+  }
+
+  .final h2 {
+    color: var(--edubaware);
+  }
+
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+  }
+
+  .terms {
+    margin: var(--space-3) 0 0;
+    font-size: 0.9rem;
+  }
+</style>

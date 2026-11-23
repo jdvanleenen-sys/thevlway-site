@@ -10,12 +10,15 @@ export const ROBO_INTERN_URL = 'https://claude.ai/code/artifact/52eee8c6-a5c2-40
 
 export const CONTACT_EMAIL = 'contact@thevlway.com';
 export const EDUBAWARE_INVITE_URL = `mailto:${CONTACT_EMAIL}?subject=INVITE`;
+export const EDUBAWARE_FREE_URL = `mailto:${CONTACT_EMAIL}?subject=FREE`;
+export const EDUBAWARE_FOUNDING_SEATS = 5;
 export const EDUBAWARE_PAGE_URL = 'https://thevlway.com/edubaware/';
 // Paid affiliate link. Render it through TwoDoors.astro so rel="sponsored" and the disclosure stay with it.
 export const CLIEF_NOTES_AFFILIATE_URL =
   'https://www.skool.com/cliefnotes/about?ref=9b87167cad844357b07892d1da8b1c51';
 export const EDUBAWARE_PRICE = '$30 USD';
 export const EDUBAWARE_REFUND_DAYS = 7;
+export const ICM_PAPER_URL = 'https://arxiv.org/abs/2603.16021';
 
 export const NAV_LINKS = [
   { href: '/', label: 'Home' },

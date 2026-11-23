@@ -1,0 +1,72 @@
+---
+const questions = [
+  {
+    q: 'Where do I start?',
+    a: 'There is a lot to learn, and nothing tells you which part comes next for your own work.',
+  },
+  {
+    q: 'Am I doing it right?',
+    a: 'You built something, but you cannot tell if it works without starting over.',
+  },
+];
+---
+
+<section class="container problem" id="problem">
+  <h2>2 questions stop most people</h2>
+  <div class="columns">
+    {
+      questions.map((item) => (
+        <article class="card depth-box">
+          <h3>{item.q}</h3>
+          <p>{item.a}</p>
+        </article>
+      ))
+    }
+  </div>
+  <p class="turn depth-box">
+    <strong>Videos can teach you the method. They cannot look at your work.</strong> That is what I do.
+  </p>
+</section>
+
+<style>
+  .problem {
+    padding-bottom: var(--space-7);
+  }
+
+  .columns {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-4);
+  }
+
+  .card {
+    padding: var(--space-4);
+    background: var(--white);
+    border: 2px solid var(--navy);
+    border-top: 6px solid var(--edubaware);
+  }
+
+  h3 {
+    margin-bottom: var(--space-2);
+    color: var(--edubaware);
+    font-size: 1.4rem;
+  }
+
+  .card p {
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  .turn {
+    margin: var(--space-4) 0 0;
+    padding: var(--space-4);
+    background: var(--edubaware);
+    color: var(--white);
+  }
+
+  @media (max-width: 720px) {
+    .columns {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+</style>

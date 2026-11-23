@@ -43,7 +43,7 @@ const sections = headings.filter((heading) => heading.depth === 2);
       <article><PostBody><Content /></PostBody></article>
       {
         sections.length > 0 && (
-          <aside aria-label="In this post">
+          <aside class="depth-box" aria-label="In this post">
             <p class="aside-title">In this post</p>
             <ol>
               {sections.map((section) => (

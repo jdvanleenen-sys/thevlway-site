@@ -1,0 +1,79 @@
+---
+// Gives every .depth-box on the site a solid edge and a small tilt toward the mouse.
+// A page or box can set --depth-edge to change the edge colour.
+---
+
+<style is:global>
+  :where(.depth-box) {
+    position: relative;
+  }
+
+  .depth-box.depth-box {
+    --sx: 1px;
+    --sy: 1px;
+    --lift: 0px;
+    --edge: var(--depth-edge, var(--navy-dark));
+    box-shadow:
+      calc(var(--sx) * 1) calc(var(--sy) * 1) 0 var(--edge),
+      calc(var(--sx) * 2) calc(var(--sy) * 2) 0 var(--edge),
+      calc(var(--sx) * 3) calc(var(--sy) * 3) 0 var(--edge),
+      calc(var(--sx) * 4) calc(var(--sy) * 4) 0 var(--edge),
+      calc(var(--sx) * 5) calc(var(--sy) * 5) 0 var(--edge),
+      calc(var(--sx) * 6) calc(var(--sy) * 6) 0 var(--edge),
+      calc(var(--sx) * 7) calc(var(--sy) * 7) 0 var(--edge),
+      calc(var(--sx) * 8) calc(var(--sy) * 8) 0 var(--edge);
+    transition: transform 0.2s ease-out, box-shadow 0.2s ease-out, background 0.2s ease-out;
+  }
+
+  .depth-box.is-tilting {
+    z-index: 2;
+    transform: perspective(1100px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg));
+    transform-style: preserve-3d;
+  }
+
+  .depth-box.is-tilting > * {
+    transform: translateZ(var(--lift));
+  }
+
+  .depth-box > * {
+    transition: transform 0.2s ease-out;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .depth-box.depth-box,
+    .depth-box > * {
+      transition: none;
+    }
+  }
+</style>
+
+<script>
+  const MAX_TILT_DEGREES = 5;
+  const FULL_TILT_WIDTH = 500;
+  const LIFT = '10px';
+  const TILT_PROPERTIES = ['--rx', '--ry', '--sx', '--sy', '--lift'];
+
+  function addTilt(box: HTMLElement) {
+    box.addEventListener('pointermove', (event) => {
+      const rect = box.getBoundingClientRect();
+      const maxTilt = MAX_TILT_DEGREES * Math.min(1, FULL_TILT_WIDTH / rect.width);
+      const x = Math.max(-0.5, Math.min(0.5, (event.clientX - rect.left) / rect.width - 0.5));
+      const y = Math.max(-0.5, Math.min(0.5, (event.clientY - rect.top) / rect.height - 0.5));
+      box.classList.add('is-tilting');
+      box.style.setProperty('--ry', `${(x * 2 * maxTilt).toFixed(2)}deg`);
+      box.style.setProperty('--rx', `${(y * -2 * maxTilt).toFixed(2)}deg`);
+      box.style.setProperty('--sx', `${(1 - x).toFixed(2)}px`);
+      box.style.setProperty('--sy', `${(1 - y).toFixed(2)}px`);
+      box.style.setProperty('--lift', LIFT);
+    });
+
+    box.addEventListener('pointerleave', () => {
+      box.classList.remove('is-tilting');
+      TILT_PROPERTIES.forEach((name) => box.style.removeProperty(name));
+    });
+  }
+
+  if (matchMedia('(hover: hover) and (prefers-reduced-motion: no-preference)').matches) {
+    document.querySelectorAll<HTMLElement>('.depth-box').forEach(addTilt);
+  }
+</script>
