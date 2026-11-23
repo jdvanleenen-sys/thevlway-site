@@ -100,7 +100,7 @@ Time, because you said the job once instead of typing it three times.
 
 Mistakes, because the system does the math and flags what doesn't match.
 
-Money, because change orders stay on the job.
+Missed change orders, because they stay on the job.
 
 And brain power, because every job remembers where it's at.
 
@@ -108,7 +108,7 @@ The stuff that matters still stays yours. You set the prices. You do the work. Y
 
 ## Get the same setup for your shop
 
-Want this setup for your shop? See the [two ways to start](#start) below.
+Want to build something like this for your own work? See the [two ways to start](#start) below.
 
 More posts like this are on the [AI the vL Way blog](/blog/). If you're new here, [start on the home page](/).
 

@@ -122,6 +122,11 @@ check(29, 'Home and school say the founding price will rise', failing(['home', '
 check(30, 'One word for the team place: shared room', coreNames.filter((name) => /shared workspace/i.test(pages[name].text)).concat(/shared workspace/i.test(visibleText(mainHtml(readFileSync(join(DIST, 'privacy/index.html'), 'utf8')))) ? ['privacy'] : []));
 check(31, 'Built templates are labelled as made-up data so far', ['teams'].filter(() => !/Shown so far on made-up data/.test(pages.teams.text)));
 
+check(32, 'No overpromise of constant presence or real-business-only builds', allFiles.flatMap((file) => {
+  const text = visibleText(mainHtml(readFileSync(file, 'utf8')));
+  return ['I stay in the chat', 'only show you builds', 'Money, because change orders'].filter((term) => text.includes(term)).map((term) => `${file}: ${term}`);
+}));
+
 let failed = 0;
 for (const { id, label, failures } of results) {
   if (failures.length) failed += 1;

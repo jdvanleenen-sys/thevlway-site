@@ -88,7 +88,7 @@ Skip step 1, and you may fix the wrong problem. Skip step 2, and the problem may
 
 You don't learn this by watching. You learn it by building.
 
-I taught high school science, which is why every lesson I make has you do the thing, not just watch it. Now I build these systems for trades businesses. My rule: I only show you builds that have run in a real business.
+I taught high school science, which is why every lesson I make has you do the thing, not just watch it. Now I build these systems for the office work behind the job, and I tell you when an example is made up.
 
 And you don't have to build everything yourself. You build one small fix, a few focused minutes at a time.
 

@@ -30,7 +30,7 @@ This step tells you if you have one fire, or chaos everywhere.
 
 A firefighter sizes up the whole building before picking up a hose.
 
-So lay out your six folders, and ask one question: **"Is one folder on fire, or is it all of them?"**
+So lay out the folders your business runs on, usually about six, and ask one question: **"Is one folder on fire, or is it all of them?"**
 
 Here's how to read the answer:
 
