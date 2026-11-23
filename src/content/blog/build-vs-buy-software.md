@@ -5,9 +5,8 @@ pubDate: 2026-10-02
 keyword: 'build vs buy software'
 youtubeId: 'J5MaC5jgj74'
 draft: false
+videoUploadDate: 2026-10-06
 ---
-
-[![Watch: Build vs buy software, 2 questions for every contractor](/blog/build-vs-buy-software/video-thumbnail.png)](https://www.youtube.com/watch?v=J5MaC5jgj74)
 
 *This is the video behind the post. It walks one roofing crew through all 3 steps, so you can see the 2 questions work on real tools before you try them on yours.*
 

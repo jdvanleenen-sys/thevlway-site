@@ -7,9 +7,8 @@ pubDate: 2026-10-23
 keyword: 'why does ai make things up'
 youtubeId: 'Jhtpy2YoeFs'
 draft: false
+videoUploadDate: 2026-10-23
 ---
-
-[![Watch: Bip's First Day, the robot intern who was confident and wrong](/blog/why-does-ai-make-things-up/video-thumbnail.png)](https://www.youtube.com/watch?v=Jhtpy2YoeFs)
 
 *This is the video behind the post, a 1:46 Short. My robot intern says "Confident!" 3 times. He's wrong twice, and both times he read the wrong file first.*
 

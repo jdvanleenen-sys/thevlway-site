@@ -4,9 +4,9 @@ description: 'A business problem statement for trades, in 5 lines: your trade an
 pubDate: 2026-10-05
 keyword: 'business problem statement'
 draft: false
+youtubeId: '_7NUTfwkYNE'
+videoUploadDate: 2026-10-06
 ---
-
-[![Watch: Business problem statement, write yours in 5 lines](/blog/business-problem-statement/video-thumbnail.png)](https://www.youtube.com/watch?v=_7NUTfwkYNE)
 
 *This is the video behind the post. It runs about a minute and shows the card being filled in line by line, so you can copy it while you watch.*
 
