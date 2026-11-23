@@ -1,0 +1,83 @@
+---
+import Base from '../layouts/Base.astro';
+import PageWalkers from '../components/PageWalkers.astro';
+import TeamsFilm from '../components/TeamsFilm.astro';
+import TeamsHero from '../components/TeamsHero.astro';
+import TeamsOffer from '../components/TeamsOffer.astro';
+import TeamsProblem from '../components/TeamsProblem.astro';
+import TeamsStart from '../components/TeamsStart.astro';
+import TeamsWay from '../components/TeamsWay.astro';
+import { EDUBAWARE_PRICE } from '../consts';
+---
+
+<Base
+  title="AI the vL Way for Teams"
+  description={`Your departments finish the job together in one shared EdubaWare workspace, with a teacher you can bring in. ${EDUBAWARE_PRICE} per seat, per month.`}
+>
+  <div class="teams-page">
+    <TeamsHero />
+    <TeamsFilm />
+    <TeamsProblem />
+    <TeamsOffer />
+    <TeamsWay />
+    <TeamsStart />
+    <PageWalkers sheet="/teams/cast.png" headings=".teams-page section:not(.film-band) h2" />
+  </div>
+</Base>
+
+<script>
+  import { addSoftHyphens } from '../lib/teamsSoftHyphens';
+
+  addSoftHyphens(document, '.teams-page p:not(.eyebrow, .amount, .per, .number, .fee, .small), .teams-page li');
+</script>
+
+<style is:global>
+  /* This page carries EdubaWare's burgundy, so its boxes and links match the buttons. */
+  .teams-page {
+    --depth-edge: var(--edubaware-dark);
+    position: relative;
+  }
+
+  .teams-page .depth-box.depth-box {
+    border-color: var(--edubaware);
+  }
+
+  .teams-page a {
+    text-decoration-color: var(--edubaware);
+  }
+
+  .teams-page a:not(.button):hover {
+    color: var(--edubaware);
+  }
+
+  .teams-page a:focus-visible,
+  .teams-page button:focus-visible {
+    outline: 3px solid var(--edubaware);
+    outline-offset: 2px;
+  }
+
+  /* Jeff's house style: body text is fully justified. Headings, buttons and price figures are not. */
+  .teams-page p:not(.eyebrow, .amount, .per, .number, .fee),
+  .teams-page li {
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: manual;
+  }
+
+  /* The price box is short and centered, and justifying its email line leaves huge gaps. */
+  .teams-page .price .small {
+    text-align: center;
+  }
+
+  .teams-card {
+    min-width: 0;
+    padding: var(--space-4);
+    background: var(--white);
+    border: 3px solid var(--edubaware);
+  }
+
+  .teams-card h3 {
+    margin-bottom: var(--space-2);
+    color: var(--edubaware);
+  }
+</style>

@@ -18,10 +18,13 @@ export const CLIEF_NOTES_AFFILIATE_URL =
   'https://www.skool.com/cliefnotes/about?ref=9b87167cad844357b07892d1da8b1c51';
 export const EDUBAWARE_PRICE = '$30 USD';
 export const EDUBAWARE_REFUND_DAYS = 7;
+export const TEAMS_PATH = '/teams/';
+export const TEAMS_EMAIL_URL = `mailto:${CONTACT_EMAIL}?subject=TEAMS`;
 export const ICM_PAPER_URL = 'https://arxiv.org/abs/2603.16021';
 
 export const NAV_LINKS = [
   { href: '/', label: 'Home' },
+  { href: '/teams/', label: 'Teams' },
   { href: '/blog/', label: 'Blog' },
   { href: '/about/', label: 'About' },
 ] as const;

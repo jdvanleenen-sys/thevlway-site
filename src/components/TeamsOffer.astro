@@ -1,0 +1,127 @@
+---
+import { EDUBAWARE_PRICE } from '../consts';
+
+const QUOTED = 'Priced after we look at the job';
+
+const parts = [
+  {
+    name: 'Shared workspace',
+    price: `${EDUBAWARE_PRICE} per seat, per month`,
+    line: 'Departments and cross-department teams work on the same job in one EdubaWare chat, using a template made for your company. A template can produce Word, Excel, PDF and PowerPoint files to download. Building the template is priced separately.',
+  },
+  { name: 'Template help', price: QUOTED, line: 'I build, review and test your templates with you.' },
+  { name: 'Custom builds', price: QUOTED, line: 'I build custom tools with you, after we agree what the job needs.' },
+  { name: 'Training', price: QUOTED, line: 'Hire me to train your people on AI. I have taught two live staff lessons so far and have not measured the results.' },
+  { name: 'Ongoing help', price: QUOTED, line: 'I can join your team\'s work from time to time, when they need a teacher.' },
+];
+
+const builds = [
+  {
+    name: 'A CIM',
+    line: 'A confidential information memorandum: the document a company uses to present itself to investors or buyers.',
+    status: 'I have a working demo on made-up data.',
+  },
+  {
+    name: 'SOPs',
+    line: 'Standard operating procedures your team can ask about while they do the job.',
+    status: 'An idea today. We would build your first SOP together.',
+  },
+  {
+    name: 'A knowledge graph',
+    line: 'A linked map of your teams, what they share and where the real files live.',
+    status: 'I have the method. No company has run it with me yet.',
+  },
+];
+---
+
+<section class="container offer" id="offer">
+  <h2>What you get</h2>
+  <div class="parts">
+    {
+      parts.map((part, index) => (
+        <article class:list={['teams-card', 'depth-box', { lead: index === 0 }]}>
+          <h3>{index + 1}. {part.name}</h3>
+          <p class="fee">{part.price}</p>
+          <p>{part.line}</p>
+        </article>
+      ))
+    }
+  </div>
+
+  <h2 class="builds-title">What we could build together</h2>
+  <p>These are examples of tools I can build with you. They are not finished products.</p>
+  <div class="builds">
+    {
+      builds.map((build) => (
+        <article class="teams-card depth-box">
+          <h3>{build.name}</h3>
+          <p>{build.line}</p>
+          <p class="status">{build.status}</p>
+        </article>
+      ))
+    }
+  </div>
+</section>
+
+<style>
+  .offer {
+    padding-top: var(--space-7);
+    padding-bottom: var(--space-4);
+  }
+
+  h2 {
+    color: var(--edubaware);
+  }
+
+  .parts {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-5);
+  }
+
+  .lead {
+    grid-column: 1 / -1;
+  }
+
+  .teams-card p {
+    font-size: 1rem;
+    line-height: 1.45;
+  }
+
+  .teams-card p:last-child {
+    margin-bottom: 0;
+  }
+
+  .fee {
+    margin-bottom: var(--space-2);
+    font-weight: 700;
+  }
+
+  .builds-title {
+    margin-top: var(--space-8);
+  }
+
+  .builds {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--space-5);
+  }
+
+  .status {
+    padding-top: var(--space-2);
+    border-top: 2px solid var(--cream);
+    font-weight: 700;
+  }
+
+  @media (max-width: 980px) {
+    .builds {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+
+  @media (max-width: 560px) {
+    .parts {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+</style>

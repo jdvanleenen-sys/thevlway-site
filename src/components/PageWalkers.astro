@@ -1,0 +1,147 @@
+---
+// Characters cross the blank strips above section headings on their own clock. Scrolling does not move them.
+// Put this inside a position: relative wrapper. A lane is only used if it clears all text, art and boxes.
+interface Props {
+  sheet: string;
+  headings: string;
+  maxLanes?: number;
+}
+
+const { sheet, headings, maxLanes = 5 } = Astro.props;
+---
+
+<div
+  class="walker-layer"
+  data-page-walkers
+  data-sheet={sheet}
+  data-headings={headings}
+  data-max-lanes={maxLanes}
+  aria-hidden="true"
+  hidden
+>
+</div>
+
+<style is:global>
+  .walker-layer {
+    position: absolute;
+    inset: 0;
+    z-index: 3;
+    overflow: hidden;
+    pointer-events: none;
+  }
+
+  .lane-walker {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    image-rendering: pixelated;
+    will-change: transform;
+  }
+</style>
+
+<script>
+  import { WALKER_CELL_HEIGHT, WALKER_CELL_WIDTH, walkerAt } from '../lib/pageWalkers';
+
+  const PHONE_WIDTH = 620;
+  const LANE_LIFT = 5;
+  const SHEET_COLUMNS = 8;
+  const SHEET_ROWS = 40;
+  const SOLID = 'a, button, canvas, img, .diorama, .depth-box';
+  const TEXT = 'h1, h2, h3, p, li, summary';
+
+  interface Lane {
+    element: HTMLElement;
+    y: number;
+  }
+
+  function blockedAreas(page: HTMLElement, layer: HTMLElement): DOMRect[] {
+    const areas: DOMRect[] = [];
+    page.querySelectorAll<HTMLElement>(SOLID).forEach((element) => {
+      if (!layer.contains(element)) areas.push(element.getBoundingClientRect());
+    });
+    page.querySelectorAll<HTMLElement>(TEXT).forEach((element) => {
+      const range = document.createRange();
+      range.selectNodeContents(element);
+      areas.push(...range.getClientRects());
+    });
+    return areas.filter((area) => area.width > 0);
+  }
+
+  function startWalkers(layer: HTMLElement) {
+    const page = layer.parentElement;
+    const { sheet, headings, maxLanes } = layer.dataset;
+    if (!page || !sheet || !headings) return;
+    const laneLimit = Number(maxLanes) || 1;
+    let lanes: Lane[] = [];
+    let scale = 2;
+    let clock = 0;
+    let lastFrame = 0;
+    let isRunning = true;
+
+    const measure = () => {
+      scale = window.innerWidth < PHONE_WIDTH ? 1.5 : 2;
+      const origin = layer.getBoundingClientRect();
+      const bodyHeight = 24 * scale;
+      const areas = blockedAreas(page, layer);
+      layer.replaceChildren();
+      lanes = [];
+      document.querySelectorAll<HTMLElement>(headings).forEach((heading) => {
+        if (lanes.length >= laneLimit || heading.closest('.depth-box')) return;
+        const feet = heading.getBoundingClientRect().top - LANE_LIFT;
+        if (areas.some((area) => area.bottom > feet - bodyHeight - 2 && area.top < feet)) return;
+        const element = document.createElement('div');
+        element.className = 'lane-walker';
+        element.style.width = `${WALKER_CELL_WIDTH * scale}px`;
+        element.style.height = `${WALKER_CELL_HEIGHT * scale}px`;
+        element.style.backgroundImage = `url('${sheet}')`;
+        element.style.backgroundSize = `${SHEET_COLUMNS * WALKER_CELL_WIDTH * scale}px ${SHEET_ROWS * WALKER_CELL_HEIGHT * scale}px`;
+        layer.append(element);
+        lanes.push({ element, y: Math.round(feet - origin.top - WALKER_CELL_HEIGHT * scale) });
+      });
+      layer.hidden = lanes.length === 0;
+    };
+
+    const draw = () => {
+      const width = layer.clientWidth;
+      const drawnWidth = WALKER_CELL_WIDTH * scale;
+      lanes.forEach((lane, index) => {
+        const frame = walkerAt(index, width, drawnWidth, clock);
+        lane.element.style.visibility = frame.isCrossing ? 'visible' : 'hidden';
+        lane.element.style.transform = `translate(${Math.round(frame.x)}px, ${lane.y}px)`;
+        if (!frame.isCrossing) return;
+        lane.element.style.backgroundPosition = `${-frame.column * WALKER_CELL_WIDTH * scale}px ${-frame.row * WALKER_CELL_HEIGHT * scale}px`;
+      });
+    };
+
+    const tick = (now: number) => {
+      if (!isRunning) return;
+      if (lastFrame && !document.hidden) clock += Math.min((now - lastFrame) / 1000, 0.1);
+      lastFrame = now;
+      draw();
+      requestAnimationFrame(tick);
+    };
+
+    const setRunning = (running: boolean) => {
+      if (running === isRunning) return;
+      isRunning = running;
+      lastFrame = 0;
+      if (running) requestAnimationFrame(tick);
+    };
+
+    const remeasure = () => {
+      measure();
+      draw();
+    };
+
+    remeasure();
+    new ResizeObserver(remeasure).observe(page);
+    void document.fonts.ready.then(remeasure);
+    document.addEventListener('teams:motion', (event) => setRunning((event as CustomEvent<boolean>).detail));
+    requestAnimationFrame(tick);
+  }
+
+  if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.querySelectorAll<HTMLElement>('[data-page-walkers]').forEach(startWalkers);
+  }
+</script>

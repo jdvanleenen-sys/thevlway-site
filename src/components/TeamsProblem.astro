@@ -1,0 +1,75 @@
+---
+const today = [
+  'Each person has a private AI chat the rest of the team cannot see.',
+  'Files and decisions get copied into email, and some get left behind.',
+  'Nobody can see what is done, what is missing or who goes next.',
+  'AI gets taped onto the old process, so the work stays the same.',
+];
+
+const together = [
+  'Your team and the AI work in the same chat, on the same files.',
+  'A template can show what is done, what is missing and who goes next.',
+  'The AI is the extra person in the room, ready when someone asks.',
+  'Your template can include a sign-off step for a named person.',
+];
+---
+
+<section class="container problem">
+  <h2>Separate AI chats keep your people apart</h2>
+  <div class="columns">
+    <article class="teams-card depth-box">
+      <h3>Separate chats</h3>
+      <ul>{today.map((line) => <li>{line}</li>)}</ul>
+    </article>
+    <article class="teams-card filled depth-box">
+      <h3>One shared chat</h3>
+      <ul>{together.map((line) => <li>{line}</li>)}</ul>
+    </article>
+  </div>
+</section>
+
+<style>
+  .problem {
+    padding-top: var(--space-7);
+    padding-bottom: var(--space-4);
+  }
+
+  h2 {
+    color: var(--edubaware);
+  }
+
+  .columns {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-5);
+  }
+
+  ul {
+    margin: 0;
+    padding-left: var(--space-5);
+    font-size: 1rem;
+  }
+
+  li {
+    margin-bottom: var(--space-2);
+  }
+
+  li:last-child {
+    margin-bottom: 0;
+  }
+
+  .filled {
+    background: var(--edubaware);
+    color: var(--white);
+  }
+
+  .filled h3 {
+    color: var(--white);
+  }
+
+  @media (max-width: 760px) {
+    .columns {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+</style>

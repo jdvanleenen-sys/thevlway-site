@@ -1,0 +1,50 @@
+---
+import { TEAMS_PATH } from '../consts';
+---
+
+<section class="teams-door">
+  <article class="band depth-box">
+    <div>
+      <h2>Buying for a company?</h2>
+      <p>Get your departments finishing the same job together, in one shared workspace.</p>
+    </div>
+    <a class="button button-edubaware door-button" href={TEAMS_PATH}>See AI the vL Way for Teams</a>
+  </article>
+</section>
+
+<style>
+  .teams-door {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: var(--space-7) var(--space-7) 0;
+  }
+
+  .band {
+    --depth-edge: var(--edubaware-dark);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-4);
+    padding: var(--space-5);
+    background: var(--white);
+    border: 3px solid var(--edubaware);
+  }
+
+  h2 {
+    margin-bottom: var(--space-1);
+    color: var(--edubaware);
+  }
+
+  p {
+    margin: 0;
+  }
+
+  @media (max-width: 620px) {
+    .teams-door {
+      padding-left: var(--space-4);
+      padding-right: var(--space-4);
+    }
+  }
+</style>

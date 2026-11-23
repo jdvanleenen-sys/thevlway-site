@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import EdubaFaq from '../components/EdubaFaq.astro';
+import PageWalkers from '../components/PageWalkers.astro';
 import EdubaHero from '../components/EdubaHero.astro';
 import EdubaMethod from '../components/EdubaMethod.astro';
 import EdubaOffer from '../components/EdubaOffer.astro';
@@ -63,6 +64,7 @@ const school = {
     <EdubaOffer />
     <EdubaTerms />
     <EdubaFaq />
+    <PageWalkers sheet="/shop/cast-walk.png" headings=".eduba-page > section h2" maxLanes={4} />
   </div>
 </Base>
 
@@ -70,6 +72,7 @@ const school = {
   /* This page carries EdubaWare's burgundy, so its boxes and links match the buttons. */
   .eduba-page {
     --depth-edge: var(--edubaware-dark);
+    position: relative;
   }
 
   .eduba-page .depth-box.depth-box {

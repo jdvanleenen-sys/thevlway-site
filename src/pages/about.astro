@@ -3,6 +3,7 @@ import Base from '../layouts/Base.astro';
 import AboutHero from '../components/AboutHero.astro';
 import AboutSubjects from '../components/AboutSubjects.astro';
 import AboutWhy from '../components/AboutWhy.astro';
+import PageWalkers from '../components/PageWalkers.astro';
 import TwoDoors from '../components/TwoDoors.astro';
 import { OWNER_NAME, SITE_NAME } from '../consts';
 
@@ -22,16 +23,23 @@ const profile = {
   description={`${OWNER_NAME} runs ${SITE_NAME} and teaches trade contractors to build simple AI systems.`}
   schema={[profile]}
 >
-  <AboutHero />
-  <AboutSubjects />
-  <AboutWhy />
-  <section class="container start">
-    <h2>2 ways to start</h2>
-    <TwoDoors />
-  </section>
+  <div class="about-page">
+    <AboutHero />
+    <AboutSubjects />
+    <AboutWhy />
+    <section class="container start">
+      <h2>2 ways to start</h2>
+      <TwoDoors />
+    </section>
+    <PageWalkers sheet="/shop/cast-walk.png" headings=".about-page section h2" maxLanes={1} />
+  </div>
 </Base>
 
 <style>
+  .about-page {
+    position: relative;
+  }
+
   .start {
     padding-top: var(--space-7);
   }
