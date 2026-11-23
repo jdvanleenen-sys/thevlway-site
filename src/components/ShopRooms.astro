@@ -1,7 +1,7 @@
 ---
 import AffiliateLink from './AffiliateLink.astro';
 import ShopRoom from './ShopRoom.astro';
-import { EDUBAWARE_FOUNDING_SEATS_START, EDUBAWARE_PAGE_URL, EDUBAWARE_PRICE, TEAMS_PATH, YOUTUBE_URL } from '../consts';
+import { OWNER_AUTHORITY, EDUBAWARE_FOUNDING_SEATS_START, EDUBAWARE_PAGE_URL, EDUBAWARE_PRICE, TEAMS_PATH, YOUTUBE_URL } from '../consts';
 import { getPublishedPosts } from '../lib/posts';
 
 const postCount = (await getPublishedPosts()).length;
@@ -20,7 +20,7 @@ const postCount = (await getPublishedPosts()).length;
         href={YOUTUBE_URL}
         action="Watch on YouTube"
       >
-        <p class="room-copy">Bip is our robot intern. These videos show what goes wrong in the office work behind the job, and how to fix it.</p>
+        <p class="room-copy">Bip is our robot intern. These videos show what goes wrong in everyday office work, and how to fix it.</p>
       </ShopRoom>
       <ShopRoom
         layout="side"
@@ -47,7 +47,7 @@ const postCount = (await getPublishedPosts()).length;
         plate="Classroom: EdubaWare, paid"
         scene="classroom"
         alt="Bip teaches at a chalkboard that says one task while three owners work at desks."
-        title="Build your weekly job with me."
+        title="Build your weekly task with me."
         href={EDUBAWARE_PAGE_URL}
         action="See the EdubaWare school"
       >
@@ -78,7 +78,7 @@ const postCount = (await getPublishedPosts()).length;
         href="/about/"
         action="Read about Jeff"
       >
-        <p class="room-copy">I have been a teacher for over 24 years. I've taught biology, free throws and real estate. AI is just the next subject I get to show you.</p>
+        <p class="room-copy">{OWNER_AUTHORITY}</p>
       </ShopRoom>
       <ShopRoom
         layout="full"

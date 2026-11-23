@@ -1,7 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
 import PostCard from '../../components/PostCard.astro';
-import ShopScene from '../../components/ShopScene.astro';
 import TwoDoors from '../../components/TwoDoors.astro';
 import { getPublishedPosts } from '../../lib/posts';
 import { YOUTUBE_URL } from '../../consts';
@@ -14,11 +13,8 @@ const [latest, ...earlier] = posts;
   <section class="container hero">
     <div class="intro">
       <p class="eyebrow">The library</p>
-      <h1>Plain answers for the office work behind the job.</h1>
+      <h1>Plain answers for your office work.</h1>
       <p class="lede">{posts.length} posts on quotes, systems and which problem to fix first.</p>
-    </div>
-    <div class="scene">
-      <ShopScene name="library" alt="A pixel-art library with a tall bookshelf. Bip stands by the ladder while a member reads in an armchair." />
     </div>
   </section>
 
@@ -57,7 +53,7 @@ const [latest, ...earlier] = posts;
 <style>
   .hero {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: minmax(0, 1fr);
     gap: var(--space-5) var(--space-6);
     padding-top: var(--space-7);
     padding-bottom: var(--space-7);
@@ -89,11 +85,6 @@ const [latest, ...earlier] = posts;
   .lede {
     margin-bottom: 0;
     font-size: 1.15rem;
-  }
-
-  .scene {
-    min-width: 0;
-    border: 4px solid var(--navy);
   }
 
   .shelf {

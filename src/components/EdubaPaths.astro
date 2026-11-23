@@ -7,13 +7,13 @@ import {
 } from '../consts';
 
 const understand = [
-  'One Job, One Page: put your weekly job on one page, step by step.',
+  'One Job, One Page: put your weekly task on one page, step by step.',
   'The Fresh Chat Test: watch a new AI try to use a folder and see where it gets lost.',
   'You work in EdubaWare, a website where people and AI work in the same chat and share folders.',
 ];
 
 const build = [
-  'Turn your one page into a job that runs.',
+  'Turn your one page into a task that runs.',
   'I am in the same chat as you when you get stuck.',
   'Learning with someone? Two or more paid seats share one workspace and one chat.',
   'Your work gets checked, and you get one fix from me each week.',
@@ -28,7 +28,7 @@ const build = [
         <p class="label">Free</p>
         <h3>Try it free</h3>
         <ul>{understand.map((line) => <li>{line}</li>)}</ul>
-        <p class="leave"><strong>You leave with:</strong> a plan for your weekly job, and a clear idea of why the folder matters.</p>
+        <p class="leave"><strong>You leave with:</strong> a plan for your weekly task, and a clear idea of why the folder matters.</p>
         <a class="button button-edubaware door-button invite" href={EDUBAWARE_FREE_URL}>Start free</a>
       </article>
       <article class="card depth-box">
@@ -36,7 +36,7 @@ const build = [
         <h3>Build it with me</h3>
         <ul>{build.map((line) => <li>{line}</li>)}</ul>
         <p class="leave">
-          <strong>The goal:</strong> your weekly job runs in steps, checks itself and waits for your sign-off.
+          <strong>The goal:</strong> your weekly task runs in steps, checks itself and waits for your sign-off.
           I am finishing the lessons for this part with the first group.
         </p>
         <a class="button button-edubaware door-button invite" href={EDUBAWARE_INVITE_URL}>Ask for a founding seat</a>

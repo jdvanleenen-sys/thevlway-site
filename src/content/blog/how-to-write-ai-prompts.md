@@ -1,5 +1,5 @@
 ---
-title: "How to Write AI Prompts: 3 Steps From Bip's Wrong Lunch"
+title: "How to Write AI Prompts: 3 Steps to the Right Answer"
 description: 'How to write AI prompts in three steps. Give the details, say what done looks like, and have your AI check and fix its work before it shows you anything.'
 pubDate: 2026-11-23
 keyword: 'how to write ai prompts'

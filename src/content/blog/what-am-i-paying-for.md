@@ -1,6 +1,6 @@
 ---
-title: "What Am I Paying For? Bip's Boss Paid $445 for 1 Button"
-description: "What am I paying for? Bip's boss rented an $89 plan and used one button. Here's the check that shows what your software costs and what the job really needs."
+title: "What Am I Paying For? How to Check Your Software Bill"
+description: "What am I paying for? One owner rented an $89 plan and used one button. Here's the check that shows what your software costs and what the job really needs."
 pubDate: 2026-11-23
 keyword: 'what am i paying for'
 draft: false

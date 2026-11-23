@@ -28,7 +28,7 @@ export async function GET(context: APIContext) {
     '',
     '## Main pages',
     '',
-    `- [Home](${site}): AI for the office work behind the job.`,
+    `- [Home](${site}): AI for your office work.`,
     `- [Teams](${site}teams/): for company owners, executives and department leads.`,
     `- [About ${OWNER_NAME}](${site}about/): who teaches this and how.`,
     `- [Blog](${site}blog/): plain answers on quotes, systems and which problem to fix first.`,

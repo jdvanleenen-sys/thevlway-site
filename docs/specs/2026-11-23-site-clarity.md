@@ -31,7 +31,7 @@ Principles. Teams puts a corporation's people together on projects, using templa
 | One person's place | workspace |
 | A team's place | shared workspace |
 | Where people talk | chat |
-| What you bring | weekly job |
+| What you bring | weekly task ("job" means the customer's job) |
 | ICM, on first use | a way of setting up folders and notes that show AI where to look |
 
 Room stays only in lesson names and the shop scenes on the home page.

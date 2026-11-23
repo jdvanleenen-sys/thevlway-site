@@ -73,7 +73,7 @@ check(9, 'Bottleneck post links four stages to six folders', ['business-bottlene
 check(10, 'ICM is explained on every main page', failing(coreNames, (p) => p.text.includes(ICM_PLAIN)));
 check(11, 'Exact Masters credit is intact', failing(['edubaware', 'about', 'teams'], (p) => p.text.includes(CREDIT)));
 check(12, 'Teacher credential on home and About', failing(['home', 'about'], (p) => /over 24 years/.test(p.text)));
-check(13, 'Main pages say "weekly job", not "task"', failing(['home', 'edubaware', 'about'], (p) => /weekly job/.test(p.text) && !/\btasks?\b/i.test(p.text)));
+check(13, 'School pages say "weekly task", never "weekly job"', failing(['home', 'edubaware', 'about'], (p) => /weekly task/.test(p.text) && !/weekly job/i.test(p.text)));
 check(14, 'No digit mid-sentence on main pages', coreNames.flatMap((name) => {
   const hits = pages[name].text.match(/\b[a-z]+ [1-9] [a-z]+/g) ?? [];
   return hits.filter((hit) => !/7 Masters/.test(hit)).map((hit) => `${name}: ${hit}`);
@@ -93,6 +93,11 @@ check(17, 'No words joined by a missing space', coreNames.flatMap((name) => (pag
 check(18, 'School pages do not sell crew or team work', failing(['home', 'edubaware', 'about'], (p) => !/your crew/i.test(p.text)));
 
 check(19, 'Founding price lock and second refund window are stated', ['edubaware'].filter(() => !(/locked for as long as you stay subscribed/.test(pages.edubaware.text) && /another seven days/.test(pages.edubaware.text))));
+
+check(20, 'No Bip on the blog index or in any post title', allFiles.filter((file) => /blog[\\/]index\.html$/.test(file) && /\bBip\b/.test(mainHtml(readFileSync(file, 'utf8')))).concat(
+  postFiles.filter((file) => /\bBip\b/.test(readFileSync(file, 'utf8').match(/<h1[\s\S]*?<\/h1>/)?.[0] ?? ''))));
+check(21, 'Home has no free throws or "behind the job"', ['home'].filter(() => /free throws|behind the job/i.test(pages.home.text)));
+check(22, 'Home lists what free and paid include, and where the AI coach is', ['home'].filter(() => !(/What you get/.test(pages.home.text) && /Everything in free/.test(pages.home.text) && /not in Clief Notes/.test(pages.home.text))));
 
 let failed = 0;
 for (const { id, label, failures } of results) {

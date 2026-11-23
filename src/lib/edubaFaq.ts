@@ -16,14 +16,14 @@ export const EDUBAWARE_FAQ = [
   },
   {
     q: 'Should I start free or take a founding seat?',
-    a: 'Start free if you are still working out what this is. Take a founding seat if you have a weekly job and want to build it with me while I finish the last three lessons.',
+    a: 'Start free if you are still working out what this is. Take a founding seat if you have a weekly task and want to build it with me while I finish the last three lessons.',
   },
   {
     q: 'Is the school finished?',
     a: `Not yet. The first lessons are ready, and I finish the last three with the first group. That is why this is the founding price, ${EDUBAWARE_PRICE} a month, locked for as long as you stay subscribed.`,
   },
   {
-    q: 'What kind of weekly job works best?',
+    q: 'What kind of weekly task works best?',
     a: 'Something you repeat every week with mostly the same steps, like quotes, invoices, job notes or follow-up emails.',
   },
   {
