@@ -5,9 +5,9 @@ const QUOTED = 'Priced after we look at the job';
 
 const parts = [
   {
-    name: 'Shared workspace',
+    name: 'Shared room',
     price: `${EDUBAWARE_PRICE} per seat, per month`,
-    line: 'Departments and cross-department teams finish their work together in shared EdubaWare chats, with templates made for the different jobs your company runs. A template can produce Word, Excel, PDF and PowerPoint files to download. Building templates is priced separately.',
+    line: 'Departments and cross-department teams finish their work together in shared EdubaWare chats, with templates made for the different jobs your company runs. A template can produce Word, Excel, PDF and PowerPoint files to download. Building new templates is priced separately.',
   },
   { name: 'Template help', price: QUOTED, line: 'I build, review and test your templates with you.' },
   { name: 'Custom builds', price: QUOTED, line: 'I build custom tools with you, after we agree what the job needs.' },
@@ -15,12 +15,15 @@ const parts = [
   { name: 'Ongoing help', price: QUOTED, line: 'I can join your team\'s work from time to time, when they need a teacher.' },
 ];
 
+const BUILT_STATUS = 'Built and loaded on EdubaWare. Shown so far on made-up data.';
+
+const templates = [
+  { name: 'Earnings report', line: 'Each department brings its numbers, the room checks for a missing cost, and the owner signs off.' },
+  { name: 'Mini CIM', line: 'A confidential information memorandum, the document a company uses to present itself to investors or buyers. Accounting holds the numbers and marketing holds the story.' },
+  { name: 'Marketing video plan', line: 'Your team plans one marketing video together in one room.' },
+];
+
 const builds = [
-  {
-    name: 'A CIM',
-    line: 'A confidential information memorandum: the document a company uses to present itself to investors or buyers.',
-    status: 'I have a working demo on made-up data.',
-  },
   {
     name: 'SOPs',
     line: 'Standard operating procedures your team can ask about while they do the job.',
@@ -47,6 +50,20 @@ const builds = [
       ))
     }
   </div>
+
+  <h2 class="builds-title">Templates you can start from</h2>
+  <div class="builds">
+    {
+      templates.map((template) => (
+        <article class="teams-card depth-box">
+          <h3>{template.name}</h3>
+          <p>{template.line}</p>
+          <p class="status">{BUILT_STATUS}</p>
+        </article>
+      ))
+    }
+  </div>
+  <p>Next on the shelf: a trade quote comparison and a meeting-to-action list.</p>
 
   <h2 class="builds-title">What we could build together</h2>
   <p>These are examples of tools I can build with you. They are not finished products.</p>

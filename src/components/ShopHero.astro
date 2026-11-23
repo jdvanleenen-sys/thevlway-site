@@ -1,4 +1,5 @@
 ---
+import AffiliateLink from './AffiliateLink.astro';
 import ShopScene from './ShopScene.astro';
 import {
   EDUBAWARE_FOUNDING_SEATS_START,
@@ -6,6 +7,7 @@ import {
   EDUBAWARE_PAGE_URL,
   EDUBAWARE_PRICE,
   EDUBAWARE_REFUND_DAYS,
+  ICM_PLAIN,
   TEAMS_PATH,
 } from '../consts';
 
@@ -23,45 +25,14 @@ const bipSayings = [
 
 <section class="shop-wrap hero">
   <div class="intro">
-    <p class="eyebrow">For people who aren't technical and have office work piling up</p>
+    <p class="eyebrow">For people who aren't technical and have office work piling up behind the job</p>
     <h1>Quotes, invoices and follow-ups shouldn't take your evenings.</h1>
     <p class="lede">
-      Pick one task you repeat every week, like quotes, follow-ups, reports or invoices. Build it in
-      EdubaWare, a website where people and AI work together, with an AI coach and me, a teacher for
-      over 24 years, in the same chat. Unlike a private AI chat, I can see your work and help you
-      right there.
+      Pick one task you repeat every week. In EdubaWare, a website where people and AI work in the
+      same chat, an AI coach and I help you until that task runs in steps, checks itself and hands it
+      to you to sign off. I have been a teacher for over 24 years, and I stay in the chat while you
+      build it.
     </p>
-    <div class="doors">
-      <div class="door">
-        <p class="door-name">The school: free</p>
-        <p class="paid-line"><strong>What you get:</strong></p>
-        <ul>
-          <li>Two short lessons on one task you repeat every week</li>
-          <li>An AI coach that guides you through them in EdubaWare</li>
-          <li>A one-page plan for your task</li>
-        </ul>
-        <a class="button button-primary door-button" href={EDUBAWARE_FREE_URL}>Start free</a>
-        <p class="door-note">Email the word FREE to get in. No payment.</p>
-      </div>
-      <div class="door paid">
-        <p class="door-name">The school: {EDUBAWARE_PRICE} per person, per month</p>
-        <p class="paid-line"><strong>Everything in free, plus:</strong></p>
-        <ul>
-          <li>Me in the same chat when you get stuck</li>
-          <li>One fix from me on your work each week</li>
-          <li>Four lessons open now, and the last three lessons as I finish them with the first group</li>
-        </ul>
-        <a class="button button-secondary door-button" href={EDUBAWARE_PAGE_URL}>See the EdubaWare school</a>
-        <p class="door-note">{EDUBAWARE_FOUNDING_SEATS_START} founding seats, by invitation. Cancel any time. Full refund within {EDUBAWARE_REFUND_DAYS} days of your first payment.</p>
-      </div>
-      <div class="door">
-        <p class="door-name">For companies: Teams</p>
-        <p class="paid-line">
-          Your team works on real projects together in EdubaWare, using templates.
-          <a href={TEAMS_PATH}>See AI the vL Way for Teams</a>.
-        </p>
-      </div>
-    </div>
   </div>
 
   <div class="scene">
@@ -72,6 +43,46 @@ const bipSayings = [
       <img class="walker" src="/shop/bit-walk.png" alt="" width="40" height="56" />
     </ShopScene>
     <span class="bubble" aria-hidden="true" data-sayings={JSON.stringify(bipSayings)}>{bipSayings[0]}</span>
+  </div>
+
+  <div class="doors">
+    <div class="door">
+      <p class="door-name">Free: learn the method</p>
+      <p class="paid-line"><strong>What you get:</strong></p>
+      <ul>
+        <li>The ICM Principles by Jake Van Clief</li>
+        <li>Clief Notes, a free AI community on Skool, an online community website</li>
+        <li>{ICM_PLAIN}</li>
+      </ul>
+      <AffiliateLink compact />
+    </div>
+    <div class="door paid">
+      <p class="door-name">The school: {EDUBAWARE_PRICE} per person, per month</p>
+      <p class="paid-line"><strong>What you get:</strong></p>
+      <ul>
+        <li>Your own workspace with an AI coach</li>
+        <li>Me in the same chat when you get stuck</li>
+        <li>One fix from me on your work each week</li>
+        <li>Four lessons open now, and the last three lessons as I finish them with the first group</li>
+      </ul>
+      <a class="button button-secondary door-button" href={EDUBAWARE_PAGE_URL}>See the EdubaWare school</a>
+      <p class="door-note">
+        {EDUBAWARE_FOUNDING_SEATS_START} founding seats, by invitation. The price will rise for later
+        members. Cancel any time. Full refund within {EDUBAWARE_REFUND_DAYS} days of your first payment.
+        Want to try it first? <a href={EDUBAWARE_FREE_URL}>Email the word FREE</a> for two free lessons.
+      </p>
+    </div>
+    <div class="door paid">
+      <p class="door-name">For teams: {EDUBAWARE_PRICE} per seat, per month</p>
+      <p class="paid-line"><strong>What you get:</strong></p>
+      <ul>
+        <li>One shared room for each job, with your people and the AI in the same chat</li>
+        <li>Templates built for the work</li>
+        <li>Everyone can see what's in, what's missing and who does what next</li>
+      </ul>
+      <a class="button button-secondary door-button" href={TEAMS_PATH}>See AI the vL Way for Teams</a>
+      <p class="door-note">Custom setup and new templates are priced after we look at the job.</p>
+    </div>
   </div>
 </section>
 
@@ -115,8 +126,10 @@ const bipSayings = [
 
   .doors {
     display: grid;
-    gap: var(--space-4);
-    margin-top: var(--space-5);
+    grid-column: 1 / -1;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--space-5);
+    align-items: start;
   }
 
   .door {
@@ -241,6 +254,10 @@ const bipSayings = [
       gap: var(--space-6);
       padding-top: var(--space-6);
       padding-bottom: var(--space-7);
+    }
+
+    .doors {
+      grid-template-columns: minmax(0, 1fr);
     }
   }
 

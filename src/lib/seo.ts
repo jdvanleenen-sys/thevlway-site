@@ -7,7 +7,7 @@ export type Schema = Record<string, unknown>;
 
 const MAX_TITLE_LENGTH = 60;
 export const DEFAULT_SHARE_IMAGE = '/og/default.png';
-export const DEFAULT_SHARE_ALT = `${SITE_NAME}: AI for your office work`;
+export const DEFAULT_SHARE_ALT = `${SITE_NAME}: AI for the office work behind the job`;
 export const EDUBAWARE_SHARE_IMAGE = '/og/edubaware.png';
 export const EDUBAWARE_SHARE_ALT = 'ICM Principles by Jake Van Clief. Try it free. Build it with me.';
 

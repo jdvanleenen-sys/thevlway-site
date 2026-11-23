@@ -54,7 +54,7 @@ check(2, 'Home hero names the teacher, the AI coach and the same chat', ['home']
   return !(/teacher/i.test(hero) && /AI coach/.test(hero) && /same chat/i.test(hero));
 }));
 check(3, 'First button on home is the Clief Notes free door', ['home'].filter(() => {
-  const first = pages.home.main.match(/<a[^>]*class="[^"]*button[^"]*"[^>]*>/)?.[0] ?? '';
+  const first = pages.home.main.match(/<a\s[^>]*class="[^"]*button[^"]*"[^>]*>/)?.[0] ?? '';
   return !(first.includes('skool.com/cliefnotes') && first.includes('sponsored'));
 }));
 check(4, 'Free offer says Jeff joins with a paid seat', ['edubaware'].filter(() => !/Free lessons are with the AI coach/.test(pages.edubaware.text)));
@@ -107,7 +107,8 @@ check(25, 'Home hero shows Clief, then the school, then Teams', ['home'].filter(
 }));
 check(26, 'Every selling page links both doors in its main content', ['index.html', 'about/index.html', 'edubaware/index.html', ...postFiles.map((file) => file.slice(DIST.length + 1))].filter((file) => {
   const main = mainHtml(readFileSync(join(DIST, file), 'utf8'));
-  return !(main.includes('skool.com/cliefnotes') && main.includes('/edubaware/'));
+  const reachesSchool = file === 'edubaware/index.html' || main.includes('/edubaware/');
+  return !(main.includes('skool.com/cliefnotes') && reachesSchool);
 }));
 check(27, 'No line sells the school against Clief Notes', allFiles.flatMap((file) => {
   const text = visibleText(mainHtml(readFileSync(file, 'utf8')));

@@ -1,27 +1,22 @@
 ---
 import AffiliateLink from './AffiliateLink.astro';
-import { EDUBAWARE_FOUNDING_SEATS_START, EDUBAWARE_FREE_URL, EDUBAWARE_PAGE_URL, EDUBAWARE_PRICE } from '../consts';
+import { EDUBAWARE_FOUNDING_SEATS_START, EDUBAWARE_PAGE_URL, EDUBAWARE_PRICE, TEAMS_PATH } from '../consts';
 ---
 
 <section class="two-doors" aria-label="Two ways to learn this">
   <article class="door depth-box">
     <p class="door-name">Free</p>
-    <p>Two short lessons on your own weekly task, with an AI coach in EdubaWare, a website where people and AI work in the same chat and share folders.</p>
-    <p class="disclosure">Email the word FREE to get in.</p>
-    <a class="button button-primary door-button" href={EDUBAWARE_FREE_URL}>Start free</a>
+    <AffiliateLink fillCard />
   </article>
 
   <article class="door paid depth-box">
     <p class="door-name">Paid</p>
-    <p>Learn the ICM Principles by Jake Van Clief in my school, AI the vL Way, by building your own weekly task with me in the same chat.</p>
+    <p>My school, AI the vL Way, runs on EdubaWare, a website where people and AI work in the same chat. Bring one weekly task, and I help you until it runs in steps, checks itself and hands it to you to sign off.</p>
     <p class="disclosure">{EDUBAWARE_PRICE} per person, per month. {EDUBAWARE_FOUNDING_SEATS_START} founding seats, by invitation.</p>
     <a class="button button-secondary door-button" href={EDUBAWARE_PAGE_URL}>See the EdubaWare school</a>
   </article>
 
-  <article class="door source depth-box">
-    <p class="door-name">Learn from the source</p>
-    <AffiliateLink fillCard />
-  </article>
+  <p class="teams-line">Running a company? <a href={TEAMS_PATH}>See AI the vL Way for Teams</a>.</p>
 </section>
 
 <style>
@@ -78,7 +73,10 @@ import { EDUBAWARE_FOUNDING_SEATS_START, EDUBAWARE_FREE_URL, EDUBAWARE_PAGE_URL,
     text-align: center;
   }
 
-  .source {
+  .teams-line {
     grid-column: 1 / -1;
+    margin: 0;
+    font-weight: 700;
+    text-align: center;
   }
 </style>

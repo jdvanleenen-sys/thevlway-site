@@ -1,6 +1,6 @@
 export const SITE_NAME = 'AI the vL Way';
 export const SITE_DESCRIPTION =
-  'Simple AI systems for your office work, built around the way you already work.';
+  'Simple AI systems for the office work behind the job, built around the way you already work.';
 export const OWNER_NAME = 'Jeff van Leenen';
 export const OWNER_LOCATION = 'Calgary, Alberta';
 

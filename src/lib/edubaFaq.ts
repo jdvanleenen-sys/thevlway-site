@@ -7,12 +7,8 @@ export const EDUBAWARE_FAQ = [
     a: 'No. You click, type and read. The lessons use plain words, and you never have to write code.',
   },
   {
-    q: 'What if I am not in Clief Notes yet?',
-    a: 'You can still start here. Clief Notes is a free place to learn the method from Jake, and the link is on this page.',
-  },
-  {
-    q: 'Why pay when Clief Notes is free?',
-    a: 'Clief Notes teaches the method. You pay me to look at your own work, sit in the same chat and give you one fix each week.',
+    q: 'Why pay when there are free videos?',
+    a: 'Videos can teach you the method. You pay me to look at your own work, sit in the same chat and give you one fix each week.',
   },
   {
     q: 'Should I start free or take a founding seat?',
@@ -20,7 +16,7 @@ export const EDUBAWARE_FAQ = [
   },
   {
     q: 'Is the school finished?',
-    a: `Not yet. The first lessons are ready, and I finish the last three with the first group. That is why this is the founding price, ${EDUBAWARE_PRICE} a month, locked for as long as you stay subscribed.`,
+    a: `Not yet. The first lessons are ready, and I finish the last three with the first group. That is why this is the founding price, ${EDUBAWARE_PRICE} a month, locked for as long as you stay subscribed. The price will rise for later members.`,
   },
   {
     q: 'What kind of weekly task works best?',
@@ -32,7 +28,7 @@ export const EDUBAWARE_FAQ = [
   },
   {
     q: 'Can I learn with someone else?',
-    a: 'Yes. Two or more paid seats get one shared workspace, where you learn in the same chat at the same time with the AI coach and me. If your company wants its team working on projects together, that is AI the vL Way for Teams.',
+    a: 'Yes. Two or more paid seats get one shared room, where you learn in the same chat at the same time with the AI coach and me. If your company wants its team working on projects together, that is AI the vL Way for Teams.',
   },
   {
     q: 'What if it is not for me?',
