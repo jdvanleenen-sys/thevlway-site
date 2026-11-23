@@ -4,9 +4,9 @@ description: 'Small business problems and solutions, for trades: list your top 3
 pubDate: 2026-10-03
 keyword: 'small business problems and solutions'
 draft: false
+youtubeId: '_I7Ue2QCFKk'
+videoUploadDate: 2026-10-06
 ---
-
-[![Watch: Small business problems and solutions, which to fix first](/blog/which-business-problem-to-fix-first/video-thumbnail.png)](https://www.youtube.com/watch?v=_I7Ue2QCFKk)
 
 *This is the video behind the post. It walks one plumbing shop through all 3 steps, so you can see why the problem that bugs you most isn't always the one to fix first.*
 

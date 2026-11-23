@@ -4,9 +4,9 @@ description: 'Software for contractors, before you buy: check what you already p
 pubDate: 2026-10-04
 keyword: 'software for contractors'
 draft: false
+youtubeId: 'XiVBx4P5vu0'
+videoUploadDate: 2026-10-06
 ---
-
-[![Watch: Software for contractors, check this before you buy](/blog/software-for-contractors/video-thumbnail.png)](https://www.youtube.com/watch?v=XiVBx4P5vu0)
 
 *This is the video behind the post. It walks a heating and cooling shop through all 3 steps, so you can see a fix turn up in software the owner already paid for.*
 

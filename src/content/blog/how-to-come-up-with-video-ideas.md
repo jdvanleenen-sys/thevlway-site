@@ -5,9 +5,8 @@ pubDate: 2026-10-23
 keyword: 'how to come up with video ideas'
 youtubeId: 'VosUmn5OsCw'
 draft: false
+videoUploadDate: 2026-10-23
 ---
-
-[![Watch: How to come up with video ideas, talk first, build second](/blog/how-to-come-up-with-video-ideas/video-thumbnail.png)](https://www.youtube.com/watch?v=VosUmn5OsCw)
 
 *This is the video behind the post. It shows the 12 steps on a real film I made in 1 evening, including the mistake my checks missed.*
 

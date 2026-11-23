@@ -16,6 +16,8 @@ const blog = defineCollection({
     updatedDate: z.coerce.date().optional(),
     keyword: z.string(),
     youtubeId: z.string().optional(),
+    // The video's YouTube publish date. Google requires it for video search results.
+    videoUploadDate: z.coerce.date().optional(),
     draft: z.boolean().default(false),
   }),
 });

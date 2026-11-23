@@ -83,6 +83,25 @@ export function articleSchema(post: BlogPost, siteUrl: string): Schema {
   };
 }
 
+/** Describes the video embedded on a post, so Google can show the page in video results. */
+export function videoSchema(post: BlogPost, siteUrl: string): Schema | null {
+  const { youtubeId, videoUploadDate, title, description } = post.data;
+  if (!youtubeId || !videoUploadDate) return null;
+  const url = `${siteUrl}blog/${post.id}/`;
+  return {
+    '@type': 'VideoObject',
+    '@id': `${url}#video`,
+    name: title,
+    description,
+    thumbnailUrl: `https://i.ytimg.com/vi/${youtubeId}/hqdefault.jpg`,
+    uploadDate: videoUploadDate.toISOString(),
+    embedUrl: `https://www.youtube-nocookie.com/embed/${youtubeId}`,
+    url: `https://www.youtube.com/watch?v=${youtubeId}`,
+    publisher: { '@id': `${siteUrl}#org` },
+    inLanguage: 'en-CA',
+  };
+}
+
 export function faqSchema(pageUrl: string, questions: readonly { q: string; a: string }[]): Schema {
   return {
     '@type': 'FAQPage',
