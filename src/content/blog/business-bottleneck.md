@@ -43,7 +43,7 @@ Here are four problems, and where each one fits:
 
 Here's why it matters. A folder gives you a place to start. A feeling doesn't.
 
-In the video, say Kyle runs a small landscaping crew. He's made up, but his week will sound familiar. He thinks his whole business is the problem.
+In the video, Kyle runs a small landscaping crew. He's made up, but his week will sound familiar. He thinks his whole business is the problem.
 
 Kyle misses calls while he's on the mower. That's Leads.
 
@@ -57,7 +57,7 @@ You patch the biggest hole in the bucket first.
 
 So take your matched problem. Now trace a second one that feels unrelated. Often, two problems turn out to live in the same folder.
 
-Back to Kyle. He also forgets to call people back. That's Leads again. 2 problems, one folder.
+Back to Kyle. He also forgets to call people back. That's Leads again. Two problems, one folder.
 
 So it isn't his whole business. It's his Leads folder.
 

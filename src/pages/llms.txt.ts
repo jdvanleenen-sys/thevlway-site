@@ -18,7 +18,7 @@ export async function GET(context: APIContext) {
     '',
     `> ${SITE_DESCRIPTION}`,
     '',
-    `${SITE_NAME} is run by ${OWNER_NAME}, a school teacher for 24 years who is now a home building executive and one of Jake Van Clief's 7 Masters of ICM. The teaching uses ICM Principles by Jake Van Clief. ICM structure has folders and notes that show AI where to look.`,
+    `${SITE_NAME} is run by ${OWNER_NAME}, a teacher for over 24 years who is now a home building executive and one of Jake Van Clief's 7 Masters of ICM. The teaching uses ICM Principles by Jake Van Clief. ICM structure has folders and notes that show AI where to look.`,
     '',
     '## Ways to work with Jeff',
     '',

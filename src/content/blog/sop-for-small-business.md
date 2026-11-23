@@ -79,7 +79,7 @@ If they get lost, you just found the exact gap to fix.
 
 The mistake is testing it yourself. You fill the gaps from memory. The right move is a stranger.
 
-It was never the AI. It was the structure you built. If you're still sorting out where the structure goes, the Government of Canada keeps a [small business hub](https://ised-isde.canada.ca/site/canadian-small-business/en) with guides on planning and running a business. ([Step 3 in the video](https://www.youtube.com/watch?v=VcbW12lMgqg&t=174s))
+It was never the AI. It was the structure you built. If you're still sorting out how your business runs, the Government of Canada keeps a [small business hub](https://ised-isde.canada.ca/site/canadian-small-business/en) with guides on planning and running a business. ([Step 3 in the video](https://www.youtube.com/watch?v=VcbW12lMgqg&t=174s))
 
 ## Why the order matters
 

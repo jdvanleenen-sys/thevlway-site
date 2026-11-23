@@ -10,7 +10,7 @@ draft: false
 
 *This is the video behind the post. It walks one plumbing shop through all three steps, so you can see why the problem that bugs you most isn't always the one to fix first.*
 
-The answer to small business problems and solutions is simple: fix the problem that costs you the most, not the one that annoys you the most. Fix one, finish it, and park the rest on a list.
+The rule for small business problems and solutions is simple: fix the problem that costs you the most, not the one that annoys you the most. Fix one, finish it, and park the rest on a list.
 
 For most trades, the big ones are missed calls, messy invoicing, lead follow-up, and job details getting lost. The rest of this post is how to pick which one goes first.
 
@@ -41,7 +41,7 @@ If you've read [small business systems in three steps](/blog/small-business-syst
 
 Here's why the list matters. You can't compare problems that stay in your head. On paper, you can.
 
-In the video, say Dale runs a small plumbing shop. He's made up, but his list will sound familiar: missed calls, messy invoicing, and lead follow-up. That's his top three. ([Step 1 in the video](https://www.youtube.com/watch?v=_I7Ue2QCFKk&t=60s))
+In the video, Dale runs a small plumbing shop. He's made up, but his list will sound familiar: missed calls, messy invoicing, and lead follow-up. That's his top three. ([Step 1 in the video](https://www.youtube.com/watch?v=_I7Ue2QCFKk&t=60s))
 
 ## Step 2: score them by cost
 
@@ -67,7 +67,7 @@ This step stops your second problem pulling you off the first.
 
 You don't gut the kitchen while the bathroom's half done.
 
-So write your second problem on a list called **Later**. Dale puts messy invoicing on his Later list.
+So write your other problems on a list called **Later**. Dale puts messy invoicing on his Later list.
 
 Here's why. Parking it is part of finishing the first one. The mistake is starting another problem when the first one gets hard. The right move is finishing the first, then opening your Later list.
 

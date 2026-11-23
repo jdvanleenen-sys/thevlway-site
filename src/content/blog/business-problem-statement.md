@@ -42,7 +42,7 @@ What better would look like:
 
 Here's what goes on each line. ([This part of the video](https://www.youtube.com/watch?v=_7NUTfwkYNE&t=22s))
 
-**Line one: your trade, and how big your team is.** A two person electrical shop and a 15 person roofing crew have different problems. So say which one you are.
+**Line one: your trade, and how big your team is.** A two-person electrical shop and a 15-person roofing crew have different problems. So say which one you are.
 
 **Line two: the one office problem you want fixed first.** Just one. Not the list. If you write four problems, you'll get four half answers.
 
@@ -66,7 +66,7 @@ Both of those you can check. Either the calls stopped getting lost or they didn'
 
 "I stop losing 3 calls a week" beats "things run smoother". ([See the two cards side by side](https://www.youtube.com/watch?v=_7NUTfwkYNE&t=39s))
 
-It's the same idea as a measuring tape. You don't cut trim "a bit shorter". You cut it to a number. The bank has a name for goals written this way, and its page on [SMART objectives](https://www.bdc.ca/en/articles-tools/entrepreneur-toolkit/templates-business-guides/glossary/smart-objectives) is worth 2 minutes if you want the longer version.
+It's the same idea as a measuring tape. You don't cut trim "a bit shorter". You cut it to a number. The Business Development Bank of Canada has a name for goals written this way, and its page on [SMART objectives](https://www.bdc.ca/en/articles-tools/entrepreneur-toolkit/templates-business-guides/glossary/smart-objectives) is worth 2 minutes if you want the longer version.
 
 ## What a filled-in one looks like
 

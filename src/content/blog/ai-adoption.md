@@ -53,7 +53,7 @@ If your Claude plan lets you share a Project, share that one with both people. W
 
 Then test it on a made-up job. Both people ask for the same quote. Read both answers. If both follow your four lines, that job is set up. If one doesn't, fix the four lines and test again.
 
-For real quotes, your own rules for what goes into AI decide what gets cleaned first.
+For real quotes, your own rules for what goes into AI decide what gets removed first.
 
 Keep that list of jobs. You'll add to it in step 3. ([Step 1 in the video](https://www.youtube.com/watch?v=raFqarDcdT8))
 
@@ -61,13 +61,13 @@ Keep that list of jobs. You'll add to it in step 3. ([Step 1 in the video](https
 
 This step puts each win where the whole team can see it.
 
-It's like a before and after photo of a finished job. A win nobody sees can't be copied by the next person.
+It's like a before-and-after photo of a finished job. A win nobody sees can't be copied by the next person.
 
 Start one wins thread now, or use one your team already has. A wins thread is one group chat, wherever your team already talks.
 
 Post the job and the time saved. Leave out customer names and prices. Everyone on the team can read it, so keep it to the win.
 
-Owen's estimator posts the scope AI drafted, and what he had to fix.
+Owen's estimator posts that AI drafted his scope, and what he had to fix.
 
 The mistake is keeping wins in your head. The right move is one thread the whole team can see.
 

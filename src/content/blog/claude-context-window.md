@@ -62,7 +62,7 @@ A crowded window makes old details harder to recall. So don't wait for it to war
 
 In Claude Code, type /context. It shows you how full the window is ([Claude Code, explore the context window](https://code.claude.com/docs/en/context-window)). ([3:16](<https://www.youtube.com/watch?v=Ba6apFc6inw&t=196s>))
 
-My rule of thumb is to stay in the first 2/3. Anthropic says that as the window fills, accuracy and recall drop. They call it context rot.
+My rule of thumb is to stay in the first two-thirds. Anthropic says that as the window fills, accuracy and recall drop. They call it context rot.
 
 So before it gets full, you've got two moves.
 
@@ -111,7 +111,7 @@ The right move is one shared folder with one copy. That's your single point of t
 
 Next time, Frank tells Claude Code to read the shared brand guide. He doesn't have to update a thing. He still checks the quote sheet before it goes out.
 
-Remember the one from step 2? Anything you'll need again lives in the folder. A long chat can lose detail. A file stays right where you put it.
+Remember the rule from step 2? Anything you'll need again lives in the folder. A long chat can lose detail. A file stays right where you put it.
 
 ## Put a map on top of the folder
 
@@ -144,9 +144,9 @@ Think of a new hire. Smart and fast, and still learning. You check their work be
 
 Same rule here.
 
-AI never sends anything without your OK. Not an email, not a post, not a file.
+Never let AI send anything without your OK. Not an email, not a post, not a file.
 
-Remember step 2. It's built to answer, so it may fill the gaps. 1 weird line, and all of a sudden it's out there.
+Remember step 2. It's built to answer, so it may fill the gaps. One weird line, and all of a sudden it's out there.
 
 You're the human in the loop. You're the last set of eyes before anything goes out.
 

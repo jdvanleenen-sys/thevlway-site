@@ -33,7 +33,7 @@ For a painter it's the same. The job is in the notes, and the prices are somewhe
 
 - Claude on your phone. The free plan works.
 - A free Airtable account.
-- A base to connect to. I use a demo, Summit Coat Painting, a made-up painting shop. It isn't real, and its prices are made up.
+- A base to connect to (Airtable's word for a database). I use a demo, Summit Coat Painting, a made-up painting shop. It isn't real, and its prices are made up.
 
 Claude's own help pages say [connectors are available on every plan](https://support.claude.com/en/articles/11176164-use-connectors-to-extend-claude-s-capabilities), and that [free accounts can make up to five Projects](https://support.claude.com/en/articles/9517075-what-are-projects).
 
@@ -63,7 +63,7 @@ In a plain chat, Claude connected to Airtable just fine. It made the customer an
 
 Connecting isn't the same as knowing your shop.
 
-So I made a Claude Project. A project is a folder in Claude that holds your rules. I pasted in the instructions: how to take a job down, and what it must never do, like never type a dollar amount and never send anything. Then I uploaded four files about the shop: what it does, how it prices, and the jobs it turns down.
+So I made a Claude Project. A project is a folder in Claude that holds your rules. I pasted in the instructions: how to take a job down, and what it must never do, like type a dollar amount or send anything. Then I uploaded four files about the shop: what it does, how it prices, and the jobs it turns down.
 
 Same request again, inside the Project. This time Claude read the name, address and phone back before it created anything. It flagged that "Test job" looked like a voice-to-text slip. And it asked for the email.
 

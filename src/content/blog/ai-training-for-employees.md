@@ -36,7 +36,7 @@ Week 1 is an audit. You start from what your team really tried, not from a guess
 
 Think of a site walk-through. You look first. You fix later.
 
-This is week 1 of six, and the job is to find out what stuck. Here are the three steps.
+This is week 1 of 6, and the job is to find out what stuck. Here are the three steps.
 
 ## Step 1: run it on yourself
 

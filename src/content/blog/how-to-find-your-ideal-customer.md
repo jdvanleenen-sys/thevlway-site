@@ -34,13 +34,13 @@ Nora thinks her best work is basements, because those are her biggest cheques. H
 
 ## Before you type anything in
 
-You do this in Claude. Claude is the AI chat we use as our thought partner, because it's good at counting a list and asking you questions back.
+You do this in Claude. Claude is the AI chat we use as our thought partner, because it can count a list and ask you questions back.
 
 **What may go in:** the type of job, the part of town, how the customer found you, and about what you kept after materials and labour. A rough number is fine. "Good" or "thin" is fine too.
 
 **What stays out:** customer names, street addresses, phone numbers and emails. You don't need them.
 
-Type it yourself. Don't paste or upload invoices or customer files.
+Type your list yourself. Don't paste or upload invoices or customer files.
 
 It goes into a chat in your own Claude account. It isn't public. Anthropic, the company behind Claude, can review a chat in some cases. Check your privacy settings in Claude first, because that's where you set your choice on training.
 
@@ -108,7 +108,7 @@ The mistake is trusting the count. The right move is checking it.
 
 Now see where Nora's guess falls over. Basements were two of her 10 best jobs, and in total she kept $12,400 on them. Bathrooms were six of 10, and in total she kept $26,200. All five of the jobs that came from a neighbour were bathrooms.
 
-Then Claude checks which of those show up in the same jobs. 4 of Nora's six bathroom jobs were on the north side, and five of the six came through a neighbour. That's one group of customers, not three separate counts.
+Then Claude checks which of those show up in the same jobs. Four of Nora's six bathroom jobs were on the north side, and five of the six came through a neighbour. That's one group of customers, not three separate counts.
 
 If nothing repeats three times, stop there. Add jobs as you finish them. Otherwise, take that group into step 3. For Nora, it's north side bathrooms. ([Step 2 in the video](https://www.youtube.com/watch?v=Y7dbpB4p8HU&t=173s))
 

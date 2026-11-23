@@ -46,7 +46,7 @@ Buildertrend, software for builders, can invoice straight from a change order.
 
 If yours does it, turn it on. That's renting the commodity, and it's often the simplest fix.
 
-In the video, say Tess runs a small heating and cooling shop. She's made up, but her week will sound familiar.
+In the video, Tess runs a small heating and cooling shop. She's made up, but her week will sound familiar.
 
 Her bottleneck was missed calls. A company quoted her on a custom phone system.
 
@@ -76,13 +76,13 @@ Now take your quote follow-up. That's how you win, and it has to work your way. 
 
 Here's why. You make the call with your eyes open.
 
-If you've been stuck on custom vs off the shelf software, these three questions are how I'd sort it. The Business Development Bank of Canada asks the same thing about bigger company software in [custom or off-the-shelf systems](https://www.bdc.ca/en/articles-tools/technology/invest-technology/custom-vs-off-the-shelf-erp-systems).
+If you've been stuck on custom vs off-the-shelf software, these three questions are how I'd sort it. The Business Development Bank of Canada asks the same thing about bigger company software in [custom or off-the-shelf systems](https://www.bdc.ca/en/articles-tools/technology/invest-technology/custom-vs-off-the-shelf-erp-systems).
 
 Now try the three questions on a tool you're about to renew. You may be renting your advantage. Or paying to build a commodity.
 
 The mistake is letting the best pitch answer for you.
 
-That's your three answers. Hold onto them for step 3. ([Step 2 in the video](https://www.youtube.com/watch?v=XiVBx4P5vu0&t=147s))
+Those are your three answers. Hold onto them for step 3. ([Step 2 in the video](https://www.youtube.com/watch?v=XiVBx4P5vu0&t=147s))
 
 ## Step 3: decide, and write the reason
 

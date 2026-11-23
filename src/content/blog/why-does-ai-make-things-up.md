@@ -1,8 +1,8 @@
 ---
 title: 'Why Does AI Make Things Up? Usually It Read the Wrong File First'
-description: 'Why does AI make things up? Often it read the wrong file first and was sure about it. 2 steps fix that: put the right file first, and send a helper into the mess.'
+description: 'Why does AI make things up? Often it read the wrong file first and was sure about it. Two steps fix that: put the right file first, and send a helper into the mess.'
 seoTitle: 'Why Does AI Make Things Up? It Read the Wrong File'
-seoDescription: 'Why does AI make things up? Often it read the wrong file first. 2 steps fix that: put the right file first, and send a helper into the mess.'
+seoDescription: 'Why does AI make things up? Often it read the wrong file first. Two steps fix that: put the right file first, and send a helper into the mess.'
 pubDate: 2026-10-23
 keyword: 'why does ai make things up'
 youtubeId: 'Jhtpy2YoeFs'
@@ -49,7 +49,7 @@ Sounding sure is not the same as being right. Your AI sounds sure every time.
 
 In the video, I move her card to the front door. That's the first place Bip looks. He reads it first and gets her number right. ([Step 1](https://www.youtube.com/watch?v=Jhtpy2YoeFs&t=29s))
 
-Your AI works the same way. Whatever it reads first, it trusts. So the file it should trust goes where it starts.
+Your AI works the same way. Whatever it reads first, it tends to trust. So the file it should trust goes where it starts.
 
 I use Claude Code for this. Claude Code is the AI assistant I work with, and it works right inside my folders. Anthropic makes it, and its own guide says the same thing. Give it the documents. Tell it to answer only from them ([Anthropic](https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/reduce-hallucinations)).
 
@@ -69,7 +69,7 @@ Bip didn't get smarter between the wrong answers and the right one. His folders 
 
 That's the whole idea behind the folder system I use. Your AI doesn't learn your business by being told over and over. It learns it by reading your folders, in the order you lay them out. So the way you set up your folders is the instructions.
 
-It's the difference between training a new hire out loud every week and handing them a binder that already runs the job. Your AI reads the binder every time you start. It reads the pages in order, though, and it trusts the first page that looks like an answer.
+It's the difference between training a new hire out loud every week and handing them a binder that already runs the job. Your AI reads the binder every time you start. It reads the pages in order, though, and it tends to trust the first page that looks like an answer.
 
 When the binder is a mess, the AI still answers. It answers from whatever it found first, and it sounds sure. In a small business, that's often what making things up really is.
 
@@ -101,7 +101,7 @@ Each step below is a piece of the folder system. Each one says what it would cha
 
 *In Bip's office:* the first wrong number shows you the problem right away. The office line was first on his path.
 
-The two steps in the first video are steps 1 and five in action. Steps 2, three, four and six are what keep them working after the video ends.
+The two steps in the first video are steps one and five in action. Steps two, three, four and six are what keep them working after the video ends.
 
 The second video shows all six, in order. Bip does the same job twice, and the second time you watch each step as a stop on his path: [Why Bip Got It Wrong](https://www.youtube.com/shorts/Eq9hj96V_lE).
 
@@ -152,7 +152,7 @@ In the video, the next caller asks the same things. Bip reads the folder. Re-til
 
 The money in the video is made up. The move isn't.
 
-The four files are the start. A full AI receptionist needs a few more: who she is, what a good call does, and how you test her before she takes a real call.
+The four files are the start. A full AI receptionist needs a few more: who it is, what a good call does, and how you test it before it takes a real call.
 
 ## Play it yourself
 

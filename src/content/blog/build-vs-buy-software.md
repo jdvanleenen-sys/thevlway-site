@@ -35,7 +35,7 @@ So for every tool you pay for, ask one question: **"Is this the same for every b
 
 Here's why it works. If every business has it, it's rarely the reason a customer picks you. The mistake is trying to make your own version. The right move is to rent a good one and move on.
 
-That's your rent list. Keep it, you need it in step 3. ([Step 1 in the video](https://www.youtube.com/watch?v=J5MaC5jgj74&t=75s))
+That's your rent list. Keep it. You need it in step 3. ([Step 1 in the video](https://www.youtube.com/watch?v=J5MaC5jgj74&t=75s))
 
 ## Step 2: build the advantage
 
@@ -60,7 +60,7 @@ Take out your rent list and your build list. Pick one tool you pay for that you'
 
 Write rent or build beside that tool. Writing it down helps you decide, instead of drifting into another renewal. And if it belongs on the rent list, that's fine. Keep renting it. ([The two questions in the video](https://www.youtube.com/watch?v=J5MaC5jgj74&t=205s))
 
-There's a short 8-bit version of this step. Bip's boss rents an invoice app, which is fine. Then she picks the plan that says EVERYTHING. 5 months and $445 later, she has used one button. Renting was never the mistake. Renting more than the job needs was: [Bip's Boss Paid $445 for 1 Button](https://youtu.be/YhiVFpwijoA).
+There's a short 8-bit version of this step. Bip's boss rents an invoice app, which is fine. Then she picks the plan that says EVERYTHING. Five months and $445 later, she has used one button. Renting was never the mistake. Renting more than the job needs was: [Bip's Boss Paid $445 for 1 Button](https://youtu.be/YhiVFpwijoA).
 
 Owning the decision also means knowing where your data and your logins live when you rent. The Canadian Centre for Cyber Security keeps a plain list of [baseline security controls for small and medium organizations](https://www.cyber.gc.ca/en/guidance/baseline-cyber-security-controls-small-and-medium-organizations) that's worth a read before you sign up for the next app. If you're in Canada, the federal [Canada Digital Adoption Program page](https://ised-isde.canada.ca/site/canada-digital-adoption-program/en) is another place to see how small businesses plan their tech.
 

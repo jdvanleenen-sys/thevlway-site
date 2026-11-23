@@ -75,7 +75,7 @@ So take your path, and write three things: your path, the one outcome you want, 
 
 Andre writes, "Build One Thing Now, quotes out the same day, by month end."
 
-Here's why that works. 1 outcome and a date tell you when you're done.
+Here's why that works. One outcome and a date tell you when you're done.
 
 The mistake is writing "get organized." You can't check that. The right move is one outcome you could check.
 

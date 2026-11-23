@@ -18,7 +18,7 @@ Here's how that works, step by step.
 
 ## The problem is the evening, not the painting
 
-Your work day is full of jobs only you can do.
+Your workday is full of jobs only you can do.
 
 You check that the tint is right. You deal with the crew member who called in sick. You handle problem after problem, and you can handle all of it.
 
@@ -98,9 +98,9 @@ When the money lands, you type it in, and it marks itself paid.
 
 Time, because you said the job once instead of typing it three times.
 
-Accuracy, because the system does the math and flags what doesn't match.
+Mistakes, because the system does the math and flags what doesn't match.
 
-Money, because change orders can't slip through.
+Money, because change orders stay on the job.
 
 And brain power, because every job remembers where it's at.
 

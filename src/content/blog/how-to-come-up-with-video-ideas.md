@@ -55,11 +55,11 @@ It's the same thinking as deciding what to build and what to buy before you spen
 
 ## The 5 build steps
 
-After approved, the AI runs the build. I choose the look and the spending. The AI does the technical work.
+After I say approved, the AI runs the build. I choose the look and the spending. The AI does the technical work.
 
 **Eight. Voice first.** The voice sets the timing for everything else. Mine came from ElevenLabs, a tool that copies my voice.
 
-**Nine. 1 picture for every scene.** Made in Higgsfield, an AI picture maker. Lock the pictures before any video. A picture is cheap to redo. A clip isn't.
+**Nine. One picture for every scene.** Made in Higgsfield, an AI picture maker. Lock the pictures before any video. A picture is cheap to redo. A clip isn't.
 
 **10. One thing per clip.** Higgsfield turns each picture into a short clip that does one thing.
 
