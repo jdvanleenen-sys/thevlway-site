@@ -4,9 +4,9 @@ description: 'The Claude context window is the AI''s working memory for one chat
 pubDate: 2026-11-06
 keyword: 'claude context window'
 draft: false
+youtubeId: 'Ba6apFc6inw'
+videoUploadDate: 2026-11-08
 ---
-
-[![Watch: It got crowded, why your AI forgets in a long chat](/blog/claude-context-window/video-thumbnail.png)](https://www.youtube.com/watch?v=Ba6apFc6inw)
 
 *This is the video behind the post. Step 4 is the story of Frank's font. You watch one font change go wrong for a whole team, and that's the reason the fix is a folder and not a better chat.*
 

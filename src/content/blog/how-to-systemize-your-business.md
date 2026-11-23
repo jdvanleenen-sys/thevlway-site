@@ -4,9 +4,9 @@ description: 'How to systemize your business without guessing: read your map, co
 pubDate: 2026-10-04
 keyword: 'how to systemize your business'
 draft: false
+youtubeId: '8DD_Cz8LyDw'
+videoUploadDate: 2026-10-06
 ---
-
-[![Watch: How to systemize your business, fix 1 thing or everything](/blog/how-to-systemize-your-business/video-thumbnail.png)](https://www.youtube.com/watch?v=8DD_Cz8LyDw)
 
 *This is the video behind the post. It follows one cleaning company owner through all three steps, so you can watch a map answer the question before you ask it of yours.*
 

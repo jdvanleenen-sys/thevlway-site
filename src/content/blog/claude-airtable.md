@@ -5,9 +5,8 @@ pubDate: 2026-09-26
 keyword: 'claude airtable'
 youtubeId: 'wA-0Hr_s2Ww'
 draft: false
+videoUploadDate: 2026-10-06
 ---
-
-[![Watch: Claude + Airtable, build a painting quote on your phone](/blog/claude-airtable/video-thumbnail.png)](https://www.youtube.com/watch?v=wA-0Hr_s2Ww)
 
 *This video sets up Claude and Airtable from scratch on a demo painting shop, then quotes a job from a phone. Every step in this post is on screen in it.*
 

@@ -4,9 +4,9 @@ description: 'Small business systems, for trades: name the one office problem co
 pubDate: 2026-10-03
 keyword: 'small business systems'
 draft: false
+youtubeId: '4js1a1SI2y4'
+videoUploadDate: 2026-10-06
 ---
-
-[![Watch: Small business systems, fix your office work in 3 steps](/blog/small-business-systems/video-thumbnail.png)](https://www.youtube.com/watch?v=4js1a1SI2y4)
 
 *This is the video behind the post. It walks one electrical shop through all three steps, so you can see a small fix come out of something the owner already had.*
 

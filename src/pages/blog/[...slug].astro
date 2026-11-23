@@ -3,9 +3,10 @@ import { render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import PostBody from '../../components/PostBody.astro';
 import PostCard from '../../components/PostCard.astro';
+import PostVideo from '../../components/PostVideo.astro';
 import TwoDoors from '../../components/TwoDoors.astro';
 import { formatPostDate, getPublishedPosts, type BlogPost } from '../../lib/posts';
-import { articleSchema, postShareImage } from '../../lib/seo';
+import { articleSchema, postShareImage, videoSchema } from '../../lib/seo';
 
 const MORE_POSTS = 3;
 
@@ -29,6 +30,7 @@ const { post, morePosts } = Astro.props;
 const { Content, headings } = await render(post);
 const sections = headings.filter((heading) => heading.depth === 2);
 const siteUrl = new URL('/', Astro.site).href;
+const video = videoSchema(post, siteUrl);
 ---
 
 <Base
@@ -39,7 +41,7 @@ const siteUrl = new URL('/', Astro.site).href;
   ogType="article"
   publishedTime={post.data.pubDate}
   modifiedTime={post.data.updatedDate ?? post.data.pubDate}
-  schema={[articleSchema(post, siteUrl)]}
+  schema={video ? [articleSchema(post, siteUrl), video] : [articleSchema(post, siteUrl)]}
 >
   <div class="container post">
     <header class="post-head">
@@ -51,7 +53,10 @@ const siteUrl = new URL('/', Astro.site).href;
       </p>
     </header>
     <div class:list={['layout', { single: sections.length === 0 }]}>
-      <article><PostBody><Content /></PostBody></article>
+      <article>
+        {video && post.data.youtubeId && <PostVideo youtubeId={post.data.youtubeId} title={post.data.title} />}
+        <PostBody><Content /></PostBody>
+      </article>
       {
         sections.length > 0 && (
           <aside class="depth-box" aria-label="In this post">

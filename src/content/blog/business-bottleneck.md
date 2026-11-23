@@ -4,9 +4,9 @@ description: 'Find your business bottleneck in three steps, for trades: match ea
 pubDate: 2026-10-04
 keyword: 'business bottleneck'
 draft: false
+youtubeId: 'XldRCThcQyc'
+videoUploadDate: 2026-10-06
 ---
-
-[![Watch: Business bottleneck, find the 1 folder costing you the most](/blog/business-bottleneck/video-thumbnail.png)](https://www.youtube.com/watch?v=XldRCThcQyc)
 
 *This is the video behind the post. It walks one landscaping crew through all three steps, so you can see two problems that feel unrelated land in the same folder.*
 
