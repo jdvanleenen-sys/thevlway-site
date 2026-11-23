@@ -88,7 +88,7 @@ check(16, 'Every internal link resolves', allFiles.flatMap((file) => {
     .map((href) => `${file}: ${href}`);
 }));
 
-check(17, 'No words joined by a missing space', coreNames.filter((name) => /[a-z]founding/i.test(pages[name].text)));
+check(17, 'No words joined by a missing space', coreNames.flatMap((name) => (pages[name].text.match(/[a-z]founding|[a-z]{2}[.,][A-Z][a-z]+/g) ?? []).map((hit) => `${name}: ${hit}`)));
 
 let failed = 0;
 for (const { id, label, failures } of results) {
