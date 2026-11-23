@@ -36,7 +36,7 @@ Week 1 is an audit. You start from what your team really tried, not from a guess
 
 Think of a site walk-through. You look first. You fix later.
 
-This is week 1 of 6, and the job is to find out what stuck. Here are the three steps.
+This is week 1, and the job is to find out what stuck. Here are the three steps.
 
 ## Step 1: run it on yourself
 
@@ -107,7 +107,7 @@ Skip step 1, and you hand out something you haven't tried. Skip step 2, and the 
 
 Here's your move for this week: run the prompt on your own week, and book session 1 with your team.
 
-Then send the guide to your team 2 days before. Next up is week 2, which is setting it up once so no chat starts cold.
+Then send the guide to your team 2 days before. After that, set it up once so no chat starts cold. [Claude context window](/blog/claude-context-window/) shows how.
 
 The Week 1 guide builds the prompt for each role, so nobody starts from a blank page. Get it here: https://thevlway.com/guides/week-1/
 

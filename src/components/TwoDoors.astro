@@ -1,19 +1,26 @@
 ---
 import AffiliateLink from './AffiliateLink.astro';
-import { EDUBAWARE_PAGE_URL, EDUBAWARE_PRICE } from '../consts';
+import { EDUBAWARE_FOUNDING_SEATS_START, EDUBAWARE_FREE_URL, EDUBAWARE_PAGE_URL, EDUBAWARE_PRICE } from '../consts';
 ---
 
 <section class="two-doors" aria-label="Two ways to learn this">
   <article class="door depth-box">
     <p class="door-name">Free</p>
-    <AffiliateLink fillCard />
+    <p>Two short lessons on your own weekly job, with an AI coach in EdubaWare, a website where people and AI work in the same chat and share folders.</p>
+    <p class="disclosure">Email the word FREE to get in.</p>
+    <a class="button button-primary door-button" href={EDUBAWARE_FREE_URL}>Start free</a>
   </article>
 
   <article class="door paid depth-box">
     <p class="door-name">Paid</p>
-    <p>My school, AI the vL Way, runs on EdubaWare, a website for sharing folders with AI.</p>
-    <p class="disclosure">{EDUBAWARE_PRICE} a month, by invitation.</p>
+    <p>Build your weekly job in my school, AI the vL Way, with me in the chat. Bring your crew, and you all work in the same chat at the same time.</p>
+    <p class="disclosure">{EDUBAWARE_PRICE} per person, per month. {EDUBAWARE_FOUNDING_SEATS_START} founding seats, by invitation.</p>
     <a class="button button-secondary door-button" href={EDUBAWARE_PAGE_URL}>See the EdubaWare school</a>
+  </article>
+
+  <article class="door source depth-box">
+    <p class="door-name">Learn from the source</p>
+    <AffiliateLink fillCard />
   </article>
 </section>
 
@@ -69,5 +76,9 @@ import { EDUBAWARE_PAGE_URL, EDUBAWARE_PRICE } from '../consts';
 
   .door .button {
     text-align: center;
+  }
+
+  .source {
+    grid-column: 1 / -1;
   }
 </style>

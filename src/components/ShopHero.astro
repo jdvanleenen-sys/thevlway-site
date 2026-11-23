@@ -1,7 +1,12 @@
 ---
-import AffiliateLink from './AffiliateLink.astro';
 import ShopScene from './ShopScene.astro';
-import { EDUBAWARE_PAGE_URL, EDUBAWARE_PRICE, EDUBAWARE_REFUND_DAYS } from '../consts';
+import {
+  EDUBAWARE_FOUNDING_SEATS_START,
+  EDUBAWARE_FREE_URL,
+  EDUBAWARE_PAGE_URL,
+  EDUBAWARE_PRICE,
+  EDUBAWARE_REFUND_DAYS,
+} from '../consts';
 
 const bipSayings = [
   'Quotes are sent, Boss. Probably.',
@@ -20,19 +25,22 @@ const bipSayings = [
     <p class="eyebrow">For people who aren't technical and have office work piling up</p>
     <h1>The office work behind the job shouldn't take your evenings.</h1>
     <p class="lede">
-      Quotes, follow-ups, reports, invoices. Pick one you repeat every week and build it once, with
-      an AI agent walking you through each lesson. In my EdubaWare school, I'm in the chat with you.
+      Pick one job you repeat every week, like quotes, follow-ups, reports or invoices. Build it in
+      EdubaWare with an AI coach and me, a teacher for over 24 years, in the same chat. Bring your
+      crew, and you all work there at the same time.
     </p>
     <div class="doors">
       <div class="door">
         <p class="door-name">Free</p>
-        <AffiliateLink compact />
+        <p class="paid-line">Two short lessons on your own weekly job, with the AI coach.</p>
+        <a class="button button-primary door-button" href={EDUBAWARE_FREE_URL}>Start free</a>
       </div>
       <div class="door paid">
         <p class="door-name">Paid</p>
         <p class="paid-line">
-          EdubaWare is {EDUBAWARE_PRICE} a month, by invitation. Cancel any time.
-          Full refund within {EDUBAWARE_REFUND_DAYS} days of your first payment.
+          Build it with me for {EDUBAWARE_PRICE} per person, per month. {EDUBAWARE_FOUNDING_SEATS_START}
+          founding seats, by invitation. I am finishing the last three lessons with the first group.
+          Cancel any time. Full refund within {EDUBAWARE_REFUND_DAYS} days of your first payment.
         </p>
         <a class="button button-secondary door-button" href={EDUBAWARE_PAGE_URL}>See the EdubaWare school</a>
       </div>

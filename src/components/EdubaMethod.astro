@@ -1,6 +1,6 @@
 ---
 import AffiliateLink from './AffiliateLink.astro';
-import { EDUBAWARE_FREE_URL, ICM_PAPER_URL } from '../consts';
+import { EDUBAWARE_FREE_URL, ICM_PAPER_URL, ICM_PLAIN } from '../consts';
 ---
 
 <section class="method-band" id="method">
@@ -11,11 +11,10 @@ import { EDUBAWARE_FREE_URL, ICM_PAPER_URL } from '../consts';
         <p class="label">The method</p>
         <h3>ICM Principles by Jake Van Clief</h3>
         <p>
-          Jake Van Clief is the person behind Interpretable Context Methodology, or ICM. ICM structure
-          has folders and notes that show AI where to look. Jake and David McDermott published it in
-          2026. <a href={ICM_PAPER_URL}>Read the ICM paper</a>.
+          {ICM_PLAIN} The full name is Interpretable Context Methodology. Jake Van Clief is the person
+          behind it, and he published it with David McDermott in 2026. <a href={ICM_PAPER_URL}>Read the ICM paper</a>.
         </p>
-        <AffiliateLink fillCard edubawareColor />
+        <AffiliateLink fillCard edubawareColor defineIcm={false} />
       </article>
       <article class="card depth-box">
         <p class="label">The teacher</p>
@@ -24,7 +23,7 @@ import { EDUBAWARE_FREE_URL, ICM_PAPER_URL } from '../consts';
           I have been a teacher for over 24 years. Now I am also an executive at a home building company, so I
           know the office work behind the job. I am one of Jake Van Clief's 7 Masters of ICM.
         </p>
-        <p>You bring your task, and I help you apply his method to it.</p>
+        <p>You bring your weekly job, and I help you apply his method to it.</p>
         <a class="button button-edubaware door-button action" href={EDUBAWARE_FREE_URL}>Start free</a>
       </article>
     </div>

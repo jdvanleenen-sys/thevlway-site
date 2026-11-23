@@ -1,6 +1,6 @@
 ---
 title: 'Business Bottleneck: Find the 1 Folder Costing You the Most'
-description: 'Find your business bottleneck in three steps, for trades: match each problem to one of four folders, mark the one folder that costs you most, and give it a name.'
+description: 'Find your business bottleneck in three steps, for trades: match each problem to one of four stages, mark the one folder that costs you most, and give it a name.'
 pubDate: 2026-10-04
 keyword: 'business bottleneck'
 draft: false
@@ -22,7 +22,7 @@ But you can't point to what's pulling you under. So nothing gets fixed, and next
 
 You'd think business pain is a mystery. It isn't. It's a specific leak in a specific stage.
 
-Your work moves through four stages. Think of each one as a folder: Leads, Quotes, Jobs and Payments.
+Your work moves through four stages. Think of each one as a folder: Leads, Quotes, Jobs and Payments. If you already set up your six folders in [small business systems](/blog/small-business-systems/), these four stages are the path a customer takes through them.
 
 Know which folder is leaking, and you know where to start. It takes three steps, and they go in order.
 

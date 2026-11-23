@@ -9,7 +9,7 @@ const collected = [
   'Your name, email address and business name, when you email me or buy a seat.',
   'Your billing address and payment details, which you enter on Stripe. I can see the last 4 digits and brand of your card. I never see the full number.',
   'Your payment history, such as invoices, receipts, refunds and subscription status.',
-  'What you type and upload in your EdubaWare workspace, including chats with the AI agent and the files you build.',
+  'What you type and upload in your EdubaWare workspace, including chats with the AI coach and the files you build.',
   'Company files and information you give me for a template, custom build, training or ongoing help.',
   'Anything you choose to tell me by email.',
 ];
@@ -25,7 +25,7 @@ const uses = [
 const providers = [
   { name: 'Stripe', job: 'processes payments, receipts and invoices, and helps prevent fraud.' },
   { name: 'Eduba', job: 'runs the EdubaWare platform and stores your workspace.' },
-  { name: 'AI model providers', job: 'process what you send to the AI agent so it can reply.' },
+  { name: 'AI model providers', job: 'process what you send to the AI coach so it can reply.' },
   { name: 'GitHub', job: 'hosts this website and may log basic visit data, such as IP addresses.' },
   { name: 'Google Fonts', job: 'delivers this site\'s font, which sends your IP address to Google.' },
   { name: 'Email providers', job: 'carry and store messages you send me.' },
@@ -61,8 +61,8 @@ const providers = [
         <p>
           I can see your EdubaWare workspace and chats so I can teach and check your work. Other managers
           of the same EdubaWare organization can also see them. If your employer bought your seat, its
-          managers may be able to see your work too. If you work in a shared room, everyone in that
-          room can read and download every file in it. Do not put private customer, financial or health
+          managers may be able to see your work too. If you work in a shared workspace, everyone in that
+          workspace can read and download every file in it. Do not put private customer, financial or health
           information in your workspace unless you are allowed to.
         </p>
       </section>
@@ -81,7 +81,7 @@ const providers = [
             ))
           }
         </ul>
-        <p>If your company connects other tools to a room, the AI agent can send them information from that room. Your company chooses those tools.</p>
+        <p>If your company connects other tools to a shared workspace, the AI coach can send them information from that workspace. Your company chooses those tools.</p>
         <p>I may also disclose information when the law requires it.</p>
       </section>
     </div>

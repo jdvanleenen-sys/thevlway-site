@@ -47,19 +47,19 @@ That's your read. Keep it for step 2. ([Step 1 in the video](https://www.youtube
 
 ## Step 2: pick your path
 
-This step matches your read to the course that fits.
+This step matches your read to the path that fits.
 
 A leak gets a plumber. A gut job gets a whole crew.
 
 Your read points to one of these paths:
 
-- **One folder on fire?** Start Build One Thing Now. That's the course where you fix the leak and get the win.
-- **Chaos everywhere?** Start Run Your Whole Operation. That's the course where you build the folders and wire them together.
-- **Rather have it done for you?** There's a third door, Need It Built For You.
+- **One folder on fire?** Take the Fix One Thing path. You fix the leak and get the win.
+- **Chaos everywhere?** Take the Whole Operation path. You build the folders and wire them together.
+- **Rather not do it alone?** Build it with a teacher in the same chat. See the [two ways to start](#start) below.
 
-Andre has one fire, so he starts Build One Thing Now.
+Andre has one fire, so he takes Fix One Thing.
 
-The mistake is picking the bigger course because it sounds more serious. A bigger path isn't a better one. The right path is the one your map points at.
+The mistake is picking the bigger path because it sounds more serious. A bigger path isn't a better one. The right path is the one your map points at.
 
 If you're still weighing the fix itself, [build vs buy software](/blog/build-vs-buy-software/) runs two questions on that. And if you're not sure which problem to start with, [which business problem to fix first](/blog/which-business-problem-to-fix-first/) scores them for you.
 
@@ -73,7 +73,7 @@ A job without a finish date just keeps going.
 
 So take your path, and write three things: your path, the one outcome you want, and a date.
 
-Andre writes, "Build One Thing Now, quotes out the same day, by month end."
+Andre writes, "Fix One Thing, quotes out the same day, by month end."
 
 Here's why that works. One outcome and a date tell you when you're done.
 
@@ -85,7 +85,7 @@ Not sure what counts as a good outcome? The Government of Canada keeps a [small 
 
 Read your map. Pick your path. Write it down, with a date.
 
-Skip step 1, and you're back to guessing. Skip step 2, and you may start in the wrong course. Skip step 3, and the path stays a nice idea.
+Skip step 1, and you're back to guessing. Skip step 2, and you may start on the wrong path. Skip step 3, and the path stays a nice idea.
 
 ## Write your path down
 

@@ -98,7 +98,7 @@ Tess writes, "Rent. Every shop needs calls answered, and my software does it."
 
 The mistake is deciding while someone is selling to you. The right move is deciding on paper first.
 
-And if the answer is rent, that's fine. Rent the good ones. Before you sign up for one, the Government of Canada's [Get Cyber Safe guide for small and medium businesses](https://www.getcybersafe.gc.ca/en/resources/get-cyber-safe-guide-small-and-medium-businesses) is worth a read. ([Step 3 in the video](https://www.youtube.com/watch?v=XiVBx4P5vu0&t=211s))
+And if the answer is rent, that's fine. Rent the good ones. Before you sign up for one, the Canadian Centre for Cyber Security's [baseline controls for small and medium organizations](https://www.cyber.gc.ca/en/guidance/baseline-cyber-security-controls-small-and-medium-organizations) are worth a read. ([Step 3 in the video](https://www.youtube.com/watch?v=XiVBx4P5vu0&t=211s))
 
 ## Why the order matters
 

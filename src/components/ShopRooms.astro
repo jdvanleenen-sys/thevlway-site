@@ -1,7 +1,7 @@
 ---
 import AffiliateLink from './AffiliateLink.astro';
 import ShopRoom from './ShopRoom.astro';
-import { EDUBAWARE_PAGE_URL, EDUBAWARE_PRICE, TEAMS_PATH, YOUTUBE_URL } from '../consts';
+import { EDUBAWARE_FOUNDING_SEATS_START, EDUBAWARE_PAGE_URL, EDUBAWARE_PRICE, TEAMS_PATH, YOUTUBE_URL } from '../consts';
 import { getPublishedPosts } from '../lib/posts';
 
 const postCount = (await getPublishedPosts()).length;
@@ -20,7 +20,7 @@ const postCount = (await getPublishedPosts()).length;
         href={YOUTUBE_URL}
         action="Watch on YouTube"
       >
-        <p class="room-copy">Videos about the office work behind the job.</p>
+        <p class="room-copy">Bip is our robot intern. These videos show what goes wrong in the office work behind the job, and how to fix it.</p>
       </ShopRoom>
       <ShopRoom
         layout="side"
@@ -47,15 +47,16 @@ const postCount = (await getPublishedPosts()).length;
         plate="Classroom: EdubaWare, paid"
         scene="classroom"
         alt="Bip teaches at a chalkboard that says one task while three owners work at desks."
-        title="Build one task that runs."
+        title="Build your weekly job with me."
         href={EDUBAWARE_PAGE_URL}
         action="See the EdubaWare school"
       >
         <p class="room-copy">
-          My school runs on EdubaWare. You get your own workspace, short lessons in plain words, and
-          practice on one task you repeat every week.
+          My school runs on EdubaWare. You get your own workspace, short lessons in plain words, an AI
+          coach, and me in the same chat when you get stuck. The first four lessons are open. I am
+          finishing the last three with the first group.
         </p>
-        <p class="room-copy"><strong>{EDUBAWARE_PRICE} per person, per month, by invitation.</strong></p>
+        <p class="room-copy"><strong>{EDUBAWARE_PRICE} per person, per month. {EDUBAWARE_FOUNDING_SEATS_START} founding seats, by invitation.</strong></p>
       </ShopRoom>
       <ShopRoom
         layout="side"
@@ -66,7 +67,7 @@ const postCount = (await getPublishedPosts()).length;
         href="/play/"
         action="Play Robo-Intern"
       >
-        <p class="room-copy">Robo-Intern is the game Bip and Bit come from.</p>
+        <p class="room-copy">Robo-Intern is the game where Bip and Bit got their start.</p>
       </ShopRoom>
       <ShopRoom
         layout="side"
@@ -77,7 +78,7 @@ const postCount = (await getPublishedPosts()).length;
         href="/about/"
         action="Read about Jeff"
       >
-        <p class="room-copy">I've taught biology, free throws and real estate. AI is just the next subject I get to show you.</p>
+        <p class="room-copy">I have been a teacher for over 24 years. I've taught biology, free throws and real estate. AI is just the next subject I get to show you.</p>
       </ShopRoom>
       <ShopRoom
         layout="full"

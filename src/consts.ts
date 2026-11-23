@@ -19,10 +19,11 @@ export const CLIEF_NOTES_AFFILIATE_URL =
   'https://www.skool.com/cliefnotes/about?ref=9b87167cad844357b07892d1da8b1c51';
 export const CLIEF_NOTES_DISCLOSURE = "I'm a Clief Notes affiliate and earn a commission if you upgrade.";
 export const EDUBAWARE_PRICE = '$30 USD';
-export const EDUBAWARE_REFUND_DAYS = 7;
+export const EDUBAWARE_REFUND_DAYS = 'seven';
 export const TEAMS_PATH = '/teams/';
 export const TEAMS_EMAIL_URL = `mailto:${CONTACT_EMAIL}?subject=TEAMS`;
 export const ICM_PAPER_URL = 'https://arxiv.org/abs/2603.16021';
+export const ICM_PLAIN = 'ICM is a way of setting up folders and notes that show AI where to look.';
 
 export const NAV_LINKS = [
   { href: '/', label: 'Home' },
@@ -39,6 +40,6 @@ interface DoorLink {
 
 // The 2 doors in the shared menu and footer.
 export const DOOR_LINKS: readonly DoorLink[] = [
-  { href: CLIEF_NOTES_AFFILIATE_URL, label: 'Clief Notes (affiliate link)', rel: 'sponsored' },
   { href: '/edubaware/', label: 'EdubaWare school' },
+  { href: CLIEF_NOTES_AFFILIATE_URL, label: 'Clief Notes (affiliate link)', rel: 'sponsored' },
 ];
