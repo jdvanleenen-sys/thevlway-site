@@ -10,11 +10,11 @@ draft: false
 videoUploadDate: 2026-10-23
 ---
 
-*This is the video behind the post, a 1:46 Short. My robot intern says "Confident!" three times. He's wrong twice, and both times he read the wrong file first.*
+*This is the 1:46 animated video behind the post. An AI says "Confident!" three times. It's wrong twice, and both times it read the wrong file first.*
 
 Why does AI make things up? A lot of the time, it isn't making anything up. It read the wrong thing first, and it was sure about it.
 
-That's what happens to Bip, my robot intern. He grabs the first answer on his path and hands it in. Confident! But wrong.
+Here's how that looks in a small office. The AI grabs the first answer on its path and hands it in. Confident, and wrong.
 
 The fix isn't a smarter AI. It's two steps in how you set up your files.
 
@@ -26,45 +26,43 @@ The first one is what people mean by AI hallucination. The AI fills a gap with a
 
 The second one shows up more in a small business. The right answer is in your files. The AI just read something else first.
 
-Bip has the second problem. Mrs. Ramirez's cell number is on her customer card. He found the office phone list first, so he handed in the office line.
+Our example has the second problem. Mrs. Ramirez's cell number is on her customer card. The AI found the office phone list first, so it handed in the office line.
 
-## What Bip's files are
+## What the AI's files are
 
-Here's his folder, the same way your AI sees yours.
+Here's the folder, the same way your AI sees yours.
 
-- **admin/** is the office folder. It holds phone-directory.md, the office phone list. It's the first file on Bip's path.
+- **admin/** is the office folder. It holds phone-directory.md, the office phone list. It's the first file on the AI's path.
 - **clients/** is the customer folder. ramirez-mrs.md is her card, with her cell number on it.
 - **specs/** is the paperwork for a repaint job. In the story it's a pile. The approved materials total is in there, $1,200. So is a rough guess, $1,800.
 
 The .md on the end means a plain text file. It's the kind of file your AI can open and read.
 
-Bip reads admin/ first, so the office number is the one he grabs. Later he wades into specs/ and grabs the $1,800 guess. Both times he says "Confident!" ([0:20 in the video](https://www.youtube.com/watch?v=Jhtpy2YoeFs&t=20s))
-
-![Three moments from the video: Bip says Confident but wrong at the office phone list, Confident but wrong with the 1,800 dollar guess, then Confident and right with 1,200 dollars](/blog/why-does-ai-make-things-up/confident-3-times.png)
+The AI reads admin/ first, so the office number is the one it grabs. Later it wades into specs/ and grabs the $1,800 guess. Both times it says "Confident!" ([0:20 in the video](https://www.youtube.com/watch?v=Jhtpy2YoeFs&t=20s))
 
 Sounding sure is not the same as being right. Your AI sounds sure every time.
 
 ## Step 1: Put the right file first
 
-In the video, I move her card to the front door. That's the first place Bip looks. He reads it first and gets her number right. ([Step 1](https://www.youtube.com/watch?v=Jhtpy2YoeFs&t=29s))
+In the video, I move her card to the front door. That's the first place the AI looks. It reads the card first and gets her number right. ([Step 1](https://www.youtube.com/watch?v=Jhtpy2YoeFs&t=29s))
 
 Your AI works the same way. Whatever it reads first, it tends to trust. So the file it should trust goes where it starts.
 
 I use Claude Code for this. Claude Code is the AI assistant I work with, and it works right inside my folders. Anthropic makes it, and its own guide says the same thing. Give it the documents. Tell it to answer only from them ([Anthropic](https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/reduce-hallucinations)).
 
-## Step 2: Send a bit into the mess
+## Step 2: Send a helper into the mess
 
 Some folders are a pile and always will be. Job paperwork is like that.
 
-So Bip doesn't go in. I send in a bit, a small helper robot. The bit reads the whole pile and hands back one line: approved materials, $1,200. Bip's head stays clear. ([Step 2](https://www.youtube.com/watch?v=Jhtpy2YoeFs&t=58s))
+So the main AI doesn't go in. I send in a helper. The helper reads the whole pile and hands back one line: approved materials, $1,200. The main AI's head stays clear. ([Step 2](https://www.youtube.com/watch?v=Jhtpy2YoeFs&t=58s))
 
-In my setup, a bit is a second AI with one job. "Read the specs folder and give me the approved materials total." It reads the mess, so the main one doesn't have to.
+In my setup, a helper is a second AI with one job. "Read the specs folder and give me the approved materials total." It reads the mess, so the main one doesn't have to.
 
-This time Bip says "$1,200. Confident!" And he's right. ([1:13](https://www.youtube.com/watch?v=Jhtpy2YoeFs&t=73s))
+This time the AI says "$1,200. Confident!" And it's right. ([1:13](https://www.youtube.com/watch?v=Jhtpy2YoeFs&t=73s))
 
 ## Why the 2 fixes work: your folders are the instructions
 
-Bip didn't get smarter between the wrong answers and the right one. His folders changed.
+The AI didn't get smarter between the wrong answers and the right one. Its folders changed.
 
 That's the whole idea behind the folder system I use. Your AI doesn't learn your business by being told over and over. It learns it by reading your folders, in the order you lay them out. So the way you set up your folders is the instructions.
 
@@ -74,35 +72,35 @@ When the binder is a mess, the AI still answers. It answers from whatever it fou
 
 ## How to set up a folder system so your AI stops making things up
 
-Each step below is a piece of the folder system. Each one says what it would change in Bip's office.
+Each step below is a piece of the folder system. Each one says what it would change in our example office.
 
 **1. Give it a front door.** One short page at the top of your folders that your AI loads at the start. It holds no answers. It only says where the answers live. "Customer phone numbers are in clients/. The office line is in admin/." Mine is a file called CLAUDE.md, because Claude Code loads that page every time it starts.
 
-*In Bip's office:* the front door sends him to clients/ for a customer's number. He never grabs the office line.
+*In our example:* the front door sends the AI to clients/ for a customer's number. It never grabs the office line.
 
 **2. Name your folders for the work.** admin/, clients/, specs/. Use the words you already say out loud. The folder's name tells the AI what's inside before it opens a single file.
 
-*In Bip's office:* "Find Mrs. Ramirez's number" and clients/ are the same idea. The name points the way.
+*In our example:* "Find Mrs. Ramirez's number" and clients/ are the same idea. The name points the way.
 
-**3. Put a short note in each folder, named CLAUDE.md.** One page that says what's in this folder, what to trust and what to skip. Claude Code loads a folder's CLAUDE.md when it works in that folder. "1 card per customer. Cell number on the card." "The approved materials total is on the signed quote. Rough guesses are not approved." The note is where you also tell your AI it's allowed to say "I don't know." Anthropic's guide says that permission cuts down wrong answers.
+**3. Put a short note in each folder, named CLAUDE.md.** One page that says what's in this folder, what to trust and what to skip. Claude Code loads a folder's CLAUDE.md when it works in that folder. "One card per customer. Cell number on the card." "The approved materials total is on the signed quote. Rough guesses are not approved." The note is where you also tell your AI it's allowed to say "I don't know." Anthropic's guide says that permission cuts down wrong answers.
 
-*In Bip's office:* the note on clients/ sends him straight to her card. The note in specs/ tells him the $1,800 is a guess before he picks it up.
+*In our example:* the note on clients/ sends the AI straight to her card. The note in specs/ tells it the $1,800 is a guess before it picks it up.
 
 **4. Give every fact one home.** Her cell number lives on her card, and only there. The office line lives in the phone list, and only there. When a fact lives in two places, someday they disagree, and the AI may go with either one. So the second place keeps a pointer, not a copy: "Ramirez: see her card in clients/."
 
-*In Bip's office:* there's only one number that belongs to her, so there's only one number he can bring back.
+*In our example:* there's only one number that belongs to her, so there's only one number the AI can bring back.
 
-**5. Give the messy folders a helper with one job.** Some folders stay a pile. So a helper reads just that folder and hands back just the line you need. Your main AI only ever sees the answer, never the pile. That's the bit in the video.
+**5. Give the messy folders a helper with one job.** Some folders stay a pile. So a helper reads just that folder and hands back just the line you need. Your main AI only ever sees the answer, never the pile.
 
-*In Bip's office:* Bit reads specs/. Bip gets one line: approved materials, $1,200.
+*In our example:* the helper reads specs/. The main AI gets one line: approved materials, $1,200.
 
 **6. Check the path.** Every answer comes from files you can open. When an answer is wrong, ask what it read. Then fix the wrong fact, or the note that wasn't clear. These pages guide your AI. They don't lock it, and that's why this step is here.
 
-*In Bip's office:* the first wrong number shows you the problem right away. The office line was first on his path.
+*In our example:* the first wrong number shows you the problem right away. The office line was first on the AI's path.
 
 The two steps in the first video are steps 1 and 5 in action. Steps 2, 3, 4 and 6 are what keep them working after the video ends.
 
-The second video shows all six, in order. Bip does the same job twice, and the second time you watch each step as a stop on his path: [Why Bip Got It Wrong](https://www.youtube.com/shorts/Eq9hj96V_lE).
+[The second video](https://www.youtube.com/shorts/Eq9hj96V_lE) shows all six, in order. The AI does the same job twice, and the second time you watch each step as a stop on its path.
 
 It's the same idea behind how I [set up a small business system](/blog/small-business-systems). And it's the bridle from my post on [how to come up with video ideas](/blog/how-to-come-up-with-video-ideas). The power is in the AI. The direction comes from your folders.
 
@@ -110,19 +108,19 @@ The method has a name. It's called Interpretable Context Methodology, ICM for sh
 
 ## The 4 files your AI receptionist needs before it picks up the phone
 
-Bip has the second problem in the first two videos. In the third one, he has the first.
+The first two videos show the second problem. The third one shows the first.
 
 The owner is up a ladder. His phone buzzes. He can't get to it. By the time he calls back, they've booked someone else.
 
-So he does the smart thing. AI can answer the phone now. He sets it up himself, and Bip takes the calls.
+So he does the smart thing. AI can answer the phone now. He sets it up himself, and the AI takes the calls.
 
-He skips one part. The folder. Bip's receptionist folder is empty.
+He skips one part. The folder. The AI receptionist's folder is empty.
 
 The phone rings. The caller asks four things. Do you do bathroom re-tile? Can you match my old tile? What's your deposit? How soon can you start?
 
-Bip answers anyway. "We do everything!" "Exact match!" "50% up front." "Monday!" Every answer is a guess, and every guess sounds sure.
+The AI answers anyway. "We do everything!" "Exact match!" "50% up front." "Monday!" Every answer is a guess, and every guess sounds sure.
 
-The caller hangs up 40 seconds in. The job is gone. ([Watch Bip lose it](https://www.youtube.com/shorts/av49NJTgzxA))
+The caller hangs up 40 seconds in. The job is gone. ([Watch the call](https://www.youtube.com/shorts/av49NJTgzxA))
 
 Nothing was in the wrong place this time. There was nothing there at all. That's the gap the OpenAI researchers describe. The AI fills it with a confident guess.
 
@@ -140,22 +138,20 @@ receptionist/
 
 Why each file is there:
 
-1. **The business.** Bip says yes to your jobs, and no to the ones you don't do. And no to a town you don't drive to.
-2. **Prices.** Bip quotes your deposit, not a number that sounds normal.
-3. **Calendar.** Bip promises a date you can keep.
+1. **The business.** The AI says yes to your jobs, and no to the ones you don't do. And no to a town you don't drive to.
+2. **Prices.** The AI quotes your deposit, not a number that sounds normal.
+3. **Calendar.** The AI promises a date you can keep.
 4. **When to get you.** The rule against guessing. Anything that isn't in the folder gets a message for you, not a made-up answer.
 
 Each fact lives in one file, the same rule as the folder setup above. When your deposit changes, you change one line in one file.
 
-In the video, the next caller asks the same things. Bip reads the folder. Re-tile, yes. 10% to book. About 3 weeks out. She asks to book, and asks about matching her old tile. That isn't in the folder, so Bip doesn't guess. He takes a message for the owner. The job books.
+In the video, the next caller asks the same things. The AI reads the folder. Re-tile, yes. 10% to book. About three weeks out. She asks to book, and asks about matching her old tile. That isn't in the folder, so the AI doesn't guess. It takes a message for the owner. The job books.
 
 The money in the video is made up. The move isn't.
 
 The four files are the start. A full AI receptionist needs a few more: who it is, what a good call does, and how you test it before it takes a real call.
 
-## Play it yourself
-
-Bip comes from Robo-Intern, a small game I built where you set up the folders and Bip does the job. [Play it here](/play/). The longer version of the story is [Bip's First Day](https://youtu.be/qAa70yzIrnU).
+## Your move today
 
 Want help with this? See the [two ways to start](#start) below.
 

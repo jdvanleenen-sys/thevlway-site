@@ -8,41 +8,41 @@ youtubeId: '5tpmCo_r0-I'
 videoUploadDate: 2026-11-18
 ---
 
-*This is the video behind the post. Bip, my AI, goes out for my lunch twice. Trip one is a confident guess. Trip two is the three steps, and you can watch him catch his own mistake.*
+*This is the short animated video behind the post. An AI goes out for my lunch twice. The first trip is a confident guess. The second uses the three steps, and you can watch it catch its own mistake.*
 
 How to write AI prompts comes down to three steps. Give the details. Say what done looks like. Have your AI check and fix its work before it shows you.
 
 I'll show you with my lunch.
 
-Bip is a cartoon robot, and the 10 minutes and 1 minute in this story are story times. The lunch is my real order.
+The ten minutes and one minute in this story are story times. The lunch is my real order.
 
 ## I asked my AI for my favourite lunch
 
-I told Bip, "Grab my favourite lunch. Back in 10 minutes."
+I told my AI, "Grab my favourite lunch. Back in 10 minutes."
 
 Then I left the room.
 
-Bip knows nothing about my lunch. That didn't slow him down.
+My AI knew nothing about my lunch. That didn't slow it down.
 
 "On it! Confident!"
 
-He was back in 1 minute. ([0:11 in the video](<https://www.youtube.com/watch?v=5tpmCo_r0-I&t=11s>))
+It was back in one minute. ([0:11 in the video](<https://www.youtube.com/watch?v=5tpmCo_r0-I&t=11s>))
 
 "Tacos! Your favourite!"
 
 They were not my favourite.
 
-So I asked him, "Bip, how would you know my favourite?"
+So I asked, "How would you know my favourite?"
 
 "I didn't. So I guessed. Confident!"
 
 ## Why your AI guesses
 
-Bip was wrong because he had no details. Not because Bip is bad. ([0:25](<https://www.youtube.com/watch?v=5tpmCo_r0-I&t=25s>))
+My AI was wrong because it had no details. The tool wasn't bad. ([0:25](<https://www.youtube.com/watch?v=5tpmCo_r0-I&t=25s>))
 
-AI does the same thing when you don't tell it what you want.
+AI does the same thing whenever you don't tell it what you want.
 
-He was sure of himself, and he was wrong. Both at once.
+It was sure of itself, and it was wrong. Both at once.
 
 If you want more on why AI fills a gap instead of stopping, I wrote up [why AI makes things up](/blog/why-does-ai-make-things-up/).
 
@@ -54,7 +54,7 @@ That wrong lunch was on me.
 
 ### Step 1: Give the details
 
-I gave Bip a short note called lunch.md. ([0:34](<https://www.youtube.com/watch?v=5tpmCo_r0-I&t=34s>))
+I gave my AI a short note called lunch.md. ([0:34](<https://www.youtube.com/watch?v=5tpmCo_r0-I&t=34s>))
 
 It had three things on it.
 
@@ -62,15 +62,15 @@ It had three things on it.
 - Extra peanuts
 - Extra aioli sauce
 
-That's what trip one was missing.
+That's what the first trip was missing.
 
-With the note, Bip goes for lettuce wraps. Without it, I get tacos.
+With the note, my AI goes for lettuce wraps. Without it, I get tacos.
 
 The mistake is "grab my favourite lunch." The right move is writing down what your favourite actually is.
 
 ### Step 2: Say what done looks like
 
-Then I gave him a second note, called done.md. ([0:37](<https://www.youtube.com/watch?v=5tpmCo_r0-I&t=37s>))
+Then I gave it a second note, called done.md. ([0:37](<https://www.youtube.com/watch?v=5tpmCo_r0-I&t=37s>))
 
 It's a three-line checklist.
 
@@ -80,19 +80,19 @@ It's a three-line checklist.
 
 It looks like the same list. It does a different job.
 
-The first note tells Bip what to get. The second gives him something to check against.
+The first note tells the AI what to get. The second gives it something to check against.
 
-Without it, Bip can only tell you he's done. With it, he can find out.
+Without the checklist, your AI can only tell you it's done. With it, your AI can find out.
 
 ### Step 3: Check and fix
 
 Here's where it gets good. ([0:42](<https://www.youtube.com/watch?v=5tpmCo_r0-I&t=42s>))
 
-Bip comes back with the bag, and he doesn't hand it over yet.
+The AI comes back with the bag, and it doesn't hand it over yet.
 
 "Got it. Checking done.md before I hand it over."
 
-He goes down the list.
+It goes down the list.
 
 - Lettuce wraps: pass
 - Extra peanuts: fail
@@ -101,7 +101,7 @@ There it is. ([0:51](<https://www.youtube.com/watch?v=5tpmCo_r0-I&t=51s>))
 
 "No extra peanuts. Going back."
 
-He goes back for them. Then he checks again.
+It goes back for them. Then it checks again.
 
 - Extra peanuts: pass
 - Extra aioli: pass
@@ -118,7 +118,7 @@ Each step needs the one before it.
 
 Skip step 1, and you get tacos.
 
-Skip step 2, and Bip has nothing to check against.
+Skip step 2, and your AI has nothing to check against.
 
 Skip step 3, and the missing peanuts land on your desk.
 
