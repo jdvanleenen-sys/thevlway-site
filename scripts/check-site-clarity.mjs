@@ -53,9 +53,9 @@ check(2, 'Home hero names the teacher, the AI coach and the same chat', ['home']
   const hero = heroOf(pages.home);
   return !(/teacher/i.test(hero) && /AI coach/.test(hero) && /same chat/i.test(hero));
 }));
-check(3, 'First button on home is the free lessons', ['home'].filter(() => {
-  const first = pages.home.main.match(/<a\b[^>]*class="[^"]*button[^"]*"[^>]*>/)?.[0] ?? '';
-  return !first.includes('subject=FREE');
+check(3, 'First button on home is the Clief Notes free door', ['home'].filter(() => {
+  const first = pages.home.main.match(/<a[^>]*class="[^"]*button[^"]*"[^>]*>/)?.[0] ?? '';
+  return !(first.includes('skool.com/cliefnotes') && first.includes('sponsored'));
 }));
 check(4, 'Free offer says Jeff joins with a paid seat', ['edubaware'].filter(() => !/Free lessons are with the AI coach/.test(pages.edubaware.text)));
 check(5, 'Home says the last three lessons are being finished', ['home'].filter(() => !/last three lessons/i.test(pages.home.text)));
@@ -96,8 +96,30 @@ check(19, 'Founding price lock and second refund window are stated', ['edubaware
 
 check(20, 'No Bip on the blog index or in any post title', allFiles.filter((file) => /blog[\\/]index\.html$/.test(file) && /\bBip\b/.test(mainHtml(readFileSync(file, 'utf8')))).concat(
   postFiles.filter((file) => /\bBip\b/.test(readFileSync(file, 'utf8').match(/<h1[\s\S]*?<\/h1>/)?.[0] ?? ''))));
-check(21, 'Home has no free throws or "behind the job"', ['home'].filter(() => /free throws|behind the job/i.test(pages.home.text)));
-check(22, 'Home lists what free and paid include, and where the AI coach is', ['home'].filter(() => !(/What you get/.test(pages.home.text) && /Everything in free/.test(pages.home.text) && /not in Clief Notes/.test(pages.home.text))));
+check(21, 'Home has no free throws', ['home'].filter(() => /free throws/i.test(pages.home.text)));
+check(22, 'Home says what you get from all three doors', ['home'].filter(() => (heroOf(pages.home).match(/What you get/g) ?? []).length !== 3));
+check(23, 'Approved audience line is on home and the school page', failing(['home', 'edubaware'], (p) => /office work piling up behind the job/.test(p.text)));
+check(24, 'Approved outcome is on home, school and About', failing(['home', 'edubaware', 'about'], (p) => /runs in steps, checks itself and hands it to (you|them) to sign off/.test(p.text)));
+check(25, 'Home hero shows Clief, then the school, then Teams', ['home'].filter(() => {
+  const hero = pages.home.main.split(/<h2/)[0];
+  const order = ['skool.com/cliefnotes', '/edubaware/', '/teams/'].map((link) => hero.indexOf(link));
+  return order.some((at) => at < 0) || !(order[0] < order[1] && order[1] < order[2]);
+}));
+check(26, 'Every selling page links both doors in its main content', ['index.html', 'about/index.html', 'edubaware/index.html', ...postFiles.map((file) => file.slice(DIST.length + 1))].filter((file) => {
+  const main = mainHtml(readFileSync(join(DIST, file), 'utf8'));
+  return !(main.includes('skool.com/cliefnotes') && main.includes('/edubaware/'));
+}));
+check(27, 'No line sells the school against Clief Notes', allFiles.flatMap((file) => {
+  const text = visibleText(mainHtml(readFileSync(file, 'utf8')));
+  return ['Why pay when Clief', 'not in Clief Notes', 'What if I am not in Clief', 'New to Clief'].filter((term) => text.includes(term)).map((term) => `${file}: ${term}`);
+}));
+check(28, 'Teams carries the locked story, the Creator line and the three built templates', ['teams'].filter(() => {
+  const t = pages.teams.text;
+  return !(/what's in, what's missing and who does what next/.test(t) && /same steps and the same checks/.test(t) && /Earnings report/.test(t) && /Mini CIM/.test(t) && /Marketing video plan/.test(t)) || /I can build your templates/.test(t);
+}));
+check(29, 'Home and school say the founding price will rise', failing(['home', 'edubaware'], (p) => /price will rise/.test(p.text)));
+check(30, 'One word for the team place: shared room', coreNames.filter((name) => /shared workspace/i.test(pages[name].text)).concat(/shared workspace/i.test(visibleText(mainHtml(readFileSync(join(DIST, 'privacy/index.html'), 'utf8')))) ? ['privacy'] : []));
+check(31, 'Built templates are labelled as made-up data so far', ['teams'].filter(() => !/Shown so far on made-up data/.test(pages.teams.text)));
 
 let failed = 0;
 for (const { id, label, failures } of results) {

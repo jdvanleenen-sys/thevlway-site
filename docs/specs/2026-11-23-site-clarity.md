@@ -9,12 +9,13 @@ Principles. Teams puts a corporation's people together on projects, using templa
 
 ## Decisions from Jeff
 - Many people can work in the same chat at the same time. This is the main advantage.
-- The two free EdubaWare lessons are the first free door. Clief Notes stays as the source.
+- Rebuilt against the capstone on 2026-11-23: the free door is Clief Notes through the affiliate link. The two free lessons are a way to try the school.
+- The site carries the approved audience, the approved outcome and the team-room ask.
 
 ## The 11 fixes
 1. Say the same-chat advantage on the home, EdubaWare, About and Teams pages.
 2. Put the teacher in the home page hero.
-3. Make "free" mean the two free lessons on every door.
+3. Make the free door Clief Notes on every page, with the two free lessons offered inside the school.
 4. Stop promising Jeff in the chat on the free tier.
 5. Say on the home page that the last three lessons are still being finished.
 6. State the same paid offer everywhere: $30 USD per person, per month, five founding seats.
@@ -29,7 +30,7 @@ Principles. Teams puts a corporation's people together on projects, using templa
 |---|---|
 | The AI inside EdubaWare | AI coach |
 | One person's place | workspace |
-| A team's place | shared workspace |
+| A team's place | shared room |
 | Where people talk | chat |
 | What you bring | weekly task ("job" means the customer's job) |
 | ICM, on first use | a way of setting up folders and notes that show AI where to look |
