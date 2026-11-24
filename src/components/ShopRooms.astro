@@ -33,6 +33,7 @@ const postCount = (await getPublishedPosts()).length;
       >
         <p class="room-copy">{postCount} posts on quotes, systems and which problem to fix first.</p>
       </ShopRoom>
+      <div class="doors-pair">
       <ShopRoom
         layout="free"
         plate="Front desk: Clief Notes, free"
@@ -58,6 +59,7 @@ const postCount = (await getPublishedPosts()).length;
         </p>
         <p class="room-copy"><strong>{EDUBAWARE_PRICE} per person, per month. {EDUBAWARE_FOUNDING_SEATS_START} founding seats, by invitation.</strong></p>
       </ShopRoom>
+      </div>
       <ShopRoom
         layout="side"
         plate="Break room"
@@ -118,6 +120,28 @@ const postCount = (await getPublishedPosts()).length;
     display: grid;
     grid-template-columns: repeat(12, minmax(0, 1fr));
     gap: var(--space-4);
+  }
+
+  /* The front desk art is 160 wide and the classroom art 240, so the space inside the two cards
+     splits 2 to 3. Both pictures get the same height and both cards start their text on the same
+     line. The 6px is each card's left and right border, kept out of the split. */
+  .doors-pair {
+    display: grid;
+    grid-column: 1 / -1;
+    grid-template-columns: calc((100% - var(--space-4) - 12px) * 2 / 5 + 6px) minmax(0, 1fr);
+    gap: var(--space-4);
+  }
+
+  @media (min-width: 981px) {
+    .doors-pair {
+      order: -1;
+    }
+  }
+
+  @media (max-width: 980px) {
+    .doors-pair {
+      grid-template-columns: minmax(0, 1fr);
+    }
   }
 
   @media (max-width: 620px) {

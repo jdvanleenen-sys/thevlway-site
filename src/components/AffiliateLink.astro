@@ -17,7 +17,7 @@ const { fillCard = false, compact = false, edubawareColor = false, defineIcm = t
       <p>{defineIcm && `${ICM_PLAIN} `}Learn the ICM Principles by Jake Van Clief in Clief Notes, a free AI community on Skool, an online community website.</p>
     )
   }
-  <p class="affiliate-disclosure">{CLIEF_NOTES_DISCLOSURE}</p>
+  {!compact && <p class="affiliate-disclosure">{CLIEF_NOTES_DISCLOSURE}</p>}
   <a
     class:list={['button door-button', edubawareColor ? 'button-edubaware' : 'button-primary']}
     href={CLIEF_NOTES_AFFILIATE_URL}
@@ -25,6 +25,7 @@ const { fillCard = false, compact = false, edubawareColor = false, defineIcm = t
   >
     Join Clief Notes (affiliate link)
   </a>
+  {compact && <p class="affiliate-disclosure below">{CLIEF_NOTES_DISCLOSURE}</p>}
 </div>
 
 <style>
@@ -37,6 +38,11 @@ const { fillCard = false, compact = false, edubawareColor = false, defineIcm = t
     font-size: 1rem;
     font-weight: 700;
     color: var(--navy);
+  }
+
+  .affiliate-disclosure.below {
+    margin: var(--space-2) 0 0;
+    font-size: 0.9rem;
   }
 
   .button {

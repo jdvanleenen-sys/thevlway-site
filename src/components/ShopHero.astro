@@ -51,8 +51,8 @@ const bipSayings = [
       <p class="door-name">Free: learn the method</p>
       <p class="paid-line"><strong>What you get:</strong></p>
       <ul>
-        <li>The ICM Principles by Jake Van Clief</li>
         <li>Clief Notes, a free AI community on Skool, an online community website</li>
+        <li>The ICM Principles by Jake Van Clief</li>
         <li>{ICM_PLAIN}</li>
       </ul>
       <AffiliateLink compact />
@@ -145,9 +145,16 @@ const bipSayings = [
     border-top: 2px solid var(--navy);
   }
 
-  .door > .button,
+  /* The free door's button and disclosure join the shared rows, so all 3 buttons and notes line up. */
   .door > :global(.affiliate) {
+    display: contents;
+  }
+
+  /* Each button sits centered over the note below it. */
+  .door > .button,
+  .door > :global(.affiliate) > :global(.button) {
     align-self: end;
+    justify-self: center;
   }
 
   .door-name {
@@ -273,8 +280,14 @@ const bipSayings = [
     }
 
     .door {
-      display: block;
+      display: flex;
+      flex-direction: column;
       grid-row: auto;
+    }
+
+    .door > .button,
+    .door > :global(.affiliate) > :global(.button) {
+      align-self: center;
     }
   }
 
