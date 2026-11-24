@@ -1,0 +1,24 @@
+---
+// thevlway.com/start-here: forwards to /start/, so either address works.
+import '../styles/global.css';
+import { SITE_NAME } from '../consts';
+const TARGET = '/start/';
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="refresh" content={`0; url=${TARGET}`} />
+    <meta name="robots" content="noindex" />
+    <link rel="canonical" href={`https://thevlway.com${TARGET}`} />
+    <title>{`Start here | ${SITE_NAME}`}</title>
+  </head>
+  <body>
+    <main class="container" style="padding: 48px 16px;">
+      <h1>Start here</h1>
+      <p>Taking you to the page. If nothing happens, <a href={TARGET}>open the Start Here page</a>.</p>
+    </main>
+  </body>
+</html>

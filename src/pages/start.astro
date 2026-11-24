@@ -1,0 +1,293 @@
+---
+// thevlway.com/start: the first idea in plain words, the 3 videos that teach it, then the 2 doors.
+import Base from '../layouts/Base.astro';
+import TwoDoors from '../components/TwoDoors.astro';
+
+const problems = [
+  {
+    name: 'It starts from zero',
+    line: 'Every new chat, your AI knows nothing about your business. Not your prices, not your customers, not how you like a quote to look.',
+  },
+  {
+    name: 'It trusts the first thing it reads',
+    line: 'If the wrong file is on its path first, it hands you that answer. Confident, and wrong.',
+  },
+  {
+    name: 'It forgets in a long chat',
+    line: 'A chat only holds so much. Talk long enough and the things you said at the start get crowded out.',
+  },
+];
+
+const note = [
+  { part: 'What goes in', example: 'The customer card and the job notes.' },
+  { part: 'What the AI does', example: 'Writes the quote from the price list.' },
+  { part: 'What comes out', example: 'One quote, ready to send.' },
+  { part: 'What you check', example: 'The total and the customer name, before it goes anywhere.' },
+];
+
+const videos = [
+  {
+    id: 'Jhtpy2YoeFs',
+    post: '/blog/why-does-ai-make-things-up/',
+    title: 'Why does AI make things up?',
+    line: 'An AI says "Confident!" three times. It is wrong twice, and both times it read the wrong file first.',
+  },
+  {
+    id: 'Ba6apFc6inw',
+    post: '/blog/claude-context-window/',
+    title: 'Why your AI forgets in a long chat',
+    line: 'Why a long chat gets crowded, and why the fix is a folder and not a better chat.',
+  },
+  {
+    id: 'VcbW12lMgqg',
+    post: '/blog/sop-for-small-business/',
+    title: 'Four lines your AI can actually follow',
+    line: 'Pick one folder, write its four lines, then hand it to a stranger to see if it works.',
+  },
+];
+---
+
+<Base
+  title="Start here: why AI needs folders and files"
+  description="Start here. Why your AI guesses, why it forgets, and how folders and files show it where to look. Three short videos, then a free or paid way to start."
+>
+  <div class="start-page">
+    <section class="container hero">
+      <p class="eyebrow">Start here</p>
+      <h1>Your AI isn't dumb. It doesn't know where to look.</h1>
+      <p class="subhead">
+        If you have tried AI for your office work and it guessed, made something up or forgot what you told it, this page
+        is for you. You don't need to be technical. You need one idea.
+      </p>
+    </section>
+
+    <section class="container block">
+      <h2>Why your AI gets it wrong</h2>
+      <div class="cards">
+        {
+          problems.map((p) => (
+            <article class="card depth-box">
+              <h3>{p.name}</h3>
+              <p>{p.line}</p>
+            </article>
+          ))
+        }
+      </div>
+      <p class="prose">
+        Here is what that looks like. You ask for Mrs. Ramirez's cell number. Her cell is on her customer card. But the
+        AI found the office phone list first, so it gave you the office line, and it was sure about it.
+      </p>
+      <p class="prose">The fix isn't a smarter AI. It's a place to look.</p>
+    </section>
+
+    <section class="container block">
+      <h2>The fix: folders and files</h2>
+      <p class="prose">
+        Give each job its own folder. Quotes get one. Invoices get one. Put one short file at the top that tells the AI
+        what this folder is for. Now the AI doesn't have to guess or remember. It opens the folder and reads that file
+        first.
+      </p>
+      <p class="prose">That file is four plain lines. Here is one for quotes:</p>
+      <ol class="note depth-box">
+        {
+          note.map((n) => (
+            <li>
+              <strong>{n.part}:</strong> {n.example}
+            </li>
+          ))
+        }
+      </ol>
+      <p class="prose">
+        That's the whole first idea. ICM structure has folders and files that show AI where to look. I learned it from the
+        ICM Principles by Jake Van Clief, and it's what I teach.
+      </p>
+      <p class="callout">
+        <strong>Try it this week:</strong> pick the one job your AI gets wrong most. Make it a folder and write its four
+        lines.
+      </p>
+    </section>
+
+    <section class="container block">
+      <h2>Watch these three first</h2>
+      <p class="prose">Each one is short and shows one piece of the idea. Watch them in this order.</p>
+      <div class="videos">
+        {
+          videos.map((v, i) => (
+            <article class="video depth-box">
+              <a class="thumb" href={v.post}>
+                <img
+                  src={`https://i.ytimg.com/vi/${v.id}/hqdefault.jpg`}
+                  alt={`Video: ${v.title}`}
+                  width="480"
+                  height="360"
+                  loading="lazy"
+                />
+              </a>
+              <p class="num">Video {['one', 'two', 'three'][i]}</p>
+              <h3>
+                <a href={v.post}>{v.title}</a>
+              </h3>
+              <p>{v.line}</p>
+              <p class="links">
+                <a href={v.post}>Watch it with the written steps</a>
+                <span aria-hidden="true"> · </span>
+                <a href={`https://www.youtube.com/watch?v=${v.id}`}>Watch on YouTube</a>
+              </p>
+            </article>
+          ))
+        }
+      </div>
+    </section>
+
+    <section id="start" class="container block">
+      <h2>Two ways to start</h2>
+      <div class="who">
+        <p>
+          <strong>Free is for you if</strong> you want to learn the idea yourself, at your own pace, with other people
+          doing the same.
+        </p>
+        <p>
+          <strong>Paid is for you if</strong> you have one weekly task you want built, and you want a teacher in the same
+          chat while you build it.
+        </p>
+      </div>
+      <TwoDoors />
+    </section>
+  </div>
+</Base>
+
+<style>
+  .hero {
+    padding-top: var(--space-7);
+    padding-bottom: var(--space-5);
+    max-width: 46rem;
+  }
+
+  .eyebrow {
+    margin-bottom: var(--space-3);
+    color: var(--cognac-dark);
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  h1 {
+    font-size: clamp(2.2rem, 5vw, 3.4rem);
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+  }
+
+  .subhead {
+    font-size: 1.15rem;
+  }
+
+  .block {
+    padding-bottom: var(--space-6);
+  }
+
+  h2 {
+    margin-bottom: var(--space-3);
+    font-size: 1.6rem;
+  }
+
+  h3 {
+    margin-bottom: var(--space-2);
+    font-size: 1.15rem;
+  }
+
+  .prose {
+    max-width: 42rem;
+    text-align: justify;
+  }
+
+  .cards,
+  .videos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+    gap: var(--space-4);
+    margin-bottom: var(--space-4);
+  }
+
+  .card,
+  .video {
+    min-width: 0;
+    padding: var(--space-4);
+    background: var(--white);
+    border: 2px solid var(--navy);
+    border-top: 6px solid var(--cognac-dark);
+  }
+
+  .card p:last-child,
+  .video p:last-child {
+    margin-bottom: 0;
+  }
+
+  .note {
+    max-width: 42rem;
+    margin: 0 0 var(--space-4);
+    padding: var(--space-4) var(--space-4) var(--space-4) var(--space-6);
+    background: var(--white);
+    border: 2px solid var(--navy);
+  }
+
+  .note li {
+    padding: var(--space-1) 0;
+  }
+
+  .callout {
+    max-width: 42rem;
+    padding: var(--space-3) var(--space-4);
+    background: var(--cognac-light);
+    border-left: 6px solid var(--cognac-dark);
+  }
+
+  .callout strong {
+    color: var(--cognac-dark);
+  }
+
+  .thumb {
+    display: block;
+    margin-bottom: var(--space-3);
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background: var(--navy);
+  }
+
+  .thumb img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .num {
+    margin-bottom: var(--space-1);
+    color: var(--warm-grey);
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .links {
+    font-size: 0.95rem;
+    font-weight: 700;
+  }
+
+  .who {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+    gap: var(--space-4);
+    margin-bottom: var(--space-4);
+  }
+
+  .who p {
+    margin: 0;
+  }
+
+  @media (max-width: 620px) {
+    .hero {
+      padding-top: var(--space-6);
+    }
+  }
+</style>
