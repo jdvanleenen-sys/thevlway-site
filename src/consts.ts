@@ -28,7 +28,7 @@ export const TEAMS_EMAIL_URL = `mailto:${CONTACT_EMAIL}?subject=TEAMS`;
 export const OWNER_AUTHORITY =
   "I have been a teacher for over 24 years. Today I am an executive at a home building company, where I build the AI workflows and tools our staff use and have started teaching them AI. I am one of Jake Van Clief's 7 Masters of ICM and have won three ICM competitions.";
 export const ICM_PAPER_URL = 'https://arxiv.org/abs/2603.16021';
-export const ICM_PLAIN = 'ICM is a way of setting up folders and notes that show AI where to look.';
+export const ICM_PLAIN = 'ICM is a way of setting up folders and files that show AI where to look.';
 
 export const NAV_LINKS = [
   { href: '/', label: 'Home' },
